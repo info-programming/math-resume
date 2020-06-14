@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2020-06-08T07:36:53+09:00    *-->
+<!--*    on 2020-06-14T09:54:41+09:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -146,9 +146,24 @@ a \times b &amp;= b \times a &amp; (\text{乗法の交換法則})\\
 (a \times b) \times c &amp;= a \times (b \times c) &amp; (\text{乗法の結合法則})\\
 (a + b) \times c &amp;= ac + bc, a \times (b + c) = ab + ac &amp; (\text{分配法則})
 \end{align*}
-</div></article><p id="p-25">計算法則を利用した式変形の例として、展開や因数分解がある。</p>
+</div></article><p id="p-25">これらの計算法則は、加法や乗法以外の、減法や除法では成り立たない。また、文字の列(文字列)について「カイ」と「イカ」が異なるように、数学以外の世界でも、交換法則が成り立たないことが多い。</p>
+<p id="p-26">計算法則を利用して式変形することで、便利な公式が得られることがある。</p>
 <article class="theorem-like" id="theorem-3"><h6 class="heading">
-<span class="type">定理</span> <span class="codenumber">2.9</span>. <span class="title">展開・因数分解の公式.</span>
+<span class="type">定理</span> <span class="codenumber">2.9</span>. <span class="title">展開の公式.</span>
+</h6>\(a, b, c, d\)を実数とするとき、次の等式が成り立つ。<div class="displaymath">
+\begin{align*}
+(a + b)(c + d) &amp;= ac + ad + bc + bd
+\end{align*}
+</div></article><article class="hiddenproof" id="proof-1"><a data-knowl="" class="id-ref" data-refid="hk-proof-1"><h6 class="heading"><span class="type">証明.</span></h6></a></article><div id="hk-proof-1" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><div class="displaymath">
+\begin{align*}
+(a + b)(c + d) &amp;= (a + b)c + (a + b)d &amp; (\text{分配法則})\\
+&amp;= ac + bc + ad + bd   &amp; (\text{分配法則})\\
+&amp;= ac + ad + bc + bd   &amp; (\text{加法の交換法則})
+\end{align*}
+</div></article></div>
+<p id="p-27">計算法則を利用した式変形の例として、展開や因数分解がある。</p>
+<article class="theorem-like" id="theorem-4"><h6 class="heading">
+<span class="type">定理</span> <span class="codenumber">2.10</span>. <span class="title">展開・因数分解の公式.</span>
 </h6>\(a, b, c\)を実数とするとき、次の等式が成り立つ。これらの等式で左辺から右辺に変形する操作を<dfn class="terminology">展開</dfn>、右辺から左辺に変形する操作を<dfn class="terminology">因数分解</dfn>という。<div class="displaymath">
 \begin{align*}
 (a + b)^2 &amp;= a^2 + 2ab + b^2\\
@@ -160,12 +175,12 @@ a \times b &amp;= b \times a &amp; (\text{乗法の交換法則})\\
 (a + b)(a^2 - ab + b^2) &amp;= a^3 - b^3\\
 (a - b)(a^2 + ab + b^2) &amp;= a^3 - b^3
 \end{align*}
-</div></article><article class="hiddenproof" id="proof-1"><a data-knowl="" class="id-ref" data-refid="hk-proof-1"><h6 class="heading"><span class="type">証明.</span></h6></a></article><div id="hk-proof-1" class="hidden-content tex2jax_ignore"><article class="hiddenproof">\((a + b)^2 = a^2 + 2ab + b^2\)は次のように示される。他も同様。<div class="displaymath">
+</div></article><article class="hiddenproof" id="proof-2"><a data-knowl="" class="id-ref" data-refid="hk-proof-2"><h6 class="heading"><span class="type">証明.</span></h6></a></article><div id="hk-proof-2" class="hidden-content tex2jax_ignore"><article class="hiddenproof">\((a + b)^2 = a^2 + 2ab + b^2\)は次のように示される。他も同様。<div class="displaymath">
 \begin{align*}
 (a + b)^2 &amp;= (a + b)(a + b)\\
-&amp;= a \times (a + b) + b \times (a + b) &amp; (\text{分配法則})\\
-&amp;= a \times a + a \times b + b \times a + b \times b &amp; (\text{分配法則})\\
-&amp;= a \times a + a \times b + a \times b + b \times b &amp; (\text{乗法の交換法則})\\
+&amp;= aa + ab + ba + bb\\
+&amp;= aa + ab + ab + bb &amp; (\text{乗法の交換法則})\\
+&amp;= aa + 2ab + bb\\
 &amp;= a^2 + 2ab + b^2
 \end{align*}
 </div></article></div></section></div></main>
