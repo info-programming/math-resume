@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2020-06-14T09:54:41+09:00    *-->
+<!--*    on 2020-06-15T21:19:04+09:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -149,7 +149,7 @@ a \times b &amp;= b \times a &amp; (\text{乗法の交換法則})\\
 </div></article><p id="p-25">これらの計算法則は、加法や乗法以外の、減法や除法では成り立たない。また、文字の列(文字列)について「カイ」と「イカ」が異なるように、数学以外の世界でも、交換法則が成り立たないことが多い。</p>
 <p id="p-26">計算法則を利用して式変形することで、便利な公式が得られることがある。</p>
 <article class="theorem-like" id="theorem-3"><h6 class="heading">
-<span class="type">定理</span> <span class="codenumber">2.9</span>. <span class="title">展開の公式.</span>
+<span class="type">定理</span> <span class="codenumber">2.9</span>. <span class="title">展開・因数分解の公式1.</span>
 </h6>\(a, b, c, d\)を実数とするとき、次の等式が成り立つ。<div class="displaymath">
 \begin{align*}
 (a + b)(c + d) &amp;= ac + ad + bc + bd
@@ -163,7 +163,7 @@ a \times b &amp;= b \times a &amp; (\text{乗法の交換法則})\\
 </div></article></div>
 <p id="p-27">計算法則を利用した式変形の例として、展開や因数分解がある。</p>
 <article class="theorem-like" id="theorem-4"><h6 class="heading">
-<span class="type">定理</span> <span class="codenumber">2.10</span>. <span class="title">展開・因数分解の公式.</span>
+<span class="type">定理</span> <span class="codenumber">2.10</span>. <span class="title">展開・因数分解の公式2.</span>
 </h6>\(a, b, c\)を実数とするとき、次の等式が成り立つ。これらの等式で左辺から右辺に変形する操作を<dfn class="terminology">展開</dfn>、右辺から左辺に変形する操作を<dfn class="terminology">因数分解</dfn>という。<div class="displaymath">
 \begin{align*}
 (a + b)^2 &amp;= a^2 + 2ab + b^2\\
@@ -183,7 +183,30 @@ a \times b &amp;= b \times a &amp; (\text{乗法の交換法則})\\
 &amp;= aa + 2ab + bb\\
 &amp;= a^2 + 2ab + b^2
 \end{align*}
-</div></article></div></section></div></main>
+</div></article></div>
+<p id="p-28">特に因数分解は、方程式の解を求めるときに用いられる。式を因数分解して\((x - a)(x - b) = 0\)の形に変形できれば、\(x - a = 0\)か\(x - b = 0\)の<em class="alert">少なくとも一方が</em>成り立つ。 \(x\)は同時に2つの値をとることはできないので、\(x = a\)または\(x = b\)となり、方程式を満たす\(x\)の値を求められる。 ここでは、「\(AB = 0\)であれば\(A = 0\)か\(B = 0\)の<em class="alert">少なくとも一方が</em>0である」ことを用いている。</p>
+<p id="p-29">より高度な因数分解として、<dfn class="terminology">襷(たすき)掛け</dfn>と呼ばれる、次の式に基づく因数分解がある。</p>
+<article class="theorem-like" id="theorem-5"><h6 class="heading">
+<span class="type">定理</span> <span class="codenumber">2.11</span>. <span class="title">展開・因数分解の公式3.</span>
+</h6>\(a, b, c, d, x\)を実数とするとき、次の等式が成り立つ。<div class="displaymath">
+\begin{gather*}
+(ax + b)(cx + d) = acx^2 + (ad + bc)x + bd
+\end{gather*}
+</div></article><article class="theorem-like" id="algorithm-1"><h6 class="heading">
+<span class="type">アルゴリズム</span> <span class="codenumber">2.12</span>. <span class="title">襷(たすき)掛け.</span>
+</h6>\(Ax^2+Bx+C\)を\((ax + b)(cx + d)\)の形に因数分解する場合、次のようにする。 <ol class="decimal">
+<li id="li-3">「掛けて\(x^2\)の係数(\(A\))」になる2数を適当に一つ選び、選んだ2数と\(A\)を縦に並べて記す。</li>
+<li id="li-4">「掛けて定数項の係数(\(C\))」になる2数を適当に一つ選び、選んだ2数と\(C\)を(1)で記した右側に縦に並べて記す。2数を選べなければ(1)へ戻る。</li>
+<li id="li-5">\((\text{左下の数}) \times (\text{右上の数})\)と\((左上の数)\times(右下の数)\)を、(2)で記した右側に縦に並べて記す。</li>
+<li id="li-6">(3)で記した2数の和が\(x\)の係数(\(B\))に一致していれば、左上の数を\(a\)、右上の数を\(b\)、左下の数を\(c\)、右下の数を\(d\)として因数分解できる。一致していなければ(2)へ戻る。</li>
+</ol></article><p id="p-30">この等式は、展開を行う場合には普通に展開しているのとほぼ変わらないため、あまり役立たない。 因数分解を行う場合には、\(a, b, c, d\)が比較的小さな数や簡単な式である場合は襷掛けを行うことができるが、そうでない場合は、次に示す2次方程式の解の公式を用いる方が早いことも多い。</p>
+<article class="theorem-like" id="theorem-6"><h6 class="heading">
+<span class="type">定理</span> <span class="codenumber">2.13</span>. <span class="title">2次方程式の解の公式.</span>
+</h6>\(a, b, c\)を実数とするとき、2次方程式\(ax^2 + bx + c = 0\)の解\(x\)は、次の式で表される。<div class="displaymath">
+\begin{gather*}
+x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+\end{gather*}
+</div></article></section></div></main>
 </div>
 <div class="login-link"><span id="loginlogout" class="login">login</span></div>
 <script src="https://pretextbook.org/js/0.11/login.js"></script>
