@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2020-06-15T21:19:04+09:00    *-->
+<!--*    on 2020-06-20T08:45:53+09:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -192,16 +192,28 @@ a \times b &amp;= b \times a &amp; (\text{乗法の交換法則})\\
 \begin{gather*}
 (ax + b)(cx + d) = acx^2 + (ad + bc)x + bd
 \end{gather*}
-</div></article><article class="theorem-like" id="algorithm-1"><h6 class="heading">
+</div></article><p id="p-30">この等式は、展開を行う場合には普通に展開しているのとほぼ変わらないため、あまり役立たない。 因数分解を行う場合には、\(a, b, c, d\)が比較的小さな数や簡単な式である場合は、次に示す襷掛けという方法で因数分解を行うことができる。</p>
+<article class="theorem-like" id="algorithm-1"><h6 class="heading">
 <span class="type">アルゴリズム</span> <span class="codenumber">2.12</span>. <span class="title">襷(たすき)掛け.</span>
 </h6>\(Ax^2+Bx+C\)を\((ax + b)(cx + d)\)の形に因数分解する場合、次のようにする。 <ol class="decimal">
-<li id="li-3">「掛けて\(x^2\)の係数(\(A\))」になる2数を適当に一つ選び、選んだ2数と\(A\)を縦に並べて記す。</li>
-<li id="li-4">「掛けて定数項の係数(\(C\))」になる2数を適当に一つ選び、選んだ2数と\(C\)を(1)で記した右側に縦に並べて記す。2数を選べなければ(1)へ戻る。</li>
-<li id="li-5">\((\text{左下の数}) \times (\text{右上の数})\)と\((左上の数)\times(右下の数)\)を、(2)で記した右側に縦に並べて記す。</li>
-<li id="li-6">(3)で記した2数の和が\(x\)の係数(\(B\))に一致していれば、左上の数を\(a\)、右上の数を\(b\)、左下の数を\(c\)、右下の数を\(d\)として因数分解できる。一致していなければ(2)へ戻る。</li>
-</ol></article><p id="p-30">この等式は、展開を行う場合には普通に展開しているのとほぼ変わらないため、あまり役立たない。 因数分解を行う場合には、\(a, b, c, d\)が比較的小さな数や簡単な式である場合は襷掛けを行うことができるが、そうでない場合は、次に示す2次方程式の解の公式を用いる方が早いことも多い。</p>
+<li id="li-3">「掛けて\(x^2\)の係数(\(A\))」になる2数\(a, c\)を適当に選び、選んだ2数と\(A\)を縦に並べて記す。</li>
+<li id="li-4">「掛けて定数項の係数(\(C\))」になる2数\(b, d\)を適当に選び、選んだ2数と\(C\)を(1)で記した右側に縦に並べて記す。</li>
+<li id="li-5">\((\text{左下の数}c) \times (\text{右上の数}b) = bc\)と\((\text{左上の数}a)\times(\text{右下の数}d) = ad\)を、(2)で記した右側に縦に並べて記す。</li>
+<li id="li-6">(3)で記した2数の和(\(ad + bc\))が\(x\)の係数(\(B\))に一致すれば、この\(a, b, c, d\)は正しい組み合わせなので因数分解できる。一致しなければ(1)へ戻る。</li>
+</ol>
+<div class="displaymath">
+\begin{align*}
+A &amp;&amp; C\\
+\downarrow &amp;&amp; \downarrow\\
+a &amp;&amp; b &amp;&amp;  \longrightarrow bc\\
+c &amp;&amp; d &amp;&amp;  \longrightarrow ad\\
+&amp;&amp;&amp;&amp; B = ad + bc
+\end{align*}
+</div></article><p id="p-31">襷掛けの手順を図<a data-knowl="./knowl/fig-quad-eq-tasuki.html" title="図 2.13">2.13</a>に示す。</p>
+<figure class="figure-like" id="fig-quad-eq-tasuki"><div style="width: 75%; margin-left: 12.5%; margin-right: 12.5%;"><img src="image/quad-eq-tasuki.svg" style="width: 100%; height: auto;" alt=""></div>
+<figcaption><span class="type">図</span> <span class="codenumber">2.13.</span> 襷掛けの手順</figcaption></figure><p id="p-32">襷掛けは\(a, b, c, d\)が比較的小さな数や簡単な式である場合は便利な方法だが、そうでない場合は、次に示す2次方程式の解の公式を用いる方が早いことも多い。</p>
 <article class="theorem-like" id="theorem-6"><h6 class="heading">
-<span class="type">定理</span> <span class="codenumber">2.13</span>. <span class="title">2次方程式の解の公式.</span>
+<span class="type">定理</span> <span class="codenumber">2.14</span>. <span class="title">2次方程式の解の公式.</span>
 </h6>\(a, b, c\)を実数とするとき、2次方程式\(ax^2 + bx + c = 0\)の解\(x\)は、次の式で表される。<div class="displaymath">
 \begin{gather*}
 x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}

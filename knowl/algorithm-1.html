@@ -2,7 +2,7 @@
 <html lang="ja-JP">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2020-06-15T21:19:04+09:00    *-->
+<!--*    on 2020-06-20T08:45:53+09:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -15,10 +15,19 @@
 <article class="theorem-like"><h6 class="heading">
 <span class="type">アルゴリズム</span> <span class="codenumber">2.12</span>. <span class="title">襷(たすき)掛け.</span>
 </h6>\(Ax^2+Bx+C\)を\((ax + b)(cx + d)\)の形に因数分解する場合、次のようにする。 <ol class="decimal">
-<li>「掛けて\(x^2\)の係数(\(A\))」になる2数を適当に一つ選び、選んだ2数と\(A\)を縦に並べて記す。</li>
-<li>「掛けて定数項の係数(\(C\))」になる2数を適当に一つ選び、選んだ2数と\(C\)を(1)で記した右側に縦に並べて記す。2数を選べなければ(1)へ戻る。</li>
-<li>\((\text{左下の数}) \times (\text{右上の数})\)と\((左上の数)\times(右下の数)\)を、(2)で記した右側に縦に並べて記す。</li>
-<li>(3)で記した2数の和が\(x\)の係数(\(B\))に一致していれば、左上の数を\(a\)、右上の数を\(b\)、左下の数を\(c\)、右下の数を\(d\)として因数分解できる。一致していなければ(2)へ戻る。</li>
-</ol></article><span class="incontext"><a href="sec-expression-fact.html#algorithm-1">in-context</a></span>
+<li>「掛けて\(x^2\)の係数(\(A\))」になる2数\(a, c\)を適当に選び、選んだ2数と\(A\)を縦に並べて記す。</li>
+<li>「掛けて定数項の係数(\(C\))」になる2数\(b, d\)を適当に選び、選んだ2数と\(C\)を(1)で記した右側に縦に並べて記す。</li>
+<li>\((\text{左下の数}c) \times (\text{右上の数}b) = bc\)と\((\text{左上の数}a)\times(\text{右下の数}d) = ad\)を、(2)で記した右側に縦に並べて記す。</li>
+<li>(3)で記した2数の和(\(ad + bc\))が\(x\)の係数(\(B\))に一致すれば、この\(a, b, c, d\)は正しい組み合わせなので因数分解できる。一致しなければ(1)へ戻る。</li>
+</ol>
+<div class="displaymath">
+\begin{align*}
+A &amp;&amp; C\\
+\downarrow &amp;&amp; \downarrow\\
+a &amp;&amp; b &amp;&amp;  \longrightarrow bc\\
+c &amp;&amp; d &amp;&amp;  \longrightarrow ad\\
+&amp;&amp;&amp;&amp; B = ad + bc
+\end{align*}
+</div></article><span class="incontext"><a href="sec-expression-fact.html#algorithm-1">in-context</a></span>
 </body>
 </html>
