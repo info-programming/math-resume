@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2020-06-23T22:15:51+09:00    *-->
+<!--*    on 2020-06-28T12:24:12+09:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -182,13 +182,37 @@ A \cup B &amp; = \{x| x \in A \text{かつ}   x \in    B\}\\
 A \cap B &amp; = \{x| x \in A \text{または} x \in    B\}
 \end{align*}
 </div></article><p id="p-48">数学における「または」は、「どちらか一方が成り立つ」という意味ではなく「	<em class="emphasis">少なくとも一方</em>が成り立つ」という意味であることに注意が必要である。</p>
+<p id="p-49">和集合や共通部分、補集合については、次のような等式が成り立つ。</p>
 <article class="theorem-like" id="theorem-7"><h6 class="heading">
 <span class="type">定理</span> <span class="codenumber">3.10</span>. <span class="title">集合の分配法則.</span>
 </h6>\(A, B, C\)が集合のとき、次の等式が成り立つ。<div class="displaymath">
 \begin{gather*}
 (A \cap B) \cup C = (A \cup C) \cap (B \cup C)
 \end{gather*}
-</div></article></section></div></main>
+</div></article><article class="theorem-like" id="theorem-8"><h6 class="heading">
+<span class="type">定理</span> <span class="codenumber">3.11</span>. <span class="title">de Morganの法則.</span>
+</h6>\(A, B, C\)が集合のとき、次の等式が成り立つ。<div class="displaymath">
+\begin{align*}
+\overline{A \cup B} &amp; = \overline{A} \cap \overline{B}\\
+\overline{A \cap B} &amp; = \overline{A} \cup \overline{B}\\
+\overline{A \cup B \cup C} &amp; = \overline{A} \cap \overline{B} \cap \overline{C}\\
+\overline{A \cap B \cap C} &amp; = \overline{A} \cup \overline{B} \cup \overline{C}
+\end{align*}
+</div></article><article class="hiddenproof" id="proof-4"><a data-knowl="" class="id-ref" data-refid="hk-proof-4"><h6 class="heading"><span class="type">証明.</span></h6></a></article><div id="hk-proof-4" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><div class="displaymath">
+\begin{align*}
+x \in \overline{A \cup B} &amp;
+\Longleftrightarrow x \notin A \cup B
+\Longleftrightarrow x \notin A \text{かつ} x \notin B
+\Longleftrightarrow x \in \overline{A} \text{かつ} x \in \overline{B}
+\Longleftrightarrow x \in \overline{A} \cap \overline{B}\\
+x \in \overline{A \cap B} &amp;
+\Longleftrightarrow x \notin A \cap B
+\Longleftrightarrow x \notin A \text{または} x \notin B
+\Longleftrightarrow x \in \overline{A} \text{または} x \in \overline{B}
+\Longleftrightarrow x \in \overline{A} \cup \overline{B}\\
+\overline{A \cup B \cup C} &amp;= \overline{A \cup (B \cup C)} = \overline{A} \cap \overline{B \cup C} = \overline{A} \cap (\overline{B} \cap \overline{C}) = \overline{A} \cap \overline{B} \cap \overline{C}
+\end{align*}
+</div></article></div></section></div></main>
 </div>
 <div class="login-link"><span id="loginlogout" class="login">login</span></div>
 <script src="https://pretextbook.org/js/0.11/login.js"></script>
