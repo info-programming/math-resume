@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2020-07-12T20:54:55+09:00    *-->
+<!--*                                    *-->
+<!--*      https://pretextbook.org       *-->
+<!--*                                    *-->
+<!--**************************************-->
+<html lang="ja-JP">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>命題論理</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']]
+    },
+    asciimath2jax: {
+        ignoreClass: ".*",
+        processClass: "has_am"
+    },
+    jax: ["input/AsciiMath"],
+    extensions: ["asciimath2jax.js"],
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.js", "https://pretextbook.org/js/lib/mathjaxknowl.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", useLabelIds: true, },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.11/pretext.js"></script><script src="https://pretextbook.org/js/0.11/pretext_add_on.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/toc.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/colors_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/setcolors.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="image/style.css">
+<link href="https://pretextbook.org/css/0.2/features.css" rel="stylesheet" type="text/css">
+<script>var logged_in = false;
+var role = 'student';
+var guest_access = true;
+var login_required = false;
+var js_version = 0.11;
+</script>
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div class="hidden-content" style="display:none">\(\require{luatexja}\require{luatexja-ruby}\require{indentfirst}\require{unicode-math}\unimathsetup{math-style=ISO,bold-style=ISO}
+\setmathfont{XITSMath-Regular.otf}
+\usepackage[match,deluxe,expert,bold,noto-otf]{luatexja-preset}
+\setmonofont{Noto Sans Mono CJK JP}
+\setmainfont[ BoldFont=Noto Sans CJK JP Medium]{Noto Serif CJK JP}
+\setmainjfont[BoldFont=Noto Sans CJK JP Medium]{Noto Serif CJK JP}
+\setsansjfont{Noto Sans CJK JP}
+
+\renewcommand{\baselinestretch}{1.2}
+\setlength{\parskip}{6pt plus 2pt minus 2pt}
+\titlespacing{\chapter}{0pt}{10pt}{15pt}
+\titlespacing{\section}{0pt}{5pt plus 3pt minus 3pt}{3pt plus 1pt}
+\titlespacing{\subsection}{0pt}{3pt plus 2pt minus 2pt}{2pt plus 1pt}
+\titlespacing{\subsubsection}{0pt}{1pt plus 1pt minus 1pt}{1pt plus 1pt}
+
+\parindent = 1\zw
+
+\renewcommand{\alert      }[1]{\textcolor{RedOrange}{\textbf{#1}}}
+\renewcommand{\terminology}[1]{\textcolor{OliveGreen}{\textbf{#1}}}
+\renewcommand{\emph       }[1]{\textcolor{RoyalBlue}{\textbf{#1}}}
+
+\tcbset{fonttitle=\bfseries}
+\tcbset{propositionstyle/.style={colframe=RedOrange,     colback=RedOrange!2!white }}
+\tcbset{ definitionstyle/.style={colframe=OliveGreen,    colback=OliveGreen!2!white}}
+\tcbset{       notestyle/.style={colframe=black!75!white,colback=black!2!white     }}
+
+\hypersetup{bookmarksopen,bookmarksnumbered}
+
+\let\gt\undefined
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="sample-book.html"><span class="title">数学 補助資料</span></a></h1>
+<p class="byline"></p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3">
+<a class="index-button toolbar-item button" href="index-1.html" title="Index">Index</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="sec-logic-problem.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="ch-logic.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="sec-logic-set.html" title="Next">Next</a></span>
+</div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="sec-logic-problem.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="ch-logic.html" title="Up">Up</a><a class="next-button button toolbar-item" href="sec-logic-set.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link">
+<a href="ch-intro.html" data-scroll="ch-intro"><span class="codenumber">1</span> <span class="title">数学</span></a><ul>
+<li><a href="sec-intro-bg.html" data-scroll="sec-intro-bg">数学を学ぶ背景</a></li>
+<li><a href="sec-intro-purpose.html" data-scroll="sec-intro-purpose">数学を学ぶ目的</a></li>
+<li><a href="sec-intro-structure.html" data-scroll="sec-intro-structure">本稿の構成</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch-expression.html" data-scroll="ch-expression"><span class="codenumber">2</span> <span class="title">項と式</span></a><ul>
+<li><a href="sec-expression-symbol.html" data-scroll="sec-expression-symbol">記号と式</a></li>
+<li><a href="sec-expression-exp.html" data-scroll="sec-expression-exp">指数と冪乗</a></li>
+<li><a href="sec-expression-poly.html" data-scroll="sec-expression-poly">多項式</a></li>
+<li><a href="sec-expression-fact.html" data-scroll="sec-expression-fact">展開と因数分解</a></li>
+<li><a href="sec-expression-rel.html" data-scroll="sec-expression-rel">関係式</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch-logic.html" data-scroll="ch-logic"><span class="codenumber">3</span> <span class="title">論理</span></a><ul>
+<li><a href="sec-logic-problem.html" data-scroll="sec-logic-problem">問題解決</a></li>
+<li><a href="sec-logic-prop.html" data-scroll="sec-logic-prop" class="active">命題論理</a></li>
+<li><a href="sec-logic-set.html" data-scroll="sec-logic-set">集合</a></li>
+</ul>
+</li>
+<li class="link"><a href="backmatter-1.html" data-scroll="backmatter-1"><span class="title">Back Matter</span></a></li>
+<li class="link"><a href="references-1.html" data-scroll="references-1"><span class="title">参考文献</span></a></li>
+<li class="link"><a href="index-1.html" data-scroll="index-1"><span class="title">索引</span></a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="sec-logic-prop"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">3.2</span> <span class="title">命題論理</span>
+</h2>
+<a href="sec-logic-prop.html" class="permalink">¶</a><article class="definition-like" id="definition-13"><h6 class="heading">
+<span class="type">定義</span> <span class="codenumber">3.4</span>. <span class="title">命題.</span>
+</h6>
+<em class="emphasis">「正しい」か「正しくない」かが明確に定まる</em>式や文のことを<dfn class="terminology">命題</dfn>(<dfn class="terminology">proposition</dfn>)という。 命題\(p\)が「正しい」とき、\(p\)は<dfn class="terminology">真</dfn>(<dfn class="terminology">true</dfn>)であるという。また、\(p\)が真でないとき、\(p\)は<dfn class="terminology">偽</dfn>(<dfn class="terminology">false</dfn>)であるという。</article><p id="p-46">特に、真である命題を<dfn class="terminology">定理</dfn>(<dfn class="terminology">theorem</dfn>)という。ただし、一般的に「定理」という場合は、「真である命題」のうち「何らかの基準に照らして<em class="emphasis">重要なもの</em>」を指すことが多い。</p>
+<article class="example-like" id="example-2"><a data-knowl="" class="id-ref" data-refid="hk-example-2"><h6 class="heading">
+<span class="type">例</span> <span class="codenumber">3.5</span>. <span class="title">命題の例.</span>
+</h6></a></article><div id="hk-example-2" class="hidden-content tex2jax_ignore"><article class="example-like">「富士山は高い山である」という文は、「高い」という形容詞に対する解釈が人によって異なるため、命題でない。 富士山の近辺に住んでいる人は「富士山は高い」と解釈する可能性が高いが、エベレストの近辺に住んでいる人は「富士山は高くない」と解釈する可能性が高い。 一方、「富士山は天保山より高い山である」という文にも、同じように「高い」という形容詞が含まれる。 だがこの文では、「富士山(の標高)」と「天保山(の標高)」という数値で大小比較可能なものを比べているため、誰が判断しても真になると考えられ、命題だといえる。</article></div>
+<p id="p-47">命題についての基本的な操作には、1つの命題に対する<dfn class="terminology">否定</dfn>や、2つ以上の命題に対する「<dfn class="terminology">かつ</dfn>(連言)」「<dfn class="terminology">または</dfn>(選言)」がある。</p>
+<article class="definition-like" id="definition-14"><h6 class="heading">
+<span class="type">定義</span> <span class="codenumber">3.6</span>. <span class="title">連言・選言・否定.</span>
+</h6>\(p, q\)を命題とするとき、\(p, q\)の<em class="emphasis">両方</em>が真のときに真となり、それ以外のときに偽となる命題を「\(p\)<dfn class="terminology">かつ</dfn>\(q\)」といい、\(p \wedge q\)と表すことがある。 また、\(p, q\)の<em class="emphasis">少なくとも一方</em>が真のときに真となり、それ以外のときに偽となる命題を「\(p\)<dfn class="terminology">または</dfn>\(q\)」といい、\(p \vee q\)と表すことがある。 更に、\(p\)が偽のときに真となり、真のときに偽となる命題を「\(p\)の<dfn class="terminology">否定</dfn>」といい、\(\overline{p}\)と表す。</article><p id="p-48">命題については、次のde Morganの法則が成り立つ。</p>
+<article class="theorem-like" id="theorem-10"><h6 class="heading">
+<span class="type">定理</span> <span class="codenumber">3.7</span>. <span class="title">de Morganの法則.</span>
+</h6>\(p, q\)が命題のとき、次の等式が成り立つ。<div class="displaymath">
+\begin{align*}
+\overline{p \wedge q} &amp; = \overline{p} \vee   \overline{q}\\
+\overline{p \vee   q} &amp; = \overline{p} \wedge \overline{q}
+\end{align*}
+</div></article><article class="hiddenproof" id="proof-4"><a data-knowl="" class="id-ref" data-refid="hk-proof-4"><h6 class="heading"><span class="type">証明.</span></h6></a></article><div id="hk-proof-4" class="hidden-content tex2jax_ignore"><article class="hiddenproof">真偽値表を用いて示す。</article></div>
+<p id="p-49">命題を用いてより高度な命題を表すには、次の推論を表す規則が必要となる。</p>
+<article class="definition-like" id="definition-15"><h6 class="heading">
+<span class="type">定義</span> <span class="codenumber">3.8</span>. <span class="title">推論.</span>
+</h6>\(p, q\)を命題とするとき、「<em class="emphasis">もし\(p\)が成り立つならば、\(q\)も成り立つ</em>」という命題を「\(p\)<dfn class="terminology">ならば</dfn>\(q\)」といい、\(p \Longrightarrow q\)と表す。 命題\(p \Longrightarrow q\)は、「<em class="alert">\(p\)が偽</em>のとき」か「\(p\)も\(q\)も真のとき」に真となる。<div class="displaymath">
+\begin{gather*}
+[ p \Longrightarrow q ] = [ \overline{p} \vee (p \wedge q) ] = [ (\overline{p} \vee p) \wedge (\overline{p} \vee q)] (\text{分配法則}) = [ \overline{p} \vee q ] (\text{排中律})
+\end{gather*}
+</div>命題\(p \Longrightarrow q\)について、\(p\)を\(p \Longrightarrow q\)の<dfn class="terminology">仮定</dfn>、\(q\)を\(p \Longrightarrow q\)の<dfn class="terminology">結論</dfn>という。 また、\(q\)を\(p\)の<dfn class="terminology">必要条件</dfn>(<dfn class="terminology">necessary condition</dfn>)、\(p\)を\(q\)の<dfn class="terminology">十分条件</dfn>(<dfn class="terminology">sufficient condition</dfn>)という。</article><p id="p-50">必要条件と十分条件は、「\(p \Longrightarrow q\)」の「\(\Longrightarrow\)」を矢に見立てて、「矢の先は必要」と覚えるとよい。</p>
+<article class="example-like" id="example-3"><a data-knowl="" class="id-ref" data-refid="hk-example-3"><h6 class="heading">
+<span class="type">例</span> <span class="codenumber">3.9</span>. <span class="title">推論の例.</span>
+</h6></a></article><div id="hk-example-3" class="hidden-content tex2jax_ignore"><article class="example-like">「宝くじに当たったら家を買う」という命題では、命題「宝くじに当たる」が仮定、命題「家を買う」が結論である。 この命題の真偽について考えると、宝くじに当たった場合には、家を買った場合には真、そうでなければ偽となる。 一方、宝くじに当たらなかった場合には、家を買おうと買うまいと、この命題では何も言っていないので、偽だとは言えず真となる。</article></div>
+<p id="p-51">この推論規則を用いて、2つの命題が「同じ」であるという関係を定義する。</p>
+<article class="definition-like" id="definition-16"><h6 class="heading">
+<span class="type">定義</span> <span class="codenumber">3.10</span>. <span class="title">同値.</span>
+</h6>\(p, q\)を命題とするとき、\(p \Longrightarrow q\)かつ\(q \Longrightarrow p\)であれば、\(p\)と\(q\)は<dfn class="terminology">同値</dfn>であるといい、\(p \Longleftrightarrow q\)と表す。<div class="displaymath">
+\begin{gather*}
+[ p \Longleftrightarrow q ] = [ p \Longrightarrow q ] \wedge [ q \Longrightarrow p ]
+\end{gather*}
+</div>このとき、\(q\)を\(p\)の<dfn class="terminology">必要十分条件</dfn>であるといい、\(p\)も\(q\)の必要十分条件であるという。</article></section></div></main>
+</div>
+<div class="login-link"><span id="loginlogout" class="login">login</span></div>
+<script src="https://pretextbook.org/js/0.11/login.js"></script>
+</body>
+</html>
