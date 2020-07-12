@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2020-07-12T10:12:09+09:00    *-->
+<!--*    on 2020-07-12T10:20:42+09:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -100,11 +100,11 @@ var js_version = 0.11;
 <nav id="primary-navbar" class="navbar"><div class="container">
 <div class="navbar-top-buttons">
 <button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3">
-<a class="index-button toolbar-item button" href="index-1.html" title="Index">Index</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="sec-expression-symbol.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="ch-expression.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="sec-expression-term.html" title="Next">Next</a></span>
+<a class="index-button toolbar-item button" href="index-1.html" title="Index">Index</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="sec-expression-symbol.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="ch-expression.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="sec-expression-poly.html" title="Next">Next</a></span>
 </div>
 </div>
 <div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
-<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="sec-expression-symbol.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="ch-expression.html" title="Up">Up</a><a class="next-button button toolbar-item" href="sec-expression-term.html" title="Next">Next</a>
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="sec-expression-symbol.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="ch-expression.html" title="Up">Up</a><a class="next-button button toolbar-item" href="sec-expression-poly.html" title="Next">Next</a>
 </div>
 </div></nav></header><div class="page">
 <div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
@@ -118,9 +118,8 @@ var js_version = 0.11;
 </li>
 <li class="link">
 <a href="ch-expression.html" data-scroll="ch-expression"><span class="codenumber">2</span> <span class="title">項と式</span></a><ul>
-<li><a href="sec-expression-symbol.html" data-scroll="sec-expression-symbol">記号と演算</a></li>
+<li><a href="sec-expression-symbol.html" data-scroll="sec-expression-symbol">記号と式</a></li>
 <li><a href="sec-expression-exp.html" data-scroll="sec-expression-exp" class="active">指数と冪乗</a></li>
-<li><a href="sec-expression-term.html" data-scroll="sec-expression-term">項と式</a></li>
 <li><a href="sec-expression-poly.html" data-scroll="sec-expression-poly">多項式</a></li>
 <li><a href="sec-expression-fact.html" data-scroll="sec-expression-fact">展開と因数分解</a></li>
 <li><a href="sec-expression-rel.html" data-scroll="sec-expression-rel">関係式</a></li>
@@ -140,47 +139,47 @@ var js_version = 0.11;
 <main class="main"><div id="content" class="pretext-content"><section class="section" id="sec-expression-exp"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">2.2</span> <span class="title">指数と冪乗</span>
 </h2>
-<a href="sec-expression-exp.html" class="permalink">¶</a><p id="p-13">同じ文字や数を何回も掛け合わせる場合には、\(a \times a = a^2\)のように右上に掛け合わせる回数を書き表す。 このとき、右上の数字を\(a^2\)の<dfn class="terminology">指数</dfn>(<dfn class="terminology">index</dfn>)という。 このように\(a^n\)の形で表記される数を、\(a\)の<dfn class="terminology">冪乗</dfn>(べきじょう)もしくは<dfn class="terminology">累乗</dfn>(るいじょう)という。</p>
-<article class="definition-like" id="definition-1"><h6 class="heading">
-<span class="type">定義</span> <span class="codenumber">2.1</span>. <span class="title">冪乗・累乗.</span>
+<a href="sec-expression-exp.html" class="permalink">¶</a><p id="p-14">同じ文字や数を何回も掛け合わせる場合には、\(a \times a = a^2\)のように右上に掛け合わせる回数を書き表す。 このとき、右上の数字を\(a^2\)の<dfn class="terminology">指数</dfn>(<dfn class="terminology">index</dfn>)という。 このように\(a^n\)の形で表記される数を、\(a\)の<dfn class="terminology">冪乗</dfn>(べきじょう)もしくは<dfn class="terminology">累乗</dfn>(るいじょう)という。</p>
+<article class="definition-like" id="definition-3"><h6 class="heading">
+<span class="type">定義</span> <span class="codenumber">2.3</span>. <span class="title">冪乗・累乗.</span>
 </h6>任意の数\(a\)と自然数\(n\)について、次のように\(a^n\)を定義し、\(a\)の\(n\)乗という。<div class="displaymath">
 \begin{gather*}
 a^n = \underbrace{a \times a \times \cdots \times a}_{n\text{個}}
 \end{gather*}
-</div></article><p id="p-14">冪乗については、次の指数法則が成り立つことが重要である。</p>
+</div></article><p id="p-15">冪乗については、次の指数法則が成り立つことが重要である。</p>
 <article class="theorem-like" id="theorem-1"><h6 class="heading">
-<span class="type">定理</span> <span class="codenumber">2.2</span>. <span class="title">指数法則.</span>
+<span class="type">定理</span> <span class="codenumber">2.4</span>. <span class="title">指数法則.</span>
 </h6>\(a\)を実数、\(m, n\)を正の整数とするとき、次の等式が成り立つ。<div class="displaymath">
 \begin{gather*}
 a^m \times a^n = a^{m + n}, (a^m)^n = a^{mn}, (ab)^n = a^n b^n
 \end{gather*}
-</div></article><p id="p-15">指数法則を用いると、冪乗の指数を正の整数以外に拡張することができる。 以下では、指数を0、負の整数、有理数の範囲に拡張していく。 まず、\(a^m = a^{m + 0} = a^m \times a^0\)と考えられるので、\(a^0 = 1\)と定義するのが自然である。</p>
-<article class="definition-like" id="definition-2"><h6 class="heading">
-<span class="type">定義</span> <span class="codenumber">2.3</span>. <span class="title">指数の0への拡張.</span>
-</h6>任意の実数\(a\)について、\(a^0 = 1\)と定義する。</article><p id="p-16">次に、指数を負の整数に拡張する。 \(1 = a^0 = a^{n+(-n)} a^n \times a^{-n}\)と考えられるので、\(a^{-n} = \frac{1}{a^n}\)と定義するのが自然である。</p>
-<article class="definition-like" id="definition-3"><h6 class="heading">
-<span class="type">定義</span> <span class="codenumber">2.4</span>. <span class="title">指数の負の整数への拡張.</span>
-</h6>任意の実数\(a\)と自然数\(n\)について、\(a^{-n} = \frac{1}{a^n}\)と定義する。</article><p id="p-17">次に、指数を有理数に拡張する。 \(a = a^1 = a^{\frac{1}{2}+\frac{1}{2}} = a^\frac{1}{2} \times a^\frac{1}{2}\)と考えられるので、2乗して\(a\)になる数を考えればよいことが分かる。 ここで、2乗して\(a\)になる数を\(a\)の<dfn class="terminology">平方根</dfn>(<dfn class="terminology">square root</dfn>)と呼ぶ。また、同様にして\(a\)の<dfn class="terminology">冪乗根</dfn>を定義する。</p>
+</div></article><p id="p-16">指数法則を用いると、冪乗の指数を正の整数以外に拡張することができる。 以下では、指数を0、負の整数、有理数の範囲に拡張していく。 まず、\(a^m = a^{m + 0} = a^m \times a^0\)と考えられるので、\(a^0 = 1\)と定義するのが自然である。</p>
 <article class="definition-like" id="definition-4"><h6 class="heading">
-<span class="type">定義</span> <span class="codenumber">2.5</span>. <span class="title">平方根.</span>
-</h6>任意の0以上の実数\(a\)について、\(b^2 = a\)となる数\(b\)を\(a\)の<dfn class="terminology">平方根</dfn>(<dfn class="terminology">square root</dfn>)と呼ぶ。 特に、\(a\)の平方根のうち正のものを\(\sqrt{a}\)と表す。</article><article class="definition-like" id="definition-5"><h6 class="heading">
-<span class="type">定義</span> <span class="codenumber">2.6</span>. <span class="title">冪乗根.</span>
+<span class="type">定義</span> <span class="codenumber">2.5</span>. <span class="title">指数の0への拡張.</span>
+</h6>任意の実数\(a\)について、\(a^0 = 1\)と定義する。</article><p id="p-17">次に、指数を負の整数に拡張する。 \(1 = a^0 = a^{n+(-n)} a^n \times a^{-n}\)と考えられるので、\(a^{-n} = \frac{1}{a^n}\)と定義するのが自然である。</p>
+<article class="definition-like" id="definition-5"><h6 class="heading">
+<span class="type">定義</span> <span class="codenumber">2.6</span>. <span class="title">指数の負の整数への拡張.</span>
+</h6>任意の実数\(a\)と自然数\(n\)について、\(a^{-n} = \frac{1}{a^n}\)と定義する。</article><p id="p-18">次に、指数を有理数に拡張する。 \(a = a^1 = a^{\frac{1}{2}+\frac{1}{2}} = a^\frac{1}{2} \times a^\frac{1}{2}\)と考えられるので、2乗して\(a\)になる数を考えればよいことが分かる。 ここで、2乗して\(a\)になる数を\(a\)の<dfn class="terminology">平方根</dfn>(<dfn class="terminology">square root</dfn>)と呼ぶ。また、同様にして\(a\)の<dfn class="terminology">冪乗根</dfn>を定義する。</p>
+<article class="definition-like" id="definition-6"><h6 class="heading">
+<span class="type">定義</span> <span class="codenumber">2.7</span>. <span class="title">平方根.</span>
+</h6>任意の0以上の実数\(a\)について、\(b^2 = a\)となる数\(b\)を\(a\)の<dfn class="terminology">平方根</dfn>(<dfn class="terminology">square root</dfn>)と呼ぶ。 特に、\(a\)の平方根のうち正のものを\(\sqrt{a}\)と表す。</article><article class="definition-like" id="definition-7"><h6 class="heading">
+<span class="type">定義</span> <span class="codenumber">2.8</span>. <span class="title">冪乗根.</span>
 </h6>任意の0以上の実数\(a\)と自然数\(n\)について、\(b^n = a\)となる数\(b\)を\(a\)のn乗根、または\(a\)の<dfn class="terminology">冪乗根</dfn>と呼ぶ。 特に、\(a\)の\(n\)乗根のうち正のものを\(\sqrt[n]{a}\)と表す。</article><article class="example-like" id="example-1"><a data-knowl="" class="id-ref" data-refid="hk-example-1"><h6 class="heading">
-<span class="type">例</span> <span class="codenumber">2.7</span>. <span class="title">冪乗根の例.</span>
+<span class="type">例</span> <span class="codenumber">2.9</span>. <span class="title">冪乗根の例.</span>
 </h6></a></article><div id="hk-example-1" class="hidden-content tex2jax_ignore"><article class="example-like">4の平方根は2と-2なので、\(\sqrt{4} = \sqrt[2]{4} = 2\)となる。 また、27の3乗根は3なので、\(\sqrt[3]{27} = 3\)となる。</article></div>
-<p id="p-18">冪乗根については、次の計算法則が成り立つ。</p>
+<p id="p-19">冪乗根については、次の計算法則が成り立つ。</p>
 <article class="theorem-like" id="theorem-2"><h6 class="heading">
-<span class="type">定理</span> <span class="codenumber">2.8</span>. <span class="title">冪乗根の性質.</span>
+<span class="type">定理</span> <span class="codenumber">2.10</span>. <span class="title">冪乗根の性質.</span>
 </h6>\(a, b\)を正の数、\(m, n\)を有理数とするとき、次の等式が成り立つ。<div class="displaymath">
 \begin{gather*}
 \sqrt[n]{a} \sqrt[n]{b} = \sqrt[n]{ab}, \frac{\sqrt[n]{a}}{\sqrt[n]{b}} = \sqrt[n]{\frac{a}{b}}, \sqrt[n]{a^m} = (\sqrt[n]{a})^m, \sqrt[m]{\sqrt[n]{a}} = \sqrt[mn]{a}
 \end{gather*}
-</div></article><p id="p-19">冪乗根の考え方を用いると、\(a = a^1 = \underbrace{a^\frac{1}{n} \times a^\frac{1}{n}}_{n\text{個}}\)と考えられるので、\(a^\frac{1}{n}\)を\(n\)乗根に対応させればよいことが分かる。</p>
-<article class="definition-like" id="definition-6"><h6 class="heading">
-<span class="type">定義</span> <span class="codenumber">2.9</span>. <span class="title">指数の有理数への拡張.</span>
-</h6>任意の0以上の実数\(a\)と自然数\(m, n\)について、\(a^\frac{1}{n} = \sqrt[n]{a}\)と定義する。 また、\(a^\frac{m}{n} = (\sqrt[n]{a})^m, a^{-\frac{m}{n}} = \frac{1}{a^\frac{m}{n}}\)と定義する。</article><p id="p-20">先の指数法則は、指数を有理数の範囲にまで拡張しても成り立つ。</p>
+</div></article><p id="p-20">冪乗根の考え方を用いると、\(a = a^1 = \underbrace{a^\frac{1}{n} \times a^\frac{1}{n}}_{n\text{個}}\)と考えられるので、\(a^\frac{1}{n}\)を\(n\)乗根に対応させればよいことが分かる。</p>
+<article class="definition-like" id="definition-8"><h6 class="heading">
+<span class="type">定義</span> <span class="codenumber">2.11</span>. <span class="title">指数の有理数への拡張.</span>
+</h6>任意の0以上の実数\(a\)と自然数\(m, n\)について、\(a^\frac{1}{n} = \sqrt[n]{a}\)と定義する。 また、\(a^\frac{m}{n} = (\sqrt[n]{a})^m, a^{-\frac{m}{n}} = \frac{1}{a^\frac{m}{n}}\)と定義する。</article><p id="p-21">先の指数法則は、指数を有理数の範囲にまで拡張しても成り立つ。</p>
 <article class="theorem-like" id="theorem-3"><h6 class="heading">
-<span class="type">定理</span> <span class="codenumber">2.10</span>. <span class="title">指数法則.</span>
+<span class="type">定理</span> <span class="codenumber">2.12</span>. <span class="title">指数法則.</span>
 </h6>\(a\)を実数、\(m, n\)を有理数とするとき、次の等式が成り立つ。<div class="displaymath">
 \begin{gather*}
 a^m \times a^n = a^{m + n}, (a^m)^n = a^{mn}, (ab)^n = a^n b^n
