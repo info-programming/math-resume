@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2020-06-29T21:12:54+09:00    *-->
+<!--*    on 2020-07-12T10:12:09+09:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -100,11 +100,11 @@ var js_version = 0.11;
 <nav id="primary-navbar" class="navbar"><div class="container">
 <div class="navbar-top-buttons">
 <button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3">
-<a class="index-button toolbar-item button" href="index-1.html" title="Index">Index</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="sec-expression-poly.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="ch-expression.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="ch-logic.html" title="Next">Next</a></span>
+<a class="index-button toolbar-item button" href="index-1.html" title="Index">Index</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="sec-expression-poly.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="ch-expression.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="sec-expression-rel.html" title="Next">Next</a></span>
 </div>
 </div>
 <div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
-<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="sec-expression-poly.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="ch-expression.html" title="Up">Up</a><a class="next-button button toolbar-item" href="ch-logic.html" title="Next">Next</a>
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="sec-expression-poly.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="ch-expression.html" title="Up">Up</a><a class="next-button button toolbar-item" href="sec-expression-rel.html" title="Next">Next</a>
 </div>
 </div></nav></header><div class="page">
 <div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
@@ -119,9 +119,11 @@ var js_version = 0.11;
 <li class="link">
 <a href="ch-expression.html" data-scroll="ch-expression"><span class="codenumber">2</span> <span class="title">項と式</span></a><ul>
 <li><a href="sec-expression-symbol.html" data-scroll="sec-expression-symbol">記号と演算</a></li>
+<li><a href="sec-expression-exp.html" data-scroll="sec-expression-exp">指数と冪乗</a></li>
 <li><a href="sec-expression-term.html" data-scroll="sec-expression-term">項と式</a></li>
 <li><a href="sec-expression-poly.html" data-scroll="sec-expression-poly">多項式</a></li>
 <li><a href="sec-expression-fact.html" data-scroll="sec-expression-fact" class="active">展開と因数分解</a></li>
+<li><a href="sec-expression-rel.html" data-scroll="sec-expression-rel">関係式</a></li>
 </ul>
 </li>
 <li class="link">
@@ -136,11 +138,11 @@ var js_version = 0.11;
 </ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
 </div></div>
 <main class="main"><div id="content" class="pretext-content"><section class="section" id="sec-expression-fact"><h2 class="heading hide-type">
-<span class="type">Section</span> <span class="codenumber">2.4</span> <span class="title">展開と因数分解</span>
+<span class="type">Section</span> <span class="codenumber">2.5</span> <span class="title">展開と因数分解</span>
 </h2>
-<a href="sec-expression-fact.html" class="permalink">¶</a><p id="p-24">四則演算のうち加法と乗法では、計算法則と呼ばれる次の法則が成り立つ。計算や証明を行うときには、この計算法則を活用することが基本となる。</p>
-<article class="theorem-like" id="theorem-2"><h6 class="heading">
-<span class="type">定理</span> <span class="codenumber">2.8</span>. <span class="title">計算法則.</span>
+<a href="sec-expression-fact.html" class="permalink">¶</a><p id="p-29">四則演算のうち加法と乗法では、計算法則と呼ばれる次の法則が成り立つ。計算や証明を行うときには、この計算法則を活用することが基本となる。</p>
+<article class="theorem-like" id="theorem-4"><h6 class="heading">
+<span class="type">定理</span> <span class="codenumber">2.16</span>. <span class="title">計算法則.</span>
 </h6>\(a, b, c\)を実数とするとき、次の等式が成り立つ。<div class="displaymath">
 \begin{align*}
 a + b &amp;= b + a &amp; (\text{加法の交換法則})\\
@@ -149,10 +151,10 @@ a \times b &amp;= b \times a &amp; (\text{乗法の交換法則})\\
 (a \times b) \times c &amp;= a \times (b \times c) &amp; (\text{乗法の結合法則})\\
 (a + b) \times c &amp;= ac + bc, a \times (b + c) = ab + ac &amp; (\text{分配法則})
 \end{align*}
-</div></article><p id="p-25">これらの計算法則は、加法や乗法以外の、減法や除法では成り立たない。また、文字の列(文字列)について「カイ」と「イカ」が異なるように、数学以外の世界でも、交換法則が成り立たないことが多い。 また、結合法則が成り立つことで、3つ以上の数の和や積を考える場合も順序を考慮しなくて良くなる。そのため、括弧を書かずに和や積を\(a + b + c\)や\(abc\)と書くことができるようになる。</p>
-<p id="p-26">計算法則を利用して式変形することで、便利な公式が得られることがある。</p>
-<article class="theorem-like" id="theorem-3"><h6 class="heading">
-<span class="type">定理</span> <span class="codenumber">2.9</span>. <span class="title">展開・因数分解の公式1.</span>
+</div></article><p id="p-30">これらの計算法則は、加法や乗法以外の、減法や除法では成り立たない。また、文字の列(文字列)について「カイ」と「イカ」が異なるように、数学以外の世界でも、交換法則が成り立たないことが多い。 また、結合法則が成り立つことで、3つ以上の数の和や積を考える場合も順序を考慮しなくて良くなる。そのため、括弧を書かずに和や積を\(a + b + c\)や\(abc\)と書くことができるようになる。</p>
+<p id="p-31">計算法則を利用して式変形することで、便利な公式が得られることがある。</p>
+<article class="theorem-like" id="theorem-5"><h6 class="heading">
+<span class="type">定理</span> <span class="codenumber">2.17</span>. <span class="title">展開・因数分解の公式1.</span>
 </h6>\(a, b, c, d\)を実数とするとき、次の等式が成り立つ。<div class="displaymath">
 \begin{align*}
 (a + b)(c + d) &amp;= ac + ad + bc + bd
@@ -164,9 +166,9 @@ a \times b &amp;= b \times a &amp; (\text{乗法の交換法則})\\
 &amp;= ac + ad + bc + bd   &amp; (\text{加法の交換法則})
 \end{align*}
 </div></article></div>
-<p id="p-27">計算法則を利用した式変形の例として、展開や因数分解がある。</p>
-<article class="theorem-like" id="theorem-4"><h6 class="heading">
-<span class="type">定理</span> <span class="codenumber">2.10</span>. <span class="title">展開・因数分解の公式2.</span>
+<p id="p-32">計算法則を利用した式変形の例として、展開や因数分解がある。</p>
+<article class="theorem-like" id="theorem-6"><h6 class="heading">
+<span class="type">定理</span> <span class="codenumber">2.18</span>. <span class="title">展開・因数分解の公式2.</span>
 </h6>\(a, b, c\)を実数とするとき、次の等式が成り立つ。これらの等式で左辺から右辺に変形する操作を<dfn class="terminology">展開</dfn>、右辺から左辺に変形する操作を<dfn class="terminology">因数分解</dfn>という。<div class="displaymath">
 \begin{align*}
 (a + b)^2 &amp;= a^2 + 2ab + b^2\\
@@ -187,10 +189,10 @@ a \times b &amp;= b \times a &amp; (\text{乗法の交換法則})\\
 &amp;= a^2 + 2ab + b^2
 \end{align*}
 </div></article></div>
-<p id="p-28">特に因数分解は、方程式の解を求めるときに用いられる。式を因数分解して\((x - a)(x - b) = 0\)の形に変形できれば、\(x - a = 0\)か\(x - b = 0\)の<em class="alert">少なくとも一方が</em>成り立つ。 \(x\)は同時に2つの値をとることはできないので、\(x = a\)または\(x = b\)となり、方程式を満たす\(x\)の値を求められる。 ここでは、「\(AB = 0\)であれば\(A = 0\)か\(B = 0\)の<em class="alert">少なくとも一方が</em>0である」ことを用いている。</p>
-<p id="p-29">より高度な因数分解として、<dfn class="terminology">襷(たすき)掛け</dfn>と呼ばれる、次の式に基づく因数分解がある。</p>
-<article class="theorem-like" id="theorem-5"><h6 class="heading">
-<span class="type">定理</span> <span class="codenumber">2.11</span>. <span class="title">展開・因数分解の公式3.</span>
+<p id="p-33">特に因数分解は、方程式の解を求めるときに用いられる。式を因数分解して\((x - a)(x - b) = 0\)の形に変形できれば、\(x - a = 0\)か\(x - b = 0\)の<em class="alert">少なくとも一方が</em>成り立つ。 \(x\)は同時に2つの値をとることはできないので、\(x = a\)または\(x = b\)となり、方程式を満たす\(x\)の値を求められる。 ここでは、「\(AB = 0\)であれば\(A = 0\)か\(B = 0\)の<em class="alert">少なくとも一方が</em>0である」ことを用いている。</p>
+<p id="p-34">より高度な因数分解として、<dfn class="terminology">襷(たすき)掛け</dfn>と呼ばれる、次の式に基づく因数分解がある。</p>
+<article class="theorem-like" id="theorem-7"><h6 class="heading">
+<span class="type">定理</span> <span class="codenumber">2.19</span>. <span class="title">展開・因数分解の公式3.</span>
 </h6>\(a, b, c, d, x\)を実数とするとき、次の等式が成り立つ。<div class="displaymath">
 \begin{gather*}
 (ax + b)(cx + d) = acx^2 + (ad + bc)x + bd
@@ -202,9 +204,9 @@ a \times b &amp;= b \times a &amp; (\text{乗法の交換法則})\\
 &amp;= acx^2 + (ad + bc)x + bd &amp; (\text{分配法則})
 \end{align*}
 </div></article></div>
-<p id="p-30">この等式は、展開を行う場合には普通に展開しているのとほぼ変わらないため、あまり役立たない。 因数分解を行う場合には、\(a, b, c, d\)が比較的小さな数や簡単な式である場合は、次に示す襷掛けという方法で因数分解を行うことができる。</p>
+<p id="p-35">この等式は、展開を行う場合には普通に展開しているのとほぼ変わらないため、あまり役立たない。 因数分解を行う場合には、\(a, b, c, d\)が比較的小さな数や簡単な式である場合は、次に示す襷掛けという方法で因数分解を行うことができる。</p>
 <article class="theorem-like" id="algorithm-1"><h6 class="heading">
-<span class="type">アルゴリズム</span> <span class="codenumber">2.12</span>. <span class="title">襷(たすき)掛け.</span>
+<span class="type">アルゴリズム</span> <span class="codenumber">2.20</span>. <span class="title">襷(たすき)掛け.</span>
 </h6>\(Ax^2+Bx+C\)を\((ax + b)(cx + d)\)の形に因数分解する場合、次のようにする。 <ol class="decimal">
 <li id="li-3">「掛けて\(x^2\)の係数(\(A\))」になる2数\(a, c\)を適当に選び、選んだ2数と\(A\)を縦に並べて記す。</li>
 <li id="li-4">「掛けて定数項の係数(\(C\))」になる2数\(b, d\)を適当に選び、選んだ2数と\(C\)を(1)で記した右側に縦に並べて記す。</li>
@@ -219,11 +221,11 @@ a &amp;&amp; b &amp;&amp;  \longrightarrow bc\\
 c &amp;&amp; d &amp;&amp;  \longrightarrow ad\\
 &amp;&amp;&amp;&amp; B = ad + bc
 \end{align*}
-</div></article><p id="p-31">襷掛けの手順を図<a data-knowl="./knowl/fig-quad-eq-tasuki.html" title="図 2.13">2.13</a>に示す。</p>
+</div></article><p id="p-36">襷掛けの手順を図<a data-knowl="./knowl/fig-quad-eq-tasuki.html" title="図 2.21">2.21</a>に示す。</p>
 <figure class="figure-like" id="fig-quad-eq-tasuki"><div style="width: 75%; margin-left: 12.5%; margin-right: 12.5%;"><img src="image/quad-eq-tasuki.svg" style="width: 100%; height: auto;" alt=""></div>
-<figcaption><span class="type">図</span> <span class="codenumber">2.13.</span> 襷掛けの手順</figcaption></figure><p id="p-32">襷掛けは\(a, b, c, d\)が比較的小さな数や簡単な式である場合は便利な方法だが、そうでない場合は、次に示す2次方程式の解の公式を用いる方が早いことも多い。</p>
-<article class="theorem-like" id="theorem-6"><h6 class="heading">
-<span class="type">定理</span> <span class="codenumber">2.14</span>. <span class="title">2次方程式の解の公式.</span>
+<figcaption><span class="type">図</span> <span class="codenumber">2.21.</span> 襷掛けの手順</figcaption></figure><p id="p-37">襷掛けは\(a, b, c, d\)が比較的小さな数や簡単な式である場合は便利な方法だが、そうでない場合は、次に示す2次方程式の解の公式を用いる方が早いことも多い。</p>
+<article class="theorem-like" id="theorem-8"><h6 class="heading">
+<span class="type">定理</span> <span class="codenumber">2.22</span>. <span class="title">2次方程式の解の公式.</span>
 </h6>\(a, b, c\)を実数とするとき、2次方程式\(ax^2 + bx + c = 0\)の解\(x\)は、次の式で表される。<div class="displaymath">
 \begin{gather*}
 x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}

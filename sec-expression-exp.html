@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2020-07-12T10:12:09+09:00    *-->
+<!--*                                    *-->
+<!--*      https://pretextbook.org       *-->
+<!--*                                    *-->
+<!--**************************************-->
+<html lang="ja-JP">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>指数と冪乗</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']]
+    },
+    asciimath2jax: {
+        ignoreClass: ".*",
+        processClass: "has_am"
+    },
+    jax: ["input/AsciiMath"],
+    extensions: ["asciimath2jax.js"],
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.js", "https://pretextbook.org/js/lib/mathjaxknowl.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", useLabelIds: true, },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.11/pretext.js"></script><script src="https://pretextbook.org/js/0.11/pretext_add_on.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/toc.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/colors_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/setcolors.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="image/style.css">
+<link href="https://pretextbook.org/css/0.2/features.css" rel="stylesheet" type="text/css">
+<script>var logged_in = false;
+var role = 'student';
+var guest_access = true;
+var login_required = false;
+var js_version = 0.11;
+</script>
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div class="hidden-content" style="display:none">\(\require{luatexja}\require{luatexja-ruby}\require{indentfirst}\require{unicode-math}\unimathsetup{math-style=ISO,bold-style=ISO}
+\setmathfont{XITSMath-Regular.otf}
+\usepackage[match,deluxe,expert,bold,noto-otf]{luatexja-preset}
+\setmonofont{Noto Sans Mono CJK JP}
+\setmainfont[ BoldFont=Noto Sans CJK JP Medium]{Noto Serif CJK JP}
+\setmainjfont[BoldFont=Noto Sans CJK JP Medium]{Noto Serif CJK JP}
+\setsansjfont{Noto Sans CJK JP}
+
+\renewcommand{\baselinestretch}{1.2}
+\setlength{\parskip}{6pt plus 2pt minus 2pt}
+\titlespacing{\chapter}{0pt}{10pt}{15pt}
+\titlespacing{\section}{0pt}{5pt plus 3pt minus 3pt}{3pt plus 1pt}
+\titlespacing{\subsection}{0pt}{3pt plus 2pt minus 2pt}{2pt plus 1pt}
+\titlespacing{\subsubsection}{0pt}{1pt plus 1pt minus 1pt}{1pt plus 1pt}
+
+\parindent = 1\zw
+
+\renewcommand{\alert      }[1]{\textcolor{RedOrange}{\textbf{#1}}}
+\renewcommand{\terminology}[1]{\textcolor{OliveGreen}{\textbf{#1}}}
+\renewcommand{\emph       }[1]{\textcolor{RoyalBlue}{\textbf{#1}}}
+
+\tcbset{fonttitle=\bfseries}
+\tcbset{propositionstyle/.style={colframe=RedOrange,     colback=RedOrange!2!white }}
+\tcbset{ definitionstyle/.style={colframe=OliveGreen,    colback=OliveGreen!2!white}}
+\tcbset{       notestyle/.style={colframe=black!75!white,colback=black!2!white     }}
+
+\hypersetup{bookmarksopen,bookmarksnumbered}
+
+\let\gt\undefined
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="sample-book.html"><span class="title">数学 補助資料</span></a></h1>
+<p class="byline"></p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3">
+<a class="index-button toolbar-item button" href="index-1.html" title="Index">Index</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="sec-expression-symbol.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="ch-expression.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="sec-expression-term.html" title="Next">Next</a></span>
+</div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="sec-expression-symbol.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="ch-expression.html" title="Up">Up</a><a class="next-button button toolbar-item" href="sec-expression-term.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link">
+<a href="ch-intro.html" data-scroll="ch-intro"><span class="codenumber">1</span> <span class="title">数学</span></a><ul>
+<li><a href="sec-intro-bg.html" data-scroll="sec-intro-bg">数学を学ぶ背景</a></li>
+<li><a href="sec-intro-purpose.html" data-scroll="sec-intro-purpose">数学を学ぶ目的</a></li>
+<li><a href="sec-intro-structure.html" data-scroll="sec-intro-structure">本稿の構成</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch-expression.html" data-scroll="ch-expression"><span class="codenumber">2</span> <span class="title">項と式</span></a><ul>
+<li><a href="sec-expression-symbol.html" data-scroll="sec-expression-symbol">記号と演算</a></li>
+<li><a href="sec-expression-exp.html" data-scroll="sec-expression-exp" class="active">指数と冪乗</a></li>
+<li><a href="sec-expression-term.html" data-scroll="sec-expression-term">項と式</a></li>
+<li><a href="sec-expression-poly.html" data-scroll="sec-expression-poly">多項式</a></li>
+<li><a href="sec-expression-fact.html" data-scroll="sec-expression-fact">展開と因数分解</a></li>
+<li><a href="sec-expression-rel.html" data-scroll="sec-expression-rel">関係式</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch-logic.html" data-scroll="ch-logic"><span class="codenumber">3</span> <span class="title">論理</span></a><ul>
+<li><a href="sec-logic-problem.html" data-scroll="sec-logic-problem">問題解決</a></li>
+<li><a href="sec-logic-set.html" data-scroll="sec-logic-set">集合</a></li>
+</ul>
+</li>
+<li class="link"><a href="backmatter-1.html" data-scroll="backmatter-1"><span class="title">Back Matter</span></a></li>
+<li class="link"><a href="references-1.html" data-scroll="references-1"><span class="title">参考文献</span></a></li>
+<li class="link"><a href="index-1.html" data-scroll="index-1"><span class="title">索引</span></a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="sec-expression-exp"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">2.2</span> <span class="title">指数と冪乗</span>
+</h2>
+<a href="sec-expression-exp.html" class="permalink">¶</a><p id="p-13">同じ文字や数を何回も掛け合わせる場合には、\(a \times a = a^2\)のように右上に掛け合わせる回数を書き表す。 このとき、右上の数字を\(a^2\)の<dfn class="terminology">指数</dfn>(<dfn class="terminology">index</dfn>)という。 このように\(a^n\)の形で表記される数を、\(a\)の<dfn class="terminology">冪乗</dfn>(べきじょう)もしくは<dfn class="terminology">累乗</dfn>(るいじょう)という。</p>
+<article class="definition-like" id="definition-1"><h6 class="heading">
+<span class="type">定義</span> <span class="codenumber">2.1</span>. <span class="title">冪乗・累乗.</span>
+</h6>任意の数\(a\)と自然数\(n\)について、次のように\(a^n\)を定義し、\(a\)の\(n\)乗という。<div class="displaymath">
+\begin{gather*}
+a^n = \underbrace{a \times a \times \cdots \times a}_{n\text{個}}
+\end{gather*}
+</div></article><p id="p-14">冪乗については、次の指数法則が成り立つことが重要である。</p>
+<article class="theorem-like" id="theorem-1"><h6 class="heading">
+<span class="type">定理</span> <span class="codenumber">2.2</span>. <span class="title">指数法則.</span>
+</h6>\(a\)を実数、\(m, n\)を正の整数とするとき、次の等式が成り立つ。<div class="displaymath">
+\begin{gather*}
+a^m \times a^n = a^{m + n}, (a^m)^n = a^{mn}, (ab)^n = a^n b^n
+\end{gather*}
+</div></article><p id="p-15">指数法則を用いると、冪乗の指数を正の整数以外に拡張することができる。 以下では、指数を0、負の整数、有理数の範囲に拡張していく。 まず、\(a^m = a^{m + 0} = a^m \times a^0\)と考えられるので、\(a^0 = 1\)と定義するのが自然である。</p>
+<article class="definition-like" id="definition-2"><h6 class="heading">
+<span class="type">定義</span> <span class="codenumber">2.3</span>. <span class="title">指数の0への拡張.</span>
+</h6>任意の実数\(a\)について、\(a^0 = 1\)と定義する。</article><p id="p-16">次に、指数を負の整数に拡張する。 \(1 = a^0 = a^{n+(-n)} a^n \times a^{-n}\)と考えられるので、\(a^{-n} = \frac{1}{a^n}\)と定義するのが自然である。</p>
+<article class="definition-like" id="definition-3"><h6 class="heading">
+<span class="type">定義</span> <span class="codenumber">2.4</span>. <span class="title">指数の負の整数への拡張.</span>
+</h6>任意の実数\(a\)と自然数\(n\)について、\(a^{-n} = \frac{1}{a^n}\)と定義する。</article><p id="p-17">次に、指数を有理数に拡張する。 \(a = a^1 = a^{\frac{1}{2}+\frac{1}{2}} = a^\frac{1}{2} \times a^\frac{1}{2}\)と考えられるので、2乗して\(a\)になる数を考えればよいことが分かる。 ここで、2乗して\(a\)になる数を\(a\)の<dfn class="terminology">平方根</dfn>(<dfn class="terminology">square root</dfn>)と呼ぶ。また、同様にして\(a\)の<dfn class="terminology">冪乗根</dfn>を定義する。</p>
+<article class="definition-like" id="definition-4"><h6 class="heading">
+<span class="type">定義</span> <span class="codenumber">2.5</span>. <span class="title">平方根.</span>
+</h6>任意の0以上の実数\(a\)について、\(b^2 = a\)となる数\(b\)を\(a\)の<dfn class="terminology">平方根</dfn>(<dfn class="terminology">square root</dfn>)と呼ぶ。 特に、\(a\)の平方根のうち正のものを\(\sqrt{a}\)と表す。</article><article class="definition-like" id="definition-5"><h6 class="heading">
+<span class="type">定義</span> <span class="codenumber">2.6</span>. <span class="title">冪乗根.</span>
+</h6>任意の0以上の実数\(a\)と自然数\(n\)について、\(b^n = a\)となる数\(b\)を\(a\)のn乗根、または\(a\)の<dfn class="terminology">冪乗根</dfn>と呼ぶ。 特に、\(a\)の\(n\)乗根のうち正のものを\(\sqrt[n]{a}\)と表す。</article><article class="example-like" id="example-1"><a data-knowl="" class="id-ref" data-refid="hk-example-1"><h6 class="heading">
+<span class="type">例</span> <span class="codenumber">2.7</span>. <span class="title">冪乗根の例.</span>
+</h6></a></article><div id="hk-example-1" class="hidden-content tex2jax_ignore"><article class="example-like">4の平方根は2と-2なので、\(\sqrt{4} = \sqrt[2]{4} = 2\)となる。 また、27の3乗根は3なので、\(\sqrt[3]{27} = 3\)となる。</article></div>
+<p id="p-18">冪乗根については、次の計算法則が成り立つ。</p>
+<article class="theorem-like" id="theorem-2"><h6 class="heading">
+<span class="type">定理</span> <span class="codenumber">2.8</span>. <span class="title">冪乗根の性質.</span>
+</h6>\(a, b\)を正の数、\(m, n\)を有理数とするとき、次の等式が成り立つ。<div class="displaymath">
+\begin{gather*}
+\sqrt[n]{a} \sqrt[n]{b} = \sqrt[n]{ab}, \frac{\sqrt[n]{a}}{\sqrt[n]{b}} = \sqrt[n]{\frac{a}{b}}, \sqrt[n]{a^m} = (\sqrt[n]{a})^m, \sqrt[m]{\sqrt[n]{a}} = \sqrt[mn]{a}
+\end{gather*}
+</div></article><p id="p-19">冪乗根の考え方を用いると、\(a = a^1 = \underbrace{a^\frac{1}{n} \times a^\frac{1}{n}}_{n\text{個}}\)と考えられるので、\(a^\frac{1}{n}\)を\(n\)乗根に対応させればよいことが分かる。</p>
+<article class="definition-like" id="definition-6"><h6 class="heading">
+<span class="type">定義</span> <span class="codenumber">2.9</span>. <span class="title">指数の有理数への拡張.</span>
+</h6>任意の0以上の実数\(a\)と自然数\(m, n\)について、\(a^\frac{1}{n} = \sqrt[n]{a}\)と定義する。 また、\(a^\frac{m}{n} = (\sqrt[n]{a})^m, a^{-\frac{m}{n}} = \frac{1}{a^\frac{m}{n}}\)と定義する。</article><p id="p-20">先の指数法則は、指数を有理数の範囲にまで拡張しても成り立つ。</p>
+<article class="theorem-like" id="theorem-3"><h6 class="heading">
+<span class="type">定理</span> <span class="codenumber">2.10</span>. <span class="title">指数法則.</span>
+</h6>\(a\)を実数、\(m, n\)を有理数とするとき、次の等式が成り立つ。<div class="displaymath">
+\begin{gather*}
+a^m \times a^n = a^{m + n}, (a^m)^n = a^{mn}, (ab)^n = a^n b^n
+\end{gather*}
+</div></article></section></div></main>
+</div>
+<div class="login-link"><span id="loginlogout" class="login">login</span></div>
+<script src="https://pretextbook.org/js/0.11/login.js"></script>
+</body>
+</html>
