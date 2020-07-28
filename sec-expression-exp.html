@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2020-07-17T20:43:59+09:00    *-->
+<!--*    on 2020-07-28T18:44:12+09:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -81,6 +81,7 @@ var js_version = 0.11;
 
 \tcbset{fonttitle=\bfseries}
 \tcbset{propositionstyle/.style={colframe=RedOrange,     colback=RedOrange!2!white }}
+\tcbset{    theoremstyle/.style={colframe=Navy,          colback=Navy!2!white }}
 \tcbset{ definitionstyle/.style={colframe=OliveGreen,    colback=OliveGreen!2!white}}
 \tcbset{       notestyle/.style={colframe=black!75!white,colback=black!2!white     }}
 
@@ -140,7 +141,10 @@ var js_version = 0.11;
 <main class="main"><div id="content" class="pretext-content"><section class="section" id="sec-expression-exp"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">2.2</span> <span class="title">指数と冪乗</span>
 </h2>
-<a href="sec-expression-exp.html" class="permalink">¶</a><p id="p-14">同じ文字や数を何回も掛け合わせる場合には、\(a \times a = a^2\)のように右上に掛け合わせる回数を書き表す。 このとき、右上の数字を\(a^2\)の<dfn class="terminology">指数</dfn>(<dfn class="terminology">index</dfn>)という。 このように\(a^n\)の形で表記される数を、\(a\)の<dfn class="terminology">冪乗</dfn>(べきじょう)もしくは<dfn class="terminology">累乗</dfn>(るいじょう)という。</p>
+<a href="sec-expression-exp.html" class="permalink">¶</a><section class="subsection" id="ssec-expression-exp"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">2.2.1</span> <span class="title">指数と冪乗</span>
+</h3>
+<a href="sec-expression-exp.html#ssec-expression-exp" class="permalink">¶</a><p id="p-14">同じ文字や数を何回も掛け合わせる場合には、\(a \times a = a^2\)のように右上に掛け合わせる回数を書き表す。 このとき、右上の数字を\(a^2\)の<dfn class="terminology">指数</dfn>(<dfn class="terminology">index</dfn>)という。 このように\(a^n\)の形で表記される数を、\(a\)の<dfn class="terminology">冪乗</dfn>(べきじょう)もしくは<dfn class="terminology">累乗</dfn>(るいじょう)という。</p>
 <article class="definition-like" id="definition-3"><h6 class="heading">
 <span class="type">定義</span> <span class="codenumber">2.3</span>. <span class="title">冪乗・累乗.</span>
 </h6>任意の数\(a\)と自然数\(n\)について、次のように\(a^n\)を定義し、\(a\)の\(n\)乗という。<div class="displaymath">
@@ -154,13 +158,19 @@ a^n = \underbrace{a \times a \times \cdots \times a}_{n\text{個}}
 \begin{gather*}
 a^m \times a^n = a^{m + n}, (a^m)^n = a^{mn}, (ab)^n = a^n b^n
 \end{gather*}
-</div></article><p id="p-16">指数法則を用いると、冪乗の指数を正の整数以外に拡張することができる。 以下では、指数を0、負の整数、有理数の範囲に拡張していく。 まず、\(a^m = a^{m + 0} = a^m \times a^0\)と考えられるので、\(a^0 = 1\)と定義するのが自然である。</p>
+</div></article></section><section class="subsection" id="ssec-expression-extentz"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">2.2.2</span> <span class="title">指数の整数への拡張</span>
+</h3>
+<a href="sec-expression-exp.html#ssec-expression-extentz" class="permalink">¶</a><p id="p-16">指数法則を用いると、冪乗の指数を正の整数以外に拡張することができる。 以下では、指数を0、負の整数、有理数の範囲に拡張していく。 まず、\(a^m = a^{m + 0} = a^m \times a^0\)と考えられるので、\(a^0 = 1\)と定義するのが自然である。</p>
 <article class="definition-like" id="definition-4"><h6 class="heading">
 <span class="type">定義</span> <span class="codenumber">2.5</span>. <span class="title">指数の0への拡張.</span>
 </h6>任意の実数\(a\)について、\(a^0 = 1\)と定義する。</article><p id="p-17">次に、指数を負の整数に拡張する。 \(1 = a^0 = a^{n+(-n)} a^n \times a^{-n}\)と考えられるので、\(a^{-n} = \frac{1}{a^n}\)と定義するのが自然である。</p>
 <article class="definition-like" id="definition-5"><h6 class="heading">
 <span class="type">定義</span> <span class="codenumber">2.6</span>. <span class="title">指数の負の整数への拡張.</span>
-</h6>任意の実数\(a\)と自然数\(n\)について、\(a^{-n} = \frac{1}{a^n}\)と定義する。</article><p id="p-18">次に、指数を有理数に拡張する。 \(a = a^1 = a^{\frac{1}{2}+\frac{1}{2}} = a^\frac{1}{2} \times a^\frac{1}{2}\)と考えられるので、2乗して\(a\)になる数を考えればよいことが分かる。 ここで、2乗して\(a\)になる数を\(a\)の<dfn class="terminology">平方根</dfn>(<dfn class="terminology">square root</dfn>)と呼ぶ。また、同様にして\(a\)の<dfn class="terminology">冪乗根</dfn>を定義する。</p>
+</h6>任意の実数\(a\)と自然数\(n\)について、\(a^{-n} = \frac{1}{a^n}\)と定義する。</article></section><section class="subsection" id="ssec-expression-extentq"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">2.2.3</span> <span class="title">指数の有理数への拡張</span>
+</h3>
+<a href="sec-expression-exp.html#ssec-expression-extentq" class="permalink">¶</a><p id="p-18">次に、指数を有理数に拡張する。 \(a = a^1 = a^{\frac{1}{2}+\frac{1}{2}} = a^\frac{1}{2} \times a^\frac{1}{2}\)と考えられるので、2乗して\(a\)になる数を考えればよいことが分かる。 ここで、2乗して\(a\)になる数を\(a\)の<dfn class="terminology">平方根</dfn>(<dfn class="terminology">square root</dfn>)と呼ぶ。また、同様にして\(a\)の<dfn class="terminology">冪乗根</dfn>を定義する。</p>
 <article class="definition-like" id="definition-6"><h6 class="heading">
 <span class="type">定義</span> <span class="codenumber">2.7</span>. <span class="title">平方根.</span>
 </h6>任意の0以上の実数\(a\)について、\(b^2 = a\)となる数\(b\)を\(a\)の<dfn class="terminology">平方根</dfn>(<dfn class="terminology">square root</dfn>)と呼ぶ。 特に、\(a\)の平方根のうち正のものを\(\sqrt{a}\)と表す。</article><article class="definition-like" id="definition-7"><h6 class="heading">
@@ -185,7 +195,7 @@ a^m \times a^n = a^{m + n}, (a^m)^n = a^{mn}, (ab)^n = a^n b^n
 \begin{gather*}
 a^m \times a^n = a^{m + n}, (a^m)^n = a^{mn}, (ab)^n = a^n b^n
 \end{gather*}
-</div></article></section></div></main>
+</div></article></section></section></div></main>
 </div>
 <div class="login-link"><span id="loginlogout" class="login">login</span></div>
 <script src="https://pretextbook.org/js/0.11/login.js"></script>
