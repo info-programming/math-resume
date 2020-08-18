@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2020-08-17T14:01:48+09:00    *-->
+<!--*                                    *-->
+<!--*      https://pretextbook.org       *-->
+<!--*                                    *-->
+<!--**************************************-->
+<html lang="ja-JP">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>述語論理</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']]
+    },
+    asciimath2jax: {
+        ignoreClass: ".*",
+        processClass: "has_am"
+    },
+    jax: ["input/AsciiMath"],
+    extensions: ["asciimath2jax.js"],
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.js", "https://pretextbook.org/js/lib/mathjaxknowl.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", useLabelIds: true, },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.11/pretext.js"></script><script src="https://pretextbook.org/js/0.11/pretext_add_on.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/toc.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/colors_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/setcolors.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="image/style.css">
+<link href="https://pretextbook.org/css/0.2/features.css" rel="stylesheet" type="text/css">
+<script>var logged_in = false;
+var role = 'student';
+var guest_access = true;
+var login_required = false;
+var js_version = 0.11;
+</script>
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div class="hidden-content" style="display:none">\(\require{luatexja}\require{luatexja-ruby}\require{indentfirst}\require{unicode-math}\unimathsetup{math-style=ISO,bold-style=ISO}
+\setmathfont{XITSMath-Regular.otf}
+\usepackage[match,deluxe,expert,bold,noto-otf]{luatexja-preset}
+\setmonofont{Noto Sans Mono CJK JP}
+\setmainfont[ BoldFont=Noto Sans CJK JP Medium]{Noto Serif CJK JP}
+\setmainjfont[BoldFont=Noto Sans CJK JP Medium]{Noto Serif CJK JP}
+\setsansjfont{Noto Sans CJK JP}
+
+\renewcommand{\baselinestretch}{1.2}
+\setlength{\parskip}{6pt plus 2pt minus 2pt}
+\titlespacing{\chapter}{0pt}{10pt}{15pt}
+\titlespacing{\section}{0pt}{5pt plus 3pt minus 3pt}{3pt plus 1pt}
+\titlespacing{\subsection}{0pt}{3pt plus 2pt minus 2pt}{2pt plus 1pt}
+\titlespacing{\subsubsection}{0pt}{1pt plus 1pt minus 1pt}{1pt plus 1pt}
+
+\parindent = 1\zw
+
+\renewcommand{\alert      }[1]{\textcolor{RedOrange}{\textbf{#1}}}
+\renewcommand{\terminology}[1]{\textcolor{OliveGreen}{\textbf{#1}}}
+\renewcommand{\emph       }[1]{\textcolor{RoyalBlue}{\textbf{#1}}}
+
+\tcbset{fonttitle=\bfseries}
+\tcbset{propositionstyle/.style={colframe=RedOrange,     colback=RedOrange!2!white }}
+\tcbset{    theoremstyle/.style={colframe=Navy,          colback=Navy!2!white }}
+\tcbset{ definitionstyle/.style={colframe=OliveGreen,    colback=OliveGreen!2!white}}
+\tcbset{       notestyle/.style={colframe=black!75!white,colback=black!2!white     }}
+
+\hypersetup{bookmarksopen,bookmarksnumbered}
+
+\let\gt\undefined
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="sample-book.html"><span class="title">数学 補助資料</span></a></h1>
+<p class="byline"></p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3">
+<a class="index-button toolbar-item button" href="index-1.html" title="Index">Index</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="sec-logic-set.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="ch-logic.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="sec-logic-infer.html" title="Next">Next</a></span>
+</div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="sec-logic-set.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="ch-logic.html" title="Up">Up</a><a class="next-button button toolbar-item" href="sec-logic-infer.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link">
+<a href="ch-intro.html" data-scroll="ch-intro"><span class="codenumber">1</span> <span class="title">数学</span></a><ul>
+<li><a href="sec-intro-bg.html" data-scroll="sec-intro-bg">数学を学ぶ背景</a></li>
+<li><a href="sec-intro-purpose.html" data-scroll="sec-intro-purpose">数学を学ぶ目的</a></li>
+<li><a href="sec-intro-structure.html" data-scroll="sec-intro-structure">本稿の構成</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch-expression.html" data-scroll="ch-expression"><span class="codenumber">2</span> <span class="title">項と式</span></a><ul>
+<li><a href="sec-expression-symbol.html" data-scroll="sec-expression-symbol">記号と式</a></li>
+<li><a href="sec-expression-exp.html" data-scroll="sec-expression-exp">指数と冪乗</a></li>
+<li><a href="sec-expression-poly.html" data-scroll="sec-expression-poly">多項式</a></li>
+<li><a href="sec-expression-fact.html" data-scroll="sec-expression-fact">展開と因数分解</a></li>
+<li><a href="sec-expression-rel.html" data-scroll="sec-expression-rel">関係式</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch-logic.html" data-scroll="ch-logic"><span class="codenumber">3</span> <span class="title">論理</span></a><ul>
+<li><a href="sec-logic-problem.html" data-scroll="sec-logic-problem">問題解決</a></li>
+<li><a href="sec-logic-prop.html" data-scroll="sec-logic-prop">命題論理</a></li>
+<li><a href="sec-logic-set.html" data-scroll="sec-logic-set">集合</a></li>
+<li><a href="sec-logic-pred.html" data-scroll="sec-logic-pred" class="active">述語論理</a></li>
+<li><a href="sec-logic-infer.html" data-scroll="sec-logic-infer">推論</a></li>
+</ul>
+</li>
+<li class="link"><a href="backmatter-1.html" data-scroll="backmatter-1"><span class="title">Back Matter</span></a></li>
+<li class="link"><a href="references-1.html" data-scroll="references-1"><span class="title">参考文献</span></a></li>
+<li class="link"><a href="index-1.html" data-scroll="index-1"><span class="title">索引</span></a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="sec-logic-pred"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">3.4</span> <span class="title">述語論理</span>
+</h2>
+<a href="sec-logic-pred.html" class="permalink">¶</a><section class="subsection" id="ssec-logic-propfunc"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">3.4.1</span> <span class="title">命題関数</span>
+</h3>
+<a href="sec-logic-pred.html#ssec-logic-propfunc" class="permalink">¶</a><p id="p-80">命題論理では、文を命題という単位で扱い、命題を組み合わせてより複雑な命題を表した。 命題には、「2は自然数である」「3は自然数である」「4は自然数である」のように、大半が同じで一部分のみが異なる命題がある。 これらの命題をまとめて表すために、<dfn class="terminology">命題関数</dfn>(<dfn class="terminology">propositional function</dfn>)を定義する。</p>
+<article class="definition-like" id="definition-30"><h6 class="heading">
+<span class="type">定義</span> <span class="codenumber">3.26</span>. <span class="title">命題関数.</span>
+</h6>変数\(x\)に値を代入すれば命題になり真偽が定まるものを<dfn class="terminology">命題関数</dfn>(<dfn class="terminology">propositional function</dfn>)といい、\(P\)という名前をつけた命題関数を\(P(x)\)のように表す。 2つの変数\(x, y\)に値を代入すれば真偽が定まる命題関数についても同様に、\(P(x, y)\)のように表す。</article><article class="example-like" id="example-6"><a data-knowl="" class="id-ref" data-refid="hk-example-6"><h6 class="heading">
+<span class="type">例</span> <span class="codenumber">3.27</span>. <span class="title">命題関数の例.</span>
+</h6></a></article><div id="hk-example-6" class="hidden-content tex2jax_ignore"><article class="example-like">\(P(x)\)を「\(x\)は自然数である」とすると、\(P(1)\)は「1は自然数である」、\(P(2)\)は「2は自然数である」、\(P(2.5)\)は「2.5は自然数である」となり、いずれも命題である。 このうち、\(P(1), P(2)\)は真、\(P(2.5)\)は偽である。 また、\(Q(x, y)\)を「\(x + y\)は自然数である」とすると、\(Q(1, 2)\)は「\(1 + 2\)は自然数である」となり、命題である。 \(Q(1, 2), Q(2, 0)\)は真、\(Q(2, 0.5), Q(-3, 1)\)は偽である。 \(P(x), Q(x, y)\)を数式で表すと、次のようになる。<div class="displaymath">
+\begin{align*}
+P(x)    &amp; = \begin{cases} T &amp; (x     \in \mathbb{N}) \\ F &amp; (\text{otherwise}) \end{cases}\\
+Q(x, y) &amp; = \begin{cases} T &amp; (x + y \in \mathbb{N}) \\ F &amp; (\text{otherwise}) \end{cases}
+\end{align*}
+</div></article></div>
+<p id="p-81">命題関数を用いると、命題関数\(P(x)\)が真になる\(x\)の集合は、内包的な表記で\(\{ x | P(x) \}\)と表せる。</p></section><section class="subsection" id="ssec-logic-allexist"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">3.4.2</span> <span class="title">「すべて」「ある」</span>
+</h3>
+<a href="sec-logic-pred.html#ssec-logic-allexist" class="permalink">¶</a><p id="p-82">命題には、「2は整数である」のように具体的な数についての命題もあれば、「自然数は整数である」のように、数の集合についての命題もある。 「自然数は整数である」という命題は、自然数という集合の要素を書き並べると、「1は整数である」かつ「2は整数である」かつ「3は整数である」かつ…となり、「\(x\)は整数である」という形の文を「かつ」でつなげた命題と同値だといえる。 \(P(x)\)を「\(x\)は整数である」とすると、次のように表せる。</p>
+<div class="displaymath">
+\begin{align*}
+\text{自然数は整数} &amp;= 1\text{は整数} \wedge 2\text{は整数} \wedge 3\text{は整数} \wedge \cdots\\
+&amp;= P(1) \wedge P(2) \wedge P(3) \wedge \cdots = \bigwedge_{x \in \mathbb{N}} P(x)
+\end{align*}
+</div>
+<p id="p-83">この命題は、自然数\(x\)について\(P(x)\)が常に成り立つときに真、そうでないときに偽となる。</p>
+<article class="definition-like" id="definition-31"><h6 class="heading">
+<span class="type">定義</span> <span class="codenumber">3.28</span>. <span class="title">「すべて」.</span>
+</h6>集合\(X\)の<dfn class="terminology">すべて</dfn>(<dfn class="terminology">all</dfn>)の要素\(x\)について\(P(x)\)が真であるという命題を\(\forall x \in X, P(x)\)と表す。 この記号\(\forall\)は<dfn class="terminology">全称量化子</dfn>といい、「for <em class="emphasis">a</em>ll」または「<em class="emphasis">a</em>ny」の頭文字である「A」を逆さにした記号である。<div class="displaymath">
+\begin{gather*}
+\forall x \in X, P(x) \iff \bigwedge_{x \in X} P(x)
+\end{gather*}
+</div>\(\forall x \in X\)は、「集合\(X\)の<dfn class="terminology">任意</dfn>(<dfn class="terminology">any</dfn>)の要素\(x\)について」「集合\(X\)の<dfn class="terminology">どの</dfn>要素\(x\)についても」などともいう。</article><p id="p-84">「すべて」が「かつ」に対応していると考えたとき、次のように文を「または」でつなげた命題を考えることができる。 「\(x\)は整数である」という形の文を「または」でつなげた命題は、次のように表せる。</p>
+<div class="displaymath">
+\begin{gather*}
+P(1) \vee P(2) \vee P(3) \vee \cdots = \bigvee_{x \in \mathbb{N}} P(x)
+\end{gather*}
+</div>
+<p id="p-85">この命題は、自然数のうちに\(P(x)\)が成り立つ\(x\)が存在するときに真、そうでないときに偽となる。</p>
+<article class="definition-like" id="definition-32"><h6 class="heading">
+<span class="type">定義</span> <span class="codenumber">3.29</span>. <span class="title">「ある」.</span>
+</h6>集合\(X\)の<dfn class="terminology">ある</dfn>(<dfn class="terminology">some</dfn>)要素\(x\)について\(P(x)\)が真であるという命題を\(\exists x \in X, P(x)\)と表す。 この記号\(\exists\)は<dfn class="terminology">存在量化子</dfn>といい、「<em class="emphasis">e</em>xist」の頭文字である「E」を逆さにした記号である。<div class="displaymath">
+\begin{gather*}
+\exists x \in X, P(x) \iff \bigvee_{x \in X} P(x)
+\end{gather*}
+</div>\(\exists x \in X\)は、「集合\(X\)の<dfn class="terminology">少なくとも1つ</dfn>の要素\(x\)について」「集合\(X\)の<dfn class="terminology">いずれか</dfn>の要素\(x\)について」「〜が成り立つ集合\(X\)の要素\(x\)が<dfn class="terminology">存在</dfn>(<dfn class="terminology">exist</dfn>)する」ともいう。</article></section><section class="subsection" id="ssec-logic-duality"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">3.4.3</span> <span class="title">「すべて」「ある」の否定</span>
+</h3>
+<a href="sec-logic-pred.html#ssec-logic-duality" class="permalink">¶</a><p id="p-86">「すべて」と「ある」を含む命題は、一方が他方の否定になるという関係がある。これは、英語における「any」と「some」の関係と同様である。</p>
+<p id="p-87">命題「<em class="emphasis">すべて</em>の\(x\)について\(P(x)\)が<em class="emphasis">成り立つ</em>(\(\forall x \in X, P(x)\))」の否定は「<em class="emphasis">ある</em>\(x\)について\(P(x)\)が<em class="emphasis">成り立たない</em>(\(\exists x \in X, \overline{P(x)}\))」(<dfn class="terminology">部分否定</dfn>)であり、「すべての\(x\)について\(P(x)\)が成り立たない(\(\forall x \in X, \overline{P(x)}\))」(<dfn class="terminology">全否定</dfn>)ではないことに注意が必要である。 また、命題「<em class="emphasis">ある</em>\(x\)について\(P(x)\)が<em class="emphasis">成り立つ</em>(\(\exists x \in X, P(x)\))」の否定は「<em class="emphasis">すべて</em>の\(x\)について\(P(x)\)が<em class="emphasis">成り立たない</em>(\(\forall x \in X, \overline{P(x)}\))」であり、「ある\(x\)について\(P(x)\)が成り立たない(\(\exists x \in X, \overline{P(x)}\))」ではない。</p>
+<article class="theorem-like" id="theorem-17"><h6 class="heading">
+<span class="type">定理</span> <span class="codenumber">3.30</span>. <span class="title">「すべて」「ある」の否定(de Morganの法則).</span>
+</h6>\(X\)を集合、\(P\)を命題関数とすると、次の等式が成り立つ。<div class="displaymath">
+\begin{gather*}
+\overline{\forall x \in X, P(x)} = \exists x \in X, \overline{P(x)}\\
+\overline{\exists x \in X, P(x)} = \forall x \in X, \overline{P(x)}
+\end{gather*}
+</div></article><article class="hiddenproof" id="proof-7"><a data-knowl="" class="id-ref" data-refid="hk-proof-7"><h6 class="heading"><span class="type">証明.</span></h6></a></article><div id="hk-proof-7" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><div class="displaymath">
+\begin{align*}
+\overline{\forall x \in X, P(x)} &amp;= \overline{\bigwedge_{x \in X} P(x)}\\
+&amp;= \bigvee_{  x \in X} \overline{P(x)} (\text{de Morganの法則})\\
+&amp;= \exists x \in X, \overline{P(x)}\\
+\overline{\exists x \in X, P(x)} &amp;= \overline{\bigvee_{  x \in X} P(x)}\\
+&amp;= \bigwedge_{x \in X} \overline{P(x)} (\text{de Morganの法則})\\
+&amp;= \forall x \in X, \overline{P(x)}
+\end{align*}
+</div></article></div>
+<p id="p-88">この関係は、命題論理におけるde Morganの法則に対応している。 ただし、集合\(X\)の要素が有限個ではない(無限集合である)場合には、de Morganの法則が成り立つかどうかは明らかではない。 そのため、<em class="alert">述語論理におけるde Morganの法則は定理ではなく公理として扱い、de Morganの法則が成り立つという前提で議論する</em>ことが多い。</p></section></section></div></main>
+</div>
+<div class="login-link"><span id="loginlogout" class="login">login</span></div>
+<script src="https://pretextbook.org/js/0.11/login.js"></script>
+</body>
+</html>

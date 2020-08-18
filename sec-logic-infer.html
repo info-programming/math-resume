@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2020-07-29T07:42:03+09:00    *-->
+<!--*    on 2020-08-17T14:01:48+09:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -101,11 +101,11 @@ var js_version = 0.11;
 <nav id="primary-navbar" class="navbar"><div class="container">
 <div class="navbar-top-buttons">
 <button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3">
-<a class="index-button toolbar-item button" href="index-1.html" title="Index">Index</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="sec-logic-set.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="ch-logic.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="backmatter-1.html" title="Next">Next</a></span>
+<a class="index-button toolbar-item button" href="index-1.html" title="Index">Index</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="sec-logic-pred.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="ch-logic.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="backmatter-1.html" title="Next">Next</a></span>
 </div>
 </div>
 <div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
-<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="sec-logic-set.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="ch-logic.html" title="Up">Up</a><a class="next-button button toolbar-item" href="backmatter-1.html" title="Next">Next</a>
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="sec-logic-pred.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="ch-logic.html" title="Up">Up</a><a class="next-button button toolbar-item" href="backmatter-1.html" title="Next">Next</a>
 </div>
 </div></nav></header><div class="page">
 <div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
@@ -131,6 +131,7 @@ var js_version = 0.11;
 <li><a href="sec-logic-problem.html" data-scroll="sec-logic-problem">問題解決</a></li>
 <li><a href="sec-logic-prop.html" data-scroll="sec-logic-prop">命題論理</a></li>
 <li><a href="sec-logic-set.html" data-scroll="sec-logic-set">集合</a></li>
+<li><a href="sec-logic-pred.html" data-scroll="sec-logic-pred">述語論理</a></li>
 <li><a href="sec-logic-infer.html" data-scroll="sec-logic-infer" class="active">推論</a></li>
 </ul>
 </li>
@@ -140,14 +141,14 @@ var js_version = 0.11;
 </ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
 </div></div>
 <main class="main"><div id="content" class="pretext-content"><section class="section" id="sec-logic-infer"><h2 class="heading hide-type">
-<span class="type">Section</span> <span class="codenumber">3.4</span> <span class="title">推論</span>
+<span class="type">Section</span> <span class="codenumber">3.5</span> <span class="title">推論</span>
 </h2>
-<a href="sec-logic-infer.html" class="permalink">¶</a><section class="introduction" id="introduction-4"><p id="p-80">いくつかの命題から一つの命題を導くことを<dfn class="terminology">推論</dfn>(<dfn class="terminology">inference</dfn>)といい、推論の過程を明らかに示したものを<dfn class="terminology">証明</dfn>(<dfn class="terminology">proof</dfn>)という。 推論には次に示す複数の方法があり、推論で導かれた命題がどの程度正しいかという<em class="emphasis">厳密性</em>の高さと、推論で導かれた命題がどの程度元の命題にないことを述べているかという<em class="emphasis">拡張性</em>の高さが、それぞれ異なる。 代表的な推論法には、厳密性の高い順に演繹・帰納・アブダクションがある。 このうち、演繹とアブダクションに対応する思考法が、de Bonoの垂直思考と水平思考である。</p>
-<p id="p-81">Toulmin(トゥールミン)は、<em class="emphasis">前提</em>、<em class="emphasis">規則</em>、<em class="emphasis">結論</em>という3つの命題が存在し、前提に規則を適用すると結論が得られるとした<a data-knowl="./knowl/bib-toulmin.html" title="Bibliographic Entry 17: 議論の技法">[17]</a>。 この「三角ロジック」と呼ばれる形式に従えば、演繹・帰納・アブダクションの3つの推論法は、図<a data-knowl="./knowl/fig-logic-inference.html" title="図 3.26">3.26</a>のように対比できる。 図中の点と矢印は命題を表し、「\(A \Longrightarrow B\)」を前提、「\(B \Longrightarrow C\)」を規則、「\(A \Longrightarrow C\)」は結論とする。 また、それぞれの推論法で与えられている命題を実線で、推論により導かれる命題を点線で示す。</p>
+<a href="sec-logic-infer.html" class="permalink">¶</a><section class="introduction" id="introduction-4"><p id="p-89">いくつかの命題から一つの命題を導くことを<dfn class="terminology">推論</dfn>(<dfn class="terminology">inference</dfn>)といい、推論の過程を明らかに示したものを<dfn class="terminology">証明</dfn>(<dfn class="terminology">proof</dfn>)という。 推論には次に示す複数の方法があり、推論で導かれた命題がどの程度正しいかという<em class="emphasis">厳密性</em>の高さと、推論で導かれた命題がどの程度元の命題にないことを述べているかという<em class="emphasis">拡張性</em>の高さが、それぞれ異なる。 代表的な推論法には、厳密性の高い順に演繹・帰納・アブダクションがある。 このうち、演繹とアブダクションに対応する思考法が、de Bonoの垂直思考と水平思考である。</p>
+<p id="p-90">Toulmin(トゥールミン)は、<em class="emphasis">前提</em>、<em class="emphasis">規則</em>、<em class="emphasis">結論</em>という3つの命題が存在し、前提に規則を適用すると結論が得られるとした<a data-knowl="./knowl/bib-toulmin.html" title="Bibliographic Entry 17: 議論の技法">[17]</a>。 この「三角ロジック」と呼ばれる形式に従えば、演繹・帰納・アブダクションの3つの推論法は、図<a data-knowl="./knowl/fig-logic-inference.html" title="図 3.31">3.31</a>のように対比できる。 図中の点と矢印は命題を表し、「\(A \Longrightarrow B\)」を前提、「\(B \Longrightarrow C\)」を規則、「\(A \Longrightarrow C\)」は結論とする。 また、それぞれの推論法で与えられている命題を実線で、推論により導かれる命題を点線で示す。</p>
 <figure class="figure-like" id="fig-logic-inference"><div style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="image/logic-inference.svg" style="width: 100%; height: auto;" alt=""></div>
-<figcaption><span class="type">図</span> <span class="codenumber">3.26.</span> 推論の方法</figcaption></figure><p id="p-82">図<a data-knowl="./knowl/fig-logic-inference.html" title="図 3.26">3.26</a>の例では、\(A\)を「\(x\)はソクラテスである」、\(B\)を「\(x\)は人である」、\(C\)を「\(x\)は死ぬ」としている。 このとき、前提(\(A \Longrightarrow B\))は「ソクラテスは人である(\(x: \text{ソクラテス} \Longrightarrow x: \text{人}\))」、規則(\(B \Longrightarrow C\))は「人は死ぬ(\(x: \text{人} \Longrightarrow x: \text{死ぬ}\))」、結論(\(A \Longrightarrow C\))は「ソクラテスは死ぬ(\(x: \text{ソクラテス} \Longrightarrow x: \text{死ぬ}\))」となる。</p>
-<article class="definition-like" id="definition-30"><h6 class="heading">
-<span class="type">定義</span> <span class="codenumber">3.27</span>. <span class="title">演繹・帰納・アブダクション.</span>
+<figcaption><span class="type">図</span> <span class="codenumber">3.31.</span> 推論の方法</figcaption></figure><p id="p-91">図<a data-knowl="./knowl/fig-logic-inference.html" title="図 3.31">3.31</a>の例では、\(A\)を「\(x\)はソクラテスである」、\(B\)を「\(x\)は人である」、\(C\)を「\(x\)は死ぬ」としている。 このとき、前提(\(A \Longrightarrow B\))は「ソクラテスは人である(\(x: \text{ソクラテス} \Longrightarrow x: \text{人}\))」、規則(\(B \Longrightarrow C\))は「人は死ぬ(\(x: \text{人} \Longrightarrow x: \text{死ぬ}\))」、結論(\(A \Longrightarrow C\))は「ソクラテスは死ぬ(\(x: \text{ソクラテス} \Longrightarrow x: \text{死ぬ}\))」となる。</p>
+<article class="definition-like" id="definition-33"><h6 class="heading">
+<span class="type">定義</span> <span class="codenumber">3.32</span>. <span class="title">演繹・帰納・アブダクション.</span>
 </h6>
 <ul class="disc">
 <li id="li-9">
@@ -157,19 +158,19 @@ var js_version = 0.11;
 <li id="li-11">
 <em class="alert">規則と結論</em>から<em class="alert">前提</em>を導く推論を<dfn class="terminology">アブダクション</dfn>(<dfn class="terminology">abduction</dfn>)という。</li>
 </ul></article></section><section class="subsection" id="ssec-logic-infer-deduction"><h3 class="heading hide-type">
-<span class="type">Subsection</span> <span class="codenumber">3.4.1</span> <span class="title">演繹</span>
+<span class="type">Subsection</span> <span class="codenumber">3.5.1</span> <span class="title">演繹</span>
 </h3>
-<a href="sec-logic-infer.html#ssec-logic-infer-deduction" class="permalink">¶</a><p id="p-83"><dfn class="terminology">演繹(えんえき)</dfn>(<dfn class="terminology">deduction</dfn>)は、前提と規則から結論を導く推論である。 図<a data-knowl="./knowl/fig-logic-inference.html" title="図 3.26">3.26</a>の例では、「ソクラテスは人である」という前提と、「人は死ぬ」という規則が与えられたときに、「ソクラテスは死ぬ」という<em class="emphasis">結論が真だと推論</em>する。 Aristotleによる三段論法<a data-knowl="./knowl/bib-aristotle-ana.html" title="Bibliographic Entry 9: Prior Analytics">[9]</a><a data-knowl="./knowl/bib-aristotle-ana-j.html" title="Bibliographic Entry 11: 分析論前書">[11]</a>は演繹の代表的な推論法で、「\(A \Longrightarrow B, B \Longrightarrow C\)」のとき「\(A \Longrightarrow C\)」が成り立つという推論を行う。</p>
-<p id="p-84">演繹による推論では、前提と規則の命題が真なら、<em class="alert">推論した結論が真であることが保証</em>され、<em class="emphasis">高い厳密性</em>をもつ。 厳密性を重視する数学や論理学では、演繹以外の推論の使用は認められない。 一方、演繹では<em class="alert">前提に含意される以上の結論を導くことはできない</em>ため、<em class="emphasis">拡張性はない</em>。</p></section><section class="subsection" id="ssec-logic-infer-induction"><h3 class="heading hide-type">
-<span class="type">Subsection</span> <span class="codenumber">3.4.2</span> <span class="title">帰納</span>
+<a href="sec-logic-infer.html#ssec-logic-infer-deduction" class="permalink">¶</a><p id="p-92"><dfn class="terminology">演繹(えんえき)</dfn>(<dfn class="terminology">deduction</dfn>)は、前提と規則から結論を導く推論である。 図<a data-knowl="./knowl/fig-logic-inference.html" title="図 3.31">3.31</a>の例では、「ソクラテスは人である」という前提と、「人は死ぬ」という規則が与えられたときに、「ソクラテスは死ぬ」という<em class="emphasis">結論が真だと推論</em>する。 Aristotleによる三段論法<a data-knowl="./knowl/bib-aristotle-ana.html" title="Bibliographic Entry 9: Prior Analytics">[9]</a><a data-knowl="./knowl/bib-aristotle-ana-j.html" title="Bibliographic Entry 11: 分析論前書">[11]</a>は演繹の代表的な推論法で、「\(A \Longrightarrow B, B \Longrightarrow C\)」のとき「\(A \Longrightarrow C\)」が成り立つという推論を行う。</p>
+<p id="p-93">演繹による推論では、前提と規則の命題が真なら、<em class="alert">推論した結論が真であることが保証</em>され、<em class="emphasis">高い厳密性</em>をもつ。 厳密性を重視する数学や論理学では、演繹以外の推論の使用は認められない。 一方、演繹では<em class="alert">前提に含意される以上の結論を導くことはできない</em>ため、<em class="emphasis">拡張性はない</em>。</p></section><section class="subsection" id="ssec-logic-infer-induction"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">3.5.2</span> <span class="title">帰納</span>
 </h3>
-<a href="sec-logic-infer.html#ssec-logic-infer-induction" class="permalink">¶</a><p id="p-85"><dfn class="terminology">帰納(きのう)</dfn>(<dfn class="terminology">induction</dfn>)は、前提と結論から規則を導く推論である。 図<a data-knowl="./knowl/fig-logic-inference.html" title="図 3.26">3.26</a>の例では、「ソクラテスは人である」「プラトンは人である」「ゼノンは人である」という前提と、「ソクラテスは死ぬ」「プラトンは死ぬ」「ゼノンは死ぬ」という結論が与えられたときに、「人は死ぬ」という<em class="emphasis">規則が真だと推論</em>する<a data-knowl="./knowl/bib-aristotle-ana2.html" title="Bibliographic Entry 10: Prior Analytics">[10]</a><a data-knowl="./knowl/bib-aristotle-ana-j2.html" title="Bibliographic Entry 12: 分析論前書">[12]</a><a data-knowl="./knowl/bib-bacon.html" title="Bibliographic Entry 13: ノヴム・オルガヌム――新機関">[13]</a>。 <em class="emphasis">経験則</em>や<dfn class="terminology">ヒューリスティクス</dfn>(<dfn class="terminology">heuristics</dfn>)は、帰納による推論の例である。</p>
-<p id="p-86">帰納による推論では、前提と結論が真でも、<em class="alert">推論した規則が真であることは保証されない</em>ため、<em class="emphasis">厳密性は十分でない</em>。 この例の場合、例えば「エピクロス」という「死なない人」の例(<em class="emphasis">反例</em>)がある可能性は否定できない。 一方、帰納では前提に含まれる個々の事例を<em class="emphasis">一般化</em>でき、前提の内容以上の規則を得る可能性があるため、<em class="emphasis">一定の拡張性</em>をもつ。</p></section><section class="subsection" id="ssec-logic-infer-abduction"><h3 class="heading hide-type">
-<span class="type">Subsection</span> <span class="codenumber">3.4.3</span> <span class="title">アブダクション</span>
+<a href="sec-logic-infer.html#ssec-logic-infer-induction" class="permalink">¶</a><p id="p-94"><dfn class="terminology">帰納(きのう)</dfn>(<dfn class="terminology">induction</dfn>)は、前提と結論から規則を導く推論である。 図<a data-knowl="./knowl/fig-logic-inference.html" title="図 3.31">3.31</a>の例では、「ソクラテスは人である」「プラトンは人である」「ゼノンは人である」という前提と、「ソクラテスは死ぬ」「プラトンは死ぬ」「ゼノンは死ぬ」という結論が与えられたときに、「人は死ぬ」という<em class="emphasis">規則が真だと推論</em>する<a data-knowl="./knowl/bib-aristotle-ana2.html" title="Bibliographic Entry 10: Prior Analytics">[10]</a><a data-knowl="./knowl/bib-aristotle-ana-j2.html" title="Bibliographic Entry 12: 分析論前書">[12]</a><a data-knowl="./knowl/bib-bacon.html" title="Bibliographic Entry 13: ノヴム・オルガヌム――新機関">[13]</a>。 <em class="emphasis">経験則</em>や<dfn class="terminology">ヒューリスティクス</dfn>(<dfn class="terminology">heuristics</dfn>)は、帰納による推論の例である。</p>
+<p id="p-95">帰納による推論では、前提と結論が真でも、<em class="alert">推論した規則が真であることは保証されない</em>ため、<em class="emphasis">厳密性は十分でない</em>。 この例の場合、例えば「エピクロス」という「死なない人」の例(<em class="emphasis">反例</em>)がある可能性は否定できない。 一方、帰納では前提に含まれる個々の事例を<em class="emphasis">一般化</em>でき、前提の内容以上の規則を得る可能性があるため、<em class="emphasis">一定の拡張性</em>をもつ。</p></section><section class="subsection" id="ssec-logic-infer-abduction"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">3.5.3</span> <span class="title">アブダクション</span>
 </h3>
-<a href="sec-logic-infer.html#ssec-logic-infer-abduction" class="permalink">¶</a><p id="p-87"><dfn class="terminology">アブダクション</dfn>(<dfn class="terminology">abduction</dfn>)は、規則と結論から前提を導く推論である。 図<a data-knowl="./knowl/fig-logic-inference.html" title="図 3.26">3.26</a>の例では、「ソクラテスは死ぬ」という結論と「人は死ぬ」という規則が与えられたときに、「ソクラテスは人である」という<em class="emphasis">前提が真だと推論</em>する。 アブダクションに類似する手法はAristotle<a data-knowl="./knowl/bib-aristotle-ana2.html" title="Bibliographic Entry 10: Prior Analytics">[10]</a><a data-knowl="./knowl/bib-aristotle-ana-j2.html" title="Bibliographic Entry 12: 分析論前書">[12]</a>も言及しているが、近代的な提唱を行ったのはPeirce(パース)である<a data-knowl="./knowl/bib-yonemori.html" title="Bibliographic Entry 4: アブダクション――仮説と発見の論理">[4]</a>。</p>
-<p id="p-88">アブダクションによる推論では、結論と規則が真でも、<em class="alert">推論した前提が真であることは保証されない</em>。 この例の場合、死んだ「ソクラテス」は人ではなく、ネコやイヌなどの人以外の動物である可能性もある。</p>
-<p id="p-89">アブダクションによる推論は<em class="emphasis">高い拡張性</em>をもつ一方、帰納よりも<em class="emphasis">厳密性に乏しく</em>、このままでは命題の正しさを示すのは難しい。 そこで、アブダクションで得られた命題を<em class="emphasis">仮説</em>として、演繹により仮説の正しさを示し、帰納により実例で仮説の正しさを裏付けることがよく行われる。 アブダクションが果たす仮説形成の役割は、Russellが“仮説を形成することが科学的な仕事のなかでもっとも難しいのであり、偉大な能力が不可欠となる”<a data-knowl="./knowl/bib-russell.html" title="Bibliographic Entry 18: History of Western Philosophy">[18]</a>というように、科学において極めて重要である。</p></section></section></div></main>
+<a href="sec-logic-infer.html#ssec-logic-infer-abduction" class="permalink">¶</a><p id="p-96"><dfn class="terminology">アブダクション</dfn>(<dfn class="terminology">abduction</dfn>)は、規則と結論から前提を導く推論である。 図<a data-knowl="./knowl/fig-logic-inference.html" title="図 3.31">3.31</a>の例では、「ソクラテスは死ぬ」という結論と「人は死ぬ」という規則が与えられたときに、「ソクラテスは人である」という<em class="emphasis">前提が真だと推論</em>する。 アブダクションに類似する手法はAristotle<a data-knowl="./knowl/bib-aristotle-ana2.html" title="Bibliographic Entry 10: Prior Analytics">[10]</a><a data-knowl="./knowl/bib-aristotle-ana-j2.html" title="Bibliographic Entry 12: 分析論前書">[12]</a>も言及しているが、近代的な提唱を行ったのはPeirce(パース)である<a data-knowl="./knowl/bib-yonemori.html" title="Bibliographic Entry 4: アブダクション――仮説と発見の論理">[4]</a>。</p>
+<p id="p-97">アブダクションによる推論では、結論と規則が真でも、<em class="alert">推論した前提が真であることは保証されない</em>。 この例の場合、死んだ「ソクラテス」は人ではなく、ネコやイヌなどの人以外の動物である可能性もある。</p>
+<p id="p-98">アブダクションによる推論は<em class="emphasis">高い拡張性</em>をもつ一方、帰納よりも<em class="emphasis">厳密性に乏しく</em>、このままでは命題の正しさを示すのは難しい。 そこで、アブダクションで得られた命題を<em class="emphasis">仮説</em>として、演繹により仮説の正しさを示し、帰納により実例で仮説の正しさを裏付けることがよく行われる。 アブダクションが果たす仮説形成の役割は、Russellが“仮説を形成することが科学的な仕事のなかでもっとも難しいのであり、偉大な能力が不可欠となる”<a data-knowl="./knowl/bib-russell.html" title="Bibliographic Entry 18: History of Western Philosophy">[18]</a>というように、科学において極めて重要である。</p></section></section></div></main>
 </div>
 <div class="login-link"><span id="loginlogout" class="login">login</span></div>
 <script src="https://pretextbook.org/js/0.11/login.js"></script>
