@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2020-08-25T07:06:52+09:00    *-->
+<!--*                                    *-->
+<!--*      https://pretextbook.org       *-->
+<!--*                                    *-->
+<!--**************************************-->
+<html lang="ja-JP">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>証明</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']]
+    },
+    asciimath2jax: {
+        ignoreClass: ".*",
+        processClass: "has_am"
+    },
+    jax: ["input/AsciiMath"],
+    extensions: ["asciimath2jax.js"],
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.js", "https://pretextbook.org/js/lib/mathjaxknowl.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", useLabelIds: true, },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.11/pretext.js"></script><script src="https://pretextbook.org/js/0.11/pretext_add_on.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/toc.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/colors_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/setcolors.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="image/style.css">
+<link href="https://pretextbook.org/css/0.2/features.css" rel="stylesheet" type="text/css">
+<script>var logged_in = false;
+var role = 'student';
+var guest_access = true;
+var login_required = false;
+var js_version = 0.11;
+</script>
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div class="hidden-content" style="display:none">\(\require{luatexja}\require{luatexja-ruby}\require{indentfirst}\require{unicode-math}\unimathsetup{math-style=ISO,bold-style=ISO}
+\setmathfont{XITSMath-Regular.otf}
+\usepackage[match,deluxe,expert,bold,noto-otf]{luatexja-preset}
+\setmonofont{Noto Sans Mono CJK JP}
+\setmainfont[ BoldFont=Noto Sans CJK JP Medium]{Noto Serif CJK JP}
+\setmainjfont[BoldFont=Noto Sans CJK JP Medium]{Noto Serif CJK JP}
+\setsansjfont{Noto Sans CJK JP}
+
+\renewcommand{\baselinestretch}{1.2}
+\setlength{\parskip}{6pt plus 2pt minus 2pt}
+\titlespacing{\chapter}{0pt}{10pt}{15pt}
+\titlespacing{\section}{0pt}{5pt plus 3pt minus 3pt}{3pt plus 1pt}
+\titlespacing{\subsection}{0pt}{3pt plus 2pt minus 2pt}{2pt plus 1pt}
+\titlespacing{\subsubsection}{0pt}{1pt plus 1pt minus 1pt}{1pt plus 1pt}
+
+\parindent = 1\zw
+
+\renewcommand{\alert      }[1]{\textcolor{RedOrange}{\textbf{#1}}}
+\renewcommand{\terminology}[1]{\textcolor{OliveGreen}{\textbf{#1}}}
+\renewcommand{\emph       }[1]{\textcolor{RoyalBlue}{\textbf{#1}}}
+
+\tcbset{fonttitle=\bfseries}
+\tcbset{propositionstyle/.style={colframe=RedOrange,     colback=RedOrange!2!white }}
+\tcbset{    theoremstyle/.style={colframe=Navy,          colback=Navy!2!white }}
+\tcbset{ definitionstyle/.style={colframe=OliveGreen,    colback=OliveGreen!2!white}}
+\tcbset{       notestyle/.style={colframe=black!75!white,colback=black!2!white     }}
+
+\hypersetup{bookmarksopen,bookmarksnumbered}
+
+\let\gt\undefined
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="sample-book.html"><span class="title">数学 補助資料</span></a></h1>
+<p class="byline"></p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3">
+<a class="index-button toolbar-item button" href="index-1.html" title="Index">Index</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="sec-logic-infer.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="ch-logic.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="backmatter-1.html" title="Next">Next</a></span>
+</div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="sec-logic-infer.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="ch-logic.html" title="Up">Up</a><a class="next-button button toolbar-item" href="backmatter-1.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link">
+<a href="ch-intro.html" data-scroll="ch-intro"><span class="codenumber">1</span> <span class="title">数学</span></a><ul>
+<li><a href="sec-intro-bg.html" data-scroll="sec-intro-bg">数学を学ぶ背景</a></li>
+<li><a href="sec-intro-purpose.html" data-scroll="sec-intro-purpose">数学を学ぶ目的</a></li>
+<li><a href="sec-intro-structure.html" data-scroll="sec-intro-structure">本稿の構成</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch-expression.html" data-scroll="ch-expression"><span class="codenumber">2</span> <span class="title">項と式</span></a><ul>
+<li><a href="sec-expression-symbol.html" data-scroll="sec-expression-symbol">記号と式</a></li>
+<li><a href="sec-expression-exp.html" data-scroll="sec-expression-exp">指数と冪乗</a></li>
+<li><a href="sec-expression-poly.html" data-scroll="sec-expression-poly">多項式</a></li>
+<li><a href="sec-expression-fact.html" data-scroll="sec-expression-fact">展開と因数分解</a></li>
+<li><a href="sec-expression-rel.html" data-scroll="sec-expression-rel">関係式</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch-logic.html" data-scroll="ch-logic"><span class="codenumber">3</span> <span class="title">論理</span></a><ul>
+<li><a href="sec-logic-problem.html" data-scroll="sec-logic-problem">問題解決</a></li>
+<li><a href="sec-logic-prop.html" data-scroll="sec-logic-prop">命題論理</a></li>
+<li><a href="sec-logic-set.html" data-scroll="sec-logic-set">集合</a></li>
+<li><a href="sec-logic-pred.html" data-scroll="sec-logic-pred">述語論理</a></li>
+<li><a href="sec-logic-infer.html" data-scroll="sec-logic-infer">推論</a></li>
+<li><a href="sec-logic-proof.html" data-scroll="sec-logic-proof" class="active">証明</a></li>
+</ul>
+</li>
+<li class="link"><a href="backmatter-1.html" data-scroll="backmatter-1"><span class="title">Back Matter</span></a></li>
+<li class="link"><a href="references-1.html" data-scroll="references-1"><span class="title">参考文献</span></a></li>
+<li class="link"><a href="index-1.html" data-scroll="index-1"><span class="title">索引</span></a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="sec-logic-proof"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">3.6</span> <span class="title">証明</span>
+</h2>
+<a href="sec-logic-proof.html" class="permalink">¶</a><section class="introduction" id="introduction-5"><p id="p-99"><em class="alert">演繹による推論</em>を続けて、命題の真偽を明らかにすることを<dfn class="terminology">証明</dfn>(<dfn class="terminology">proof</dfn>)という。 証明は「命題が真であること」を明らかにする場合が多いが、「命題が偽であること」を明らかにする場合もある。</p></section><section class="subsection" id="ssec-logic-proof-direct"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">3.6.1</span> <span class="title">直接法</span>
+</h3>
+<a href="sec-logic-proof.html#ssec-logic-proof-direct" class="permalink">¶</a><p id="p-100">示したい命題を直接示す証明方法は、直接法と呼ばれることが多い。 直接法を用いる場合、前提に対して同値な変形や定理などの規則を繰り返し適用することにより、結論を示すことが多い。 場合によっては、結論から前提の側に向けて同値な変形を繰り返していくこともある。</p></section><section class="subsection" id="ssec-logic-proof-counter"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">3.6.2</span> <span class="title">反例を用いた証明</span>
+</h3>
+<a href="sec-logic-proof.html#ssec-logic-proof-counter" class="permalink">¶</a><p id="p-101">示したい事柄が「命題\(p \Longrightarrow q\)が偽である(\(\overline{p \Longrightarrow q}\))」ことの場合は、<dfn class="terminology">反例</dfn>(<dfn class="terminology">counterexample</dfn>)と呼ばれる命題が成り立たないような具体例を1つ挙げることも多い。 反例が見つかりさえすれば、通常の証明に比べて簡単に示すことができる。</p>
+<article class="definition-like" id="definition-34"><h6 class="heading">
+<span class="type">定義</span> <span class="codenumber">3.33</span>. <span class="title">反例.</span>
+</h6>命題\(x \in A \Longrightarrow x \in B\)に対して、「\(A\)の要素だが\(B\)の要素でない\(x\)(\(x \in A \wedge x \notin B\))」を、命題\(x \in A \Longrightarrow x \in B\)の<dfn class="terminology">反例</dfn>(<dfn class="terminology">counterexample</dfn>)という。</article><article class="theorem-like" id="theorem-18"><h6 class="heading">
+<span class="type">定理</span> <span class="codenumber">3.34</span>. <span class="title">反例を用いた証明.</span>
+</h6>命題\(p \Longrightarrow q\)が偽であることを示すには、例を1つ挙げ、その例が「\(p\)を満たすが\(q\)を満たさない」ことを示せばよい。</article><article class="hiddenproof" id="proof-8"><a data-knowl="" class="id-ref" data-refid="hk-proof-8"><h6 class="heading"><span class="type">証明.</span></h6></a></article><div id="hk-proof-8" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><div class="displaymath">
+\begin{gather*}
+\overline{p \Longrightarrow q} = \overline{\overline{p} \vee q} = \overline{\overline{p}} \wedge \overline{q} = p \wedge \overline{q}
+\end{gather*}
+</div></article></div></section><section class="subsection" id="ssec-logic-proof-contraposition"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">3.6.3</span> <span class="title">対偶を用いた証明</span>
+</h3>
+<a href="sec-logic-proof.html#ssec-logic-proof-contraposition" class="permalink">¶</a><p id="p-102">「命題\(p \Longrightarrow q\)が真である」ことを直接示しにくい場合には、元の命題の<em class="alert">対偶</em>\(\overline{q} \Longrightarrow \overline{p}\)をとり、対偶を示して元の命題を示せることがある。</p></section><section class="subsection" id="ssec-logic-proof-contradiction"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">3.6.4</span> <span class="title">背理法</span>
+</h3>
+<a href="sec-logic-proof.html#ssec-logic-proof-contradiction" class="permalink">¶</a><p id="p-103">証明したい命題\(p\)を直接示すのが難しい場合には、命題\(p\)が成り立たない(偽である)と仮定して<dfn class="terminology">矛盾</dfn>(<dfn class="terminology">contradiction</dfn>)を導く<dfn class="terminology">背理法</dfn>が用いられることがある。</p>
+<article class="definition-like" id="definition-35"><h6 class="heading">
+<span class="type">定義</span> <span class="codenumber">3.35</span>. <span class="title">矛盾.</span>
+</h6>\(p\)を命題とするとき、\(p \wedge \overline{p}\)を<dfn class="terminology">矛盾</dfn>(<dfn class="terminology">contradiction</dfn>)という。 命題\(p \wedge \overline{p}\)は常に偽である。</article><article class="theorem-like" id="theorem-19"><h6 class="heading">
+<span class="type">定理</span> <span class="codenumber">3.36</span>. <span class="title">背理法.</span>
+</h6>命題\(p\)の真偽と命題\(\overline{p} \Longrightarrow \text{F}\)の真偽は一致する。</article><article class="hiddenproof" id="proof-9"><a data-knowl="" class="id-ref" data-refid="hk-proof-9"><h6 class="heading"><span class="type">証明.</span></h6></a></article><div id="hk-proof-9" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><div class="displaymath">
+\begin{gather*}
+[ \overline{p} \Longrightarrow \text{F} ] = [ \overline{\overline{p}} \vee \text{F} ] = [ p \vee \text{F} ] = p
+\end{gather*}
+</div></article></div>
+<p id="p-104">実際の背理法の手順は、次のようになる。</p>
+<article class="theorem-like" id="algorithm-2"><h6 class="heading">
+<span class="type">アルゴリズム</span> <span class="codenumber">3.37</span>. <span class="title">背理法.</span>
+</h6>命題\(p\)が真であることを示す場合、次のようにする。 <ol class="decimal">
+<li id="li-12">命題\(p\)が偽であると仮定し、\(p\)の否定\(\overline{p}\)が真であるとみなす。</li>
+<li id="li-13">\(\overline{p}\)に対して、演繹による推論を重ねる。</li>
+<li id="li-14">偽になる命題を導く。多くの場合、ある命題\(r\)についての<em class="alert">矛盾</em>\(r \wedge \overline{r}\)を導く。 具体的には、\(r\)が「\(x\)は有理数である」だとすると、「\(x\)は有理数である」と「\(x\)は有理数でない(無理数である)」の2つは同時に成り立たないので、この2つを示せば矛盾があるといえる。</li>
+<li id="li-15">(3)での推論の結果、矛盾が導かれ偽になったので、(1)で仮定した\(\overline{p}\)が偽であるということになり、\(p\)が真であることが示される。</li>
+</ol></article></section></section></div></main>
+</div>
+<div class="login-link"><span id="loginlogout" class="login">login</span></div>
+<script src="https://pretextbook.org/js/0.11/login.js"></script>
+</body>
+</html>
