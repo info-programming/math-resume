@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2020-08-25T22:34:32+09:00    *-->
+<!--*    on 2020-08-26T07:38:42+09:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -147,7 +147,7 @@ var js_version = 0.11;
 <a href="sec-logic-pred.html" class="permalink">¶</a><section class="subsection" id="ssec-logic-propfunc"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">3.4.1</span> <span class="title">命題関数</span>
 </h3>
-<a href="sec-logic-pred.html#ssec-logic-propfunc" class="permalink">¶</a><p id="p-78">命題論理では、文を命題という単位で扱い、命題を組み合わせてより複雑な命題を表した。 命題には、「2は自然数である」「3は自然数である」「4は自然数である」のように、大半が同じで一部分のみが異なる命題がある。 これらの命題をまとめて表すために、<dfn class="terminology">命題関数</dfn>(<dfn class="terminology">propositional function</dfn>)を定義する。</p>
+<a href="sec-logic-pred.html#ssec-logic-propfunc" class="permalink">¶</a><p id="p-79">命題論理では、文を命題という単位で扱い、命題を組み合わせてより複雑な命題を表した。 命題には、「2は自然数である」「3は自然数である」「4は自然数である」のように、大半が同じで一部分のみが異なる命題がある。 これらの命題をまとめて表すために、<dfn class="terminology">命題関数</dfn>(<dfn class="terminology">propositional function</dfn>)を定義する。</p>
 <article class="definition-like" id="definition-30"><h6 class="heading">
 <span class="type">定義</span> <span class="codenumber">3.26</span>. <span class="title">命題関数.</span>
 </h6>変数\(x\)に値を代入すれば命題になり真偽が定まるものを<dfn class="terminology">命題関数</dfn>(<dfn class="terminology">propositional function</dfn>)といい、\(P\)という名前をつけた命題関数を\(P(x)\)のように表す。 2つの変数\(x, y\)に値を代入すれば真偽が定まる命題関数についても同様に、\(P(x, y)\)のように表す。</article><article class="example-like" id="example-6"><a data-knowl="" class="id-ref" data-refid="hk-example-6"><h6 class="heading">
@@ -158,30 +158,30 @@ P(x)    &amp; = \begin{cases} T &amp; (x     \in \mathbb{N}) \\ F &amp; (\text{o
 Q(x, y) &amp; = \begin{cases} T &amp; (x + y \in \mathbb{N}) \\ F &amp; (\text{otherwise}) \end{cases}
 \end{align*}
 </div></article></div>
-<p id="p-79">命題関数を用いると、命題関数\(P(x)\)が真になる\(x\)の集合は、内包的な表記で\(\{ x | P(x) \}\)と表せる。</p></section><section class="subsection" id="ssec-logic-allexist"><h3 class="heading hide-type">
+<p id="p-80">命題関数を用いると、命題関数\(P(x)\)が真になる\(x\)の集合は、内包的な表記で\(\{ x | P(x) \}\)と表せる。</p></section><section class="subsection" id="ssec-logic-allexist"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">3.4.2</span> <span class="title">「すべて」「ある」</span>
 </h3>
-<a href="sec-logic-pred.html#ssec-logic-allexist" class="permalink">¶</a><p id="p-80">命題には、「2は整数である」のように具体的な数についての命題もあれば、「自然数は整数である」のように、数の集合についての命題もある。 「自然数は整数である」という命題は、自然数という集合の要素を書き並べると、「1は整数である」かつ「2は整数である」かつ「3は整数である」かつ…となり、「\(x\)は整数である」という形の文を「かつ」でつなげた命題と同値だといえる。 \(P(x)\)を「\(x\)は整数である」とすると、次のように表せる。</p>
+<a href="sec-logic-pred.html#ssec-logic-allexist" class="permalink">¶</a><p id="p-81">命題には、「2は整数である」のように具体的な数についての命題もあれば、「自然数は整数である」のように、数の集合についての命題もある。 「自然数は整数である」という命題は、自然数という集合の要素を書き並べると、「1は整数である」かつ「2は整数である」かつ「3は整数である」かつ…となり、「\(x\)は整数である」という形の文を「かつ」でつなげた命題と同値だといえる。 \(P(x)\)を「\(x\)は整数である」とすると、次のように表せる。</p>
 <div class="displaymath">
 \begin{align*}
-\text{自然数は整数} &amp;= 1\text{は整数} \wedge 2\text{は整数} \wedge 3\text{は整数} \wedge \cdots\\
-&amp;= P(1) \wedge P(2) \wedge P(3) \wedge \cdots = \bigwedge_{x \in \mathbb{N}} P(x)
+\text{自然数は整数} &amp;= 1\text{は整数} \land 2\text{は整数} \land 3\text{は整数} \land \cdots\\
+&amp;= P(1) \land P(2) \land P(3) \land \cdots = \bigwedge_{x \in \mathbb{N}} P(x)
 \end{align*}
 </div>
-<p id="p-81">この命題は、自然数\(x\)について\(P(x)\)が常に成り立つときに真、そうでないときに偽となる。</p>
+<p id="p-82">この命題は、自然数\(x\)について\(P(x)\)が常に成り立つときに真、そうでないときに偽となる。</p>
 <article class="definition-like" id="definition-31"><h6 class="heading">
 <span class="type">定義</span> <span class="codenumber">3.28</span>. <span class="title">「すべて」.</span>
 </h6>集合\(X\)の<dfn class="terminology">すべて</dfn>(<dfn class="terminology">all</dfn>)の要素\(x\)について\(P(x)\)が真であるという命題を\(\forall x \in X, P(x)\)と表す。 この記号\(\forall\)は<dfn class="terminology">全称量化子</dfn>といい、「for <em class="emphasis">a</em>ll」または「<em class="emphasis">a</em>ny」の頭文字である「A」を逆さにした記号である。<div class="displaymath">
 \begin{gather*}
 \forall x \in X, P(x) \iff \bigwedge_{x \in X} P(x)
 \end{gather*}
-</div>\(\forall x \in X\)は、「集合\(X\)の<dfn class="terminology">任意</dfn>(<dfn class="terminology">any</dfn>)の要素\(x\)について」「集合\(X\)の<dfn class="terminology">どの</dfn>要素\(x\)についても」などともいう。</article><p id="p-82">「すべて」が「かつ」に対応していると考えたとき、次のように文を「または」でつなげた命題を考えることができる。 「\(x\)は整数である」という形の文を「または」でつなげた命題は、次のように表せる。</p>
+</div>\(\forall x \in X\)は、「集合\(X\)の<dfn class="terminology">任意</dfn>(<dfn class="terminology">any</dfn>)の要素\(x\)について」「集合\(X\)の<dfn class="terminology">どの</dfn>要素\(x\)についても」などともいう。</article><p id="p-83">「すべて」が「かつ」に対応していると考えたとき、次のように文を「または」でつなげた命題を考えることができる。 「\(x\)は整数である」という形の文を「または」でつなげた命題は、次のように表せる。</p>
 <div class="displaymath">
 \begin{gather*}
-P(1) \vee P(2) \vee P(3) \vee \cdots = \bigvee_{x \in \mathbb{N}} P(x)
+P(1) \lor P(2) \lor P(3) \lor \cdots = \bigvee_{x \in \mathbb{N}} P(x)
 \end{gather*}
 </div>
-<p id="p-83">この命題は、自然数のうちに\(P(x)\)が成り立つ\(x\)が存在するときに真、そうでないときに偽となる。</p>
+<p id="p-84">この命題は、自然数のうちに\(P(x)\)が成り立つ\(x\)が存在するときに真、そうでないときに偽となる。</p>
 <article class="definition-like" id="definition-32"><h6 class="heading">
 <span class="type">定義</span> <span class="codenumber">3.29</span>. <span class="title">「ある」.</span>
 </h6>集合\(X\)の<dfn class="terminology">ある</dfn>(<dfn class="terminology">some</dfn>)要素\(x\)について\(P(x)\)が真であるという命題を\(\exists x \in X, P(x)\)と表す。 この記号\(\exists\)は<dfn class="terminology">存在量化子</dfn>といい、「<em class="emphasis">e</em>xist」の頭文字である「E」を逆さにした記号である。<div class="displaymath">
@@ -191,8 +191,8 @@ P(1) \vee P(2) \vee P(3) \vee \cdots = \bigvee_{x \in \mathbb{N}} P(x)
 </div>\(\exists x \in X\)は、「集合\(X\)の<dfn class="terminology">少なくとも1つ</dfn>の要素\(x\)について」「集合\(X\)の<dfn class="terminology">いずれか</dfn>の要素\(x\)について」「〜が成り立つ集合\(X\)の要素\(x\)が<dfn class="terminology">存在</dfn>(<dfn class="terminology">exist</dfn>)する」ともいう。</article></section><section class="subsection" id="ssec-logic-duality"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">3.4.3</span> <span class="title">「すべて」「ある」の否定</span>
 </h3>
-<a href="sec-logic-pred.html#ssec-logic-duality" class="permalink">¶</a><p id="p-84">「すべて」と「ある」を含む命題は、一方が他方の否定になるという関係がある。これは、英語における「any」と「some」の関係と同様である。</p>
-<p id="p-85">命題「<em class="emphasis">すべて</em>の\(x\)について\(P(x)\)が<em class="emphasis">成り立つ</em>(\(\forall x \in X, P(x)\))」の否定は「<em class="emphasis">ある</em>\(x\)について\(P(x)\)が<em class="emphasis">成り立たない</em>(\(\exists x \in X, \overline{P(x)}\))」(<dfn class="terminology">部分否定</dfn>)であり、「すべての\(x\)について\(P(x)\)が成り立たない(\(\forall x \in X, \overline{P(x)}\))」(<dfn class="terminology">全否定</dfn>)ではないことに注意が必要である。 また、命題「<em class="emphasis">ある</em>\(x\)について\(P(x)\)が<em class="emphasis">成り立つ</em>(\(\exists x \in X, P(x)\))」の否定は「<em class="emphasis">すべて</em>の\(x\)について\(P(x)\)が<em class="emphasis">成り立たない</em>(\(\forall x \in X, \overline{P(x)}\))」であり、「ある\(x\)について\(P(x)\)が成り立たない(\(\exists x \in X, \overline{P(x)}\))」ではない。</p>
+<a href="sec-logic-pred.html#ssec-logic-duality" class="permalink">¶</a><p id="p-85">「すべて」と「ある」を含む命題は、一方が他方の否定になるという関係がある。これは、英語における「any」と「some」の関係と同様である。</p>
+<p id="p-86">命題「<em class="emphasis">すべて</em>の\(x\)について\(P(x)\)が<em class="emphasis">成り立つ</em>(\(\forall x \in X, P(x)\))」の否定は「<em class="emphasis">ある</em>\(x\)について\(P(x)\)が<em class="emphasis">成り立たない</em>(\(\exists x \in X, \overline{P(x)}\))」(<dfn class="terminology">部分否定</dfn>)であり、「すべての\(x\)について\(P(x)\)が成り立たない(\(\forall x \in X, \overline{P(x)}\))」(<dfn class="terminology">全否定</dfn>)ではないことに注意が必要である。 また、命題「<em class="emphasis">ある</em>\(x\)について\(P(x)\)が<em class="emphasis">成り立つ</em>(\(\exists x \in X, P(x)\))」の否定は「<em class="emphasis">すべて</em>の\(x\)について\(P(x)\)が<em class="emphasis">成り立たない</em>(\(\forall x \in X, \overline{P(x)}\))」であり、「ある\(x\)について\(P(x)\)が成り立たない(\(\exists x \in X, \overline{P(x)}\))」ではない。</p>
 <article class="theorem-like" id="theorem-17"><h6 class="heading">
 <span class="type">定理</span> <span class="codenumber">3.30</span>. <span class="title">「すべて」「ある」の否定(de Morganの法則).</span>
 </h6>\(X\)を集合、\(P\)を命題関数とすると、次の等式が成り立つ。<div class="displaymath">
@@ -210,7 +210,7 @@ P(1) \vee P(2) \vee P(3) \vee \cdots = \bigvee_{x \in \mathbb{N}} P(x)
 &amp;= \forall x \in X, \overline{P(x)}
 \end{align*}
 </div></article></div>
-<p id="p-86">この関係は、命題論理におけるde Morganの法則に対応している。 ただし、集合\(X\)の要素が有限個ではない(無限集合である)場合には、de Morganの法則が成り立つかどうかは明らかではない。 そのため、<em class="alert">述語論理におけるde Morganの法則は定理ではなく公理として扱い、de Morganの法則が成り立つという前提で議論する</em>ことが多い。</p></section></section></div></main>
+<p id="p-87">この関係は、命題論理におけるde Morganの法則に対応している。 ただし、集合\(X\)の要素が有限個ではない(無限集合である)場合には、de Morganの法則が成り立つかどうかは明らかではない。 そのため、<em class="alert">述語論理におけるde Morganの法則は定理ではなく公理として扱い、de Morganの法則が成り立つという前提で議論する</em>ことが多い。</p></section></section></div></main>
 </div>
 <div class="login-link"><span id="loginlogout" class="login">login</span></div>
 <script src="https://pretextbook.org/js/0.11/login.js"></script>

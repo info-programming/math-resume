@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2020-08-25T22:34:32+09:00    *-->
+<!--*    on 2020-08-26T07:38:42+09:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -161,7 +161,7 @@ var js_version = 0.11;
 <a href="sec-logic-prop.html#ssec-logic-andornot" class="permalink">¶</a><p id="p-52">命題についての基本的な操作には、1つの命題に対する<dfn class="terminology">否定</dfn>や、2つ以上の命題に対する「<dfn class="terminology">かつ</dfn>(連言)」「<dfn class="terminology">または</dfn>(選言)」がある。</p>
 <article class="definition-like" id="definition-19"><h6 class="heading">
 <span class="type">定義</span> <span class="codenumber">3.6</span>. <span class="title">連言・選言・否定.</span>
-</h6>\(p, q\)を命題とするとき、\(p, q\)の<em class="emphasis">両方</em>が真のときに真となり、それ以外のときに偽となる命題を「\(p\)<dfn class="terminology">かつ</dfn>\(q\)」といい、\(p \wedge q\)と表すことがある。 また、\(p, q\)の<em class="emphasis">少なくとも一方</em>が真のときに真となり、それ以外のときに偽となる命題を「\(p\)<dfn class="terminology">または</dfn>\(q\)」といい、\(p \vee q\)と表すことがある。 更に、\(p\)が偽のときに真となり、真のときに偽となる命題を「\(p\)の<dfn class="terminology">否定</dfn>」といい、\(\overline{p}\)と表す。</article><p id="p-53">数学における「または」は、「どちらか一方が成り立つ」という意味ではなく「	<em class="emphasis">少なくとも一方</em>が成り立つ」という意味であることに注意が必要である。</p></section><section class="subsection" id="ssec-logic-proplaw"><h3 class="heading hide-type">
+</h6>\(p, q\)を命題とするとき、\(p, q\)の<em class="emphasis">両方</em>が真のときに真となり、それ以外のときに偽となる命題を「\(p\)<dfn class="terminology">かつ</dfn>\(q\)」といい、\(p \land q\)と表すことがある。 また、\(p, q\)の<em class="emphasis">少なくとも一方</em>が真のときに真となり、それ以外のときに偽となる命題を「\(p\)<dfn class="terminology">または</dfn>\(q\)」といい、\(p \lor q\)と表すことがある。 更に、\(p\)が偽のときに真となり、真のときに偽となる命題を「\(p\)の<dfn class="terminology">否定</dfn>」といい、\(\overline{p}\)と表す。</article><p id="p-53">数学における「または」は、「どちらか一方が成り立つ」という意味ではなく「	<em class="emphasis">少なくとも一方</em>が成り立つ」という意味であることに注意が必要である。</p></section><section class="subsection" id="ssec-logic-proplaw"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">3.2.3</span> <span class="title">命題に関する計算法則</span>
 </h3>
 <a href="sec-logic-prop.html#ssec-logic-proplaw" class="permalink">¶</a><p id="p-54">「または」や「かつ」、「でない」については、次のような等式が成り立つ。</p>
@@ -169,26 +169,26 @@ var js_version = 0.11;
 <span class="type">定理</span> <span class="codenumber">3.7</span>. <span class="title">命題に関する計算法則.</span>
 </h6>\(p, q, r\)が命題のとき、次の等式が成り立つ。<div class="displaymath">
 \begin{align*}
-p \vee   q &amp;= q \vee   p &amp; (\text{交換法則})\\
-p \wedge q &amp;= q \wedge p &amp; (\text{交換法則})\\
-(p \vee   q) \vee   r &amp;= p \vee   (q \vee   r) &amp; (\text{結合法則})\\
-(p \wedge q) \wedge r &amp;= p \wedge (q \wedge r) &amp; (\text{結合法則})
+p \lor  q &amp;= q \lor  p &amp; (\text{交換法則})\\
+p \land q &amp;= q \land p &amp; (\text{交換法則})\\
+(p \lor  q) \lor  r &amp;= p \lor  (q \lor  r) &amp; (\text{結合法則})\\
+(p \land q) \land r &amp;= p \land (q \land r) &amp; (\text{結合法則})
 \end{align*}
 </div></article><p id="p-55">命題に関する分配法則も成り立つが、数の分配法則と異なる部分もある。</p>
 <article class="theorem-like" id="theorem-11"><h6 class="heading">
 <span class="type">定理</span> <span class="codenumber">3.8</span>. <span class="title">命題に関する分配法則.</span>
 </h6>\(p, q, r\)が命題のとき、次の等式が成り立つ。<div class="displaymath">
 \begin{gather*}
-(p \vee   q) \wedge r = (p \wedge r) \vee   (q \wedge r)\\
-(p \wedge q) \vee   r = (p \vee   r) \wedge (q \vee   r)
+(p \lor  q) \land r = (p \land r) \lor  (q \land r)\\
+(p \land q) \lor  r = (p \lor  r) \land (q \lor  r)
 \end{gather*}
 </div>2番目の式は数の分配法則とは異なるので、注意が必要である。</article><p id="p-56">さらに命題については、次のde Morganの法則が成り立つ。</p>
 <article class="theorem-like" id="theorem-12"><h6 class="heading">
 <span class="type">定理</span> <span class="codenumber">3.9</span>. <span class="title">de Morganの法則.</span>
 </h6>\(p, q\)が命題のとき、次の等式が成り立つ。<div class="displaymath">
 \begin{align*}
-\overline{p \wedge q} &amp; = \overline{p} \vee   \overline{q}\\
-\overline{p \vee   q} &amp; = \overline{p} \wedge \overline{q}
+\overline{p \land q} &amp; = \overline{p} \lor  \overline{q}\\
+\overline{p \lor  q} &amp; = \overline{p} \land \overline{q}
 \end{align*}
 </div></article><article class="hiddenproof" id="proof-4"><a data-knowl="" class="id-ref" data-refid="hk-proof-4"><h6 class="heading"><span class="type">証明.</span></h6></a></article><div id="hk-proof-4" class="hidden-content tex2jax_ignore"><article class="hiddenproof">真理値表を用いて示す。</article></div></section><section class="subsection" id="ssec-logic-inference"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">3.2.4</span> <span class="title">推論「ならば」</span>
@@ -196,11 +196,11 @@ p \wedge q &amp;= q \wedge p &amp; (\text{交換法則})\\
 <a href="sec-logic-prop.html#ssec-logic-inference" class="permalink">¶</a><p id="p-57">命題を用いてより高度な命題を表すには、次の<dfn class="terminology">推論</dfn>(<dfn class="terminology">inference</dfn>)を表す規則が必要となる。</p>
 <article class="definition-like" id="definition-20"><h6 class="heading">
 <span class="type">定義</span> <span class="codenumber">3.10</span>. <span class="title">推論.</span>
-</h6>\(p, q\)を命題とするとき、「<em class="emphasis">もし\(p\)が成り立つならば、\(q\)も成り立つ</em>」という命題を「\(p\)<dfn class="terminology">ならば</dfn>\(q\)」といい、\(p \Longrightarrow q\)と表す。 命題\(p \Longrightarrow q\)は、「<em class="alert">\(p\)が偽</em>のとき」か「\(p\)も\(q\)も真のとき」に真となる。<div class="displaymath">
+</h6>\(p, q\)を命題とするとき、「<em class="emphasis">もし\(p\)が成り立つならば、\(q\)も成り立つ</em>」という命題を「\(p\)<dfn class="terminology">ならば</dfn>\(q\)」といい、\(p \implies q\)と表す。 命題\(p \implies q\)は、「<em class="alert">\(p\)が偽</em>のとき」か「\(p\)も\(q\)も真のとき」に真となる。<div class="displaymath">
 \begin{gather*}
-[ p \Longrightarrow q ] = [ \overline{p} \vee (p \wedge q) ] = [ (\overline{p} \vee p) \wedge (\overline{p} \vee q)] (\text{分配法則}) = [ \overline{p} \vee q ] (\text{排中律})
+[ p \implies q ] = [ \overline{p} \lor (p \land q) ] = [ (\overline{p} \lor p) \land (\overline{p} \lor q)] (\text{分配法則}) = [ \overline{p} \lor q ] (\text{排中律})
 \end{gather*}
-</div>命題\(p \Longrightarrow q\)について、\(p\)を\(p \Longrightarrow q\)の<dfn class="terminology">仮定</dfn>、\(q\)を\(p \Longrightarrow q\)の<dfn class="terminology">結論</dfn>という。 また、\(q\)を\(p\)の<dfn class="terminology">必要条件</dfn>(<dfn class="terminology">necessary condition</dfn>)、\(p\)を\(q\)の<dfn class="terminology">十分条件</dfn>(<dfn class="terminology">sufficient condition</dfn>)という。</article><p id="p-58">必要条件と十分条件は、「\(p \Longrightarrow q\)」の「\(\Longrightarrow\)」を矢に見立てて、「矢の先は必要」と覚えるとよい。</p>
+</div>命題\(p \implies q\)について、\(p\)を\(p \implies q\)の<dfn class="terminology">仮定</dfn>、\(q\)を\(p \implies q\)の<dfn class="terminology">結論</dfn>という。 また、\(q\)を\(p\)の<dfn class="terminology">必要条件</dfn>(<dfn class="terminology">necessary condition</dfn>)、\(p\)を\(q\)の<dfn class="terminology">十分条件</dfn>(<dfn class="terminology">sufficient condition</dfn>)という。</article><p id="p-58">必要条件と十分条件は、「\(p \implies q\)」の「\(\implies\)」を矢に見立てて、「矢の先は必要」と覚えるとよい。</p>
 <article class="example-like" id="example-4"><a data-knowl="" class="id-ref" data-refid="hk-example-4"><h6 class="heading">
 <span class="type">例</span> <span class="codenumber">3.11</span>. <span class="title">推論の例.</span>
 </h6></a></article><div id="hk-example-4" class="hidden-content tex2jax_ignore"><article class="example-like">「宝くじに当たったら家を買う」という命題では、命題「宝くじに当たる」が仮定、命題「家を買う」が結論である。 この命題の真偽について考えると、宝くじに当たった場合には、家を買った場合には真、そうでなければ偽となる。 一方、宝くじに当たらなかった場合には、家を買おうと買うまいと、この命題では何も言っていないので、偽だとは言えず真となる。</article></div></section><section class="subsection" id="ssec-logic-eq"><h3 class="heading hide-type">
@@ -209,26 +209,26 @@ p \wedge q &amp;= q \wedge p &amp; (\text{交換法則})\\
 <a href="sec-logic-prop.html#ssec-logic-eq" class="permalink">¶</a><p id="p-59">この推論規則を用いて、2つの命題が「同じ」であるという関係を定義する。</p>
 <article class="definition-like" id="definition-21"><h6 class="heading">
 <span class="type">定義</span> <span class="codenumber">3.12</span>. <span class="title">同値.</span>
-</h6>\(p, q\)を命題とするとき、\(p \Longrightarrow q\)かつ\(q \Longrightarrow p\)であれば、\(p\)と\(q\)は<dfn class="terminology">同値</dfn>であるといい、\(p \Longleftrightarrow q\)と表す。<div class="displaymath">
+</h6>\(p, q\)を命題とするとき、\(p \implies q\)かつ\(q \implies p\)であれば、\(p\)と\(q\)は<dfn class="terminology">同値</dfn>であるといい、\(p \iff q\)と表す。<div class="displaymath">
 \begin{gather*}
-[ p \Longleftrightarrow q ] = [ p \Longrightarrow q ] \wedge [ q \Longrightarrow p ]
+[ p \iff q ] = [ p \implies q ] \land [ q \implies p ]
 \end{gather*}
-</div>このとき、\(q\)を\(p\)の<dfn class="terminology">必要十分条件</dfn>であるといい、\(p\)も\(q\)の必要十分条件であるという。</article></section><section class="subsection" id="ssec-logic-contra"><h3 class="heading hide-type">
+</div>このとき、\(q\)を\(p\)の<dfn class="terminology">必要十分条件</dfn>であるといい、\(p\)も\(q\)の必要十分条件であるという。</article><p id="p-60">同値の記号「\(\iff\)」は数の比較に用いる等号「\(=\)」と同様の記号で、2つの命題が「同じ」ことを表せる便利な記号である。 ただし「\(\iff\)」を使う際は、「\(\implies\)」方向だけでなく「\(\impliedby\)」方向についても命題が成り立っていることを確認する必要がある。 「\(\impliedby\)」方向が成り立つと言い切れない場合には、「\(\implies\)」記号を使うべきである。</p></section><section class="subsection" id="ssec-logic-contra"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">3.2.6</span> <span class="title">逆・裏・対偶</span>
 </h3>
-<a href="sec-logic-prop.html#ssec-logic-contra" class="permalink">¶</a><p id="p-60">更に、推論を用いた命題について、逆や裏、対偶を定義できる。</p>
+<a href="sec-logic-prop.html#ssec-logic-contra" class="permalink">¶</a><p id="p-61">更に、推論を用いた命題について、逆や裏、対偶を定義できる。</p>
 <article class="definition-like" id="definition-22"><h6 class="heading">
 <span class="type">定義</span> <span class="codenumber">3.13</span>. <span class="title">逆・裏・対偶.</span>
-</h6>\(p, q\)を命題とするとき、命題\(p \Longrightarrow q\)に対し、\(q \Longrightarrow p\)を元の命題の<dfn class="terminology">逆</dfn>、\(\overline{p} \Longrightarrow \overline{q}\)を元の命題の<dfn class="terminology">裏</dfn>、\(\overline{q} \Longrightarrow \overline{p}\)を元の命題の<dfn class="terminology">対偶</dfn>という。</article><p id="p-61">このうち、命題\(p \Longrightarrow q\)と逆\(q \Longrightarrow p\)について、前者は\(\overline{p} \vee q\)、後者は\(\overline{q} \vee p\)であるので、<em class="alert">命題とその逆の真偽は一致しない</em>。 また、命題\(p \Longrightarrow q\)と対偶\(\overline{q} \Longrightarrow \overline{p}\)については、次の定理が成り立つ。</p>
+</h6>\(p, q\)を命題とするとき、命題\(p \implies q\)に対し、\(q \implies p\)を元の命題の<dfn class="terminology">逆</dfn>、\(\overline{p} \implies \overline{q}\)を元の命題の<dfn class="terminology">裏</dfn>、\(\overline{q} \implies \overline{p}\)を元の命題の<dfn class="terminology">対偶</dfn>という。</article><p id="p-62">このうち、命題\(p \implies q\)と逆\(q \implies p\)について、前者は\(\overline{p} \lor q\)、後者は\(\overline{q} \lor p\)であるので、<em class="alert">命題とその逆の真偽は一致しない</em>。 また、命題\(p \implies q\)と対偶\(\overline{q} \implies \overline{p}\)については、次の定理が成り立つ。</p>
 <article class="theorem-like" id="theorem-13"><h6 class="heading">
 <span class="type">定理</span> <span class="codenumber">3.14</span>. <span class="title">命題とその対偶.</span>
 </h6>命題とその対偶の真偽は一致する。つまり、\(p, q\)を命題とするとき、<div class="displaymath">
 \begin{gather*}
-[ \overline{q} \Longrightarrow \overline{p} ] = [ p \Longrightarrow q ]
+[ \overline{q} \implies \overline{p} ] = [ p \implies q ]
 \end{gather*}
 </div></article><article class="hiddenproof" id="proof-5"><a data-knowl="" class="id-ref" data-refid="hk-proof-5"><h6 class="heading"><span class="type">証明.</span></h6></a></article><div id="hk-proof-5" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><div class="displaymath">
 \begin{gather*}
-[ \overline{q} \Longrightarrow \overline{p} ] = [\overline{\overline{q}} \vee \overline{p}] = [ q \vee \overline{p}] = [ \overline{p} \vee q] = [ p \Longrightarrow q ]
+[ \overline{q} \implies \overline{p} ] = [\overline{\overline{q}} \lor \overline{p}] = [ q \lor \overline{p}] = [ \overline{p} \lor q] = [ p \implies q ]
 \end{gather*}
 </div></article></div></section></section></div></main>
 </div>
