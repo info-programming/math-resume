@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2020-08-25T07:24:49+09:00    *-->
+<!--*    on 2020-08-25T21:50:19+09:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -150,19 +150,19 @@ var js_version = 0.11;
 <a href="sec-logic-proof.html#ssec-logic-proof-direct" class="permalink">¶</a><p id="p-98">示したい命題を直接示す証明方法は、直接法と呼ばれることが多い。 直接法を用いる場合、前提に対して同値な変形や定理などの規則を繰り返し適用することにより、結論を示すことが多い。 場合によっては、結論から前提の側に向けて同値な変形を繰り返していくこともある。</p></section><section class="subsection" id="ssec-logic-proof-counter"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">3.6.2</span> <span class="title">反例を用いた証明</span>
 </h3>
-<a href="sec-logic-proof.html#ssec-logic-proof-counter" class="permalink">¶</a><p id="p-99">示したい事柄が「命題\(p \Longrightarrow q\)が偽である(\(\overline{p \Longrightarrow q}\))」ことの場合は、<dfn class="terminology">反例</dfn>(<dfn class="terminology">counterexample</dfn>)と呼ばれる命題が成り立たないような具体例を1つ挙げることも多い。 反例が見つかりさえすれば、通常の証明に比べて簡単に示すことができる。</p>
+<a href="sec-logic-proof.html#ssec-logic-proof-counter" class="permalink">¶</a><p id="p-99">命題\(x \in A \Longrightarrow x \in B\)が<em class="alert">偽</em>である(\(\overline{x \in A \Longrightarrow x \in B}\))ことを示すには、<dfn class="terminology">反例</dfn>(<dfn class="terminology">counterexample</dfn>)と呼ばれる命題が成り立たないような具体例を1つ挙げることも多い。 この場合、反例が1つ見つかりさえすれば、通常の証明に比べて簡単に示すことができる。</p>
 <article class="definition-like" id="definition-34"><h6 class="heading">
 <span class="type">定義</span> <span class="codenumber">3.33</span>. <span class="title">反例.</span>
 </h6>命題\(x \in A \Longrightarrow x \in B\)に対して、「\(A\)の要素だが\(B\)の要素でない\(x\)(\(x \in A \wedge x \notin B\))」を、命題\(x \in A \Longrightarrow x \in B\)の<dfn class="terminology">反例</dfn>(<dfn class="terminology">counterexample</dfn>)という。</article><article class="theorem-like" id="theorem-18"><h6 class="heading">
 <span class="type">定理</span> <span class="codenumber">3.34</span>. <span class="title">反例を用いた証明.</span>
-</h6>命題\(p \Longrightarrow q\)が偽であることを示すには、例を1つ挙げ、その例が「\(p\)を満たすが\(q\)を満たさない」ことを示せばよい。</article><article class="hiddenproof" id="proof-8"><a data-knowl="" class="id-ref" data-refid="hk-proof-8"><h6 class="heading"><span class="type">証明.</span></h6></a></article><div id="hk-proof-8" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><div class="displaymath">
+</h6>命題\(x \in A \Longrightarrow x \in B\)が偽であることを示すには、例を1つ挙げ、その例が「\(A\)の要素だが\(B\)の要素でない」ことを示せばよい。</article><article class="hiddenproof" id="proof-8"><a data-knowl="" class="id-ref" data-refid="hk-proof-8"><h6 class="heading"><span class="type">証明.</span></h6></a></article><div id="hk-proof-8" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><div class="displaymath">
 \begin{gather*}
-\overline{p \Longrightarrow q} = \overline{\overline{p} \vee q} = \overline{\overline{p}} \wedge \overline{q} = p \wedge \overline{q}
+\overline{x \in A \Longrightarrow x \in B} = \overline{\overline{x \in A} \vee x \in B} = \overline{\overline{x \in A}} \wedge \overline{x \in B} = x \in A \wedge x \not\in B
 \end{gather*}
 </div></article></div></section><section class="subsection" id="ssec-logic-proof-contraposition"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">3.6.3</span> <span class="title">対偶を用いた証明</span>
 </h3>
-<a href="sec-logic-proof.html#ssec-logic-proof-contraposition" class="permalink">¶</a><p id="p-100">「命題\(p \Longrightarrow q\)が真である」ことを直接示しにくい場合には、元の命題の<em class="alert">対偶</em>\(\overline{q} \Longrightarrow \overline{p}\)をとり、対偶を示して元の命題を示せることがある。</p></section><section class="subsection" id="ssec-logic-proof-contradiction"><h3 class="heading hide-type">
+<a href="sec-logic-proof.html#ssec-logic-proof-contraposition" class="permalink">¶</a><p id="p-100">命題\(p \Longrightarrow q\)の真偽を直接示しにくい場合には、元の命題の<em class="alert">対偶</em>\(\overline{q} \Longrightarrow \overline{p}\)をとり、対偶を示して元の命題を示せることがある。</p></section><section class="subsection" id="ssec-logic-proof-contradiction"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">3.6.4</span> <span class="title">背理法</span>
 </h3>
 <a href="sec-logic-proof.html#ssec-logic-proof-contradiction" class="permalink">¶</a><p id="p-101">証明したい命題\(p\)を直接示すのが難しい場合には、命題\(p\)が成り立たない(偽である)と仮定して<dfn class="terminology">矛盾</dfn>(<dfn class="terminology">contradiction</dfn>)を導く<dfn class="terminology">背理法</dfn>が用いられることがある。</p>
