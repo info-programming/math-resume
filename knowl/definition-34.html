@@ -2,7 +2,7 @@
 <html lang="ja-JP">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2020-08-26T07:38:43+09:00    *-->
+<!--*    on 2020-08-31T10:44:49+09:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,7 +13,12 @@
 </head>
 <body>
 <article class="definition-like"><h6 class="heading">
-<span class="type">定義</span> <span class="codenumber">3.33</span>. <span class="title">反例.</span>
-</h6>命題\(x \in A \implies x \in B\)に対して、「\(A\)の要素だが\(B\)の要素でない\(x\)(\(x \in A \land x \notin B\))」を、命題\(x \in A \implies x \in B\)の<dfn class="terminology">反例</dfn>(<dfn class="terminology">counterexample</dfn>)という。</article><span class="incontext"><a href="sec-logic-proof.html#definition-34">in-context</a></span>
+<span class="type">定義</span> <span class="codenumber">3.32</span>. <span class="title">可能世界を用いた「必ず」「ありうる」の表現.</span>
+</h6>可能世界の集合を\(W\)、可能世界\(w\)で事象\(P\)が成り立つかどうかを命題関数\(P(w)\)で表すとき、次のように\(\Box P, \Diamond P\)を定義できる。<div class="displaymath">
+\begin{align*}
+\Box     P &amp;\iff \forall w \in W, P(w)\\
+\Diamond P &amp;\iff \exists w \in W, P(w)
+\end{align*}
+</div>つまり、\(\Box P\)は「<em class="alert">すべての可能世界</em>で\(P\)が成り立つ」こと、\(\Diamond P\)は「<em class="alert">ある可能世界</em>で\(P\)が成り立つ」こととして定義できる。</article><span class="incontext"><a href="sec-logic-mode.html#definition-34">in-context</a></span>
 </body>
 </html>

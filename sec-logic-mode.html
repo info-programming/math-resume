@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2020-08-31T10:44:49+09:00    *-->
+<!--*                                    *-->
+<!--*      https://pretextbook.org       *-->
+<!--*                                    *-->
+<!--**************************************-->
+<html lang="ja-JP">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>様相論理</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']]
+    },
+    asciimath2jax: {
+        ignoreClass: ".*",
+        processClass: "has_am"
+    },
+    jax: ["input/AsciiMath"],
+    extensions: ["asciimath2jax.js"],
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.js", "https://pretextbook.org/js/lib/mathjaxknowl.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", useLabelIds: true, },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.11/pretext.js"></script><script src="https://pretextbook.org/js/0.11/pretext_add_on.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/toc.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/colors_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/setcolors.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="image/style.css">
+<link href="https://pretextbook.org/css/0.2/features.css" rel="stylesheet" type="text/css">
+<script>var logged_in = false;
+var role = 'student';
+var guest_access = true;
+var login_required = false;
+var js_version = 0.11;
+</script>
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div class="hidden-content" style="display:none">\(\require{luatexja}\require{luatexja-ruby}\require{indentfirst}\require{unicode-math}\unimathsetup{math-style=ISO,bold-style=ISO}
+\setmathfont{XITSMath-Regular.otf}
+\usepackage[match,deluxe,expert,bold,noto-otf]{luatexja-preset}
+\setmonofont{Noto Sans Mono CJK JP}
+\setmainfont[ BoldFont=Noto Sans CJK JP Medium]{Noto Serif CJK JP}
+\setmainjfont[BoldFont=Noto Sans CJK JP Medium]{Noto Serif CJK JP}
+\setsansjfont{Noto Sans CJK JP}
+
+\renewcommand{\baselinestretch}{1.2}
+\setlength{\parskip}{6pt plus 2pt minus 2pt}
+\titlespacing{\chapter}{0pt}{10pt}{15pt}
+\titlespacing{\section}{0pt}{5pt plus 3pt minus 3pt}{3pt plus 1pt}
+\titlespacing{\subsection}{0pt}{3pt plus 2pt minus 2pt}{2pt plus 1pt}
+\titlespacing{\subsubsection}{0pt}{1pt plus 1pt minus 1pt}{1pt plus 1pt}
+
+\parindent = 1\zw
+
+\renewcommand{\alert      }[1]{\textcolor{RedOrange}{\textbf{#1}}}
+\renewcommand{\terminology}[1]{\textcolor{OliveGreen}{\textbf{#1}}}
+\renewcommand{\emph       }[1]{\textcolor{RoyalBlue}{\textbf{#1}}}
+
+\tcbset{fonttitle=\bfseries}
+\tcbset{propositionstyle/.style={colframe=RedOrange,     colback=RedOrange!2!white }}
+\tcbset{    theoremstyle/.style={colframe=Navy,          colback=Navy!2!white }}
+\tcbset{ definitionstyle/.style={colframe=OliveGreen,    colback=OliveGreen!2!white}}
+\tcbset{       notestyle/.style={colframe=black!75!white,colback=black!2!white     }}
+
+\hypersetup{bookmarksopen,bookmarksnumbered}
+
+\let\gt\undefined
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="sample-book.html"><span class="title">数学 補助資料</span></a></h1>
+<p class="byline"></p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3">
+<a class="index-button toolbar-item button" href="index-1.html" title="Index">Index</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="sec-logic-pred.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="ch-logic.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="sec-logic-infer.html" title="Next">Next</a></span>
+</div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="sec-logic-pred.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="ch-logic.html" title="Up">Up</a><a class="next-button button toolbar-item" href="sec-logic-infer.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link">
+<a href="ch-intro.html" data-scroll="ch-intro"><span class="codenumber">1</span> <span class="title">数学</span></a><ul>
+<li><a href="sec-intro-bg.html" data-scroll="sec-intro-bg">数学を学ぶ背景</a></li>
+<li><a href="sec-intro-purpose.html" data-scroll="sec-intro-purpose">数学を学ぶ目的</a></li>
+<li><a href="sec-intro-structure.html" data-scroll="sec-intro-structure">本稿の構成</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch-expression.html" data-scroll="ch-expression"><span class="codenumber">2</span> <span class="title">項と式</span></a><ul>
+<li><a href="sec-expression-symbol.html" data-scroll="sec-expression-symbol">記号と式</a></li>
+<li><a href="sec-expression-exp.html" data-scroll="sec-expression-exp">指数と冪乗</a></li>
+<li><a href="sec-expression-poly.html" data-scroll="sec-expression-poly">多項式</a></li>
+<li><a href="sec-expression-fact.html" data-scroll="sec-expression-fact">展開と因数分解</a></li>
+<li><a href="sec-expression-rel.html" data-scroll="sec-expression-rel">関係式</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch-logic.html" data-scroll="ch-logic"><span class="codenumber">3</span> <span class="title">論理</span></a><ul>
+<li><a href="sec-logic-problem.html" data-scroll="sec-logic-problem">問題解決</a></li>
+<li><a href="sec-logic-prop.html" data-scroll="sec-logic-prop">命題論理</a></li>
+<li><a href="sec-logic-set.html" data-scroll="sec-logic-set">集合</a></li>
+<li><a href="sec-logic-pred.html" data-scroll="sec-logic-pred">述語論理</a></li>
+<li><a href="sec-logic-mode.html" data-scroll="sec-logic-mode" class="active">様相論理</a></li>
+<li><a href="sec-logic-infer.html" data-scroll="sec-logic-infer">推論</a></li>
+<li><a href="sec-logic-proof.html" data-scroll="sec-logic-proof">証明</a></li>
+</ul>
+</li>
+<li class="link"><a href="backmatter-1.html" data-scroll="backmatter-1"><span class="title">Back Matter</span></a></li>
+<li class="link"><a href="references-1.html" data-scroll="references-1"><span class="title">参考文献</span></a></li>
+<li class="link"><a href="index-1.html" data-scroll="index-1"><span class="title">索引</span></a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="sec-logic-mode"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">3.5</span> <span class="title">様相論理</span>
+</h2>
+<a href="sec-logic-mode.html" class="permalink">¶</a><section class="introduction" id="introduction-4"><p id="p-88">述語論理の特別な例として、事象のあり方や捉え方を扱う<dfn class="terminology">様相論理</dfn>(<dfn class="terminology">modal logic</dfn>)がある。</p></section><section class="subsection" id="ssec-logic-modal"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">3.5.1</span> <span class="title">「必ず」「ありうる」</span>
+</h3>
+<a href="sec-logic-mode.html#ssec-logic-modal" class="permalink">¶</a><p id="p-89">これまで扱った命題と同様に、「必ず〜となる」「〜となることがありうる」という文も、真偽が確定するので命題だといえる。 様相論理は、このような必然性や可能性についてのいろいろな命題を扱うための論理である。</p>
+<article class="definition-like" id="definition-33"><h6 class="heading">
+<span class="type">定義</span> <span class="codenumber">3.31</span>. <span class="title">「必ず」「ありうる」.</span>
+</h6>命題\(P\)に対して、「\(P\)が成り立つことが<dfn class="terminology">必然</dfn>(<dfn class="terminology">necessary</dfn>)である」「必ず\(P\)となる」という命題を\(\Box P\)と表す。 また、「\(P\)が成り立つことが<dfn class="terminology">可能</dfn>(<dfn class="terminology">possible</dfn>)である」「\(P\)となりうる」という命題を\(\Diamond P\)と表す。</article></section><section class="subsection" id="ssec-logic-world"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">3.5.2</span> <span class="title">可能世界</span>
+</h3>
+<a href="sec-logic-mode.html#ssec-logic-world" class="permalink">¶</a><p id="p-90">\(\Box P\)や\(\Diamond P\)は、次に定義する<dfn class="terminology">可能世界</dfn>(<dfn class="terminology">possible world</dfn>)の考え方を用いると、述語論理の記号で表せる。</p>
+<p id="p-91">将棋や囲碁のようなゲームでは、対局の途中のある盤面について、駒を進めたり置いたりすることで、次の盤面に進む。 多くの場合、駒の進め方や置き方は複数ありうるので、「次の盤面」も複数ありうる。 このときの「今の盤面」と「次の盤面」のように「現在の世界」と「次の時点の世界」を考え、「ありうる世界の集合」を定義したときの要素を可能世界と呼ぶ。</p>
+<article class="definition-like" id="definition-34"><h6 class="heading">
+<span class="type">定義</span> <span class="codenumber">3.32</span>. <span class="title">可能世界を用いた「必ず」「ありうる」の表現.</span>
+</h6>可能世界の集合を\(W\)、可能世界\(w\)で事象\(P\)が成り立つかどうかを命題関数\(P(w)\)で表すとき、次のように\(\Box P, \Diamond P\)を定義できる。<div class="displaymath">
+\begin{align*}
+\Box     P &amp;\iff \forall w \in W, P(w)\\
+\Diamond P &amp;\iff \exists w \in W, P(w)
+\end{align*}
+</div>つまり、\(\Box P\)は「<em class="alert">すべての可能世界</em>で\(P\)が成り立つ」こと、\(\Diamond P\)は「<em class="alert">ある可能世界</em>で\(P\)が成り立つ」こととして定義できる。</article></section><section class="subsection" id="ssec-logic-modedual"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">3.5.3</span> <span class="title">「必ず」「ありうる」の否定</span>
+</h3>
+<a href="sec-logic-mode.html#ssec-logic-modedual" class="permalink">¶</a><p id="p-92">可能世界の考え方と述語論理の記号を用いると、「必ず」「ありうる」を含む命題の否定を定義できる。 この関係は、de Morganの法則に対応している。</p>
+<article class="theorem-like" id="theorem-18"><h6 class="heading">
+<span class="type">定理</span> <span class="codenumber">3.33</span>. <span class="title">「必ず」「ありうる」の否定(de Morganの法則).</span>
+</h6>可能世界の集合を\(W\)、可能世界\(w\)で事象\(P\)が成り立つかどうかを命題関数\(P(w)\)で表すとき、次の同値関係が成り立つ。<div class="displaymath">
+\begin{align*}
+\overline{\Box     P} &amp;\iff \Diamond \overline{P}\\
+\overline{\Diamond P} &amp;\iff \Box     \overline{P}
+\end{align*}
+</div>つまり、「必ず\(P\)となる」の否定は「\(P\)が成り立たないことがありうる」、「\(P\)となりうる」の否定は「必ず\(P\)とならない」である。</article><article class="hiddenproof" id="proof-8"><a data-knowl="" class="id-ref" data-refid="hk-proof-8"><h6 class="heading"><span class="type">証明.</span></h6></a></article><div id="hk-proof-8" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><div class="displaymath">
+\begin{gather*}
+\overline{\Box     P} \iff \overline{\forall w \in W, P(w)} \iff [\exists w \in W, \overline{P(w)}] \iff \Diamond \overline{P}\\
+\overline{\Diamond P} \iff \overline{\exists w \in W, P(w)} \iff [\forall w \in W, \overline{P(w)}] \iff \Box     \overline{P}
+\end{gather*}
+</div></article></div></section><section class="subsection" id="ssec-logic-mode"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">3.5.4</span> <span class="title">さまざまな様相論理</span>
+</h3>
+<a href="sec-logic-mode.html#ssec-logic-mode" class="permalink">¶</a><p id="p-93">様相論理では、可能世界の集合\(W\)の定義を変えることで、「必ず」「ありうる」以外にも、さまざまな事象のあり方や捉え方を扱うことが可能である。 ここでは、そのような<dfn class="terminology">様相</dfn>(<dfn class="terminology">mode</dfn>)のいくつかを紹介する。義務を扱う論理は<dfn class="terminology">義務論理</dfn>、時間を扱う論理は<dfn class="terminology">時相論理</dfn>と呼ばれる。</p>
+<figure class="figure-like" id="table-logic-mode"><table>
+<tr>
+<td class="l m b1 r0 l0 t0 lines">対象</td>
+<td class="l m b1 r0 l0 t0 lines">\(W\)の要素</td>
+<td class="l m b1 r0 l0 t0 lines">\(\Box P\)の定義</td>
+<td class="l m b1 r0 l0 t0 lines">\(\Diamond P\)の定義</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">可能性</td>
+<td class="l m b0 r0 l0 t0 lines"><em class="alert">可能な世界</em></td>
+<td class="l m b0 r0 l0 t0 lines">「\(P\)が成り立つことは<em class="alert">必然</em>である(<em class="alert">必ず</em>)」</td>
+<td class="l m b0 r0 l0 t0 lines">「\(P\)が成り立つことが<em class="alert">可能</em>である(<em class="alert">ありうる</em>)」</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">義務</td>
+<td class="l m b0 r0 l0 t0 lines"><em class="alert">「よい」世界</em></td>
+<td class="l m b0 r0 l0 t0 lines">「\(P\)をする<em class="alert">義務</em>がある(<dfn class="terminology">しなければならない</dfn>(<dfn class="terminology">must</dfn>))」</td>
+<td class="l m b0 r0 l0 t0 lines">「\(P\)をする<em class="alert">許可</em>がある(<dfn class="terminology">してもよい</dfn>(<dfn class="terminology">may</dfn>))」</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">場所</td>
+<td class="l m b0 r0 l0 t0 lines"><em class="alert">場所</em></td>
+<td class="l m b0 r0 l0 t0 lines">「どの<em class="alert">場所</em>でも(<dfn class="terminology">どこでも</dfn>(<dfn class="terminology">anywhere</dfn>))\(P\)が成り立つ」</td>
+<td class="l m b0 r0 l0 t0 lines">「ある<em class="alert">場所</em>で(<dfn class="terminology">どこかで</dfn>(<dfn class="terminology">somewhere</dfn>))\(P\)が成り立つ」</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">時間</td>
+<td class="l m b0 r0 l0 t0 lines"><em class="alert">時点</em></td>
+<td class="l m b0 r0 l0 t0 lines">「どの<em class="alert">時点</em>でも(<dfn class="terminology">いつでも</dfn>(<dfn class="terminology">anytime</dfn>))\(P\)が成り立つ」</td>
+<td class="l m b0 r0 l0 t0 lines">「ある<em class="alert">時点</em>で(<dfn class="terminology">ときには</dfn>(<dfn class="terminology">sometime</dfn>))\(P\)が成り立つ」</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">未来</td>
+<td class="l m b0 r0 l0 t0 lines"><em class="alert">現在より後の時点</em></td>
+<td class="l m b0 r0 l0 t0 lines">「どの<em class="alert">未来</em>でも\(P\)が成り立つ」</td>
+<td class="l m b0 r0 l0 t0 lines">「ある<em class="alert">未来</em>で\(P\)が成り立つ」</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">過去</td>
+<td class="l m b0 r0 l0 t0 lines"><em class="alert">現在より前の時点</em></td>
+<td class="l m b0 r0 l0 t0 lines">「どの<em class="alert">過去</em>でも\(P\)が成り立つ」</td>
+<td class="l m b0 r0 l0 t0 lines">「ある<em class="alert">過去</em>で\(P\)が成り立つ」</td>
+</tr>
+</table>
+<figcaption><span class="type">表</span> <span class="codenumber">3.34.</span> 様相の例</figcaption></figure></section></section></div></main>
+</div>
+<div class="login-link"><span id="loginlogout" class="login">login</span></div>
+<script src="https://pretextbook.org/js/0.11/login.js"></script>
+</body>
+</html>
