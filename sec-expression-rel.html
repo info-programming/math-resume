@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2020-08-31T11:21:42+09:00    *-->
+<!--*    on 2020-09-02T09:46:51+09:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -137,6 +137,13 @@ var js_version = 0.11;
 <li><a href="sec-logic-proof.html" data-scroll="sec-logic-proof">証明</a></li>
 </ul>
 </li>
+<li class="link">
+<a href="ch-func.html" data-scroll="ch-func"><span class="codenumber">4</span> <span class="title">関数</span></a><ul>
+<li><a href="sec-func-map.html" data-scroll="sec-func-map">写像と関数</a></li>
+<li><a href="sec-func-graph.html" data-scroll="sec-func-graph">グラフ</a></li>
+<li><a href="sec-func-poly.html" data-scroll="sec-func-poly">多項式関数</a></li>
+</ul>
+</li>
 <li class="link"><a href="backmatter-1.html" data-scroll="backmatter-1"><span class="title">Back Matter</span></a></li>
 <li class="link"><a href="references-1.html" data-scroll="references-1"><span class="title">参考文献</span></a></li>
 <li class="link"><a href="index-1.html" data-scroll="index-1"><span class="title">索引</span></a></li>
@@ -155,7 +162,7 @@ var js_version = 0.11;
 <span class="type">定義</span> <span class="codenumber">2.24</span>. <span class="title">3つ以上の辺からなる等式.</span>
 </h6>\(a = b\)かつ\(b = c\)のとき、\(a = b = c\)と表すことがある。<div class="displaymath">
 \begin{gather*}
-a = b = c \Longleftrightarrow (a = b) \wedge (b = c) \Longleftrightarrow \begin{cases} a = b \\ b = c \end{cases}
+a = b = c \iff (a = b) \text{かつ} (b = c) \iff \begin{cases} a = b \\ b = c \end{cases}
 \end{gather*}
 </div>等式\(a = b = c\)の最も左側にある辺\(a\)を<dfn class="terminology">第1辺</dfn>、左から2番目にある辺\(b\)を<dfn class="terminology">第2辺</dfn>、左から3番目にある辺\(c\)を<dfn class="terminology">第3辺</dfn>という。</article><article class="definition-like" id="definition-14"><h6 class="heading">
 <span class="type">定義</span> <span class="codenumber">2.25</span>. <span class="title">方程式.</span>
@@ -189,7 +196,7 @@ ac &amp;&gt; bc &amp; (c &lt; 0)\\
 <span class="type">定義</span> <span class="codenumber">2.28</span>. <span class="title">3つ以上の辺からなる不等式.</span>
 </h6>\(a &lt; b\)かつ\(b &lt; c\)のとき、\(a &lt; b &lt; c\)と表すことがある。\(&lt;\)以外の不等号についても、同様に表すことができる。<div class="displaymath">
 \begin{gather*}
-a &lt; b &lt; c \Longleftrightarrow (a &lt; b) \wedge (b &lt; c) \Longleftrightarrow \begin{cases} a &lt; b \\ b &lt; c \end{cases}
+a &lt; b &lt; c \iff (a &lt; b) \text{かつ} (b &lt; c) \iff \begin{cases} a &lt; b \\ b &lt; c \end{cases}
 \end{gather*}
 </div>等式の場合と同様に、\(a &lt; b &lt; c\)で最も左側にある辺\(a\)を<dfn class="terminology">第1辺</dfn>、左から2番目にある辺\(b\)を<dfn class="terminology">第2辺</dfn>、左から3番目にある辺\(c\)を<dfn class="terminology">第3辺</dfn>という。</article><p id="p-42">この方法と同じ考え方で\(a &lt; b &gt; c\)のような書き方をすることも考えられる。しかし、大小関係が同じ向きに並んでいないと不等式の意味を理解しづらいので、このような書き方はあまり行わない。</p>
 <p id="p-43">\(-3x + 1 &lt; 5\)のように、未知の数を含む不等式を考えることもできる。 このような不等式では、条件を満たす\(x\)は特定の値ではなく、不等式で表される範囲になることが多い。 条件を満たす\(x\)の範囲を求めることを、不等式を<dfn class="terminology">解く</dfn>(<dfn class="terminology">solve</dfn>)といい、求めた範囲を不等式の<dfn class="terminology">解</dfn>(<dfn class="terminology">solution</dfn>)という。</p>
