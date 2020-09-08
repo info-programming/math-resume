@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2020-09-07T07:59:40+09:00    *-->
+<!--*    on 2020-09-08T16:17:49+09:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -271,7 +271,29 @@ x \in \overline{A \cap B} &amp;
 \begin{align*}
 \mathbb{Q} &amp;= \{\frac{n}{m} | n \in \mathbb{N}, m \in \mathbb{Z} \}
 \end{align*}
-</div>\(\pi = 3.14\cdots\)や\(\sqrt{2} = 1.414\cdots\)などの無限小数は分数で表すことができず、これを<dfn class="terminology">無理数</dfn>という。 有理数と無理数を合わせて<dfn class="terminology">実数</dfn>(<dfn class="terminology">real number</dfn>)といい、実数全体の集合を\(\mathbb{R}\)で表す。</article><p id="p-79">有理数を\(\mathbb{Q}\)で表すのは「商」の意を表すquotientに由来する。有理数は英語を直訳すると「比で表される数」であり、この言い方の方が定義をより明瞭に表している。</p></section></section></div></main>
+</div>\(\pi = 3.14\cdots\)や\(\sqrt{2} = 1.414\cdots\)などの無限小数は分数で表すことができず、これを<dfn class="terminology">無理数</dfn>という。 有理数と無理数を合わせて<dfn class="terminology">実数</dfn>(<dfn class="terminology">real number</dfn>)といい、実数全体の集合を\(\mathbb{R}\)で表す。</article><p id="p-79">有理数を\(\mathbb{Q}\)で表すのは「商」の意を表すquotientに由来する。有理数は英語を直訳すると「比で表される数」であり、この言い方の方が定義をより明瞭に表している。</p></section><section class="subsection" id="ssec-logic-tuple"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">3.3.6</span> <span class="title">組と直積</span>
+</h3>
+<a href="sec-logic-set.html#ssec-logic-tuple" class="permalink">¶</a><p id="p-80">数など複数のものを1つにまとめて扱う方法には、集合以外に<dfn class="terminology">組</dfn>(<dfn class="terminology">tuple</dfn>)を用いる方法もある。</p>
+<article class="definition-like" id="definition-30"><h6 class="heading">
+<span class="type">定義</span> <span class="codenumber">3.26</span>. <span class="title">組.</span>
+</h6>\(x, y, z\)があるとき、\((x, y)\)を\(x\)と\(y\)の<dfn class="terminology">組</dfn>(<dfn class="terminology">tuple</dfn>)、\((x, y, z)\)を\(x\)と\(y\)と\(z\)の組という。</article><article class="definition-like" id="definition-31"><h6 class="heading">
+<span class="type">定義</span> <span class="codenumber">3.27</span>. <span class="title">組の相等関係.</span>
+</h6>組\((a_1, a_2, \cdots, a_n)\)と\((b_1, b_2, \cdots, b_n)\)は、\(a_1 = b_1, a_2 = b_2, \cdots, a_n = b_n\)がすべて成り立つとき<dfn class="terminology">等しい</dfn>といい、\((a_1, a_2, \cdots, a_n) = (b_1, b_2, \cdots, b_n)\)と表す。</article><p id="p-81">組は集合と同じく複数のものをまとめて扱う方法であるが、次の2点で異なっている。</p>
+<ul class="disc">
+<li id="li-9">
+<em class="alert">組には順序がある</em>ので\((1, 2) \ne (2, 1)\)であるが、<em class="alert">集合の要素には順序がない</em>ので、\(\{1, 2\} = \{2, 1\}\)となる。</li>
+<li id="li-10">
+<em class="alert">組では重複があってもそれぞれを1つのものとして扱う</em>ので\((1, 2, 2) \ne (1, 2)\)であるが、<em class="alert">集合の要素は重複するものは同じものとして扱う</em>ので、\(\{1, 2, 2\} = \{1, 2\}\)となる。</li>
+</ul>
+<p id="p-82">組を含む集合は、実用上便利である。</p>
+<article class="definition-like" id="definition-32"><h6 class="heading">
+<span class="type">定義</span> <span class="codenumber">3.28</span>. <span class="title">直積.</span>
+</h6>\(A, B\)を集合とするとき、\(a (\in A)\)と\(b (\in B)\)の組\((a, b)\)を要素とする集合を\(A\)と\(B\)の<dfn class="terminology">直積</dfn>(<dfn class="terminology">direct product</dfn>)といい、\(A \times B\)と表す。<div class="displaymath">
+\begin{align*}
+A \times B &amp;= \{(a, b) | a \in A, b \in B \}
+\end{align*}
+</div>特に、同じ集合同士の直積\(A \times A\)を\(A^2\)と表す。同様にして、\(A^3 = A \times A \times A\)などと定義する。</article><p id="p-83">直積を使うと、\(xy\)平面上の点\((x, y)\)は\(\mathbb{R}^2\)の要素として定義することができる。</p></section></section></div></main>
 </div>
 <div class="login-link"><span id="loginlogout" class="login">login</span></div>
 <script src="https://pretextbook.org/js/0.11/login.js"></script>
