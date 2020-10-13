@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2020-09-21T18:21:09+09:00    *-->
+<!--*    on 2020-10-14T08:33:19+09:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -156,7 +156,10 @@ var js_version = 0.11;
 <main class="main"><div id="content" class="pretext-content"><section class="section" id="sec-func-quad"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">4.4</span> <span class="title">2次関数</span>
 </h2>
-<a href="sec-func-quad.html" class="permalink">¶</a><article class="definition-like" id="definition-47"><h6 class="heading">
+<a href="sec-func-quad.html" class="permalink">¶</a><section class="subsection" id="subsection-40"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">4.4.1</span> <span class="title">2次関数の定義</span>
+</h3>
+<article class="definition-like" id="definition-47"><h6 class="heading">
 <span class="type">定義</span> <span class="codenumber">4.16</span>. <span class="title">2次関数.</span>
 </h6>多項式関数のうち、2次式で表される関数を<dfn class="terminology">2次関数</dfn>(<dfn class="terminology">quadratic function</dfn>)という。 すべての二次関数は、次のようにいくつかの形で表せる(\(a, b, c, p, q, \beta, \gamma \in \mathbb{R}, a \ne 0\))。<div class="displaymath">
 \begin{align*}
@@ -168,7 +171,10 @@ f(x) &amp;= a(x-\beta)(x-\gamma) &amp; (a \ne 0) &amp; (\text{因数分解形})
 <figure class="figure-like" id="fig-func-quad-graph"><div style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="image/func-quad-graph.svg" style="width: 100%; height: auto;" alt=""></div>
 <figcaption><span class="type">図</span> <span class="codenumber">4.17.</span> 2次関数のグラフ(放物線)</figcaption></figure><p id="p-133">2次関数の標準形・一般形・因数分解形の特徴や用途を図<a data-knowl="./knowl/fig-func-quad-form.html" title="図 4.18">4.18</a>に示す。 通常は頂点や最大値・最小値が分かる標準形に変形すると便利なことが多いが、標準形・一般形・因数分解形にはそれぞれ便利な場面があるので、用途に応じて使い分ける必要がある。</p>
 <figure class="figure-like" id="fig-func-quad-form"><div style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="image/func-quad-form.svg" style="width: 100%; height: auto;" alt=""></div>
-<figcaption><span class="type">図</span> <span class="codenumber">4.18.</span> 2次関数の標準形・一般形・因数分解形の比較</figcaption></figure><p id="p-134">2次関数の形状に関する情報を得るためには、2次関数を標準形で表す必要がある。 そのために、一般形\(f(x) = ax^2 + bx + c\)で表された2次関数を標準形\(f(x) = a(x-p)^2 + q\)に変換する、<dfn class="terminology">平方完成</dfn>(<dfn class="terminology">completing the square</dfn>)という操作を行う。</p>
+<figcaption><span class="type">図</span> <span class="codenumber">4.18.</span> 2次関数の標準形・一般形・因数分解形の比較</figcaption></figure></section><section class="subsection" id="subsection-41"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">4.4.2</span> <span class="title">平方完成</span>
+</h3>
+<p id="p-134">2次関数の形状に関する情報を得るためには、2次関数を標準形で表す必要がある。 そのために、一般形\(f(x) = ax^2 + bx + c\)で表された2次関数を標準形\(f(x) = a(x-p)^2 + q\)に変換する、<dfn class="terminology">平方完成</dfn>(<dfn class="terminology">completing the square</dfn>)という操作を行う。</p>
 <article class="theorem-like" id="theorem-22"><h6 class="heading">
 <span class="type">定理</span> <span class="codenumber">4.19</span>. <span class="title">一般形2次関数の頂点と軸.</span>
 </h6>一般形の2次関数\(f(x) = ax^2 + bx + c\)の頂点は点\((-\frac{b}{2a}, - \frac{b^2 - 4ac}{4a})\)、軸は\(x = -\frac{b}{2a}\)である。</article><article class="hiddenproof" id="proof-11"><a data-knowl="" class="id-ref" data-refid="hk-proof-11"><h6 class="heading"><span class="type">証明.</span></h6></a></article><div id="hk-proof-11" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><div class="displaymath">
@@ -186,28 +192,40 @@ f(x) = ax^2 + bx + c = a(x^2 + \frac{b}{a}x) + c = a(x^2 + \frac{b}{a}x + (\frac
 <li id="li-33">因数分解の公式を用いて\((x - p)^2\)の形の項を作る。</li>
 </ol></article><p id="p-136">平方完成の例を次に示す。計算が正しいか不安であれば、右から左へ展開して検算するとよい。</p>
 <article class="example-like" id="example-12"><a data-knowl="" class="id-ref" data-refid="hk-example-12"><h6 class="heading">
-<span class="type">例</span> <span class="codenumber">4.21</span>. <span class="title">平方完成の例.</span>
-</h6></a></article><div id="hk-example-12" class="hidden-content tex2jax_ignore"><article class="example-like">2次関数\(f(x) = 4x^2 + 6x + 3\)を標準形へ変換する。<div class="displaymath">
+<span class="type">例</span> <span class="codenumber">4.21</span>. <span class="title">平方完成の例1.</span>
+</h6></a></article><div id="hk-example-12" class="hidden-content tex2jax_ignore"><article class="example-like"><div class="displaymath">
+\begin{align*}
+y &amp;= x^2 - 4x + 1 = (x^2 - 2 \cdot 2x) + 1 = (x^2 - 2 \cdot 2x + 2^2 - 2^2) + 1 = {(x^2 - 2 \cdot 2x + 2^2) - 2^2} + 1 = {(x - 2)^2 - 4} + 1 = (x - 2)^2 - 3\\
+y &amp;= x^2 + 3x - 1 = (x^2 + 2 \cdot \frac{3}{2}x) - 1 = (x^2 + 2 \cdot \frac{3}{2}x + (\frac{3}{2})^2 - (\frac{3}{2})^2) - 1 = {(x^2 + 2 \cdot \frac{3}{2}x + (\frac{3}{2})^2) - (\frac{3}{2})^2} - 1 = {(x + \frac{3}{2})^2 - \frac{9}{4}} - 1 = (x + \frac{3}{2})^2 - \frac{13}{4}\\
+y &amp;= -x^2 + 3x - 1 = - (x^2 - 3x) - 1 = - (x^2 - 2 \cdot \frac{3}{2}x) - 1 = - (x^2 - 2 \cdot \frac{3}{2}x + (\frac{3}{2})^2 - (\frac{3}{2})^2) - 1 = - {(x^2 - 2 \cdot \frac{3}{2}x + (\frac{3}{2})^2) - (\frac{3}{2})^2} - 1 = - {(x - \frac{3}{2})^2 - \frac{9}{4}} - 1 = - (x - \frac{3}{2})^2 + \frac{9}{4} - 1 = - (x - \frac{3}{2})^2 + \frac{5}{4}\\
+y &amp;= 2x^2 + 3x - 1 = 2(x^2 + \frac{3}{2}x) - 1 = 2(x^2 + 2 \cdot \frac{3}{4}x) - 1 = 2(x^2 + 2 \cdot \frac{3}{4}x + (\frac{3}{4})^2 - (\frac{3}{4})^2) - 1 = 2{(x^2 - 2 \cdot \frac{3}{4}x + (\frac{3}{4})^2) - (\frac{3}{4})^2} - 1 = 2{(x - \frac{3}{4})^2 - \frac{9}{16}} - 1 = 2(x - \frac{3}{4})^2 - \frac{9}{8} - 1 = - (x - \frac{3}{2})^2 + \frac{17}{8}
+\end{align*}
+</div></article></div>
+<article class="example-like" id="example-13"><a data-knowl="" class="id-ref" data-refid="hk-example-13"><h6 class="heading">
+<span class="type">例</span> <span class="codenumber">4.22</span>. <span class="title">平方完成の例2.</span>
+</h6></a></article><div id="hk-example-13" class="hidden-content tex2jax_ignore"><article class="example-like">2次関数\(f(x) = 4x^2 + 6x + 3\)を標準形へ変換する。<div class="displaymath">
 \begin{gather*}
 f(x) = 4x^2+6x+3 = 4(x^2 + \frac{3}{2}x) + 3 = 4(x^2 + \frac{3}{2}x + (\frac{3}{4})^2) + 3 - 4(\frac{3}{4})^2 = 4(x + \frac{3}{4})^2 + \frac{3}{4}
 \end{gather*}
-</div>より、\(f(x)\)の頂点は点\((-\frac{3}{4}, \frac{3}{4})\)、軸は直線\(x = -\frac{3}{4}\)となり、グラフは図<a data-knowl="./knowl/fig-func-quad-graph-ex.html" title="図 4.22">4.22</a>のようになる。 <figure class="figure-like" id="fig-func-quad-graph-ex"><div style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="image/func-quad-graph-ex.svg" style="width: 100%; height: auto;" alt=""></div>
-<figcaption><span class="type">図</span> <span class="codenumber">4.22.</span> \(y = 4x^2 + 6x + 3\)のグラフ</figcaption></figure></article></div>
+</div>より、\(f(x)\)の頂点は点\((-\frac{3}{4}, \frac{3}{4})\)、軸は直線\(x = -\frac{3}{4}\)となり、グラフは図<a data-knowl="./knowl/fig-func-quad-graph-ex.html" title="図 4.23">4.23</a>のようになる。 <figure class="figure-like" id="fig-func-quad-graph-ex"><div style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="image/func-quad-graph-ex.svg" style="width: 100%; height: auto;" alt=""></div>
+<figcaption><span class="type">図</span> <span class="codenumber">4.23.</span> \(y = 4x^2 + 6x + 3\)のグラフ</figcaption></figure></article></div></section><section class="subsection" id="subsection-42"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">4.4.3</span> <span class="title">2次関数の最大・最小</span>
+</h3>
 <p id="p-137">平方完成を行って標準形に変換することは、2次関数の最大・最小問題を解くためにも有効である。</p>
-<article class="example-like" id="example-13"><a data-knowl="" class="id-ref" data-refid="hk-example-13"><h6 class="heading">
-<span class="type">例</span> <span class="codenumber">4.23</span>. <span class="title">2次関数の最大値・最小値.</span>
-</h6></a></article><div id="hk-example-13" class="hidden-content tex2jax_ignore"><article class="example-like">2次関数\(f(x) = 4x^2 + 6x + 3\)の最大値・最小値を求める。<div class="displaymath">
+<article class="example-like" id="example-14"><a data-knowl="" class="id-ref" data-refid="hk-example-14"><h6 class="heading">
+<span class="type">例</span> <span class="codenumber">4.24</span>. <span class="title">2次関数の最大値・最小値.</span>
+</h6></a></article><div id="hk-example-14" class="hidden-content tex2jax_ignore"><article class="example-like">2次関数\(f(x) = 4x^2 + 6x + 3\)の最大値・最小値を求める。<div class="displaymath">
 \begin{gather*}
 f(x) = 4(x + \frac{3}{4})^2 + \frac{3}{4} \geq \frac{3}{4}
 \end{gather*}
 </div>等号は\(x = -\frac{3}{4}\)のとき成り立つので、\(x = -\frac{3}{4}\)のとき最小値\(\frac{3}{4}\)、最大値はない。</article></div>
 <p id="p-138">第三者が代入して値を検証できるよう、最大値や最小値を求める際は、<em class="alert">最大・最小となる\(x\)の値も求める</em>必要がある。</p>
-<article class="example-like" id="example-14"><a data-knowl="" class="id-ref" data-refid="hk-example-14"><h6 class="heading">
-<span class="type">例</span> <span class="codenumber">4.24</span>. <span class="title">2次関数の最大値・最小値(定義域が限定されている場合).</span>
-</h6></a></article><div id="hk-example-14" class="hidden-content tex2jax_ignore"><article class="example-like">2次関数\(f(x) = 4x^2 + 6x + 3 (x \in [0, 10])\)の最大値・最小値を求める。 \(f\)の軸は直線\(x = -\frac{3}{4}\)であるので、\([0, 10]\)で\(f\)は単調増加。 従って、\(x = 0\)で最小値3をとり、\(x = 10\)で最大値463をとる。</article></div>
 <article class="example-like" id="example-15"><a data-knowl="" class="id-ref" data-refid="hk-example-15"><h6 class="heading">
-<span class="type">例</span> <span class="codenumber">4.25</span>. <span class="title">2次関数の最大値・最小値(定義域に文字を含む場合).</span>
-</h6></a></article><div id="hk-example-15" class="hidden-content tex2jax_ignore"><article class="example-like">2次関数\(f(x) = (x - 7)^2 + 9 = x^2 - 14x + 58 (x \in [m, M]; m &lt; M)\)の最大値・最小値を求める。 区間に文字が含まれているので、\(m, M\)の値により最大・最小となる\(x\)の値が変化することに注意して、場合分けして考えると良い。 <ol class="decimal">
+<span class="type">例</span> <span class="codenumber">4.25</span>. <span class="title">2次関数の最大値・最小値(定義域が限定されている場合).</span>
+</h6></a></article><div id="hk-example-15" class="hidden-content tex2jax_ignore"><article class="example-like">2次関数\(f(x) = 4x^2 + 6x + 3 (x \in [0, 10])\)の最大値・最小値を求める。 \(f\)の軸は直線\(x = -\frac{3}{4}\)であるので、\([0, 10]\)で\(f\)は単調増加。 従って、\(x = 0\)で最小値3をとり、\(x = 10\)で最大値463をとる。</article></div>
+<article class="example-like" id="example-16"><a data-knowl="" class="id-ref" data-refid="hk-example-16"><h6 class="heading">
+<span class="type">例</span> <span class="codenumber">4.26</span>. <span class="title">2次関数の最大値・最小値(定義域に文字を含む場合).</span>
+</h6></a></article><div id="hk-example-16" class="hidden-content tex2jax_ignore"><article class="example-like">2次関数\(f(x) = (x - 7)^2 + 9 = x^2 - 14x + 58 (x \in [m, M]; m &lt; M)\)の最大値・最小値を求める。 区間に文字が含まれているので、\(m, M\)の値により最大・最小となる\(x\)の値が変化することに注意して、場合分けして考えると良い。 <ol class="decimal">
 <li id="li-34">\(M \leqq 7\)のとき、\([m, M]\)で\(f\)は単調減少なので、\(x = M\)で最小値\(M^2 - 14M + 58\)、\(x = m\)で最大値\(m^2 - 14m + 58\)をとる。</li>
 <li id="li-35">\(m &lt; 7\)かつ\(7 &lt; M\)のとき、\([m, M]\)に\(f\)の軸が含まれるので、\(x = 7\)で最小値9、\(x = M\)で最大値\(M^2 - 14M + 58\)をとる。</li>
 <li id="li-36">\(7 \leqq m\)のとき、\([m, M]\)で\(f\)は単調増加なので、\(x = m\)で最小値\(m^2 - 14m + 58\)、\(x = M\)で最大値\(M^2 - 14M + 58\)をとる。</li>
@@ -223,24 +241,26 @@ m^2 - 14m + 58 &amp; (M \leqq 7) \\
 M^2 - 14M + 58 &amp; (7 &lt; M)
 \end{cases}
 \end{align*}
-</div></article></div>
+</div></article></div></section><section class="subsection" id="subsection-43"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">4.4.4</span> <span class="title">2次不等式</span>
+</h3>
 <p id="p-139">\(ax^2 + bx + c &gt; 0\)のような<dfn class="terminology">2次不等式</dfn>は、2次方程式と2次関数の知識を組み合わせて解くと簡単です。</p>
 <article class="theorem-like" id="algorithm-5"><h6 class="heading">
-<span class="type">アルゴリズム</span> <span class="codenumber">4.26</span>. <span class="title">2次不等式の解法.</span>
+<span class="type">アルゴリズム</span> <span class="codenumber">4.27</span>. <span class="title">2次不等式の解法.</span>
 </h6>\(f(x) = ax^2 + bx + c\)とおくとき、2次不等式\(f(x) &gt; 0\)や\(f(x) &lt; 0\)は次の手順で解く。 <ol class="decimal">
 <li id="li-37">2次方程式\(f(x) = 0\)の解\(x = \beta, \gamma\)を求める。</li>
 <li id="li-38">\(y = f(x)\)のグラフを描く。</li>
 <li id="li-39">\(f(x) &gt; 0\)のときは\(f(x)\)が正になる区間を、\(f(x) &lt; 0\)のときは\(f(x)\)が負になる区間を求める。</li>
-</ol></article><article class="example-like" id="example-16"><a data-knowl="" class="id-ref" data-refid="hk-example-16"><h6 class="heading">
-<span class="type">例</span> <span class="codenumber">4.27</span>. <span class="title">2次不等式の例.</span>
-</h6></a></article><div id="hk-example-16" class="hidden-content tex2jax_ignore"><article class="example-like"><ol class="decimal">
+</ol></article><article class="example-like" id="example-17"><a data-knowl="" class="id-ref" data-refid="hk-example-17"><h6 class="heading">
+<span class="type">例</span> <span class="codenumber">4.28</span>. <span class="title">2次不等式の例.</span>
+</h6></a></article><div id="hk-example-17" class="hidden-content tex2jax_ignore"><article class="example-like"><ol class="decimal">
 <li id="li-40">2次不等式\(x^2 + 5x + 6 &gt; 0\)を解く。 \(x^2 + 5x + 6 = (x + 3)(x + 2) = 0\)の解は\(x = -3, -2\)であるので、\(y = x^2 + 5x + 6\)のグラフは図のようになる。 不等式の解は\(y\)が正となる部分であるので、\(x &lt; -3, -2 &lt; x\)。</li>
 <li id="li-41">2次不等式\(-4x^2 + 4x + 7 \geqq 0\)を解く。 \(-4x^2 + 4x + 7 = 0\)の解は\(x = \frac{-2 \pm \sqrt{2^2 - 7(-4)}}{-4} = \frac{1 \mp 2\sqrt{2}}{2} (\text{複号同順})\)であるので、\(y = -4x^2 + 4x + 7\)のグラフは図のようになる。 不等式の解は\(y\)が0または正となる部分であるので、\(\frac{1 - 2\sqrt{2}}{2} \leqq x \leqq \frac{1+2\sqrt{2}}{2}\)。</li>
 <li id="li-42">2次不等式\(x^2 + 4x + 5 &gt; 0\)を解く。 \(x^2 + 4x + 5 = (x + 2)^2 + 1 \geqq 1 (&gt; 0)\)であるので、不等式はすべての\(x \in \mathbb{R}\)について成立する。</li>
 <li id="li-43">2次不等式\(x^2 + 4x + 5 \leqq 0\)を解く。 \(x^2 + 4x + 5 = (x + 2)^2 + 1 \geqq 1 (&gt; 0)\)であるので、不等式が成立するような\(x\)は存在しない。つまり、この不等式の解はない。</li>
 </ol>
 <figure class="figure-like" id="fig-func-quad-graph-ineq"><div style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="image/func-quad-graph-ineq.svg" style="width: 100%; height: auto;" alt=""></div>
-<figcaption><span class="type">図</span> <span class="codenumber">4.28.</span> 2次不等式の例</figcaption></figure></article></div></section></div></main>
+<figcaption><span class="type">図</span> <span class="codenumber">4.29.</span> 2次不等式の例</figcaption></figure></article></div></section></section></div></main>
 </div>
 <div class="login-link"><span id="loginlogout" class="login">login</span></div>
 <script src="https://pretextbook.org/js/0.11/login.js"></script>
