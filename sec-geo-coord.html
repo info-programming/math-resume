@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2020-12-27T18:32:20+09:00    *-->
+<!--*    on 2020-12-27T21:53:16+09:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -149,7 +149,7 @@ var js_version = 0.11;
 <a href="ch-triangle.html" data-scroll="ch-triangle"><span class="codenumber">5</span> <span class="title">三角関数</span></a><ul>
 <li><a href="sec-triangle-angle.html" data-scroll="sec-triangle-angle">角度</a></li>
 <li><a href="sec-triangle-def.html" data-scroll="sec-triangle-def">三角関数</a></li>
-<li><a href="sec-triangle-rel.html" data-scroll="sec-triangle-rel">三角関数の相互関係</a></li>
+<li><a href="sec-triangle-coord.html" data-scroll="sec-triangle-coord">三角関数と座標</a></li>
 <li><a href="sec-triangle-add.html" data-scroll="sec-triangle-add">加法定理</a></li>
 </ul>
 </li>
@@ -164,38 +164,38 @@ var js_version = 0.11;
 <main class="main"><div id="content" class="pretext-content"><section class="section" id="sec-geo-coord"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">6.1</span> <span class="title">座標</span>
 </h2>
-<a href="sec-geo-coord.html" class="permalink">¶</a><section class="introduction" id="introduction-12"><p id="p-166">図形を方程式で表したり、数を目で見えるよう可視化させたりする目的で使われるのが、<dfn class="terminology">座標</dfn>(<dfn class="terminology">coordinate</dfn>)である。 座標のとり方のことを<dfn class="terminology">座標系</dfn>(<dfn class="terminology">coordinate system</dfn>)といい、座標系が定められた空間を<dfn class="terminology">座標空間</dfn>(<dfn class="terminology">coordinate space</dfn>)という。 特に、2つの軸により定められる座標空間を<dfn class="terminology">座標平面</dfn>という。</p></section><section class="subsection" id="ssec-geo-rect"><h3 class="heading hide-type">
+<a href="sec-geo-coord.html" class="permalink">¶</a><section class="introduction" id="introduction-12"><p id="p-170">図形を方程式で表したり、数を目で見えるよう可視化させたりする目的で使われるのが、<dfn class="terminology">座標</dfn>(<dfn class="terminology">coordinate</dfn>)である。 座標のとり方のことを<dfn class="terminology">座標系</dfn>(<dfn class="terminology">coordinate system</dfn>)といい、座標系が定められた空間を<dfn class="terminology">座標空間</dfn>(<dfn class="terminology">coordinate space</dfn>)という。 特に、2つの軸により定められる座標空間を<dfn class="terminology">座標平面</dfn>という。</p></section><section class="subsection" id="ssec-geo-rect"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">6.1.1</span> <span class="title">直交座標系</span>
 </h3>
 <a href="sec-geo-coord.html#ssec-geo-rect" class="permalink">¶</a><article class="definition-like" id="definition-52"><h6 class="heading">
 <span class="type">定義</span> <span class="codenumber">6.1</span>. <span class="title">直交座標系.</span>
-</h6>互いに直交する<dfn class="terminology">軸</dfn>(<dfn class="terminology">axis</dfn>)からなる座標系を<dfn class="terminology">直交座標系</dfn>(<dfn class="terminology">rectangular coordinate system</dfn>)という。 軸として、座標平面では\(x\)軸と\(y\)軸、座標空間では\(x\)軸と\(y\)軸と\(z\)軸を使うことが多い。 \(x\)軸と\(y\)軸からなる座標平面を\(xy\)平面、\(y\)軸と\(z\)軸からなる座標平面を\(yz\)平面、\(z\)軸と\(x\)軸からなる座標平面を\(zx\)平面という。 また、\(x\)軸と\(y\)軸と\(z\)軸からなる座標空間を\(xyz\)空間という。 直交座標系ではすべての軸は1点で交わり、この点を<dfn class="terminology">原点</dfn>(<dfn class="terminology">origin</dfn>)といい、originの頭文字をとって点\(O\)と表す。</article><p id="p-167">1次元、2次元、3次元の直交座標系は図<a data-knowl="./knowl/fig-geo-rect.html" title="図 6.2">6.2</a>のように表される。なお、1次元の座標空間は数直線となる。</p>
+</h6>互いに直交する<dfn class="terminology">軸</dfn>(<dfn class="terminology">axis</dfn>)からなる座標系を<dfn class="terminology">直交座標系</dfn>(<dfn class="terminology">rectangular coordinate system</dfn>)という。 軸として、座標平面では\(x\)軸と\(y\)軸、座標空間では\(x\)軸と\(y\)軸と\(z\)軸を使うことが多い。 \(x\)軸と\(y\)軸からなる座標平面を\(xy\)平面、\(y\)軸と\(z\)軸からなる座標平面を\(yz\)平面、\(z\)軸と\(x\)軸からなる座標平面を\(zx\)平面という。 また、\(x\)軸と\(y\)軸と\(z\)軸からなる座標空間を\(xyz\)空間という。 直交座標系ではすべての軸は1点で交わり、この点を<dfn class="terminology">原点</dfn>(<dfn class="terminology">origin</dfn>)といい、originの頭文字をとって点\(O\)と表す。</article><p id="p-171">1次元、2次元、3次元の直交座標系は図<a data-knowl="./knowl/fig-geo-rect.html" title="図 6.2">6.2</a>のように表される。なお、1次元の座標空間は数直線となる。</p>
 <figure class="figure-like" id="fig-geo-rect"><div style="width: 75%; margin-left: 12.5%; margin-right: 12.5%;"><img src="image/geo-1d-coord.svg" style="width: 100%; height: auto;" alt=""></div>
 <div style="width: 75%; margin-left: 12.5%; margin-right: 12.5%;"><img src="image/geo-2d-coord.svg" style="width: 100%; height: auto;" alt=""></div>
-<figcaption><span class="type">図</span> <span class="codenumber">6.2.</span> 直交座標系</figcaption></figure><p id="p-168">直交座標系における点の座標は、次のように定義される。</p>
+<figcaption><span class="type">図</span> <span class="codenumber">6.2.</span> 直交座標系</figcaption></figure><p id="p-172">直交座標系における点の座標は、次のように定義される。</p>
 <article class="definition-like" id="definition-53"><h6 class="heading">
 <span class="type">定義</span> <span class="codenumber">6.3</span>. <span class="title">直交座標系における座標.</span>
 </h6>直交座標系では、軸の数と同じだけの実数の組により、座標系の上にある点の「位置」を表す。この「位置」をその点の<dfn class="terminology">座標</dfn>という。 \(x\)軸と\(y\)軸からなる座標平面では、それぞれの軸に対応する位置を\(x\)と\(y\)で表すとき、点の座標はこれらの組\((x, y)\)で表される。 同様に、\(x\)軸と\(y\)軸と\(z\)軸からなる座標平面では、それぞれの軸に対応する位置を\(x\)と\(y\)と\(z\)で表すとき、点の座標はこれらの組\((x, y, z)\)で表される。 点\(P\)の座標が\((x, y)\)や\((x, y, z)\)であることを、\(P(x, y)\)や\(P(x, y, z)\)と表すことがある。 点の位置を定めるため、原点\(O\)の座標はすべての軸について0として、座標平面では\(O(0, 0)\)、座標空間では\(O(0, 0, 0)\)とする。</article></section><section class="subsection" id="ssec-geo-pole"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">6.1.2</span> <span class="title">極座標系</span>
 </h3>
-<a href="sec-geo-coord.html#ssec-geo-pole" class="permalink">¶</a><p id="p-169">直交座標系以外の座標系には、曲線を含む図形を表すのに便利な極座標系がある。</p>
+<a href="sec-geo-coord.html#ssec-geo-pole" class="permalink">¶</a><p id="p-173">直交座標系以外の座標系には、曲線を含む図形を表すのに便利な極座標系がある。</p>
 <article class="definition-like" id="definition-54"><h6 class="heading">
 <span class="type">定義</span> <span class="codenumber">6.4</span>. <span class="title">極座標系.</span>
-</h6>ある点\(O\)と、\(O\)を端点とする半直線からなる座標系を<dfn class="terminology">極座標系</dfn>(<dfn class="terminology">polar coordinate system</dfn>)という。 極座標系での点\(O\)を<dfn class="terminology">極</dfn>(<dfn class="terminology">pole</dfn>)、\(O\)を端点とする半直線を<dfn class="terminology">始線</dfn>(<dfn class="terminology">polar axis</dfn>)という。 極座標系では、点\(P\)の座標を、極\(O\)からの距離\(r (\geqq 0)\)と、\(OP\)と始線のなす角\(\theta\)を用いて\((r, \theta)\)と表す。</article><p id="p-170">極座標系は図<a data-knowl="./knowl/fig-geo-pole.html" title="図 6.5">6.5</a>のように表される。</p>
+</h6>ある点\(O\)と、\(O\)を端点とする半直線からなる座標系を<dfn class="terminology">極座標系</dfn>(<dfn class="terminology">polar coordinate system</dfn>)という。 極座標系での点\(O\)を<dfn class="terminology">極</dfn>(<dfn class="terminology">pole</dfn>)、\(O\)を端点とする半直線を<dfn class="terminology">始線</dfn>(<dfn class="terminology">polar axis</dfn>)という。 極座標系では、点\(P\)の座標を、極\(O\)からの距離\(r (\geqq 0)\)と、\(OP\)と始線のなす角\(\theta\)を用いて\((r, \theta)\)と表す。</article><p id="p-174">極座標系は図<a data-knowl="./knowl/fig-geo-pole.html" title="図 6.5">6.5</a>のように表される。</p>
 <figure class="figure-like" id="fig-geo-pole"><div style="width: 75%; margin-left: 12.5%; margin-right: 12.5%;"><img src="image/geo-pole.svg" style="width: 100%; height: auto;" alt=""></div>
-<figcaption><span class="type">図</span> <span class="codenumber">6.5.</span> 極座標系</figcaption></figure><p id="p-171">極座標系と直交座標系は、次の式で変換できる。</p>
-<article class="theorem-like" id="theorem-37"><h6 class="heading">
+<figcaption><span class="type">図</span> <span class="codenumber">6.5.</span> 極座標系</figcaption></figure><p id="p-175">極座標系と直交座標系は、次の式で変換できる。</p>
+<article class="theorem-like" id="theorem-40"><h6 class="heading">
 <span class="type">定理</span> <span class="codenumber">6.6</span>. <span class="title">極座標系と直交座標系の変換.</span>
 </h6>直交座標系で座標\((x, y)\)の点は、極座標系では座標\((\sqrt{x^2 + y^2}, \theta) (\cos\theta = \frac{x}{r}, \sin\theta = \frac{y}{r})\)となる。 また、極座標系で座標\((r, \theta)\)の点は、直交座標系では座標\((r\cos\theta, r\sin\theta)\)となる。</article></section><section class="subsection" id="ssec-geo-3d"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">6.1.3</span> <span class="title">空間の極座標</span>
 </h3>
-<a href="sec-geo-coord.html#ssec-geo-3d" class="permalink">¶</a><p id="p-172">極座標系を座標空間に拡張した座標系には、円柱座標系と空間極座標系の2つがある。 円柱座標系は極座標系と直交座標系を組み合わせた座標系で、円柱のように平面上は極座標系が扱いやすいものの、高さについては直交座標系を用いる方が便利な場合に用いる。 空間極座標系は高さ方向も角度で表した座標系で、球のように高さ方向についても角度で表す方が便利な場合に用いる。</p>
+<a href="sec-geo-coord.html#ssec-geo-3d" class="permalink">¶</a><p id="p-176">極座標系を座標空間に拡張した座標系には、円柱座標系と空間極座標系の2つがある。 円柱座標系は極座標系と直交座標系を組み合わせた座標系で、円柱のように平面上は極座標系が扱いやすいものの、高さについては直交座標系を用いる方が便利な場合に用いる。 空間極座標系は高さ方向も角度で表した座標系で、球のように高さ方向についても角度で表す方が便利な場合に用いる。</p>
 <article class="definition-like" id="definition-55"><h6 class="heading">
 <span class="type">定義</span> <span class="codenumber">6.7</span>. <span class="title">円柱座標系.</span>
 </h6>平面を極座標系で表し、それに高さを表す\(z\)軸を加えた座標系を<dfn class="terminology">円柱座標系</dfn>という。 円柱座標系では、点の座標は\((r, \theta, z)\)で表される。</article><article class="definition-like" id="definition-56"><h6 class="heading">
 <span class="type">定義</span> <span class="codenumber">6.8</span>. <span class="title">空間極座標系.</span>
-</h6>平面を極座標系で表し、それに高さ方向の角度を表す\(\phi\)軸を加えた座標系を<dfn class="terminology">空間極座標系</dfn>という。 空間極座標系では、点の座標は\((r, \theta, \phi)\)で表される。</article><p id="p-173">円柱座標系は、平面上の座標を直交座標系に変換すれば、直交座標系の座標空間における座標に変換できる。 空間極座標系と直交座標系は、次の式で変換できる。</p>
-<article class="theorem-like" id="theorem-38"><h6 class="heading">
+</h6>平面を極座標系で表し、それに高さ方向の角度を表す\(\phi\)軸を加えた座標系を<dfn class="terminology">空間極座標系</dfn>という。 空間極座標系では、点の座標は\((r, \theta, \phi)\)で表される。</article><p id="p-177">円柱座標系は、平面上の座標を直交座標系に変換すれば、直交座標系の座標空間における座標に変換できる。 空間極座標系と直交座標系は、次の式で変換できる。</p>
+<article class="theorem-like" id="theorem-41"><h6 class="heading">
 <span class="type">定理</span> <span class="codenumber">6.9</span>. <span class="title">空間極座標系と直交座標系の変換.</span>
 </h6>直交座標系で座標\((x, y, z)\)の点は、空間極座標系では座標\((\sqrt{x^2 + y^2 + z^2}, \theta, \phi) (\cos\theta = \frac{z}{r}, \cos\phi = \frac{x}{r}, \sin\phi = \frac{y}{r})\)となる。 また、空間極座標系で\((r, \theta, \phi)\)の点は、直交座標系では座標\((r\cos\phi\sin\theta, r\sin\phi\sin\theta, r\cos\theta)\)となる。</article></section></section></div></main>
 </div>
