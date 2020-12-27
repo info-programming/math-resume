@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2020-12-27T18:20:23+09:00    *-->
+<!--*                                    *-->
+<!--*      https://pretextbook.org       *-->
+<!--*                                    *-->
+<!--**************************************-->
+<html lang="ja-JP">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>三角関数</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']]
+    },
+    asciimath2jax: {
+        ignoreClass: ".*",
+        processClass: "has_am"
+    },
+    jax: ["input/AsciiMath"],
+    extensions: ["asciimath2jax.js"],
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.js", "https://pretextbook.org/js/lib/mathjaxknowl.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", useLabelIds: true, },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.11/pretext.js"></script><script src="https://pretextbook.org/js/0.11/pretext_add_on.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/toc.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/colors_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/setcolors.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="image/style.css">
+<link href="https://pretextbook.org/css/0.2/features.css" rel="stylesheet" type="text/css">
+<script>var logged_in = false;
+var role = 'student';
+var guest_access = true;
+var login_required = false;
+var js_version = 0.11;
+</script>
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div class="hidden-content" style="display:none">\(\require{luatexja}\require{luatexja-ruby}\require{indentfirst}\require{unicode-math}\unimathsetup{math-style=ISO,bold-style=ISO}
+\setmathfont{XITSMath-Regular.otf}
+\usepackage[match,deluxe,expert,bold,noto-otf]{luatexja-preset}
+\setmonofont{Noto Sans Mono CJK JP}
+\setmainfont[ BoldFont=Noto Sans CJK JP Medium]{Noto Serif CJK JP}
+\setmainjfont[BoldFont=Noto Sans CJK JP Medium]{Noto Serif CJK JP}
+\setsansjfont{Noto Sans CJK JP}
+
+\renewcommand{\baselinestretch}{1.2}
+\setlength{\parskip}{6pt plus 2pt minus 2pt}
+\titlespacing{\chapter}{0pt}{10pt}{15pt}
+\titlespacing{\section}{0pt}{5pt plus 3pt minus 3pt}{3pt plus 1pt}
+\titlespacing{\subsection}{0pt}{3pt plus 2pt minus 2pt}{2pt plus 1pt}
+\titlespacing{\subsubsection}{0pt}{1pt plus 1pt minus 1pt}{1pt plus 1pt}
+
+\parindent = 1\zw
+
+\renewcommand{\alert      }[1]{\textcolor{RedOrange}{\textbf{#1}}}
+\renewcommand{\terminology}[1]{\textcolor{OliveGreen}{\textbf{#1}}}
+\renewcommand{\emph       }[1]{\textcolor{RoyalBlue}{\textbf{#1}}}
+
+\tcbset{fonttitle=\bfseries}
+\tcbset{propositionstyle/.style={colframe=RedOrange,     colback=RedOrange!2!white }}
+\tcbset{    theoremstyle/.style={colframe=Navy,          colback=Navy!2!white }}
+\tcbset{ definitionstyle/.style={colframe=OliveGreen,    colback=OliveGreen!2!white}}
+\tcbset{       notestyle/.style={colframe=black!75!white,colback=black!2!white     }}
+
+\hypersetup{bookmarksopen,bookmarksnumbered}
+
+\let\gt\undefined
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="sample-book.html"><span class="title">数学 補助資料</span></a></h1>
+<p class="byline"></p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3">
+<a class="index-button toolbar-item button" href="index-1.html" title="Index">Index</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="sec-triangle-angle.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="ch-triangle.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="sec-triangle-rel.html" title="Next">Next</a></span>
+</div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="sec-triangle-angle.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="ch-triangle.html" title="Up">Up</a><a class="next-button button toolbar-item" href="sec-triangle-rel.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link">
+<a href="ch-intro.html" data-scroll="ch-intro"><span class="codenumber">1</span> <span class="title">数学</span></a><ul>
+<li><a href="sec-intro-bg.html" data-scroll="sec-intro-bg">数学を学ぶ背景</a></li>
+<li><a href="sec-intro-purpose.html" data-scroll="sec-intro-purpose">数学を学ぶ目的</a></li>
+<li><a href="sec-intro-structure.html" data-scroll="sec-intro-structure">本稿の構成</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch-expression.html" data-scroll="ch-expression"><span class="codenumber">2</span> <span class="title">項と式</span></a><ul>
+<li><a href="sec-expression-symbol.html" data-scroll="sec-expression-symbol">記号と式</a></li>
+<li><a href="sec-expression-exp.html" data-scroll="sec-expression-exp">指数と冪乗</a></li>
+<li><a href="sec-expression-poly.html" data-scroll="sec-expression-poly">多項式</a></li>
+<li><a href="sec-expression-fact.html" data-scroll="sec-expression-fact">展開と因数分解</a></li>
+<li><a href="sec-expression-rel.html" data-scroll="sec-expression-rel">関係式</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch-logic.html" data-scroll="ch-logic"><span class="codenumber">3</span> <span class="title">論理</span></a><ul>
+<li><a href="sec-logic-problem.html" data-scroll="sec-logic-problem">問題解決</a></li>
+<li><a href="sec-logic-prop.html" data-scroll="sec-logic-prop">命題論理</a></li>
+<li><a href="sec-logic-set.html" data-scroll="sec-logic-set">集合</a></li>
+<li><a href="sec-logic-pred.html" data-scroll="sec-logic-pred">述語論理</a></li>
+<li><a href="sec-logic-mode.html" data-scroll="sec-logic-mode">様相論理</a></li>
+<li><a href="sec-logic-infer.html" data-scroll="sec-logic-infer">推論</a></li>
+<li><a href="sec-logic-proof.html" data-scroll="sec-logic-proof">証明</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch-func.html" data-scroll="ch-func"><span class="codenumber">4</span> <span class="title">関数</span></a><ul>
+<li><a href="sec-func-map.html" data-scroll="sec-func-map">写像と関数</a></li>
+<li><a href="sec-func-graph.html" data-scroll="sec-func-graph">グラフ</a></li>
+<li><a href="sec-func-ex.html" data-scroll="sec-func-ex">関数の例</a></li>
+<li><a href="sec-func-quad.html" data-scroll="sec-func-quad">2次関数</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch-triangle.html" data-scroll="ch-triangle"><span class="codenumber">5</span> <span class="title">三角関数</span></a><ul>
+<li><a href="sec-triangle-angle.html" data-scroll="sec-triangle-angle">角度</a></li>
+<li><a href="sec-triangle-def.html" data-scroll="sec-triangle-def" class="active">三角関数</a></li>
+<li><a href="sec-triangle-rel.html" data-scroll="sec-triangle-rel">三角関数の相互関係</a></li>
+<li><a href="sec-triangle-add.html" data-scroll="sec-triangle-add">加法定理</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="ch-geo.html" data-scroll="ch-geo"><span class="codenumber">6</span> <span class="title">幾何</span></a><ul><li><a href="sec-geo-coord.html" data-scroll="sec-geo-coord">座標</a></li></ul>
+</li>
+<li class="link"><a href="backmatter-1.html" data-scroll="backmatter-1"><span class="title">Back Matter</span></a></li>
+<li class="link"><a href="references-1.html" data-scroll="references-1"><span class="title">参考文献</span></a></li>
+<li class="link"><a href="index-1.html" data-scroll="index-1"><span class="title">索引</span></a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="sec-triangle-def"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">5.2</span> <span class="title">三角関数</span>
+</h2>
+<a href="sec-triangle-def.html" class="permalink">¶</a><section class="subsection" id="ssec-triangle-acute"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">5.2.1</span> <span class="title">三角比</span>
+</h3>
+<a href="sec-triangle-def.html#ssec-triangle-acute" class="permalink">¶</a><p id="p-148">\(\angle ABC = 90 ^ \circ\)となる直角三角形\(\triangle ABC\)を考える。 このとき、直角でない残りの2つの角のうち一つの角度と、直角三角形の斜辺の長さが分かれば、\(\triangle ABC\)はただ一つに定まる。</p>
+<article class="theorem-like" id="theorem-25"><h6 class="heading">
+<span class="type">定理</span> <span class="codenumber">5.7</span>. <span class="title">直角三角形の辺の比の一意性.</span>
+</h6>\(\angle B = 90^\circ\)となる直角三角形\(\triangle ABC\)では、\(\frac{BC}{CA}, \frac{AB}{CA}, \frac{BC}{AB}\)の値は三角形によらず、\(\angle A\)の大きさのみによって定まる。</article><article class="hiddenproof" id="proof-12"><a data-knowl="" class="id-ref" data-refid="hk-proof-12"><h6 class="heading"><span class="type">証明.</span></h6></a></article><div id="hk-proof-12" class="hidden-content tex2jax_ignore"><article class="hiddenproof">\(\angle A\)を共有する2つの直角三角形\(\triangle ABC, \triangle AB'C'\)があり、\(\angle B = \angle B' = 90^\circ\)とする。 このとき、三角形の2つの角が等しいので、\(\triangle ABC \sim \triangle AB'C'\)である。 相似な三角形では辺の比が等しいので、\(BC : B'C' = CA : C'A\)より\(BC \times C'A = B'C' \times CA\)となり、\(\frac{BC}{CA} = \frac{B'C'}{C'A}\)が成り立つ。 同様にして、\(\frac{AB}{CA} = \frac{AB'}{C'A}, \frac{BC}{AB} = \frac{B'C'}{AB'}\)も成り立つ。 <div style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="image/triangle-ratio.svg" style="width: 100%; height: auto;" alt=""></div></article></div>
+<p id="p-149">この定理により、直角三角形の辺の比はどの三角形でも、\(\angle A\)の大きさのみによって定まることが分かる。 従って、直角三角形の辺の比を、\(\angle A\)によって定まる関数として定義できる。</p>
+<article class="definition-like" id="definition-50"><h6 class="heading">
+<span class="type">定義</span> <span class="codenumber">5.8</span>. <span class="title">三角比.</span>
+</h6>\(\angle ABC = 90 ^ \circ\)の\(\triangle ABC\)において、\(\theta = \angle A, x = AB, y = BC, r = CA\)とおく。 このとき、各辺の比を<dfn class="terminology">三角比</dfn>といい、次のように定義する。 <ul class="disc">
+<li id="li-44">\(\sin(\theta) = \frac{y}{r} = \frac{BC}{CA} = \frac{\text{対辺}}{\text{斜辺}}\)を、\(\angle A\)の<dfn class="terminology">正弦</dfn>(<dfn class="terminology">sine</dfn>)または<dfn class="terminology">サイン</dfn>という。</li>
+<li id="li-45">\(\cos(\theta) = \frac{x}{r} = \frac{AB}{CA} = \frac{\text{底辺}}{\text{斜辺}}\)を、\(\angle A\)の<dfn class="terminology">余弦</dfn>(<dfn class="terminology">cosine</dfn>)または<dfn class="terminology">コサイン</dfn>という。</li>
+<li id="li-46">\(\tan(\theta) = \frac{y}{x} = \frac{BC}{AB} = \frac{\text{対辺}}{\text{底辺}}\)を、\(\angle A\)の<dfn class="terminology">正接</dfn>(<dfn class="terminology">tangent</dfn>)または<dfn class="terminology">タンジェント</dfn>という。</li>
+</ul>
+<div style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="image/triangle-triangle.svg" style="width: 100%; height: auto;" alt=""></div>\(\sin(\theta)\)は\(\sin \theta\)のように、括弧を省略して表すことが多い。同様に、\(\sin 2\theta = \sin(2\theta), \sin 3\theta = \sin(3\theta), \sin \frac{1}{2}\theta = \sin(\frac{1}{2}\theta)\)のように表す。 また、\(\sin^2\theta = (\sin\theta)^2\)のように、冪乗の指数を\(\sin\)の後に書き、括弧を省略することも多い。 ただし、\(\sin(-\theta)\)や\(\sin(\theta + \phi)\)は括弧を省略せず表す。この略記法は三角関数に特有のもので、他の関数ではこの略記は行わない。</article><p id="p-150">三角関数の値は実数だが、正確に表すのが困難な無理数になり、求められないことが多い。そのため、三角関数の値を調べるときには、<em class="emphasis">三角比の表</em>を参照することが多い。 ただし、直角三角形のうちには辺の比が\(1 : 2 : \sqrt{3}\)や\(1 : 1 : \sqrt{2}\)となる有名なものがある。そのため、幾つかの角度については、三角関数は簡単に表せる数となる。</p>
+<article class="example-like" id="example-19"><a data-knowl="" class="id-ref" data-refid="hk-example-19"><h6 class="heading">
+<span class="type">例</span> <span class="codenumber">5.9</span>. <span class="title">鋭角の三角関数の値.</span>
+</h6></a></article><div id="hk-example-19" class="hidden-content tex2jax_ignore"><article class="example-like"><div class="displaymath">
+\begin{align*}
+\sin 30 ^ \circ &amp;= \frac{1}{2},        &amp; \cos 30 ^ \circ &amp;= \frac{\sqrt{3}}{2}, &amp; \tan 30 ^ \circ &amp;= \frac{1}{\sqrt{3}}\\
+\sin 45 ^ \circ &amp;= \frac{1}{\sqrt{2}}, &amp; \cos 45 ^ \circ &amp;= \frac{1}{\sqrt{2}}, &amp; \tan 45 ^ \circ &amp;= 1\\
+\sin 60 ^ \circ &amp;= \frac{\sqrt{3}}{2}, &amp; \cos 60 ^ \circ &amp;= \frac{1}{2},        &amp; \tan 60 ^ \circ &amp;= \sqrt{3}
+\end{align*}
+</div></article></div></section><section class="subsection" id="ssec-triangle-obtuse"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">5.2.2</span> <span class="title">三角関数</span>
+</h3>
+<a href="sec-triangle-def.html#ssec-triangle-obtuse" class="permalink">¶</a><p id="p-151">鋭角以外の角でも三角関数を拡張するために、\(xy\)平面上に図のような円をとり、座標平面上で三角関数の値を定義する。</p>
+<article class="definition-like" id="definition-51"><h6 class="heading">
+<span class="type">定義</span> <span class="codenumber">5.10</span>. <span class="title">三角関数.</span>
+</h6>原点\(O\)を中心とする半径\(r\)の円上に点\(P(x,y)\)をとり、線分\(OP\)と\(x\)軸がなす角度を\(\theta\)とする。 このとき、次のように<dfn class="terminology">三角関数</dfn>を定義する。<div class="displaymath">
+\begin{gather*}
+\sin \theta = \frac{y}{r}, \cos \theta = \frac{x}{r}, \tan \theta = \frac{y}{x}
+\end{gather*}
+</div>ただし、\(\theta = (n + \frac{1}{2})\pi (n \in \mathbb{Z})\)のとき、\(\tan \theta\)は定義されない。 このとき、点\(P\)の座標は\((r\cos \theta, r\sin \theta)\)と表される。 <div style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="image/triangle-triangle2.svg" style="width: 100%; height: auto;" alt=""></div></article><article class="theorem-like" id="theorem-26"><h6 class="heading">
+<span class="type">定理</span> <span class="codenumber">5.11</span>. <span class="title">三角関数と座標平面.</span>
+</h6>\(x = r\cos\theta, y = r\sin\theta, y = (\tan\theta) x\)と変形できる。特に、\(r = 1\)の円(単位円)では、三角関数は\(xy\)平面上で次の意味をもつ。 <ul class="disc">
+<li id="li-47">原点を中心とする単位円上で\(x\)軸と角度\(\theta\)をなす点は\((\cos\theta, \sin\theta)\)で表せるので、<em class="emphasis">\(\cos\)は\(x\)座標</em>、<em class="emphasis">\(\sin\)は\(y\)座標</em>を表す。</li>
+<li id="li-48">原点を通り\(x\)軸と角度\(\theta\)をなす直線は\(y = (\tan\theta) x\)と表せるので、<em class="emphasis">\(\tan\)は直線の傾き</em>を表す。</li>
+</ul></article><p id="p-152">各象限での三角関数の符号は表<a data-knowl="./knowl/table-triangle-sign.html" title="表 5.12">5.12</a>のようになり、これらをグラフにすると図\ref{fig:triangle}のような周期関数になる。</p>
+<p id="p-153">グラフから明らかなように、\(\sin\theta, \cos\theta\)の周期は\(2\pi\)、\(\tan\theta\)の周期は\(\pi\)である。 \(y = \sin\theta, y = \tan\theta\)は原点について対称な奇関数、\(y = \cos\theta\)は\(y\)軸について対称な偶関数である。 また、\(y = \tan\theta\)のグラフは直線\(\theta = (n+\frac{1}{2})\pi (n \in \mathbb{Z})\)を漸近線としてもつ。</p>
+<figure class="figure-like" id="table-triangle-sign"><table>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">象限</td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="l m b0 r0 l0 t0 lines">第一象限</td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="l m b0 r0 l0 t0 lines">第二象限</td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="l m b0 r0 l0 t0 lines">第三象限</td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="l m b0 r0 l0 t0 lines">第四象限</td>
+<td class="l m b0 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">\(\theta (rad)\)</td>
+<td class="l m b0 r0 l0 t0 lines">\(0\)</td>
+<td class="l m b0 r0 l0 t0 lines">\(0 &lt; \theta &lt; \frac{\pi}{2}\)</td>
+<td class="l m b0 r0 l0 t0 lines">\(\frac{\pi}{2}\)</td>
+<td class="l m b0 r0 l0 t0 lines">\(\frac{\pi}{2} &lt; \theta &lt; \pi\)</td>
+<td class="l m b0 r0 l0 t0 lines">\(\pi\)</td>
+<td class="l m b0 r0 l0 t0 lines">\(\pi &lt; \theta &lt; \frac{3}{2}\pi\)</td>
+<td class="l m b0 r0 l0 t0 lines">\(\frac{3}{2}\pi\)</td>
+<td class="l m b0 r0 l0 t0 lines">\(\frac{3}{2}\pi &lt; \theta &lt; 2\pi\)</td>
+<td class="l m b0 r0 l0 t0 lines">\(2\pi\)</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">\(\theta^\circ\)</td>
+<td class="l m b0 r0 l0 t0 lines">\(0^\circ\)</td>
+<td class="l m b0 r0 l0 t0 lines">\(0^\circ &lt; \theta &lt; 90^\circ\)</td>
+<td class="l m b0 r0 l0 t0 lines">\(90^\circ\)</td>
+<td class="l m b0 r0 l0 t0 lines">\(90^\circ &lt; \theta &lt; 180^\circ\)</td>
+<td class="l m b0 r0 l0 t0 lines">\(180^\circ\)</td>
+<td class="l m b0 r0 l0 t0 lines">\(180^\circ &lt; \theta &lt; 270^\circ\)</td>
+<td class="l m b0 r0 l0 t0 lines">\(270^\circ\)</td>
+<td class="l m b0 r0 l0 t0 lines">\(270^\circ &lt; \theta &lt; 360^\circ\)</td>
+<td class="l m b0 r0 l0 t0 lines">\(360^\circ\)</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">\(\sin\theta\)</td>
+<td class="l m b0 r0 l0 t0 lines">\(0\)</td>
+<td class="l m b0 r0 l0 t0 lines">\(+\)</td>
+<td class="l m b0 r0 l0 t0 lines">\(1\)</td>
+<td class="l m b0 r0 l0 t0 lines">\(+\)</td>
+<td class="l m b0 r0 l0 t0 lines">\(0\)</td>
+<td class="l m b0 r0 l0 t0 lines">\(-\)</td>
+<td class="l m b0 r0 l0 t0 lines">\(-1\)</td>
+<td class="l m b0 r0 l0 t0 lines">\(-\)</td>
+<td class="l m b0 r0 l0 t0 lines">\(0\)</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">\(\cos\theta\)</td>
+<td class="l m b0 r0 l0 t0 lines">\(1\)</td>
+<td class="l m b0 r0 l0 t0 lines">\(+\)</td>
+<td class="l m b0 r0 l0 t0 lines">\(0\)</td>
+<td class="l m b0 r0 l0 t0 lines">\(-\)</td>
+<td class="l m b0 r0 l0 t0 lines">\(-1\)</td>
+<td class="l m b0 r0 l0 t0 lines">\(-\)</td>
+<td class="l m b0 r0 l0 t0 lines">\(0\)</td>
+<td class="l m b0 r0 l0 t0 lines">\(+\)</td>
+<td class="l m b0 r0 l0 t0 lines">\(1\)</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">\(\tan\theta\)</td>
+<td class="l m b0 r0 l0 t0 lines">\(0\)</td>
+<td class="l m b0 r0 l0 t0 lines">\(+\)</td>
+<td class="l m b0 r0 l0 t0 lines">\(\times\)</td>
+<td class="l m b0 r0 l0 t0 lines">\(-\)</td>
+<td class="l m b0 r0 l0 t0 lines">\(0\)</td>
+<td class="l m b0 r0 l0 t0 lines">\(+\)</td>
+<td class="l m b0 r0 l0 t0 lines">\(\times\)</td>
+<td class="l m b0 r0 l0 t0 lines">\(-\)</td>
+<td class="l m b0 r0 l0 t0 lines">\(0\)</td>
+</tr>
+</table>
+<figcaption><span class="type">表</span> <span class="codenumber">5.12.</span> 三角関数の符号</figcaption></figure><div style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="image/triangle-graph.svg" style="width: 100%; height: auto;" alt=""></div></section></section></div></main>
+</div>
+<div class="login-link"><span id="loginlogout" class="login">login</span></div>
+<script src="https://pretextbook.org/js/0.11/login.js"></script>
+</body>
+</html>
