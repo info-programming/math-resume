@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2020-12-27T21:53:16+09:00    *-->
+<!--*    on 2021-04-25T08:51:15+09:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -129,8 +129,8 @@ var js_version = 0.11;
 <li class="link">
 <a href="ch-logic.html" data-scroll="ch-logic"><span class="codenumber">3</span> <span class="title">論理</span></a><ul>
 <li><a href="sec-logic-problem.html" data-scroll="sec-logic-problem">問題解決</a></li>
-<li><a href="sec-logic-prop.html" data-scroll="sec-logic-prop">命題論理</a></li>
 <li><a href="sec-logic-set.html" data-scroll="sec-logic-set">集合</a></li>
+<li><a href="sec-logic-prop.html" data-scroll="sec-logic-prop">命題論理</a></li>
 <li><a href="sec-logic-pred.html" data-scroll="sec-logic-pred">述語論理</a></li>
 <li><a href="sec-logic-mode.html" data-scroll="sec-logic-mode">様相論理</a></li>
 <li><a href="sec-logic-infer.html" data-scroll="sec-logic-infer">推論</a></li>
@@ -169,7 +169,7 @@ var js_version = 0.11;
 </h3>
 <a href="sec-triangle-coord.html#ssec-triangle-rel" class="permalink">¶</a><p id="p-154">それぞれの三角関数の間には、次の関係式が成り立つ。この関係式は、1つの三角関数の値から他の三角関数の値を求めるときに使うことができる。</p>
 <article class="theorem-like" id="theorem-27"><h6 class="heading">
-<span class="type">定理</span> <span class="codenumber">5.13</span>. <span class="title">三角関数の相互関係.</span>
+<span class="type">定理</span> <span class="codenumber">5.18</span>. <span class="title">三角関数の相互関係.</span>
 </h6>\(\sin^2\theta + \cos^2\theta = 1, \tan^2\theta + 1 = \frac{1}{\cos^2\theta}, \tan\theta = \frac{\sin\theta}{\cos\theta}\)</article><article class="hiddenproof" id="proof-13"><a data-knowl="" class="id-ref" data-refid="hk-proof-13"><h6 class="heading"><span class="type">証明.</span></h6></a></article><div id="hk-proof-13" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><ul class="disc">
 <li id="li-49">原点を中心とする単位円上の点\((\cos\theta, \sin\theta)\)について三平方の定理を用いると、\(\sin^2\theta + \cos^2\theta = 1\)</li>
 <li id="li-50">\(\tan\theta = \frac{y}{x} = \frac{r\sin\theta}{r\cos\theta} = \frac{\sin\theta}{\cos\theta}\)</li>
@@ -177,7 +177,7 @@ var js_version = 0.11;
 </ul></article></div>
 <p id="p-155">座標平面上での角の関係性を考えると、次の関係式が成り立つことが分かる。</p>
 <article class="theorem-like" id="theorem-28"><h6 class="heading">
-<span class="type">定理</span> <span class="codenumber">5.14</span>. <span class="title">三角関数の相互関係(2).</span>
+<span class="type">定理</span> <span class="codenumber">5.19</span>. <span class="title">三角関数の相互関係(2).</span>
 </h6>
 <div class="displaymath">
 \begin{gather*}
@@ -190,14 +190,14 @@ var js_version = 0.11;
 \end{gather*}
 </div></article><p id="p-156">また、三角関数は周期関数のため、次の周期性が成り立つ。</p>
 <article class="theorem-like" id="theorem-29"><h6 class="heading">
-<span class="type">定理</span> <span class="codenumber">5.15</span>. <span class="title">三角関数の周期性.</span>
+<span class="type">定理</span> <span class="codenumber">5.20</span>. <span class="title">三角関数の周期性.</span>
 </h6>\(\sin(\theta + 2n\pi) = \cos\theta,
 \cos(\theta + 2n\pi) = \sin\theta (n \in \mathbb{Z})\)</article></section><section class="subsection" id="ssec-triangle-law"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">5.3.2</span> <span class="title">三角関数と計量</span>
 </h3>
 <a href="sec-triangle-coord.html#ssec-triangle-law" class="permalink">¶</a><p id="p-157">図形に対して三角関数を用いると辺や角、面積などの大きさを求めることができる。</p>
 <article class="theorem-like" id="theorem-30"><h6 class="heading">
-<span class="type">定理</span> <span class="codenumber">5.16</span>. <span class="title">正弦定理.</span>
+<span class="type">定理</span> <span class="codenumber">5.21</span>. <span class="title">正弦定理.</span>
 </h6>\(\triangle ABC\)の外接円の半径を\(R\)とおく。<div class="displaymath">
 \begin{gather*}
 \frac{a}{\sin A} = \frac{b}{\sin B} = \frac{c}{\sin C} = 2R
@@ -205,10 +205,11 @@ var js_version = 0.11;
 </div></article><article class="hiddenproof" id="proof-14"><a data-knowl="" class="id-ref" data-refid="hk-proof-14"><h6 class="heading"><span class="type">証明.</span></h6></a></article><div id="hk-proof-14" class="hidden-content tex2jax_ignore"><article class="hiddenproof">頂点\(B\)と外接円の中心を結ぶ直線が外接円の円周と交わる点を\(D\)とする。 <ol class="decimal">
 <li id="li-52">\(0 &lt; A \leq \frac{\pi}{2}\)のとき、円周角の定理により\(\angle BDC = A\)であり、また\(\angle BCD = \frac{\pi}{2}\)であるので、\(a = 2R\sin A\)となる。</li>
 <li id="li-53">\(\frac{\pi}{2} &lt; A &lt; \pi\)のとき、四角形\(ABCD\)は円に内接するので\(\angle BDC = \pi - A\)であり、また\(\angle BCD = \frac{\pi}{2}\)であるので、\(a = 2R\sin (\pi - A) = 2R\sin A\)となる。</li>
-</ol>\([1],[2]\)より\(a = 2R\sin A\)である。\(B,C\)についても同様に示せる。 <div style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="image/triangle-sin.svg" style="width: 100%; height: auto;" alt=""></div></article></div>
+</ol>\([1],[2]\)より\(a = 2R\sin A\)である。\(B,C\)についても同様に示せる。 <figure class="figure-like" id="fig-triangle-sin"><div style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="image/triangle-sin.svg" style="width: 100%; height: auto;" alt=""></div>
+<figcaption><span class="type">図</span> <span class="codenumber">5.22.</span> 正弦定理</figcaption></figure></article></div>
 <p id="p-158">また、次の余弦定理は、直角三角形での三平方の定理を一般の三角形に拡張した定理である。</p>
 <article class="theorem-like" id="theorem-31"><h6 class="heading">
-<span class="type">定理</span> <span class="codenumber">5.17</span>. <span class="title">余弦定理.</span>
+<span class="type">定理</span> <span class="codenumber">5.23</span>. <span class="title">余弦定理.</span>
 </h6>\(\triangle ABC\)において、\(a = b^2 + c^2 - 2bc\cos A\)。</article><article class="hiddenproof" id="proof-15"><a data-knowl="" class="id-ref" data-refid="hk-proof-15"><h6 class="heading"><span class="type">証明.</span></h6></a></article><div id="hk-proof-15" class="hidden-content tex2jax_ignore"><article class="hiddenproof">頂点\(C\)から\(AB\)に下ろした垂線の足を\(D\)とおく。<div class="displaymath">
 \begin{align*}
 a^2 &amp;= {CD}^2 + {DB}^2 = {CD}^2 + (DA+AB)^2 = (b\sin(\pi - A))^2 + (b\cos(\pi - A) + c) = b^2 + c^2 + 2bc\cos(\pi - A)\\
@@ -217,14 +218,14 @@ a^2 &amp;= {CD}^2 + {DB}^2 = {CD}^2 + (DA+AB)^2 = (b\sin(\pi - A))^2 + (b\cos(\p
 </div></article></div>
 <p id="p-159">正弦定理や余弦定理を用いると、三角形の未知の辺や角の大きさを求めることができる。</p>
 <article class="example-like" id="example-20"><a data-knowl="" class="id-ref" data-refid="hk-example-20"><h6 class="heading">
-<span class="type">例</span> <span class="codenumber">5.18</span>. <span class="title">正弦定理.</span>
+<span class="type">例</span> <span class="codenumber">5.24</span>. <span class="title">正弦定理.</span>
 </h6></a></article><div id="hk-example-20" class="hidden-content tex2jax_ignore"><article class="example-like">\(\triangle ABC\)において、\(a=\sqrt{2}, b=\sqrt{3}, B=\frac{\pi}{3}\)のとき、\(A\)を求める。 \(\frac{\sqrt{2}}{\sin A} = \frac{\sqrt{3}}{\sin\frac{\pi}{3}}\)より\(\sin A = \frac{1}{\sqrt{2}}\)となるので、\(A = \frac{\pi}{4}, \frac{3\pi}{4}\)。 \(0 &lt; A &lt; \pi - \frac{\pi}{3} = \frac{2}{3}\pi\)より、\(A = \frac{\pi}{4}\)。</article></div>
 <article class="example-like" id="example-21"><a data-knowl="" class="id-ref" data-refid="hk-example-21"><h6 class="heading">
-<span class="type">例</span> <span class="codenumber">5.19</span>. <span class="title">余弦定理.</span>
+<span class="type">例</span> <span class="codenumber">5.25</span>. <span class="title">余弦定理.</span>
 </h6></a></article><div id="hk-example-21" class="hidden-content tex2jax_ignore"><article class="example-like">\(\triangle ABC\)において、\(a=4,b=5,B=\frac{\pi}{3}\)のとき、\(c\)を求める。 \(b^2 = a^2 + c^2 - 2ac\cos B = 16 + c^2 - 4c = 25\)より、\(c^2 - 4c - 9 = 0\)なので、\(c = 2\pm\sqrt{13}\)。 \(c &gt; 0\)であるので、\(c = 2 + \sqrt{13}\)。</article></div>
 <p id="p-160">また、\(\sin\)を用いて三角形の面積を表すと、次のようになる。</p>
 <article class="theorem-like" id="theorem-32"><h6 class="heading">
-<span class="type">定理</span> <span class="codenumber">5.20</span>. <span class="title">三角形の面積.</span>
+<span class="type">定理</span> <span class="codenumber">5.26</span>. <span class="title">三角形の面積.</span>
 </h6>
 <div class="displaymath">
 \begin{gather*}

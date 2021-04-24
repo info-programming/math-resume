@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2020-12-27T21:53:16+09:00    *-->
+<!--*    on 2021-04-25T08:51:15+09:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -129,8 +129,8 @@ var js_version = 0.11;
 <li class="link">
 <a href="ch-logic.html" data-scroll="ch-logic"><span class="codenumber">3</span> <span class="title">論理</span></a><ul>
 <li><a href="sec-logic-problem.html" data-scroll="sec-logic-problem">問題解決</a></li>
-<li><a href="sec-logic-prop.html" data-scroll="sec-logic-prop">命題論理</a></li>
 <li><a href="sec-logic-set.html" data-scroll="sec-logic-set">集合</a></li>
+<li><a href="sec-logic-prop.html" data-scroll="sec-logic-prop">命題論理</a></li>
 <li><a href="sec-logic-pred.html" data-scroll="sec-logic-pred">述語論理</a></li>
 <li><a href="sec-logic-mode.html" data-scroll="sec-logic-mode">様相論理</a></li>
 <li><a href="sec-logic-infer.html" data-scroll="sec-logic-infer">推論</a></li>
@@ -169,7 +169,7 @@ var js_version = 0.11;
 </h3>
 <a href="sec-triangle-add.html#ssec-triangle-add" class="permalink">¶</a><p id="p-161">三角関数の和や積に対して成り立つ関係式は、いずれも次の加法定理が基本となって示される。</p>
 <article class="theorem-like" id="theorem-33"><h6 class="heading">
-<span class="type">定理</span> <span class="codenumber">5.21</span>. <span class="title">加法定理.</span>
+<span class="type">定理</span> <span class="codenumber">5.27</span>. <span class="title">加法定理.</span>
 </h6>\(\alpha, \beta \in \mathbb{R}\)とする。<div class="displaymath">
 \begin{align*}
 \sin(\alpha \pm \beta) &amp;= \sin\alpha\cos\beta \pm \cos\alpha\sin\beta (\text{複号同順})\\
@@ -186,7 +186,8 @@ PQ^2 &amp;= |\cos\beta - \cos\alpha|^2 + |\sin\alpha - \sin\beta|^2 = (\cos^2\be
 \cos(\alpha + \phi) = \cos\alpha\cos(-\phi) + \sin\alpha\sin(-\phi) = \cos\alpha\cos\phi - \sin\alpha\sin\phi
 \end{gather*}
 </div>
-<div style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="image/triangle-add.svg" style="width: 100%; height: auto;" alt=""></div> 次に、\(\sin\)の加法定理を示す。<div class="displaymath">
+<figure class="figure-like" id="fig-triangle-add"><div style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="image/triangle-add.svg" style="width: 100%; height: auto;" alt=""></div>
+<figcaption><span class="type">図</span> <span class="codenumber">5.28.</span> \(\cos\)の加法定理</figcaption></figure> 次に、\(\sin\)の加法定理を示す。<div class="displaymath">
 \begin{align*}
 \sin(\alpha \pm \beta)
 &amp;= \cos(\frac{\pi}{2} - (\alpha \pm \beta)) = \cos((\frac{\pi}{2} - \alpha) \mp \beta))
@@ -204,7 +205,7 @@ PQ^2 &amp;= |\cos\beta - \cos\alpha|^2 + |\sin\alpha - \sin\beta|^2 = (\cos^2\be
 <p id="p-162">加法定理は便利な定理だが、\(\sin,\cos,\tan\)のそれぞれにプラスとマイナスの場合があり覚えにくい。 語呂合わせで覚える方法の1つに、\(\sin\)の加法定理は「サイン・コス・コス・サイン」、\(\cos\)の加法定理は「コス・コス・マイナス・サイン・サイン」、\(\tan\)の加法定理は「1引くタン・タン、タン足すタン」というものがある。 これを覚えておき、マイナスの場合の式が必要な場合は、プラスの場合の式に出てくるプラス・マイナスをひっくり返すようにすれば、覚える量が少なくて済む。</p>
 <p id="p-163">加法定理を使うと、有名な角度以外の角度でも、三角関数の値を求められることがある。</p>
 <article class="example-like" id="example-22"><a data-knowl="" class="id-ref" data-refid="hk-example-22"><h6 class="heading">
-<span class="type">例</span> <span class="codenumber">5.22</span>. <span class="title">加法定理.</span>
+<span class="type">例</span> <span class="codenumber">5.29</span>. <span class="title">加法定理.</span>
 </h6></a></article><div id="hk-example-22" class="hidden-content tex2jax_ignore"><article class="example-like"><div class="displaymath">
 \begin{gather*}
 \sin \frac{\pi}{12} = \sin(\frac{\pi}{4} - \frac{\pi}{6}) = \sin\frac{\pi}{4} \cos\frac{\pi}{6} - \cos\frac{\pi}{4} \sin\frac{\pi}{6} = \frac{1}{\sqrt{2}}\frac{\sqrt{3}}{2} - \frac{1}{\sqrt{2}}\frac{1}{2} = \frac{\sqrt{3} - 1}{2\sqrt{2}} = \frac{\sqrt{6} - \sqrt{2}}{4}
@@ -214,7 +215,7 @@ PQ^2 &amp;= |\cos\beta - \cos\alpha|^2 + |\sin\alpha - \sin\beta|^2 = (\cos^2\be
 </h3>
 <a href="sec-triangle-add.html#ssec-triangle-double" class="permalink">¶</a><p id="p-164">加法定理から、三角関数に関する多くの公式が示される。 以下の公式は数も多いので、式自体を覚えるのではなく、式の導出方法を覚えておくとよい。</p>
 <article class="theorem-like" id="theorem-34"><h6 class="heading">
-<span class="type">定理</span> <span class="codenumber">5.23</span>. <span class="title">二倍角の公式.</span>
+<span class="type">定理</span> <span class="codenumber">5.30</span>. <span class="title">二倍角の公式.</span>
 </h6>\(\alpha \in \mathbb{R}\)とする。<div class="displaymath">
 \begin{align*}
 \sin 2\alpha &amp;= 2\sin\alpha\cos\alpha\\
@@ -229,7 +230,7 @@ PQ^2 &amp;= |\cos\beta - \cos\alpha|^2 + |\sin\alpha - \sin\beta|^2 = (\cos^2\be
 \end{align*}
 </div></article></div>
 <article class="theorem-like" id="theorem-35"><h6 class="heading">
-<span class="type">定理</span> <span class="codenumber">5.24</span>. <span class="title">半角の公式.</span>
+<span class="type">定理</span> <span class="codenumber">5.31</span>. <span class="title">半角の公式.</span>
 </h6>\(\alpha \in \mathbb{R}\)とする。<div class="displaymath">
 \begin{gather*}
 \sin^2 \alpha = \frac{1 - \cos2\alpha}{2}, \cos^2\alpha = \frac{1 + \cos2\alpha}{2}
@@ -241,7 +242,7 @@ PQ^2 &amp;= |\cos\beta - \cos\alpha|^2 + |\sin\alpha - \sin\beta|^2 = (\cos^2\be
 \end{align*}
 </div></article></div>
 <article class="theorem-like" id="theorem-36"><h6 class="heading">
-<span class="type">定理</span> <span class="codenumber">5.25</span>. <span class="title">三倍角の公式.</span>
+<span class="type">定理</span> <span class="codenumber">5.32</span>. <span class="title">三倍角の公式.</span>
 </h6>\(\alpha \in \mathbb{R}\)とする。<div class="displaymath">
 \begin{gather*}
 \sin 3\alpha = 3\sin\alpha - 4\sin^3\alpha, \cos 3\alpha = 4\cos^3\alpha - 3\cos\alpha
@@ -258,7 +259,7 @@ PQ^2 &amp;= |\cos\beta - \cos\alpha|^2 + |\sin\alpha - \sin\beta|^2 = (\cos^2\be
 </h3>
 <a href="sec-triangle-add.html#ssec-triangle-sumprod" class="permalink">¶</a><p id="p-165">加法定理を用いると、三角関数の積と三角関数の和を相互に変換する公式を導ける。</p>
 <article class="theorem-like" id="theorem-37"><h6 class="heading">
-<span class="type">定理</span> <span class="codenumber">5.26</span>. <span class="title">積和公式.</span>
+<span class="type">定理</span> <span class="codenumber">5.33</span>. <span class="title">積和公式.</span>
 </h6>\(\alpha, \beta \in \mathbb{R}\)とする。<div class="displaymath">
 \begin{align*}
 \sin\alpha\cos\beta &amp;=  \frac{1}{2}(\sin(\alpha + \beta) + \sin(\alpha - \beta))\\
@@ -273,7 +274,7 @@ PQ^2 &amp;= |\cos\beta - \cos\alpha|^2 + |\sin\alpha - \sin\beta|^2 = (\cos^2\be
 \end{align*}
 </div>この2式の両辺を足し合わせて、\(\sin(\alpha + \beta) + \sin(\alpha - \beta) = 2\sin\alpha\cos\beta\)となる。 また、2式の両辺の差をとって、\(\sin(\alpha + \beta) - \sin(\alpha - \beta) = 2\cos\alpha\sin\beta\)となる。 他の2式も、同様にして導かれる。</article></div>
 <article class="theorem-like" id="theorem-38"><h6 class="heading">
-<span class="type">定理</span> <span class="codenumber">5.27</span>. <span class="title">和積公式.</span>
+<span class="type">定理</span> <span class="codenumber">5.34</span>. <span class="title">和積公式.</span>
 </h6>\(x, y \in \mathbb{R}\)とする。<div class="displaymath">
 \begin{align*}
 \sin x + \sin y &amp;=  2\sin\frac{x+y}{2}\cos\frac{x-y}{2}\\
@@ -286,7 +287,7 @@ PQ^2 &amp;= |\cos\beta - \cos\alpha|^2 + |\sin\alpha - \sin\beta|^2 = (\cos^2\be
 </h3>
 <a href="sec-triangle-add.html#ssec-triangle-compose" class="permalink">¶</a><p id="p-166">加法定理を逆向きに用いると、複数の三角関数を一つにまとめることができる。</p>
 <article class="theorem-like" id="theorem-39"><h6 class="heading">
-<span class="type">定理</span> <span class="codenumber">5.28</span>. <span class="title">三角関数の合成.</span>
+<span class="type">定理</span> <span class="codenumber">5.35</span>. <span class="title">三角関数の合成.</span>
 </h6>\(a, b, \theta \in \mathbb{R}\)とする。<div class="displaymath">
 \begin{align*}
 a\sin\theta + b\cos\theta &amp;= \sqrt{a^2 + b^2}\sin(\theta + \phi) (\cos\phi = \frac{a}{\sqrt{a^2 + b^2}}, \sin\phi = \frac{b}{\sqrt{a^2 + b^2}})\\
@@ -295,7 +296,7 @@ a\sin\theta + b\cos\theta &amp;= \sqrt{a^2 + b^2}\sin(\theta + \phi) (\cos\phi =
 </div></article><article class="hiddenproof" id="proof-23"><a data-knowl="" class="id-ref" data-refid="hk-proof-23"><h6 class="heading"><span class="type">証明.</span></h6></a></article><div id="hk-proof-23" class="hidden-content tex2jax_ignore"><article class="hiddenproof">右辺に加法定理を適用すれば左辺が導かれる。</article></div>
 <p id="p-167">三角関数の合成を行うことで、三角関数の最大・最小問題が解き易くなることがある。</p>
 <article class="example-like" id="example-23"><a data-knowl="" class="id-ref" data-refid="hk-example-23"><h6 class="heading">
-<span class="type">例</span> <span class="codenumber">5.29</span>. <span class="title">三角関数の合成.</span>
+<span class="type">例</span> <span class="codenumber">5.36</span>. <span class="title">三角関数の合成.</span>
 </h6></a></article><div id="hk-example-23" class="hidden-content tex2jax_ignore"><article class="example-like">\(\sin\theta+\sqrt{3}\cos\theta (\theta \in [0, \pi])\)の最大値と最小値を求める。<div class="displaymath">
 \begin{gather*}
 \sin\theta + \sqrt{3}\cos\theta = 2\sin(\theta + \phi) (\cos\phi = \frac{1}{2}, \sin\phi = \frac{\sqrt{3}}{2}) = 2\sin(\theta + \frac{\pi}{3})

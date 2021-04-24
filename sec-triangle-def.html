@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2020-12-27T21:53:16+09:00    *-->
+<!--*    on 2021-04-25T08:51:15+09:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -129,8 +129,8 @@ var js_version = 0.11;
 <li class="link">
 <a href="ch-logic.html" data-scroll="ch-logic"><span class="codenumber">3</span> <span class="title">論理</span></a><ul>
 <li><a href="sec-logic-problem.html" data-scroll="sec-logic-problem">問題解決</a></li>
-<li><a href="sec-logic-prop.html" data-scroll="sec-logic-prop">命題論理</a></li>
 <li><a href="sec-logic-set.html" data-scroll="sec-logic-set">集合</a></li>
+<li><a href="sec-logic-prop.html" data-scroll="sec-logic-prop">命題論理</a></li>
 <li><a href="sec-logic-pred.html" data-scroll="sec-logic-pred">述語論理</a></li>
 <li><a href="sec-logic-mode.html" data-scroll="sec-logic-mode">様相論理</a></li>
 <li><a href="sec-logic-infer.html" data-scroll="sec-logic-infer">推論</a></li>
@@ -169,19 +169,21 @@ var js_version = 0.11;
 </h3>
 <a href="sec-triangle-def.html#ssec-triangle-acute" class="permalink">¶</a><p id="p-148">\(\angle ABC = 90 ^ \circ\)となる直角三角形\(\triangle ABC\)を考える。 このとき、直角でない残りの2つの角のうち一つの角度と、直角三角形の斜辺の長さが分かれば、\(\triangle ABC\)はただ一つに定まる。</p>
 <article class="theorem-like" id="theorem-25"><h6 class="heading">
-<span class="type">定理</span> <span class="codenumber">5.7</span>. <span class="title">直角三角形の辺の比の一意性.</span>
-</h6>\(\angle B = 90^\circ\)となる直角三角形\(\triangle ABC\)では、\(\frac{BC}{CA}, \frac{AB}{CA}, \frac{BC}{AB}\)の値は三角形によらず、\(\angle A\)の大きさのみによって定まる。</article><article class="hiddenproof" id="proof-12"><a data-knowl="" class="id-ref" data-refid="hk-proof-12"><h6 class="heading"><span class="type">証明.</span></h6></a></article><div id="hk-proof-12" class="hidden-content tex2jax_ignore"><article class="hiddenproof">\(\angle A\)を共有する2つの直角三角形\(\triangle ABC, \triangle AB'C'\)があり、\(\angle B = \angle B' = 90^\circ\)とする。 このとき、三角形の2つの角が等しいので、\(\triangle ABC \sim \triangle AB'C'\)である。 相似な三角形では辺の比が等しいので、\(BC : B'C' = CA : C'A\)より\(BC \times C'A = B'C' \times CA\)となり、\(\frac{BC}{CA} = \frac{B'C'}{C'A}\)が成り立つ。 同様にして、\(\frac{AB}{CA} = \frac{AB'}{C'A}, \frac{BC}{AB} = \frac{B'C'}{AB'}\)も成り立つ。 <div style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="image/triangle-ratio.svg" style="width: 100%; height: auto;" alt=""></div></article></div>
+<span class="type">定理</span> <span class="codenumber">5.8</span>. <span class="title">直角三角形の辺の比の一意性.</span>
+</h6>\(\angle B = 90^\circ\)となる直角三角形\(\triangle ABC\)では、\(\frac{BC}{CA}, \frac{AB}{CA}, \frac{BC}{AB}\)の値は三角形によらず、\(\angle A\)の大きさのみによって定まる。</article><article class="hiddenproof" id="proof-12"><a data-knowl="" class="id-ref" data-refid="hk-proof-12"><h6 class="heading"><span class="type">証明.</span></h6></a></article><div id="hk-proof-12" class="hidden-content tex2jax_ignore"><article class="hiddenproof">図<a data-knowl="./knowl/fig-triangle-ratio.html" title="図 5.9">5.9</a>のように、\(\angle A\)を共有する2つの直角三角形\(\triangle ABC, \triangle AB'C'\)があり、\(\angle B = \angle B' = 90^\circ\)とする。 このとき、三角形の2つの角が等しいので、\(\triangle ABC \sim \triangle AB'C'\)である。 相似な三角形では辺の比が等しいので、\(BC : B'C' = CA : C'A\)より\(BC \times C'A = B'C' \times CA\)となり、\(\frac{BC}{CA} = \frac{B'C'}{C'A}\)が成り立つ。 同様にして、\(\frac{AB}{CA} = \frac{AB'}{C'A}, \frac{BC}{AB} = \frac{B'C'}{AB'}\)も成り立つ。 <figure class="figure-like" id="fig-triangle-ratio"><div style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="image/triangle-ratio.svg" style="width: 100%; height: auto;" alt=""></div>
+<figcaption><span class="type">図</span> <span class="codenumber">5.9.</span> 直角三角形の辺の比</figcaption></figure></article></div>
 <p id="p-149">この定理により、直角三角形の辺の比はどの三角形でも、\(\angle A\)の大きさのみによって定まることが分かる。 従って、直角三角形の辺の比を、\(\angle A\)によって定まる関数として定義できる。</p>
 <article class="definition-like" id="definition-50"><h6 class="heading">
-<span class="type">定義</span> <span class="codenumber">5.8</span>. <span class="title">三角比.</span>
+<span class="type">定義</span> <span class="codenumber">5.10</span>. <span class="title">三角比.</span>
 </h6>\(\angle ABC = 90 ^ \circ\)の\(\triangle ABC\)において、\(\theta = \angle A, x = AB, y = BC, r = CA\)とおく。 このとき、各辺の比を<dfn class="terminology">三角比</dfn>といい、次のように定義する。 <ul class="disc">
 <li id="li-44">\(\sin(\theta) = \frac{y}{r} = \frac{BC}{CA} = \frac{\text{対辺}}{\text{斜辺}}\)を、\(\angle A\)の<dfn class="terminology">正弦</dfn>(<dfn class="terminology">sine</dfn>)または<dfn class="terminology">サイン</dfn>という。</li>
 <li id="li-45">\(\cos(\theta) = \frac{x}{r} = \frac{AB}{CA} = \frac{\text{底辺}}{\text{斜辺}}\)を、\(\angle A\)の<dfn class="terminology">余弦</dfn>(<dfn class="terminology">cosine</dfn>)または<dfn class="terminology">コサイン</dfn>という。</li>
 <li id="li-46">\(\tan(\theta) = \frac{y}{x} = \frac{BC}{AB} = \frac{\text{対辺}}{\text{底辺}}\)を、\(\angle A\)の<dfn class="terminology">正接</dfn>(<dfn class="terminology">tangent</dfn>)または<dfn class="terminology">タンジェント</dfn>という。</li>
 </ul>
-<div style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="image/triangle-triangle.svg" style="width: 100%; height: auto;" alt=""></div>\(\sin(\theta)\)は\(\sin \theta\)のように、括弧を省略して表すことが多い。同様に、\(\sin 2\theta = \sin(2\theta), \sin 3\theta = \sin(3\theta), \sin \frac{1}{2}\theta = \sin(\frac{1}{2}\theta)\)のように表す。 また、\(\sin^2\theta = (\sin\theta)^2\)のように、冪乗の指数を\(\sin\)の後に書き、括弧を省略することも多い。 ただし、\(\sin(-\theta)\)や\(\sin(\theta + \phi)\)は括弧を省略せず表す。この略記法は三角関数に特有のもので、他の関数ではこの略記は行わない。</article><p id="p-150">三角関数の値は実数だが、正確に表すのが困難な無理数になり、求められないことが多い。そのため、三角関数の値を調べるときには、<em class="emphasis">三角比の表</em>を参照することが多い。 ただし、直角三角形のうちには辺の比が\(1 : 2 : \sqrt{3}\)や\(1 : 1 : \sqrt{2}\)となる有名なものがある。そのため、幾つかの角度については、三角関数は簡単に表せる数となる。</p>
+<figure class="figure-like" id="fig-triangle-triangle"><div style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="image/triangle-triangle.svg" style="width: 100%; height: auto;" alt=""></div>
+<figcaption><span class="type">図</span> <span class="codenumber">5.11.</span> 三角比</figcaption></figure>\(\sin(\theta)\)は\(\sin \theta\)のように、括弧を省略して表すことが多い。同様に、\(\sin 2\theta = \sin(2\theta), \sin 3\theta = \sin(3\theta), \sin \frac{1}{2}\theta = \sin(\frac{1}{2}\theta)\)のように表す。 また、\(\sin^2\theta = (\sin\theta)^2\)のように、冪乗の指数を\(\sin\)の後に書き、括弧を省略することも多い。 ただし、\(\sin(-\theta)\)や\(\sin(\theta + \phi)\)は括弧を省略せず表す。この略記法は三角関数に特有のもので、他の関数ではこの略記は行わない。</article><p id="p-150">三角関数の値は実数だが、正確に表すのが困難な無理数になり、求められないことが多い。そのため、三角関数の値を調べるときには、<em class="emphasis">三角比の表</em>を参照することが多い。 ただし、直角三角形のうちには辺の比が\(1 : 2 : \sqrt{3}\)や\(1 : 1 : \sqrt{2}\)となる有名なものがある。そのため、幾つかの角度については、三角関数は簡単に表せる数となる。</p>
 <article class="example-like" id="example-19"><a data-knowl="" class="id-ref" data-refid="hk-example-19"><h6 class="heading">
-<span class="type">例</span> <span class="codenumber">5.9</span>. <span class="title">鋭角の三角関数の値.</span>
+<span class="type">例</span> <span class="codenumber">5.12</span>. <span class="title">鋭角の三角関数の値.</span>
 </h6></a></article><div id="hk-example-19" class="hidden-content tex2jax_ignore"><article class="example-like"><div class="displaymath">
 \begin{align*}
 \sin 30 ^ \circ &amp;= \frac{1}{2},        &amp; \cos 30 ^ \circ &amp;= \frac{\sqrt{3}}{2}, &amp; \tan 30 ^ \circ &amp;= \frac{1}{\sqrt{3}}\\
@@ -193,30 +195,31 @@ var js_version = 0.11;
 </h3>
 <a href="sec-triangle-def.html#ssec-triangle-obtuse" class="permalink">¶</a><p id="p-151">鋭角以外の角でも三角関数を拡張するために、\(xy\)平面上に図のような円をとり、座標平面上で三角関数の値を定義する。</p>
 <article class="definition-like" id="definition-51"><h6 class="heading">
-<span class="type">定義</span> <span class="codenumber">5.10</span>. <span class="title">三角関数.</span>
+<span class="type">定義</span> <span class="codenumber">5.13</span>. <span class="title">三角関数.</span>
 </h6>原点\(O\)を中心とする半径\(r\)の円上に点\(P(x,y)\)をとり、線分\(OP\)と\(x\)軸がなす角度を\(\theta\)とする。 このとき、次のように<dfn class="terminology">三角関数</dfn>を定義する。<div class="displaymath">
 \begin{gather*}
 \sin \theta = \frac{y}{r}, \cos \theta = \frac{x}{r}, \tan \theta = \frac{y}{x}
 \end{gather*}
-</div>ただし、\(\theta = (n + \frac{1}{2})\pi (n \in \mathbb{Z})\)のとき、\(\tan \theta\)は定義されない。 このとき、点\(P\)の座標は\((r\cos \theta, r\sin \theta)\)と表される。 <div style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="image/triangle-triangle2.svg" style="width: 100%; height: auto;" alt=""></div></article><article class="theorem-like" id="theorem-26"><h6 class="heading">
-<span class="type">定理</span> <span class="codenumber">5.11</span>. <span class="title">三角関数と座標平面.</span>
+</div>ただし、\(\theta = (n + \frac{1}{2})\pi (n \in \mathbb{Z})\)のとき、\(\tan \theta\)は定義されない。 このとき、点\(P\)の座標は\((r\cos \theta, r\sin \theta)\)と表される。 <figure class="figure-like" id="fig-triangle-triangle2"><div style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="image/triangle-triangle2.svg" style="width: 100%; height: auto;" alt=""></div>
+<figcaption><span class="type">図</span> <span class="codenumber">5.14.</span> 三角関数</figcaption></figure></article><article class="theorem-like" id="theorem-26"><h6 class="heading">
+<span class="type">定理</span> <span class="codenumber">5.15</span>. <span class="title">三角関数と座標平面.</span>
 </h6>\(x = r\cos\theta, y = r\sin\theta, y = (\tan\theta) x\)と変形できる。特に、\(r = 1\)の円(単位円)では、三角関数は\(xy\)平面上で次の意味をもつ。 <ul class="disc">
 <li id="li-47">原点を中心とする単位円上で\(x\)軸と角度\(\theta\)をなす点は\((\cos\theta, \sin\theta)\)で表せるので、<em class="emphasis">\(\cos\)は\(x\)座標</em>、<em class="emphasis">\(\sin\)は\(y\)座標</em>を表す。</li>
 <li id="li-48">原点を通り\(x\)軸と角度\(\theta\)をなす直線は\(y = (\tan\theta) x\)と表せるので、<em class="emphasis">\(\tan\)は直線の傾き</em>を表す。</li>
-</ul></article><p id="p-152">各象限での三角関数の符号は表<a data-knowl="./knowl/table-triangle-sign.html" title="表 5.12">5.12</a>のようになり、これらをグラフにすると図\ref{fig:triangle}のような周期関数になる。</p>
+</ul></article><p id="p-152">各象限での三角関数の符号は表<a data-knowl="./knowl/table-triangle-sign.html" title="表 5.16">5.16</a>のようになり、これらをグラフにすると図<a data-knowl="./knowl/fig-triangle-graph.html" title="図 5.17">5.17</a>のような周期関数になる。</p>
 <p id="p-153">グラフから明らかなように、\(\sin\theta, \cos\theta\)の周期は\(2\pi\)、\(\tan\theta\)の周期は\(\pi\)である。 \(y = \sin\theta, y = \tan\theta\)は原点について対称な奇関数、\(y = \cos\theta\)は\(y\)軸について対称な偶関数である。 また、\(y = \tan\theta\)のグラフは直線\(\theta = (n+\frac{1}{2})\pi (n \in \mathbb{Z})\)を漸近線としてもつ。</p>
 <figure class="figure-like" id="table-triangle-sign"><table>
 <tr>
-<td class="l m b0 r0 l0 t0 lines">象限</td>
-<td class="l m b0 r0 l0 t0 lines"></td>
-<td class="l m b0 r0 l0 t0 lines">第一象限</td>
-<td class="l m b0 r0 l0 t0 lines"></td>
-<td class="l m b0 r0 l0 t0 lines">第二象限</td>
-<td class="l m b0 r0 l0 t0 lines"></td>
-<td class="l m b0 r0 l0 t0 lines">第三象限</td>
-<td class="l m b0 r0 l0 t0 lines"></td>
-<td class="l m b0 r0 l0 t0 lines">第四象限</td>
-<td class="l m b0 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines">象限</td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines">第一象限</td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines">第二象限</td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines">第三象限</td>
+<td class="l m b1 r0 l0 t0 lines"></td>
+<td class="l m b1 r0 l0 t0 lines">第四象限</td>
+<td class="l m b1 r0 l0 t0 lines"></td>
 </tr>
 <tr>
 <td class="l m b0 r0 l0 t0 lines">\(\theta (rad)\)</td>
@@ -279,7 +282,8 @@ var js_version = 0.11;
 <td class="l m b0 r0 l0 t0 lines">\(0\)</td>
 </tr>
 </table>
-<figcaption><span class="type">表</span> <span class="codenumber">5.12.</span> 三角関数の符号</figcaption></figure><div style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="image/triangle-graph.svg" style="width: 100%; height: auto;" alt=""></div></section></section></div></main>
+<figcaption><span class="type">表</span> <span class="codenumber">5.16.</span> 三角関数の符号</figcaption></figure><figure class="figure-like" id="fig-triangle-graph"><div style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="image/triangle-graph.svg" style="width: 100%; height: auto;" alt=""></div>
+<figcaption><span class="type">図</span> <span class="codenumber">5.17.</span> 三角関数</figcaption></figure></section></section></div></main>
 </div>
 <div class="login-link"><span id="loginlogout" class="login">login</span></div>
 <script src="https://pretextbook.org/js/0.11/login.js"></script>
