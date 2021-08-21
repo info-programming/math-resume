@@ -1,64 +1,54 @@
 <!DOCTYPE html>
-<!--**************************************-->
-<!--*    Generated from PreTeXt source   *-->
-<!--*    on 2021-08-16T10:08:22+09:00    *-->
-<!--*                                    *-->
-<!--*      https://pretextbook.org       *-->
-<!--*                                    *-->
-<!--**************************************-->
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
 <html lang="ja-JP">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>加法定理</title>
 <meta name="Keywords" content="Authored in PreTeXt">
-<meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-    tex2jax: {
-        inlineMath: [['\\(','\\)']]
-    },
-    asciimath2jax: {
-        ignoreClass: ".*",
-        processClass: "has_am"
-    },
-    jax: ["input/AsciiMath"],
-    extensions: ["asciimath2jax.js"],
-    TeX: {
-        extensions: ["extpfeil.js", "autobold.js", "https://pretextbook.org/js/lib/mathjaxknowl.js", ],
-        // scrolling to fragment identifiers is controlled by other Javascript
-        positionToHash: false,
-        equationNumbers: { autoNumber: "none", useLabelIds: true, },
-        TagSide: "right",
-        TagIndent: ".8em",
-    },
-    // HTML-CSS output Jax to be dropped for MathJax 3.0
-    "HTML-CSS": {
-        scale: 88,
-        mtextFontInherit: true,
-    },
-    CommonHTML: {
-        scale: 88,
-        mtextFontInherit: true,
-    },
-});
-</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.11/pretext.js"></script><script src="https://pretextbook.org/js/0.11/pretext_add_on.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
-<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.2/pretext.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.2/pretext_add_on.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.2/toc.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.2/colors_default.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.2/setcolors.css" rel="stylesheet" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    useLabelIds: true,
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore",
+    processHtmlClass: "has_am",
+  },
+  chtml: {
+    scale: 0.88,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext_add_on.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script xmlns:svg="http://www.w3.org/2000/svg">sagecellEvalName='Evaluate (Sage)';
+</script><link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/banner_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/toc_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/knowls_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/style_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/colors_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/setcolors.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href="image/style.css">
-<link href="https://pretextbook.org/css/0.2/features.css" rel="stylesheet" type="text/css">
-<script>var logged_in = false;
-var role = 'student';
-var guest_access = true;
-var login_required = false;
-var js_version = 0.11;
-</script>
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link xmlns:svg="http://www.w3.org/2000/svg" href="developer.css" rel="stylesheet" type="text/css">
 </head>
 <body class="mathbook-book has-toc has-sidebar-left">
-<a class="assistive" href="#content">Skip to main content</a><div class="hidden-content" style="display:none">\(\require{luatexja}\require{luatexja-ruby}\require{indentfirst}\require{unicode-math}\unimathsetup{math-style=ISO,bold-style=ISO}
+<a class="assistive" href="#content">Skip to main content</a><div xmlns:svg="http://www.w3.org/2000/svg" id="latex-macros" class="hidden-content" style="display:none">\(\require{luatexja}\require{luatexja-ruby}\require{indentfirst}\require{unicode-math}\unimathsetup{math-style=ISO,bold-style=ISO}
 \setmathfont{XITSMath-Regular.otf}
 \usepackage[match,deluxe,expert,bold,noto-otf]{luatexja-preset}
 \setmonofont{Noto Sans Mono CJK JP}
@@ -98,17 +88,17 @@ var js_version = 0.11;
 <p class="byline"></p>
 </div>
 </div></div>
-<nav id="primary-navbar" class="navbar"><div class="container">
+<nav xmlns:svg="http://www.w3.org/2000/svg" id="primary-navbar" class="navbar"><div class="container">
 <div class="navbar-top-buttons">
 <button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3">
-<a class="index-button toolbar-item button" href="index-1.html" title="Index">Index</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="sec-triangle-coord.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="ch-triangle.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="ch-geo.html" title="Next">Next</a></span>
+<a class="index-button toolbar-item button" href="index-1.html" title="索引">索引</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="sec-triangle-coord.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="ch-triangle.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="ch-geo.html" title="Next">Next</a></span>
 </div>
 </div>
 <div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
 <button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="sec-triangle-coord.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="ch-triangle.html" title="Up">Up</a><a class="next-button button toolbar-item" href="ch-geo.html" title="Next">Next</a>
 </div>
 </div></nav></header><div class="page">
-<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<div xmlns:svg="http://www.w3.org/2000/svg" id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
 <nav id="toc"><ul>
 <li class="link">
 <a href="ch-intro.html" data-scroll="ch-intro"><span class="codenumber">1</span> <span class="title">数学</span></a><ul>
@@ -156,27 +146,27 @@ var js_version = 0.11;
 <li class="link">
 <a href="ch-geo.html" data-scroll="ch-geo"><span class="codenumber">6</span> <span class="title">幾何</span></a><ul><li><a href="sec-geo-coord.html" data-scroll="sec-geo-coord">座標</a></li></ul>
 </li>
-<li class="link"><a href="backmatter-1.html" data-scroll="backmatter-1"><span class="title">Back Matter</span></a></li>
+<li class="link backmatter"><a href="backmatter-1.html" data-scroll="backmatter-1"><span class="title">Back Matter</span></a></li>
 <li class="link"><a href="references-1.html" data-scroll="references-1"><span class="title">参考文献</span></a></li>
-<li class="link"><a href="index-1.html" data-scroll="index-1"><span class="title">索引</span></a></li>
+<li class="link"><a href="index-1.html" data-scroll="index-1"><span class="title">Index</span></a></li>
 </ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
 </div></div>
-<main class="main"><div id="content" class="pretext-content"><section class="section" id="sec-triangle-add"><h2 class="heading hide-type">
+<main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="section" id="sec-triangle-add"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">5.4</span> <span class="title">加法定理</span>
 </h2>
-<a href="sec-triangle-add.html" class="permalink">¶</a><section class="subsection" id="ssec-triangle-add"><h3 class="heading hide-type">
+<section class="subsection" id="ssec-triangle-add"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">5.4.1</span> <span class="title">加法定理</span>
 </h3>
-<a href="sec-triangle-add.html#ssec-triangle-add" class="permalink">¶</a><p id="p-161">三角関数の和や積に対して成り立つ関係式は、いずれも次の加法定理が基本となって示される。</p>
-<article class="theorem-like" id="theorem-33"><h6 class="heading">
-<span class="type">定理</span> <span class="codenumber">5.27</span>. <span class="title">加法定理.</span>
+<p id="p-161">三角関数の和や積に対して成り立つ関係式は、いずれも次の加法定理が基本となって示される。</p>
+<article class="theorem theorem-like" id="theorem-33"><h6 class="heading">
+<span class="type">定理</span><span class="space"> </span><span class="codenumber">5.27</span><span class="period">.</span><span class="space"> </span><span class="title">加法定理.</span>
 </h6>\(\alpha, \beta \in \mathbb{R}\)とする。<div class="displaymath">
 \begin{align*}
 \sin(\alpha \pm \beta) &amp;= \sin\alpha\cos\beta \pm \cos\alpha\sin\beta (\text{複号同順})\\
 \cos(\alpha \pm \beta) &amp;= \cos\alpha\cos\beta \mp \sin\alpha\sin\beta (\text{複号同順})\\
 \tan(\alpha \pm \beta) &amp;= \frac{\tan\alpha \pm \tan\beta}{1 \mp \tan\alpha\tan\beta} (\text{複号同順})
 \end{align*}
-</div></article><article class="hiddenproof" id="proof-17"><a data-knowl="" class="id-ref" data-refid="hk-proof-17"><h6 class="heading"><span class="type">証明.</span></h6></a></article><div id="hk-proof-17" class="hidden-content tex2jax_ignore"><article class="hiddenproof">まず、\(\cos\)の加法定理を示す。 単位円周上に2点\(P(\cos\alpha,\sin\alpha), Q(\cos\beta, \sin\beta)\)をとる。 \(\triangle POQ\)に余弦定理(定理\ref{th:cos2})を用いると、\(PQ^2 = 1^2 + 1^2 - 2\times 1 \times 1 \cos\angle POQ = 2 - 2\cos(\alpha - \beta)\)となる。 一方、三平方の定理により、<div class="displaymath">
+</div></article><article class="hiddenproof" id="proof-17"><a data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-17"><h6 class="heading"><span class="type">証明<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-17"><article class="hiddenproof">まず、\(\cos\)の加法定理を示す。 単位円周上に2点\(P(\cos\alpha,\sin\alpha), Q(\cos\beta, \sin\beta)\)をとる。 \(\triangle POQ\)に余弦定理(定理\ref{th:cos2})を用いると、\(PQ^2 = 1^2 + 1^2 - 2\times 1 \times 1 \cos\angle POQ = 2 - 2\cos(\alpha - \beta)\)となる。 一方、三平方の定理により、<div class="displaymath">
 \begin{align*}
 PQ^2 &amp;= |\cos\beta - \cos\alpha|^2 + |\sin\alpha - \sin\beta|^2 = (\cos^2\beta + \sin^2\beta) + (\cos^2\alpha + \sin^2\alpha) - 2(\cos\alpha\cos\beta + \sin\alpha\sin\beta)\\
 &amp;= 1 + 1 - 2(\cos\alpha\cos\beta + \sin\alpha\sin\beta) = 2 - 2(\cos\alpha\cos\beta + \sin\alpha\sin\beta)
@@ -186,8 +176,8 @@ PQ^2 &amp;= |\cos\beta - \cos\alpha|^2 + |\sin\alpha - \sin\beta|^2 = (\cos^2\be
 \cos(\alpha + \phi) = \cos\alpha\cos(-\phi) + \sin\alpha\sin(-\phi) = \cos\alpha\cos\phi - \sin\alpha\sin\phi
 \end{gather*}
 </div>
-<figure class="figure-like" id="fig-triangle-add"><div style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="image/triangle-add.svg" style="width: 100%; height: auto;" alt=""></div>
-<figcaption><span class="type">図</span> <span class="codenumber">5.28.</span> \(\cos\)の加法定理</figcaption></figure> 次に、\(\sin\)の加法定理を示す。<div class="displaymath">
+<figure class="figure figure-like" id="fig-triangle-add"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="image/triangle-add.svg" role="img" class="contained" alt=""></div>
+<figcaption><span class="type">図</span><span class="space"> </span><span class="codenumber">5.28<span class="period">.</span></span><span class="space"> </span>\(\cos\)の加法定理</figcaption></figure> 次に、\(\sin\)の加法定理を示す。<div class="displaymath">
 \begin{align*}
 \sin(\alpha \pm \beta)
 &amp;= \cos(\frac{\pi}{2} - (\alpha \pm \beta)) = \cos((\frac{\pi}{2} - \alpha) \mp \beta))
@@ -204,24 +194,24 @@ PQ^2 &amp;= |\cos\beta - \cos\alpha|^2 + |\sin\alpha - \sin\beta|^2 = (\cos^2\be
 </div></article></div>
 <p id="p-162">加法定理は便利な定理だが、\(\sin,\cos,\tan\)のそれぞれにプラスとマイナスの場合があり覚えにくい。 語呂合わせで覚える方法の1つに、\(\sin\)の加法定理は「サイン・コス・コス・サイン」、\(\cos\)の加法定理は「コス・コス・マイナス・サイン・サイン」、\(\tan\)の加法定理は「1引くタン・タン、タン足すタン」というものがある。 これを覚えておき、マイナスの場合の式が必要な場合は、プラスの場合の式に出てくるプラス・マイナスをひっくり返すようにすれば、覚える量が少なくて済む。</p>
 <p id="p-163">加法定理を使うと、有名な角度以外の角度でも、三角関数の値を求められることがある。</p>
-<article class="example-like" id="example-22"><a data-knowl="" class="id-ref" data-refid="hk-example-22"><h6 class="heading">
-<span class="type">例</span> <span class="codenumber">5.29</span>. <span class="title">加法定理.</span>
-</h6></a></article><div id="hk-example-22" class="hidden-content tex2jax_ignore"><article class="example-like"><div class="displaymath">
+<article class="example example-like" id="example-22"><a data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-22"><h6 class="heading">
+<span class="type">例</span><span class="space"> </span><span class="codenumber">5.29</span><span class="period">.</span><span class="space"> </span><span class="title">加法定理.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-22"><article class="example example-like"><div class="displaymath">
 \begin{gather*}
 \sin \frac{\pi}{12} = \sin(\frac{\pi}{4} - \frac{\pi}{6}) = \sin\frac{\pi}{4} \cos\frac{\pi}{6} - \cos\frac{\pi}{4} \sin\frac{\pi}{6} = \frac{1}{\sqrt{2}}\frac{\sqrt{3}}{2} - \frac{1}{\sqrt{2}}\frac{1}{2} = \frac{\sqrt{3} - 1}{2\sqrt{2}} = \frac{\sqrt{6} - \sqrt{2}}{4}
 \end{gather*}
 </div></article></div></section><section class="subsection" id="ssec-triangle-double"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">5.4.2</span> <span class="title">倍角・半角の公式</span>
 </h3>
-<a href="sec-triangle-add.html#ssec-triangle-double" class="permalink">¶</a><p id="p-164">加法定理から、三角関数に関する多くの公式が示される。 以下の公式は数も多いので、式自体を覚えるのではなく、式の導出方法を覚えておくとよい。</p>
-<article class="theorem-like" id="theorem-34"><h6 class="heading">
-<span class="type">定理</span> <span class="codenumber">5.30</span>. <span class="title">二倍角の公式.</span>
+<p id="p-164">加法定理から、三角関数に関する多くの公式が示される。 以下の公式は数も多いので、式自体を覚えるのではなく、式の導出方法を覚えておくとよい。</p>
+<article class="theorem theorem-like" id="theorem-34"><h6 class="heading">
+<span class="type">定理</span><span class="space"> </span><span class="codenumber">5.30</span><span class="period">.</span><span class="space"> </span><span class="title">二倍角の公式.</span>
 </h6>\(\alpha \in \mathbb{R}\)とする。<div class="displaymath">
 \begin{align*}
 \sin 2\alpha &amp;= 2\sin\alpha\cos\alpha\\
 \cos 2\alpha &amp;= \cos^2\alpha - \sin^2\alpha = 2\cos^2\alpha - 1 = 1 - 2\sin^2\alpha
 \end{align*}
-</div></article><article class="hiddenproof" id="proof-18"><a data-knowl="" class="id-ref" data-refid="hk-proof-18"><h6 class="heading"><span class="type">証明.</span></h6></a></article><div id="hk-proof-18" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><div class="displaymath">
+</div></article><article class="hiddenproof" id="proof-18"><a data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-18"><h6 class="heading"><span class="type">証明<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-18"><article class="hiddenproof"><div class="displaymath">
 \begin{align*}
 \sin 2\alpha &amp;= \sin(\alpha + \alpha) = \sin\alpha\cos\alpha + \cos\alpha\sin\alpha = 2\sin\alpha\cos\alpha\\
 \cos 2\alpha &amp;= \cos(\alpha + \alpha) = \cos\alpha\cos\alpha - \sin\alpha\sin\alpha = \cos^2\alpha - \sin^2\alpha\\
@@ -229,25 +219,25 @@ PQ^2 &amp;= |\cos\beta - \cos\alpha|^2 + |\sin\alpha - \sin\beta|^2 = (\cos^2\be
 &amp;= 2(1 - \sin^2\alpha) - 1 = 1 - 2\sin^2\alpha
 \end{align*}
 </div></article></div>
-<article class="theorem-like" id="theorem-35"><h6 class="heading">
-<span class="type">定理</span> <span class="codenumber">5.31</span>. <span class="title">半角の公式.</span>
+<article class="theorem theorem-like" id="theorem-35"><h6 class="heading">
+<span class="type">定理</span><span class="space"> </span><span class="codenumber">5.31</span><span class="period">.</span><span class="space"> </span><span class="title">半角の公式.</span>
 </h6>\(\alpha \in \mathbb{R}\)とする。<div class="displaymath">
 \begin{gather*}
 \sin^2 \alpha = \frac{1 - \cos2\alpha}{2}, \cos^2\alpha = \frac{1 + \cos2\alpha}{2}
 \end{gather*}
-</div></article><article class="hiddenproof" id="proof-19"><a data-knowl="" class="id-ref" data-refid="hk-proof-19"><h6 class="heading"><span class="type">証明.</span></h6></a></article><div id="hk-proof-19" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><div class="displaymath">
+</div></article><article class="hiddenproof" id="proof-19"><a data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-19"><h6 class="heading"><span class="type">証明<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-19"><article class="hiddenproof"><div class="displaymath">
 \begin{align*}
 1 - \cos2\alpha &amp;= 1 - (1 - 2\sin^2\alpha) = 2\sin^2\alpha\\
 1 + \cos2\alpha &amp;= 1 + (2\cos^2\alpha - 1) = 2\cos^2\alpha
 \end{align*}
 </div></article></div>
-<article class="theorem-like" id="theorem-36"><h6 class="heading">
-<span class="type">定理</span> <span class="codenumber">5.32</span>. <span class="title">三倍角の公式.</span>
+<article class="theorem theorem-like" id="theorem-36"><h6 class="heading">
+<span class="type">定理</span><span class="space"> </span><span class="codenumber">5.32</span><span class="period">.</span><span class="space"> </span><span class="title">三倍角の公式.</span>
 </h6>\(\alpha \in \mathbb{R}\)とする。<div class="displaymath">
 \begin{gather*}
 \sin 3\alpha = 3\sin\alpha - 4\sin^3\alpha, \cos 3\alpha = 4\cos^3\alpha - 3\cos\alpha
 \end{gather*}
-</div></article><article class="hiddenproof" id="proof-20"><a data-knowl="" class="id-ref" data-refid="hk-proof-20"><h6 class="heading"><span class="type">証明.</span></h6></a></article><div id="hk-proof-20" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><div class="displaymath">
+</div></article><article class="hiddenproof" id="proof-20"><a data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-20"><h6 class="heading"><span class="type">証明<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-20"><article class="hiddenproof"><div class="displaymath">
 \begin{align*}
 \sin 3\alpha &amp;= \sin(2\alpha + \alpha) = \sin2\alpha\cos\alpha + \cos2\alpha\sin\alpha = 2\sin\alpha\cos^2\alpha + \cos^2\alpha\sin\alpha - \sin^3\alpha\\
 &amp;= 3\sin\alpha\cos^2\alpha - \sin^3\alpha = 3\sin\alpha(1 - \sin^2\alpha) - \sin^3\alpha = 3\sin\alpha - 4\sin^3\alpha\\
@@ -257,9 +247,9 @@ PQ^2 &amp;= |\cos\beta - \cos\alpha|^2 + |\sin\alpha - \sin\beta|^2 = (\cos^2\be
 </div></article></div></section><section class="subsection" id="ssec-triangle-sumprod"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">5.4.3</span> <span class="title">和積・積和公式</span>
 </h3>
-<a href="sec-triangle-add.html#ssec-triangle-sumprod" class="permalink">¶</a><p id="p-165">加法定理を用いると、三角関数の積と三角関数の和を相互に変換する公式を導ける。</p>
-<article class="theorem-like" id="theorem-37"><h6 class="heading">
-<span class="type">定理</span> <span class="codenumber">5.33</span>. <span class="title">積和公式.</span>
+<p id="p-165">加法定理を用いると、三角関数の積と三角関数の和を相互に変換する公式を導ける。</p>
+<article class="theorem theorem-like" id="theorem-37"><h6 class="heading">
+<span class="type">定理</span><span class="space"> </span><span class="codenumber">5.33</span><span class="period">.</span><span class="space"> </span><span class="title">積和公式.</span>
 </h6>\(\alpha, \beta \in \mathbb{R}\)とする。<div class="displaymath">
 \begin{align*}
 \sin\alpha\cos\beta &amp;=  \frac{1}{2}(\sin(\alpha + \beta) + \sin(\alpha - \beta))\\
@@ -267,14 +257,14 @@ PQ^2 &amp;= |\cos\beta - \cos\alpha|^2 + |\sin\alpha - \sin\beta|^2 = (\cos^2\be
 \cos\alpha\cos\beta &amp;=  \frac{1}{2}(\cos(\alpha + \beta) + \cos(\alpha - \beta))\\
 \sin\alpha\sin\beta &amp;= -\frac{1}{2}(\cos(\alpha + \beta) - \cos(\alpha - \beta))
 \end{align*}
-</div></article><article class="hiddenproof" id="proof-21"><a data-knowl="" class="id-ref" data-refid="hk-proof-21"><h6 class="heading"><span class="type">証明.</span></h6></a></article><div id="hk-proof-21" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><div class="displaymath">
+</div></article><article class="hiddenproof" id="proof-21"><a data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-21"><h6 class="heading"><span class="type">証明<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-21"><article class="hiddenproof"><div class="displaymath">
 \begin{align*}
 \sin(\alpha + \beta) &amp;= \sin\alpha\cos\beta + \cos\alpha\sin\beta\\
 \sin(\alpha - \beta) &amp;= \sin\alpha\cos\beta - \cos\alpha\sin\beta
 \end{align*}
 </div>この2式の両辺を足し合わせて、\(\sin(\alpha + \beta) + \sin(\alpha - \beta) = 2\sin\alpha\cos\beta\)となる。 また、2式の両辺の差をとって、\(\sin(\alpha + \beta) - \sin(\alpha - \beta) = 2\cos\alpha\sin\beta\)となる。 他の2式も、同様にして導かれる。</article></div>
-<article class="theorem-like" id="theorem-38"><h6 class="heading">
-<span class="type">定理</span> <span class="codenumber">5.34</span>. <span class="title">和積公式.</span>
+<article class="theorem theorem-like" id="theorem-38"><h6 class="heading">
+<span class="type">定理</span><span class="space"> </span><span class="codenumber">5.34</span><span class="period">.</span><span class="space"> </span><span class="title">和積公式.</span>
 </h6>\(x, y \in \mathbb{R}\)とする。<div class="displaymath">
 \begin{align*}
 \sin x + \sin y &amp;=  2\sin\frac{x+y}{2}\cos\frac{x-y}{2}\\
@@ -282,28 +272,26 @@ PQ^2 &amp;= |\cos\beta - \cos\alpha|^2 + |\sin\alpha - \sin\beta|^2 = (\cos^2\be
 \cos x + \cos y &amp;=  2\cos\frac{x+y}{2}\cos\frac{x-y}{2}\\
 \cos x - \cos y &amp;= -2\sin\frac{x+y}{2}\sin\frac{x-y}{2}
 \end{align*}
-</div></article><article class="hiddenproof" id="proof-22"><a data-knowl="" class="id-ref" data-refid="hk-proof-22"><h6 class="heading"><span class="type">証明.</span></h6></a></article><div id="hk-proof-22" class="hidden-content tex2jax_ignore"><article class="hiddenproof">積和公式で\(x = \alpha + \beta, y = \alpha - \beta\)とおくと、\(\alpha = \frac{x+y}{2}, \beta = \frac{x-y}{2}\)となり示される。</article></div></section><section class="subsection" id="ssec-triangle-compose"><h3 class="heading hide-type">
+</div></article><article class="hiddenproof" id="proof-22"><a data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-22"><h6 class="heading"><span class="type">証明<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-22"><article class="hiddenproof">積和公式で\(x = \alpha + \beta, y = \alpha - \beta\)とおくと、\(\alpha = \frac{x+y}{2}, \beta = \frac{x-y}{2}\)となり示される。</article></div></section><section class="subsection" id="ssec-triangle-compose"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">5.4.4</span> <span class="title">三角関数の合成</span>
 </h3>
-<a href="sec-triangle-add.html#ssec-triangle-compose" class="permalink">¶</a><p id="p-166">加法定理を逆向きに用いると、複数の三角関数を一つにまとめることができる。</p>
-<article class="theorem-like" id="theorem-39"><h6 class="heading">
-<span class="type">定理</span> <span class="codenumber">5.35</span>. <span class="title">三角関数の合成.</span>
+<p id="p-166">加法定理を逆向きに用いると、複数の三角関数を一つにまとめることができる。</p>
+<article class="theorem theorem-like" id="theorem-39"><h6 class="heading">
+<span class="type">定理</span><span class="space"> </span><span class="codenumber">5.35</span><span class="period">.</span><span class="space"> </span><span class="title">三角関数の合成.</span>
 </h6>\(a, b, \theta \in \mathbb{R}\)とする。<div class="displaymath">
 \begin{align*}
 a\sin\theta + b\cos\theta &amp;= \sqrt{a^2 + b^2}\sin(\theta + \phi) (\cos\phi = \frac{a}{\sqrt{a^2 + b^2}}, \sin\phi = \frac{b}{\sqrt{a^2 + b^2}})\\
 &amp;= \sqrt{a^2 + b^2}\cos(\theta + \psi) (\sin\psi = \frac{a}{\sqrt{a^2 + b^2}}, \cos\psi = \frac{b}{\sqrt{a^2 + b^2}})
 \end{align*}
-</div></article><article class="hiddenproof" id="proof-23"><a data-knowl="" class="id-ref" data-refid="hk-proof-23"><h6 class="heading"><span class="type">証明.</span></h6></a></article><div id="hk-proof-23" class="hidden-content tex2jax_ignore"><article class="hiddenproof">右辺に加法定理を適用すれば左辺が導かれる。</article></div>
+</div></article><article class="hiddenproof" id="proof-23"><a data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-23"><h6 class="heading"><span class="type">証明<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-23"><article class="hiddenproof">右辺に加法定理を適用すれば左辺が導かれる。</article></div>
 <p id="p-167">三角関数の合成を行うことで、三角関数の最大・最小問題が解き易くなることがある。</p>
-<article class="example-like" id="example-23"><a data-knowl="" class="id-ref" data-refid="hk-example-23"><h6 class="heading">
-<span class="type">例</span> <span class="codenumber">5.36</span>. <span class="title">三角関数の合成.</span>
-</h6></a></article><div id="hk-example-23" class="hidden-content tex2jax_ignore"><article class="example-like">\(\sin\theta+\sqrt{3}\cos\theta (\theta \in [0, \pi])\)の最大値と最小値を求める。<div class="displaymath">
+<article class="example example-like" id="example-23"><a data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-23"><h6 class="heading">
+<span class="type">例</span><span class="space"> </span><span class="codenumber">5.36</span><span class="period">.</span><span class="space"> </span><span class="title">三角関数の合成.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-23"><article class="example example-like">\(\sin\theta+\sqrt{3}\cos\theta (\theta \in [0, \pi])\)の最大値と最小値を求める。<div class="displaymath">
 \begin{gather*}
 \sin\theta + \sqrt{3}\cos\theta = 2\sin(\theta + \phi) (\cos\phi = \frac{1}{2}, \sin\phi = \frac{\sqrt{3}}{2}) = 2\sin(\theta + \frac{\pi}{3})
 \end{gather*}
 </div>と変形できる。\(\frac{\pi}{3} \leq \theta + \frac{\pi}{3} \leq \frac{4}{3}\pi\)であるので、\(\theta + \frac{\pi}{3} = \frac{\pi}{2}\)で最大、\(\theta + \frac{\pi}{3} = \frac{4}{3}\pi\)で最小となる。 従って、\(\theta = \frac{\pi}{6}\)で最大値2をとり、\(\theta = \pi\)で最小値\(-\sqrt{3}\)をとる。</article></div></section></section></div></main>
 </div>
-<div class="login-link"><span id="loginlogout" class="login">login</span></div>
-<script src="https://pretextbook.org/js/0.11/login.js"></script>
 </body>
 </html>

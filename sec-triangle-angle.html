@@ -1,64 +1,54 @@
 <!DOCTYPE html>
-<!--**************************************-->
-<!--*    Generated from PreTeXt source   *-->
-<!--*    on 2021-08-16T10:08:22+09:00    *-->
-<!--*                                    *-->
-<!--*      https://pretextbook.org       *-->
-<!--*                                    *-->
-<!--**************************************-->
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
 <html lang="ja-JP">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>角度</title>
 <meta name="Keywords" content="Authored in PreTeXt">
-<meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-    tex2jax: {
-        inlineMath: [['\\(','\\)']]
-    },
-    asciimath2jax: {
-        ignoreClass: ".*",
-        processClass: "has_am"
-    },
-    jax: ["input/AsciiMath"],
-    extensions: ["asciimath2jax.js"],
-    TeX: {
-        extensions: ["extpfeil.js", "autobold.js", "https://pretextbook.org/js/lib/mathjaxknowl.js", ],
-        // scrolling to fragment identifiers is controlled by other Javascript
-        positionToHash: false,
-        equationNumbers: { autoNumber: "none", useLabelIds: true, },
-        TagSide: "right",
-        TagIndent: ".8em",
-    },
-    // HTML-CSS output Jax to be dropped for MathJax 3.0
-    "HTML-CSS": {
-        scale: 88,
-        mtextFontInherit: true,
-    },
-    CommonHTML: {
-        scale: 88,
-        mtextFontInherit: true,
-    },
-});
-</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.11/pretext.js"></script><script src="https://pretextbook.org/js/0.11/pretext_add_on.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
-<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.2/pretext.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.2/pretext_add_on.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.2/toc.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.2/colors_default.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.2/setcolors.css" rel="stylesheet" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    useLabelIds: true,
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore",
+    processHtmlClass: "has_am",
+  },
+  chtml: {
+    scale: 0.88,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext_add_on.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script xmlns:svg="http://www.w3.org/2000/svg">sagecellEvalName='Evaluate (Sage)';
+</script><link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/banner_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/toc_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/knowls_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/style_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/colors_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/setcolors.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href="image/style.css">
-<link href="https://pretextbook.org/css/0.2/features.css" rel="stylesheet" type="text/css">
-<script>var logged_in = false;
-var role = 'student';
-var guest_access = true;
-var login_required = false;
-var js_version = 0.11;
-</script>
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link xmlns:svg="http://www.w3.org/2000/svg" href="developer.css" rel="stylesheet" type="text/css">
 </head>
 <body class="mathbook-book has-toc has-sidebar-left">
-<a class="assistive" href="#content">Skip to main content</a><div class="hidden-content" style="display:none">\(\require{luatexja}\require{luatexja-ruby}\require{indentfirst}\require{unicode-math}\unimathsetup{math-style=ISO,bold-style=ISO}
+<a class="assistive" href="#content">Skip to main content</a><div xmlns:svg="http://www.w3.org/2000/svg" id="latex-macros" class="hidden-content" style="display:none">\(\require{luatexja}\require{luatexja-ruby}\require{indentfirst}\require{unicode-math}\unimathsetup{math-style=ISO,bold-style=ISO}
 \setmathfont{XITSMath-Regular.otf}
 \usepackage[match,deluxe,expert,bold,noto-otf]{luatexja-preset}
 \setmonofont{Noto Sans Mono CJK JP}
@@ -98,17 +88,17 @@ var js_version = 0.11;
 <p class="byline"></p>
 </div>
 </div></div>
-<nav id="primary-navbar" class="navbar"><div class="container">
+<nav xmlns:svg="http://www.w3.org/2000/svg" id="primary-navbar" class="navbar"><div class="container">
 <div class="navbar-top-buttons">
 <button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3">
-<a class="index-button toolbar-item button" href="index-1.html" title="Index">Index</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="ch-triangle.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="ch-triangle.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="sec-triangle-def.html" title="Next">Next</a></span>
+<a class="index-button toolbar-item button" href="index-1.html" title="索引">索引</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="ch-triangle.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="ch-triangle.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="sec-triangle-def.html" title="Next">Next</a></span>
 </div>
 </div>
 <div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
 <button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="ch-triangle.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="ch-triangle.html" title="Up">Up</a><a class="next-button button toolbar-item" href="sec-triangle-def.html" title="Next">Next</a>
 </div>
 </div></nav></header><div class="page">
-<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<div xmlns:svg="http://www.w3.org/2000/svg" id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
 <nav id="toc"><ul>
 <li class="link">
 <a href="ch-intro.html" data-scroll="ch-intro"><span class="codenumber">1</span> <span class="title">数学</span></a><ul>
@@ -156,42 +146,42 @@ var js_version = 0.11;
 <li class="link">
 <a href="ch-geo.html" data-scroll="ch-geo"><span class="codenumber">6</span> <span class="title">幾何</span></a><ul><li><a href="sec-geo-coord.html" data-scroll="sec-geo-coord">座標</a></li></ul>
 </li>
-<li class="link"><a href="backmatter-1.html" data-scroll="backmatter-1"><span class="title">Back Matter</span></a></li>
+<li class="link backmatter"><a href="backmatter-1.html" data-scroll="backmatter-1"><span class="title">Back Matter</span></a></li>
 <li class="link"><a href="references-1.html" data-scroll="references-1"><span class="title">参考文献</span></a></li>
-<li class="link"><a href="index-1.html" data-scroll="index-1"><span class="title">索引</span></a></li>
+<li class="link"><a href="index-1.html" data-scroll="index-1"><span class="title">Index</span></a></li>
 </ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
 </div></div>
-<main class="main"><div id="content" class="pretext-content"><section class="section" id="sec-triangle-angle"><h2 class="heading hide-type">
+<main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="section" id="sec-triangle-angle"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">5.1</span> <span class="title">角度</span>
 </h2>
-<a href="sec-triangle-angle.html" class="permalink">¶</a><section class="subsection" id="ssec-triangle-angle"><h3 class="heading hide-type">
+<section class="subsection" id="ssec-triangle-angle"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">5.1.1</span> <span class="title">度数法</span>
 </h3>
-<a href="sec-triangle-angle.html#ssec-triangle-angle" class="permalink">¶</a><p id="p-142">角度を\(x^\circ\)のような形で表す方法を、<dfn class="terminology">度数法</dfn>という。 角度は\(0^\circ\)が最も小さく、\(360^\circ\)になると\(0^\circ\)と同じになる。 こう考えると、例えば\(361^\circ\)は\(1^\circ\)と同じであるとみなせる。 この考え方を一般化したのが、次の一般角である。</p>
-<article class="definition-like" id="definition-48"><h6 class="heading">
-<span class="type">定義</span> <span class="codenumber">5.1</span>. <span class="title">一般角.</span>
+<p id="p-142">角度を\(x^\circ\)のような形で表す方法を、<dfn class="terminology">度数法</dfn>という。 角度は\(0^\circ\)が最も小さく、\(360^\circ\)になると\(0^\circ\)と同じになる。 こう考えると、例えば\(361^\circ\)は\(1^\circ\)と同じであるとみなせる。 この考え方を一般化したのが、次の一般角である。</p>
+<article class="definition definition-like" id="definition-48"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">5.1</span><span class="period">.</span><span class="space"> </span><span class="title">一般角.</span>
 </h6>\(\theta \in [0, 360)\)のとき、度数法での<dfn class="terminology">一般角</dfn>を次のように定める。<div class="displaymath">
 \begin{gather*}
 (\theta + 360n)^\circ = \theta^\circ (n \in \mathbb{Z})
 \end{gather*}
-</div></article><article class="example-like" id="example-18"><a data-knowl="" class="id-ref" data-refid="hk-example-18"><h6 class="heading">
-<span class="type">例</span> <span class="codenumber">5.2</span>. <span class="title">一般角.</span>
-</h6></a></article><div id="hk-example-18" class="hidden-content tex2jax_ignore"><article class="example-like">\(540^\circ = (180 + 360 \times 1)^\circ = 180^\circ, -180^\circ = (180 + 360 \times (-1))^\circ = 180^\circ\)より、\(540^\circ, -180^\circ\)は\(180^\circ\)と同じとみなすことができる。</article></div></section><section class="subsection" id="ssec-triangle-radian"><h3 class="heading hide-type">
+</div></article><article class="example example-like" id="example-18"><a data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-18"><h6 class="heading">
+<span class="type">例</span><span class="space"> </span><span class="codenumber">5.2</span><span class="period">.</span><span class="space"> </span><span class="title">一般角.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-18"><article class="example example-like">\(540^\circ = (180 + 360 \times 1)^\circ = 180^\circ, -180^\circ = (180 + 360 \times (-1))^\circ = 180^\circ\)より、\(540^\circ, -180^\circ\)は\(180^\circ\)と同じとみなすことができる。</article></div></section><section class="subsection" id="ssec-triangle-radian"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">5.1.2</span> <span class="title">弧度法</span>
 </h3>
-<a href="sec-triangle-angle.html#ssec-triangle-radian" class="permalink">¶</a><p id="p-143">度数法による角度の表示は、そのままでは通常の数と比較することができず、数学で扱うには不便である。 そこで、扇形の弧の「長さ」を用いて、角の大きさを表すことを考える。</p>
+<p id="p-143">度数法による角度の表示は、そのままでは通常の数と比較することができず、数学で扱うには不便である。 そこで、扇形の弧の「長さ」を用いて、角の大きさを表すことを考える。</p>
 <p id="p-144">半径\(r\)の円の弧の長さは、\(2 \pi r\)と表せる。 円は中心角\(360^\circ\)の扇形とみなすことができるので、\(360^\circ\)と\(2 \pi\)を対応づける、<dfn class="terminology">弧度法</dfn>という角度の表し方を定義する。</p>
-<article class="definition-like" id="definition-49"><h6 class="heading">
-<span class="type">定義</span> <span class="codenumber">5.3</span>. <span class="title">弧度法.</span>
-</h6>半径\(r\)の扇形の弧の長さが\(r\)になるとき、<dfn class="terminology">ラジアン</dfn>(<dfn class="terminology">radian</dfn>)という単位を用いて、この扇形の中心角を<em class="emphasis">1 (radian)</em>と定める。 半径\(r\)の円(中心角\(360^\circ\))の円周は\(2\pi r\)で表されるので、\(360^\circ = 2\pi (radian)\)である。 なお、単位radianは省略することが多い。 <figure class="figure-like" id="fig-triangle-radian"><div style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="image/triangle-radian.svg" style="width: 100%; height: auto;" alt=""></div>
-<figcaption><span class="type">図</span> <span class="codenumber">5.4.</span> 弧度法</figcaption></figure></article><p id="p-145">度数法と弧度法は、次の関係式で変換できる。</p>
-<article class="theorem-like" id="theorem-23"><h6 class="heading">
-<span class="type">定理</span> <span class="codenumber">5.5</span>. <span class="title">度数法と弧度法の変換.</span>
+<article class="definition definition-like" id="definition-49"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">5.3</span><span class="period">.</span><span class="space"> </span><span class="title">弧度法.</span>
+</h6>半径\(r\)の扇形の弧の長さが\(r\)になるとき、<dfn class="terminology">ラジアン</dfn>(<dfn class="terminology">radian</dfn>)という単位を用いて、この扇形の中心角を<em class="emphasis">1 (radian)</em>と定める。 半径\(r\)の円(中心角\(360^\circ\))の円周は\(2\pi r\)で表されるので、\(360^\circ = 2\pi (radian)\)である。 なお、単位radianは省略することが多い。 <figure class="figure figure-like" id="fig-triangle-radian"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="image/triangle-radian.svg" role="img" class="contained" alt=""></div>
+<figcaption><span class="type">図</span><span class="space"> </span><span class="codenumber">5.4<span class="period">.</span></span><span class="space"> </span>弧度法</figcaption></figure></article><p id="p-145">度数法と弧度法は、次の関係式で変換できる。</p>
+<article class="theorem theorem-like" id="theorem-23"><h6 class="heading">
+<span class="type">定理</span><span class="space"> </span><span class="codenumber">5.5</span><span class="period">.</span><span class="space"> </span><span class="title">度数法と弧度法の変換.</span>
 </h6>\(a^\circ = \frac{a}{180}\pi (radian), \theta (radian) = (\frac{180}{\pi} \theta)^\circ\)</article><p id="p-146">弧度法によれば、扇形の弧の長さと面積は次の式で表せ、度数法より簡潔に表せる。</p>
-<article class="theorem-like" id="theorem-24"><h6 class="heading">
-<span class="type">定理</span> <span class="codenumber">5.6</span>. <span class="title">扇形の弧の長さと面積.</span>
-</h6>中心角\(\theta (radian)\)、半径\(r\)の扇形の弧の長さを\(l\)とすると、\(l = \theta r\)となる。 また、この扇形の面積は\(\frac{1}{2}\theta r^2 = \frac{1}{2}lr\)となる。 この面積の公式は、三角形の面積の公式(\(\text{面積} = \frac{1}{2} \times (\text{高さ}) \times (\text{底辺})\))と類似している。</article><p id="p-147">主要な角について度数法と弧度法の対応関係を表すと、表<a data-knowl="./knowl/table-triangle-radian.html" title="表 5.7">5.7</a>のようになる。</p>
-<figure class="figure-like" id="table-triangle-radian"><table>
+<article class="theorem theorem-like" id="theorem-24"><h6 class="heading">
+<span class="type">定理</span><span class="space"> </span><span class="codenumber">5.6</span><span class="period">.</span><span class="space"> </span><span class="title">扇形の弧の長さと面積.</span>
+</h6>中心角\(\theta (radian)\)、半径\(r\)の扇形の弧の長さを\(l\)とすると、\(l = \theta r\)となる。 また、この扇形の面積は\(\frac{1}{2}\theta r^2 = \frac{1}{2}lr\)となる。 この面積の公式は、三角形の面積の公式(\(\text{面積} = \frac{1}{2} \times (\text{高さ}) \times (\text{底辺})\))と類似している。</article><p id="p-147">主要な角について度数法と弧度法の対応関係を表すと、表<a class="xref" data-knowl="./knowl/table-triangle-radian.html" title="表 5.7">5.7</a>のようになる。</p>
+<figure class="table table-like" id="table-triangle-radian"><figcaption><span class="type">表</span><span class="space"> </span><span class="codenumber">5.7<span class="period">.</span></span><span class="space"> </span>度数法と弧度法の対応</figcaption><div class="tabular-box natural-width"><table class="tabular">
 <tr>
 <td class="l m b0 r0 l0 t0 lines">\(\theta^\circ\)</td>
 <td class="l m b0 r0 l0 t0 lines">\(0^\circ\)</td>
@@ -232,10 +222,7 @@ var js_version = 0.11;
 <td class="l m b0 r0 l0 t0 lines">\(\frac{11\pi}{6}\)</td>
 <td class="l m b0 r0 l0 t0 lines">\(2\pi\)</td>
 </tr>
-</table>
-<figcaption><span class="type">表</span> <span class="codenumber">5.7.</span> 度数法と弧度法の対応</figcaption></figure></section></section></div></main>
+</table></div></figure></section></section></div></main>
 </div>
-<div class="login-link"><span id="loginlogout" class="login">login</span></div>
-<script src="https://pretextbook.org/js/0.11/login.js"></script>
 </body>
 </html>

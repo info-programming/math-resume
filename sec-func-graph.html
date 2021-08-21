@@ -1,64 +1,54 @@
 <!DOCTYPE html>
-<!--**************************************-->
-<!--*    Generated from PreTeXt source   *-->
-<!--*    on 2021-08-16T10:08:22+09:00    *-->
-<!--*                                    *-->
-<!--*      https://pretextbook.org       *-->
-<!--*                                    *-->
-<!--**************************************-->
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
 <html lang="ja-JP">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>グラフ</title>
 <meta name="Keywords" content="Authored in PreTeXt">
-<meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-    tex2jax: {
-        inlineMath: [['\\(','\\)']]
-    },
-    asciimath2jax: {
-        ignoreClass: ".*",
-        processClass: "has_am"
-    },
-    jax: ["input/AsciiMath"],
-    extensions: ["asciimath2jax.js"],
-    TeX: {
-        extensions: ["extpfeil.js", "autobold.js", "https://pretextbook.org/js/lib/mathjaxknowl.js", ],
-        // scrolling to fragment identifiers is controlled by other Javascript
-        positionToHash: false,
-        equationNumbers: { autoNumber: "none", useLabelIds: true, },
-        TagSide: "right",
-        TagIndent: ".8em",
-    },
-    // HTML-CSS output Jax to be dropped for MathJax 3.0
-    "HTML-CSS": {
-        scale: 88,
-        mtextFontInherit: true,
-    },
-    CommonHTML: {
-        scale: 88,
-        mtextFontInherit: true,
-    },
-});
-</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.11/pretext.js"></script><script src="https://pretextbook.org/js/0.11/pretext_add_on.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
-<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.2/pretext.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.2/pretext_add_on.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.2/toc.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.2/colors_default.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.2/setcolors.css" rel="stylesheet" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    useLabelIds: true,
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore",
+    processHtmlClass: "has_am",
+  },
+  chtml: {
+    scale: 0.88,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext_add_on.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script xmlns:svg="http://www.w3.org/2000/svg">sagecellEvalName='Evaluate (Sage)';
+</script><link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/banner_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/toc_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/knowls_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/style_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/colors_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/setcolors.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href="image/style.css">
-<link href="https://pretextbook.org/css/0.2/features.css" rel="stylesheet" type="text/css">
-<script>var logged_in = false;
-var role = 'student';
-var guest_access = true;
-var login_required = false;
-var js_version = 0.11;
-</script>
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link xmlns:svg="http://www.w3.org/2000/svg" href="developer.css" rel="stylesheet" type="text/css">
 </head>
 <body class="mathbook-book has-toc has-sidebar-left">
-<a class="assistive" href="#content">Skip to main content</a><div class="hidden-content" style="display:none">\(\require{luatexja}\require{luatexja-ruby}\require{indentfirst}\require{unicode-math}\unimathsetup{math-style=ISO,bold-style=ISO}
+<a class="assistive" href="#content">Skip to main content</a><div xmlns:svg="http://www.w3.org/2000/svg" id="latex-macros" class="hidden-content" style="display:none">\(\require{luatexja}\require{luatexja-ruby}\require{indentfirst}\require{unicode-math}\unimathsetup{math-style=ISO,bold-style=ISO}
 \setmathfont{XITSMath-Regular.otf}
 \usepackage[match,deluxe,expert,bold,noto-otf]{luatexja-preset}
 \setmonofont{Noto Sans Mono CJK JP}
@@ -98,17 +88,17 @@ var js_version = 0.11;
 <p class="byline"></p>
 </div>
 </div></div>
-<nav id="primary-navbar" class="navbar"><div class="container">
+<nav xmlns:svg="http://www.w3.org/2000/svg" id="primary-navbar" class="navbar"><div class="container">
 <div class="navbar-top-buttons">
 <button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3">
-<a class="index-button toolbar-item button" href="index-1.html" title="Index">Index</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="sec-func-map.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="ch-func.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="sec-func-ex.html" title="Next">Next</a></span>
+<a class="index-button toolbar-item button" href="index-1.html" title="索引">索引</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="sec-func-map.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="ch-func.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="sec-func-ex.html" title="Next">Next</a></span>
 </div>
 </div>
 <div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
 <button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="sec-func-map.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="ch-func.html" title="Up">Up</a><a class="next-button button toolbar-item" href="sec-func-ex.html" title="Next">Next</a>
 </div>
 </div></nav></header><div class="page">
-<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<div xmlns:svg="http://www.w3.org/2000/svg" id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
 <nav id="toc"><ul>
 <li class="link">
 <a href="ch-intro.html" data-scroll="ch-intro"><span class="codenumber">1</span> <span class="title">数学</span></a><ul>
@@ -156,55 +146,53 @@ var js_version = 0.11;
 <li class="link">
 <a href="ch-geo.html" data-scroll="ch-geo"><span class="codenumber">6</span> <span class="title">幾何</span></a><ul><li><a href="sec-geo-coord.html" data-scroll="sec-geo-coord">座標</a></li></ul>
 </li>
-<li class="link"><a href="backmatter-1.html" data-scroll="backmatter-1"><span class="title">Back Matter</span></a></li>
+<li class="link backmatter"><a href="backmatter-1.html" data-scroll="backmatter-1"><span class="title">Back Matter</span></a></li>
 <li class="link"><a href="references-1.html" data-scroll="references-1"><span class="title">参考文献</span></a></li>
-<li class="link"><a href="index-1.html" data-scroll="index-1"><span class="title">索引</span></a></li>
+<li class="link"><a href="index-1.html" data-scroll="index-1"><span class="title">Index</span></a></li>
 </ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
 </div></div>
-<main class="main"><div id="content" class="pretext-content"><section class="section" id="sec-func-graph"><h2 class="heading hide-type">
+<main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="section" id="sec-func-graph"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">4.2</span> <span class="title">グラフ</span>
 </h2>
-<a href="sec-func-graph.html" class="permalink">¶</a><section class="subsection" id="ssec-func-graph"><h3 class="heading hide-type">
+<section class="subsection" id="ssec-func-graph"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">4.2.1</span> <span class="title">グラフ</span>
 </h3>
-<a href="sec-func-graph.html#ssec-func-graph" class="permalink">¶</a><p id="p-124">関数のグラフを座標空間に図示すると、関数の値の変化を目で見て分かるように可視化できる。</p>
-<article class="definition-like" id="definition-42"><h6 class="heading">
-<span class="type">定義</span> <span class="codenumber">4.4</span>. <span class="title">グラフ.</span>
-</h6>関数\(f: \mathbb{R} \to \mathbb{R}\)について、集合\(\{ (x, y) | x \in \mathbb{R}, y = f(x) \}\)を\(f\)の<dfn class="terminology">グラフ</dfn>(<dfn class="terminology">graph</dfn>)という。 また、関数\(f: \mathbb{R}^2 \to \mathbb{R}\)について、集合\(\{ (x, y, z) | x, y \in \mathbb{R}, z = f(x, y) \}\)を\(f\)のグラフという。 このとき、\(y = f(x)\)や\(z = f(x, y)\)をそれぞれのグラフの方程式という。</article><article class="theorem-like" id="algorithm-3"><h6 class="heading">
-<span class="type">アルゴリズム</span> <span class="codenumber">4.5</span>. <span class="title">グラフの描き方.</span>
+<p id="p-124">関数のグラフを座標空間に図示すると、関数の値の変化を目で見て分かるように可視化できる。</p>
+<article class="definition definition-like" id="definition-42"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">4.4</span><span class="period">.</span><span class="space"> </span><span class="title">グラフ.</span>
+</h6>関数\(f: \mathbb{R} \to \mathbb{R}\)について、集合\(\{ (x, y) | x \in \mathbb{R}, y = f(x) \}\)を\(f\)の<dfn class="terminology">グラフ</dfn>(<dfn class="terminology">graph</dfn>)という。 また、関数\(f: \mathbb{R}^2 \to \mathbb{R}\)について、集合\(\{ (x, y, z) | x, y \in \mathbb{R}, z = f(x, y) \}\)を\(f\)のグラフという。 このとき、\(y = f(x)\)や\(z = f(x, y)\)をそれぞれのグラフの方程式という。</article><article class="algorithm theorem-like" id="algorithm-3"><h6 class="heading">
+<span class="type">Algorithm</span><span class="space"> </span><span class="codenumber">4.5</span><span class="period">.</span><span class="space"> </span><span class="title">グラフの描き方.</span>
 </h6>
 <ol class="decimal">
-<li id="li-21">軸と原点を描く。\(xy\)平面の場合は\(x\)軸と\(y\)軸を書き、それぞれの軸の端に「\(x\)」「\(y\)」と記す。\(x\)軸と\(y\)軸の交点に原点を表す記号\(O\)を記す。</li>
-<li id="li-22">軸との交点を探し、もし交点があれば交点の座標を書き込む。\(xy\)平面の場合は\(y = 0\)を代入して\(x\)軸との交点を求め、\(x = 0\)を代入して\(y\)軸との交点を求める。</li>
-<li id="li-23">\(x = \pm 1, \pm 2, \pm \frac{1}{2}\)などいくつかの値を代入して、グラフの概形を推測する。</li>
-<li id="li-24">以上の点を通る線を描く。線上で条件を満たす端点は白丸「○」で、条件を満たさない端点は黒丸「●」で表す。 曲線を描く場合は、「曲がり方が急になる・緩やかになる」「ある値へ近づく」など、どのような曲がり方をしているかを意識し、できるだけ曲線の特徴を反映させて描く。</li>
+<li id="li-21"><p id="p-derived-li-21">軸と原点を描く。\(xy\)平面の場合は\(x\)軸と\(y\)軸を書き、それぞれの軸の端に「\(x\)」「\(y\)」と記す。\(x\)軸と\(y\)軸の交点に原点を表す記号\(O\)を記す。</p></li>
+<li id="li-22"><p id="p-derived-li-22">軸との交点を探し、もし交点があれば交点の座標を書き込む。\(xy\)平面の場合は\(y = 0\)を代入して\(x\)軸との交点を求め、\(x = 0\)を代入して\(y\)軸との交点を求める。</p></li>
+<li id="li-23"><p id="p-derived-li-23">\(x = \pm 1, \pm 2, \pm \frac{1}{2}\)などいくつかの値を代入して、グラフの概形を推測する。</p></li>
+<li id="li-24"><p id="p-derived-li-24">以上の点を通る線を描く。線上で条件を満たす端点は白丸「○」で、条件を満たさない端点は黒丸「●」で表す。 曲線を描く場合は、「曲がり方が急になる・緩やかになる」「ある値へ近づく」など、どのような曲がり方をしているかを意識し、できるだけ曲線の特徴を反映させて描く。</p></li>
 </ol></article></section><section class="subsection" id="ssec-func-trans"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">4.2.2</span> <span class="title">移動</span>
 </h3>
-<a href="sec-func-graph.html#ssec-func-trans" class="permalink">¶</a><p id="p-125">関数のグラフを座標空間内で移動させると、グラフに対してさまざまな変形を行うことができる。</p>
-<article class="definition-like" id="definition-43"><h6 class="heading">
-<span class="type">定義</span> <span class="codenumber">4.6</span>. <span class="title">平行移動.</span>
-</h6>あるグラフを平面上で一定の距離と方向に動かすことを、そのグラフの<dfn class="terminology">平行移動</dfn>という。 ある方程式のグラフを\(X\)軸方向に\(p\)だけ平行移動したグラフの方程式は、元の方程式の変数\(X\)を\(X - p\)に置き換えたものになる。 たとえば、\(y = f(x)\)を\(x\)軸方向に\(p\)、\(y\)軸方向に\(q\)だけ平行移動したグラフは\(y - q = f(x - p)\)と表される。 <figure class="figure-like" id="fig-func-trans-translate"><div style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="image/func-trans-translate.svg" style="width: 100%; height: auto;" alt=""></div>
-<figcaption><span class="type">図</span> <span class="codenumber">4.7.</span> 平行移動の例</figcaption></figure></article><p id="p-126">\(xy\)平面上の点\((a, b)\)を\(x\)軸方向に\(p\)、\(y\)軸方向に\(q\)だけ平行移動すると点\((a + p, b + q)\)となる。 点\((a, b)\)の方程式は\((x, y) = (a, b)\)、つまり「\(x = a\)かつ\(y = b\)」と表せるので、移動後の点の方程式は「\(x = a + p\)かつ\(y = b + q\)」となる。 これを変形すると「\(x - p = a\)かつ\(y - q = b\)となり、元の方程式の\(x\)を\(x - p\)に、\(y\)を\(y - q\)に、それぞれ置き換えたものであることが分かる。 図形のグラフは方程式を満たす点の集合であるので、一般の図形についても、\(x\)を\(x - p\)に、\(y\)を\(y - q\)に、それぞれ置き換えることで、平行移動後のグラフの方程式が求められる。</p>
-<article class="definition-like" id="definition-44"><h6 class="heading">
-<span class="type">定義</span> <span class="codenumber">4.8</span>. <span class="title">対称移動.</span>
+<p id="p-125">関数のグラフを座標空間内で移動させると、グラフに対してさまざまな変形を行うことができる。</p>
+<article class="definition definition-like" id="definition-43"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">4.6</span><span class="period">.</span><span class="space"> </span><span class="title">平行移動.</span>
+</h6>あるグラフを平面上で一定の距離と方向に動かすことを、そのグラフの<dfn class="terminology">平行移動</dfn>という。 ある方程式のグラフを\(X\)軸方向に\(p\)だけ平行移動したグラフの方程式は、元の方程式の変数\(X\)を\(X - p\)に置き換えたものになる。 たとえば、\(y = f(x)\)を\(x\)軸方向に\(p\)、\(y\)軸方向に\(q\)だけ平行移動したグラフは\(y - q = f(x - p)\)と表される。 <figure class="figure figure-like" id="fig-func-trans-translate"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="image/func-trans-translate.svg" role="img" class="contained" alt=""></div>
+<figcaption><span class="type">図</span><span class="space"> </span><span class="codenumber">4.7<span class="period">.</span></span><span class="space"> </span>平行移動の例</figcaption></figure></article><p id="p-126">\(xy\)平面上の点\((a, b)\)を\(x\)軸方向に\(p\)、\(y\)軸方向に\(q\)だけ平行移動すると点\((a + p, b + q)\)となる。 点\((a, b)\)の方程式は\((x, y) = (a, b)\)、つまり「\(x = a\)かつ\(y = b\)」と表せるので、移動後の点の方程式は「\(x = a + p\)かつ\(y = b + q\)」となる。 これを変形すると「\(x - p = a\)かつ\(y - q = b\)となり、元の方程式の\(x\)を\(x - p\)に、\(y\)を\(y - q\)に、それぞれ置き換えたものであることが分かる。 図形のグラフは方程式を満たす点の集合であるので、一般の図形についても、\(x\)を\(x - p\)に、\(y\)を\(y - q\)に、それぞれ置き換えることで、平行移動後のグラフの方程式が求められる。</p>
+<article class="definition definition-like" id="definition-44"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">4.8</span><span class="period">.</span><span class="space"> </span><span class="title">対称移動.</span>
 </h6>ある点や直線などを決め、グラフをそれに関して対称に移動することを、その点や直線などに関する<dfn class="terminology">対称移動</dfn>という。 ある方程式のグラフを直線\(X = 0\)について対称移動したグラフの方程式は、元の方程式の変数\(X\)を\(-X\)に置き換えたものになる。 <ul class="disc">
-<li id="li-25">\(y = f(x)\)を\(x\)軸(\(y = 0\))について対称移動したグラフは\(-y = f(x)\)と表される。</li>
-<li id="li-26">\(y = f(x)\)を\(y\)軸(\(x = 0\))について対称移動したグラフは\(y = f(-x)\)と表される。</li>
-<li id="li-27">\(y = f(x)\)を原点について対称移動したグラフは\(-y = f(-x)\)と表される。原点についての対称移動は、\(x\)軸についての対称移動と\(y\)軸についての対称移動を合わせたものである。</li>
+<li id="li-25"><p id="p-derived-li-25">\(y = f(x)\)を\(x\)軸(\(y = 0\))について対称移動したグラフは\(-y = f(x)\)と表される。</p></li>
+<li id="li-26"><p id="p-derived-li-26">\(y = f(x)\)を\(y\)軸(\(x = 0\))について対称移動したグラフは\(y = f(-x)\)と表される。</p></li>
+<li id="li-27"><p id="p-derived-li-27">\(y = f(x)\)を原点について対称移動したグラフは\(-y = f(-x)\)と表される。原点についての対称移動は、\(x\)軸についての対称移動と\(y\)軸についての対称移動を合わせたものである。</p></li>
 </ul>
-<figure class="figure-like" id="fig-func-trans-reflection"><div style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="image/func-trans-reflection.svg" style="width: 100%; height: auto;" alt=""></div>
-<figcaption><span class="type">図</span> <span class="codenumber">4.9.</span> 対称移動の例</figcaption></figure></article><p id="p-127">また、\(x\)や\(y\)を定数で割ることにより、グラフを拡大したり縮小したりすることができる。</p>
-<article class="theorem-like" id="theorem-21"><h6 class="heading">
-<span class="type">定理</span> <span class="codenumber">4.10</span>. <span class="title">拡大.</span>
+<figure class="figure figure-like" id="fig-func-trans-reflection"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="image/func-trans-reflection.svg" role="img" class="contained" alt=""></div>
+<figcaption><span class="type">図</span><span class="space"> </span><span class="codenumber">4.9<span class="period">.</span></span><span class="space"> </span>対称移動の例</figcaption></figure></article><p id="p-127">また、\(x\)や\(y\)を定数で割ることにより、グラフを拡大したり縮小したりすることができる。</p>
+<article class="theorem theorem-like" id="theorem-21"><h6 class="heading">
+<span class="type">定理</span><span class="space"> </span><span class="codenumber">4.10</span><span class="period">.</span><span class="space"> </span><span class="title">拡大.</span>
 </h6>\(k\)を0でない実数とする。 ある方程式のグラフを\(X\)軸について\(k\)倍に<dfn class="terminology">拡大</dfn>したグラフは、元の方程式の変数\(X\)を\(\frac{X}{k}\)に置き換えたものになる。 <ul class="disc">
-<li id="li-28">\(y = f(x)\)を\(x\)軸方向に\(k\)倍に拡大したグラフは\(y = f(\frac{x}{k})\)と表される。</li>
-<li id="li-29">\(y = f(x)\)を\(y\)軸方向に\(k\)倍に拡大したグラフは\(\frac{y}{k} = f(x)\)と表される。</li>
+<li id="li-28"><p id="p-derived-li-28">\(y = f(x)\)を\(x\)軸方向に\(k\)倍に拡大したグラフは\(y = f(\frac{x}{k})\)と表される。</p></li>
+<li id="li-29"><p id="p-derived-li-29">\(y = f(x)\)を\(y\)軸方向に\(k\)倍に拡大したグラフは\(\frac{y}{k} = f(x)\)と表される。</p></li>
 </ul>
-<figure class="figure-like" id="fig-func-trans-zoom"><div style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="image/func-trans-zoom.svg" style="width: 100%; height: auto;" alt=""></div>
-<figcaption><span class="type">図</span> <span class="codenumber">4.11.</span> 拡大の例</figcaption></figure></article></section></section></div></main>
+<figure class="figure figure-like" id="fig-func-trans-zoom"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="image/func-trans-zoom.svg" role="img" class="contained" alt=""></div>
+<figcaption><span class="type">図</span><span class="space"> </span><span class="codenumber">4.11<span class="period">.</span></span><span class="space"> </span>拡大の例</figcaption></figure></article></section></section></div></main>
 </div>
-<div class="login-link"><span id="loginlogout" class="login">login</span></div>
-<script src="https://pretextbook.org/js/0.11/login.js"></script>
 </body>
 </html>

@@ -1,64 +1,54 @@
 <!DOCTYPE html>
-<!--**************************************-->
-<!--*    Generated from PreTeXt source   *-->
-<!--*    on 2021-08-16T10:08:22+09:00    *-->
-<!--*                                    *-->
-<!--*      https://pretextbook.org       *-->
-<!--*                                    *-->
-<!--**************************************-->
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
 <html lang="ja-JP">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>座標</title>
 <meta name="Keywords" content="Authored in PreTeXt">
-<meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-    tex2jax: {
-        inlineMath: [['\\(','\\)']]
-    },
-    asciimath2jax: {
-        ignoreClass: ".*",
-        processClass: "has_am"
-    },
-    jax: ["input/AsciiMath"],
-    extensions: ["asciimath2jax.js"],
-    TeX: {
-        extensions: ["extpfeil.js", "autobold.js", "https://pretextbook.org/js/lib/mathjaxknowl.js", ],
-        // scrolling to fragment identifiers is controlled by other Javascript
-        positionToHash: false,
-        equationNumbers: { autoNumber: "none", useLabelIds: true, },
-        TagSide: "right",
-        TagIndent: ".8em",
-    },
-    // HTML-CSS output Jax to be dropped for MathJax 3.0
-    "HTML-CSS": {
-        scale: 88,
-        mtextFontInherit: true,
-    },
-    CommonHTML: {
-        scale: 88,
-        mtextFontInherit: true,
-    },
-});
-</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.11/pretext.js"></script><script src="https://pretextbook.org/js/0.11/pretext_add_on.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
-<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.2/pretext.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.2/pretext_add_on.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.2/toc.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.2/colors_default.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.2/setcolors.css" rel="stylesheet" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    useLabelIds: true,
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore",
+    processHtmlClass: "has_am",
+  },
+  chtml: {
+    scale: 0.88,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext_add_on.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script xmlns:svg="http://www.w3.org/2000/svg">sagecellEvalName='Evaluate (Sage)';
+</script><link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/banner_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/toc_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/knowls_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/style_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/colors_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/setcolors.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href="image/style.css">
-<link href="https://pretextbook.org/css/0.2/features.css" rel="stylesheet" type="text/css">
-<script>var logged_in = false;
-var role = 'student';
-var guest_access = true;
-var login_required = false;
-var js_version = 0.11;
-</script>
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link xmlns:svg="http://www.w3.org/2000/svg" href="developer.css" rel="stylesheet" type="text/css">
 </head>
 <body class="mathbook-book has-toc has-sidebar-left">
-<a class="assistive" href="#content">Skip to main content</a><div class="hidden-content" style="display:none">\(\require{luatexja}\require{luatexja-ruby}\require{indentfirst}\require{unicode-math}\unimathsetup{math-style=ISO,bold-style=ISO}
+<a class="assistive" href="#content">Skip to main content</a><div xmlns:svg="http://www.w3.org/2000/svg" id="latex-macros" class="hidden-content" style="display:none">\(\require{luatexja}\require{luatexja-ruby}\require{indentfirst}\require{unicode-math}\unimathsetup{math-style=ISO,bold-style=ISO}
 \setmathfont{XITSMath-Regular.otf}
 \usepackage[match,deluxe,expert,bold,noto-otf]{luatexja-preset}
 \setmonofont{Noto Sans Mono CJK JP}
@@ -98,17 +88,17 @@ var js_version = 0.11;
 <p class="byline"></p>
 </div>
 </div></div>
-<nav id="primary-navbar" class="navbar"><div class="container">
+<nav xmlns:svg="http://www.w3.org/2000/svg" id="primary-navbar" class="navbar"><div class="container">
 <div class="navbar-top-buttons">
 <button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3">
-<a class="index-button toolbar-item button" href="index-1.html" title="Index">Index</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="ch-geo.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="ch-geo.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="backmatter-1.html" title="Next">Next</a></span>
+<a class="index-button toolbar-item button" href="index-1.html" title="索引">索引</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="ch-geo.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="ch-geo.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="backmatter-1.html" title="Next">Next</a></span>
 </div>
 </div>
 <div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
 <button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="ch-geo.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="ch-geo.html" title="Up">Up</a><a class="next-button button toolbar-item" href="backmatter-1.html" title="Next">Next</a>
 </div>
 </div></nav></header><div class="page">
-<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<div xmlns:svg="http://www.w3.org/2000/svg" id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
 <nav id="toc"><ul>
 <li class="link">
 <a href="ch-intro.html" data-scroll="ch-intro"><span class="codenumber">1</span> <span class="title">数学</span></a><ul>
@@ -156,50 +146,48 @@ var js_version = 0.11;
 <li class="link">
 <a href="ch-geo.html" data-scroll="ch-geo"><span class="codenumber">6</span> <span class="title">幾何</span></a><ul><li><a href="sec-geo-coord.html" data-scroll="sec-geo-coord" class="active">座標</a></li></ul>
 </li>
-<li class="link"><a href="backmatter-1.html" data-scroll="backmatter-1"><span class="title">Back Matter</span></a></li>
+<li class="link backmatter"><a href="backmatter-1.html" data-scroll="backmatter-1"><span class="title">Back Matter</span></a></li>
 <li class="link"><a href="references-1.html" data-scroll="references-1"><span class="title">参考文献</span></a></li>
-<li class="link"><a href="index-1.html" data-scroll="index-1"><span class="title">索引</span></a></li>
+<li class="link"><a href="index-1.html" data-scroll="index-1"><span class="title">Index</span></a></li>
 </ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
 </div></div>
-<main class="main"><div id="content" class="pretext-content"><section class="section" id="sec-geo-coord"><h2 class="heading hide-type">
+<main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="section" id="sec-geo-coord"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">6.1</span> <span class="title">座標</span>
 </h2>
-<a href="sec-geo-coord.html" class="permalink">¶</a><section class="introduction" id="introduction-12"><p id="p-170">図形を方程式で表したり、数を目で見えるよう可視化させたりする目的で使われるのが、<dfn class="terminology">座標</dfn>(<dfn class="terminology">coordinate</dfn>)である。 座標のとり方のことを<dfn class="terminology">座標系</dfn>(<dfn class="terminology">coordinate system</dfn>)といい、座標系が定められた空間を<dfn class="terminology">座標空間</dfn>(<dfn class="terminology">coordinate space</dfn>)という。 特に、2つの軸により定められる座標空間を<dfn class="terminology">座標平面</dfn>という。</p></section><section class="subsection" id="ssec-geo-rect"><h3 class="heading hide-type">
+<section class="introduction" id="introduction-12"><p id="p-170">図形を方程式で表したり、数を目で見えるよう可視化させたりする目的で使われるのが、<dfn class="terminology">座標</dfn>(<dfn class="terminology">coordinate</dfn>)である。 座標のとり方のことを<dfn class="terminology">座標系</dfn>(<dfn class="terminology">coordinate system</dfn>)といい、座標系が定められた空間を<dfn class="terminology">座標空間</dfn>(<dfn class="terminology">coordinate space</dfn>)という。 特に、2つの軸により定められる座標空間を<dfn class="terminology">座標平面</dfn>という。</p></section><section class="subsection" id="ssec-geo-rect"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">6.1.1</span> <span class="title">直交座標系</span>
 </h3>
-<a href="sec-geo-coord.html#ssec-geo-rect" class="permalink">¶</a><article class="definition-like" id="definition-52"><h6 class="heading">
-<span class="type">定義</span> <span class="codenumber">6.1</span>. <span class="title">直交座標系.</span>
-</h6>互いに直交する<dfn class="terminology">軸</dfn>(<dfn class="terminology">axis</dfn>)からなる座標系を<dfn class="terminology">直交座標系</dfn>(<dfn class="terminology">rectangular coordinate system</dfn>)という。 軸として、座標平面では\(x\)軸と\(y\)軸、座標空間では\(x\)軸と\(y\)軸と\(z\)軸を使うことが多い。 \(x\)軸と\(y\)軸からなる座標平面を\(xy\)平面、\(y\)軸と\(z\)軸からなる座標平面を\(yz\)平面、\(z\)軸と\(x\)軸からなる座標平面を\(zx\)平面という。 また、\(x\)軸と\(y\)軸と\(z\)軸からなる座標空間を\(xyz\)空間という。 直交座標系ではすべての軸は1点で交わり、この点を<dfn class="terminology">原点</dfn>(<dfn class="terminology">origin</dfn>)といい、originの頭文字をとって点\(O\)と表す。</article><p id="p-171">1次元、2次元、3次元の直交座標系は図<a data-knowl="./knowl/fig-geo-rect.html" title="図 6.2">6.2</a>のように表される。なお、1次元の座標空間は数直線となる。</p>
-<figure class="figure-like" id="fig-geo-rect"><div style="width: 75%; margin-left: 12.5%; margin-right: 12.5%;"><img src="image/geo-1d-coord.svg" style="width: 100%; height: auto;" alt=""></div>
-<div style="width: 75%; margin-left: 12.5%; margin-right: 12.5%;"><img src="image/geo-2d-coord.svg" style="width: 100%; height: auto;" alt=""></div>
-<figcaption><span class="type">図</span> <span class="codenumber">6.2.</span> 直交座標系</figcaption></figure><p id="p-172">直交座標系における点の座標は、次のように定義される。</p>
-<article class="definition-like" id="definition-53"><h6 class="heading">
-<span class="type">定義</span> <span class="codenumber">6.3</span>. <span class="title">直交座標系における座標.</span>
+<article class="definition definition-like" id="definition-52"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">6.1</span><span class="period">.</span><span class="space"> </span><span class="title">直交座標系.</span>
+</h6>互いに直交する<dfn class="terminology">軸</dfn>(<dfn class="terminology">axis</dfn>)からなる座標系を<dfn class="terminology">直交座標系</dfn>(<dfn class="terminology">rectangular coordinate system</dfn>)という。 軸として、座標平面では\(x\)軸と\(y\)軸、座標空間では\(x\)軸と\(y\)軸と\(z\)軸を使うことが多い。 \(x\)軸と\(y\)軸からなる座標平面を\(xy\)平面、\(y\)軸と\(z\)軸からなる座標平面を\(yz\)平面、\(z\)軸と\(x\)軸からなる座標平面を\(zx\)平面という。 また、\(x\)軸と\(y\)軸と\(z\)軸からなる座標空間を\(xyz\)空間という。 直交座標系ではすべての軸は1点で交わり、この点を<dfn class="terminology">原点</dfn>(<dfn class="terminology">origin</dfn>)といい、originの頭文字をとって点\(O\)と表す。</article><p id="p-171">1次元、2次元、3次元の直交座標系は図<a class="xref" data-knowl="./knowl/fig-geo-rect.html" title="図 6.2">6.2</a>のように表される。なお、1次元の座標空間は数直線となる。</p>
+<figure class="figure figure-like" id="fig-geo-rect"><div class="image-box" style="width: 75%; margin-left: 12.5%; margin-right: 12.5%;"><img src="image/geo-1d-coord.svg" role="img" class="contained" alt=""></div>
+<div class="image-box" style="width: 75%; margin-left: 12.5%; margin-right: 12.5%;"><img src="image/geo-2d-coord.svg" role="img" class="contained" alt=""></div>
+<figcaption><span class="type">図</span><span class="space"> </span><span class="codenumber">6.2<span class="period">.</span></span><span class="space"> </span>直交座標系</figcaption></figure><p id="p-172">直交座標系における点の座標は、次のように定義される。</p>
+<article class="definition definition-like" id="definition-53"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">6.3</span><span class="period">.</span><span class="space"> </span><span class="title">直交座標系における座標.</span>
 </h6>直交座標系では、軸の数と同じだけの実数の組により、座標系の上にある点の「位置」を表す。この「位置」をその点の<dfn class="terminology">座標</dfn>という。 \(x\)軸と\(y\)軸からなる座標平面では、それぞれの軸に対応する位置を\(x\)と\(y\)で表すとき、点の座標はこれらの組\((x, y)\)で表される。 同様に、\(x\)軸と\(y\)軸と\(z\)軸からなる座標平面では、それぞれの軸に対応する位置を\(x\)と\(y\)と\(z\)で表すとき、点の座標はこれらの組\((x, y, z)\)で表される。 点\(P\)の座標が\((x, y)\)や\((x, y, z)\)であることを、\(P(x, y)\)や\(P(x, y, z)\)と表すことがある。 点の位置を定めるため、原点\(O\)の座標はすべての軸について0として、座標平面では\(O(0, 0)\)、座標空間では\(O(0, 0, 0)\)とする。</article></section><section class="subsection" id="ssec-geo-pole"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">6.1.2</span> <span class="title">極座標系</span>
 </h3>
-<a href="sec-geo-coord.html#ssec-geo-pole" class="permalink">¶</a><p id="p-173">直交座標系以外の座標系には、曲線を含む図形を表すのに便利な極座標系がある。</p>
-<article class="definition-like" id="definition-54"><h6 class="heading">
-<span class="type">定義</span> <span class="codenumber">6.4</span>. <span class="title">極座標系.</span>
-</h6>ある点\(O\)と、\(O\)を端点とする半直線からなる座標系を<dfn class="terminology">極座標系</dfn>(<dfn class="terminology">polar coordinate system</dfn>)という。 極座標系での点\(O\)を<dfn class="terminology">極</dfn>(<dfn class="terminology">pole</dfn>)、\(O\)を端点とする半直線を<dfn class="terminology">始線</dfn>(<dfn class="terminology">polar axis</dfn>)という。 極座標系では、点\(P\)の座標を、極\(O\)からの距離\(r (\geqq 0)\)と、\(OP\)と始線のなす角\(\theta\)を用いて\((r, \theta)\)と表す。</article><p id="p-174">極座標系は図<a data-knowl="./knowl/fig-geo-pole.html" title="図 6.5">6.5</a>のように表される。</p>
-<figure class="figure-like" id="fig-geo-pole"><div style="width: 75%; margin-left: 12.5%; margin-right: 12.5%;"><img src="image/geo-pole.svg" style="width: 100%; height: auto;" alt=""></div>
-<figcaption><span class="type">図</span> <span class="codenumber">6.5.</span> 極座標系</figcaption></figure><p id="p-175">極座標系と直交座標系は、次の式で変換できる。</p>
-<article class="theorem-like" id="theorem-40"><h6 class="heading">
-<span class="type">定理</span> <span class="codenumber">6.6</span>. <span class="title">極座標系と直交座標系の変換.</span>
+<p id="p-173">直交座標系以外の座標系には、曲線を含む図形を表すのに便利な極座標系がある。</p>
+<article class="definition definition-like" id="definition-54"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">6.4</span><span class="period">.</span><span class="space"> </span><span class="title">極座標系.</span>
+</h6>ある点\(O\)と、\(O\)を端点とする半直線からなる座標系を<dfn class="terminology">極座標系</dfn>(<dfn class="terminology">polar coordinate system</dfn>)という。 極座標系での点\(O\)を<dfn class="terminology">極</dfn>(<dfn class="terminology">pole</dfn>)、\(O\)を端点とする半直線を<dfn class="terminology">始線</dfn>(<dfn class="terminology">polar axis</dfn>)という。 極座標系では、点\(P\)の座標を、極\(O\)からの距離\(r (\geqq 0)\)と、\(OP\)と始線のなす角\(\theta\)を用いて\((r, \theta)\)と表す。</article><p id="p-174">極座標系は図<a class="xref" data-knowl="./knowl/fig-geo-pole.html" title="図 6.5">6.5</a>のように表される。</p>
+<figure class="figure figure-like" id="fig-geo-pole"><div class="image-box" style="width: 75%; margin-left: 12.5%; margin-right: 12.5%;"><img src="image/geo-pole.svg" role="img" class="contained" alt=""></div>
+<figcaption><span class="type">図</span><span class="space"> </span><span class="codenumber">6.5<span class="period">.</span></span><span class="space"> </span>極座標系</figcaption></figure><p id="p-175">極座標系と直交座標系は、次の式で変換できる。</p>
+<article class="theorem theorem-like" id="theorem-40"><h6 class="heading">
+<span class="type">定理</span><span class="space"> </span><span class="codenumber">6.6</span><span class="period">.</span><span class="space"> </span><span class="title">極座標系と直交座標系の変換.</span>
 </h6>直交座標系で座標\((x, y)\)の点は、極座標系では座標\((\sqrt{x^2 + y^2}, \theta) (\cos\theta = \frac{x}{r}, \sin\theta = \frac{y}{r})\)となる。 また、極座標系で座標\((r, \theta)\)の点は、直交座標系では座標\((r\cos\theta, r\sin\theta)\)となる。</article></section><section class="subsection" id="ssec-geo-3d"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">6.1.3</span> <span class="title">空間の極座標</span>
 </h3>
-<a href="sec-geo-coord.html#ssec-geo-3d" class="permalink">¶</a><p id="p-176">極座標系を座標空間に拡張した座標系には、円柱座標系と空間極座標系の2つがある。 円柱座標系は極座標系と直交座標系を組み合わせた座標系で、円柱のように平面上は極座標系が扱いやすいものの、高さについては直交座標系を用いる方が便利な場合に用いる。 空間極座標系は高さ方向も角度で表した座標系で、球のように高さ方向についても角度で表す方が便利な場合に用いる。</p>
-<article class="definition-like" id="definition-55"><h6 class="heading">
-<span class="type">定義</span> <span class="codenumber">6.7</span>. <span class="title">円柱座標系.</span>
-</h6>平面を極座標系で表し、それに高さを表す\(z\)軸を加えた座標系を<dfn class="terminology">円柱座標系</dfn>という。 円柱座標系では、点の座標は\((r, \theta, z)\)で表される。</article><article class="definition-like" id="definition-56"><h6 class="heading">
-<span class="type">定義</span> <span class="codenumber">6.8</span>. <span class="title">空間極座標系.</span>
+<p id="p-176">極座標系を座標空間に拡張した座標系には、円柱座標系と空間極座標系の2つがある。 円柱座標系は極座標系と直交座標系を組み合わせた座標系で、円柱のように平面上は極座標系が扱いやすいものの、高さについては直交座標系を用いる方が便利な場合に用いる。 空間極座標系は高さ方向も角度で表した座標系で、球のように高さ方向についても角度で表す方が便利な場合に用いる。</p>
+<article class="definition definition-like" id="definition-55"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">6.7</span><span class="period">.</span><span class="space"> </span><span class="title">円柱座標系.</span>
+</h6>平面を極座標系で表し、それに高さを表す\(z\)軸を加えた座標系を<dfn class="terminology">円柱座標系</dfn>という。 円柱座標系では、点の座標は\((r, \theta, z)\)で表される。</article><article class="definition definition-like" id="definition-56"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">6.8</span><span class="period">.</span><span class="space"> </span><span class="title">空間極座標系.</span>
 </h6>平面を極座標系で表し、それに高さ方向の角度を表す\(\phi\)軸を加えた座標系を<dfn class="terminology">空間極座標系</dfn>という。 空間極座標系では、点の座標は\((r, \theta, \phi)\)で表される。</article><p id="p-177">円柱座標系は、平面上の座標を直交座標系に変換すれば、直交座標系の座標空間における座標に変換できる。 空間極座標系と直交座標系は、次の式で変換できる。</p>
-<article class="theorem-like" id="theorem-41"><h6 class="heading">
-<span class="type">定理</span> <span class="codenumber">6.9</span>. <span class="title">空間極座標系と直交座標系の変換.</span>
+<article class="theorem theorem-like" id="theorem-41"><h6 class="heading">
+<span class="type">定理</span><span class="space"> </span><span class="codenumber">6.9</span><span class="period">.</span><span class="space"> </span><span class="title">空間極座標系と直交座標系の変換.</span>
 </h6>直交座標系で座標\((x, y, z)\)の点は、空間極座標系では座標\((\sqrt{x^2 + y^2 + z^2}, \theta, \phi) (\cos\theta = \frac{z}{r}, \cos\phi = \frac{x}{r}, \sin\phi = \frac{y}{r})\)となる。 また、空間極座標系で\((r, \theta, \phi)\)の点は、直交座標系では座標\((r\cos\phi\sin\theta, r\sin\phi\sin\theta, r\cos\theta)\)となる。</article></section></section></div></main>
 </div>
-<div class="login-link"><span id="loginlogout" class="login">login</span></div>
-<script src="https://pretextbook.org/js/0.11/login.js"></script>
 </body>
 </html>

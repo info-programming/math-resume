@@ -1,64 +1,54 @@
 <!DOCTYPE html>
-<!--**************************************-->
-<!--*    Generated from PreTeXt source   *-->
-<!--*    on 2021-08-16T10:08:22+09:00    *-->
-<!--*                                    *-->
-<!--*      https://pretextbook.org       *-->
-<!--*                                    *-->
-<!--**************************************-->
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
 <html lang="ja-JP">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>証明</title>
 <meta name="Keywords" content="Authored in PreTeXt">
-<meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-    tex2jax: {
-        inlineMath: [['\\(','\\)']]
-    },
-    asciimath2jax: {
-        ignoreClass: ".*",
-        processClass: "has_am"
-    },
-    jax: ["input/AsciiMath"],
-    extensions: ["asciimath2jax.js"],
-    TeX: {
-        extensions: ["extpfeil.js", "autobold.js", "https://pretextbook.org/js/lib/mathjaxknowl.js", ],
-        // scrolling to fragment identifiers is controlled by other Javascript
-        positionToHash: false,
-        equationNumbers: { autoNumber: "none", useLabelIds: true, },
-        TagSide: "right",
-        TagIndent: ".8em",
-    },
-    // HTML-CSS output Jax to be dropped for MathJax 3.0
-    "HTML-CSS": {
-        scale: 88,
-        mtextFontInherit: true,
-    },
-    CommonHTML: {
-        scale: 88,
-        mtextFontInherit: true,
-    },
-});
-</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.11/pretext.js"></script><script src="https://pretextbook.org/js/0.11/pretext_add_on.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
-<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.2/pretext.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.2/pretext_add_on.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.2/toc.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.2/colors_default.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.2/setcolors.css" rel="stylesheet" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    useLabelIds: true,
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore",
+    processHtmlClass: "has_am",
+  },
+  chtml: {
+    scale: 0.88,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext_add_on.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script xmlns:svg="http://www.w3.org/2000/svg">sagecellEvalName='Evaluate (Sage)';
+</script><link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/banner_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/toc_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/knowls_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/style_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/colors_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/setcolors.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href="image/style.css">
-<link href="https://pretextbook.org/css/0.2/features.css" rel="stylesheet" type="text/css">
-<script>var logged_in = false;
-var role = 'student';
-var guest_access = true;
-var login_required = false;
-var js_version = 0.11;
-</script>
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link xmlns:svg="http://www.w3.org/2000/svg" href="developer.css" rel="stylesheet" type="text/css">
 </head>
 <body class="mathbook-book has-toc has-sidebar-left">
-<a class="assistive" href="#content">Skip to main content</a><div class="hidden-content" style="display:none">\(\require{luatexja}\require{luatexja-ruby}\require{indentfirst}\require{unicode-math}\unimathsetup{math-style=ISO,bold-style=ISO}
+<a class="assistive" href="#content">Skip to main content</a><div xmlns:svg="http://www.w3.org/2000/svg" id="latex-macros" class="hidden-content" style="display:none">\(\require{luatexja}\require{luatexja-ruby}\require{indentfirst}\require{unicode-math}\unimathsetup{math-style=ISO,bold-style=ISO}
 \setmathfont{XITSMath-Regular.otf}
 \usepackage[match,deluxe,expert,bold,noto-otf]{luatexja-preset}
 \setmonofont{Noto Sans Mono CJK JP}
@@ -98,17 +88,17 @@ var js_version = 0.11;
 <p class="byline"></p>
 </div>
 </div></div>
-<nav id="primary-navbar" class="navbar"><div class="container">
+<nav xmlns:svg="http://www.w3.org/2000/svg" id="primary-navbar" class="navbar"><div class="container">
 <div class="navbar-top-buttons">
 <button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3">
-<a class="index-button toolbar-item button" href="index-1.html" title="Index">Index</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="sec-logic-infer.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="ch-logic.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="ch-func.html" title="Next">Next</a></span>
+<a class="index-button toolbar-item button" href="index-1.html" title="索引">索引</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="sec-logic-infer.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="ch-logic.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="ch-func.html" title="Next">Next</a></span>
 </div>
 </div>
 <div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
 <button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="sec-logic-infer.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="ch-logic.html" title="Up">Up</a><a class="next-button button toolbar-item" href="ch-func.html" title="Next">Next</a>
 </div>
 </div></nav></header><div class="page">
-<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<div xmlns:svg="http://www.w3.org/2000/svg" id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
 <nav id="toc"><ul>
 <li class="link">
 <a href="ch-intro.html" data-scroll="ch-intro"><span class="codenumber">1</span> <span class="title">数学</span></a><ul>
@@ -156,65 +146,63 @@ var js_version = 0.11;
 <li class="link">
 <a href="ch-geo.html" data-scroll="ch-geo"><span class="codenumber">6</span> <span class="title">幾何</span></a><ul><li><a href="sec-geo-coord.html" data-scroll="sec-geo-coord">座標</a></li></ul>
 </li>
-<li class="link"><a href="backmatter-1.html" data-scroll="backmatter-1"><span class="title">Back Matter</span></a></li>
+<li class="link backmatter"><a href="backmatter-1.html" data-scroll="backmatter-1"><span class="title">Back Matter</span></a></li>
 <li class="link"><a href="references-1.html" data-scroll="references-1"><span class="title">参考文献</span></a></li>
-<li class="link"><a href="index-1.html" data-scroll="index-1"><span class="title">索引</span></a></li>
+<li class="link"><a href="index-1.html" data-scroll="index-1"><span class="title">Index</span></a></li>
 </ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
 </div></div>
-<main class="main"><div id="content" class="pretext-content"><section class="section" id="sec-logic-proof"><h2 class="heading hide-type">
+<main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="section" id="sec-logic-proof"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">3.7</span> <span class="title">証明</span>
 </h2>
-<a href="sec-logic-proof.html" class="permalink">¶</a><section class="introduction" id="introduction-8"><p id="p-110"><em class="alert">演繹による推論</em>を続けて、命題の真偽を明らかにすることを<dfn class="terminology">証明</dfn>(<dfn class="terminology">proof</dfn>)という。 証明は「命題が真であること」を明らかにする場合が多いが、「命題が偽であること」を明らかにする場合もある。</p></section><section class="subsection" id="ssec-logic-proof-direct"><h3 class="heading hide-type">
+<section class="introduction" id="introduction-8"><p id="p-110"><em class="alert">演繹による推論</em>を続けて、命題の真偽を明らかにすることを<dfn class="terminology">証明</dfn>(<dfn class="terminology">proof</dfn>)という。 証明は「命題が真であること」を明らかにする場合が多いが、「命題が偽であること」を明らかにする場合もある。</p></section><section class="subsection" id="ssec-logic-proof-direct"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">3.7.1</span> <span class="title">直接法</span>
 </h3>
-<a href="sec-logic-proof.html#ssec-logic-proof-direct" class="permalink">¶</a><p id="p-111">示したい命題を直接示す証明方法は、直接法と呼ばれることが多い。 直接法を用いる場合、前提に対して同値な変形や定理などの規則を繰り返し適用することにより、結論を示すことが多い。 場合によっては、結論から前提の側に向けて同値な変形を繰り返していくこともある。</p></section><section class="subsection" id="ssec-logic-proof-counter"><h3 class="heading hide-type">
+<p id="p-111">示したい命題を直接示す証明方法は、直接法と呼ばれることが多い。 直接法を用いる場合、前提に対して同値な変形や定理などの規則を繰り返し適用することにより、結論を示すことが多い。 場合によっては、結論から前提の側に向けて同値な変形を繰り返していくこともある。</p></section><section class="subsection" id="ssec-logic-proof-counter"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">3.7.2</span> <span class="title">反例を用いた証明</span>
 </h3>
-<a href="sec-logic-proof.html#ssec-logic-proof-counter" class="permalink">¶</a><p id="p-112">命題\(x \in A \implies x \in B\)が<em class="alert">偽</em>である(\(\overline{x \in A \implies x \in B}\))ことを示すには、<dfn class="terminology">反例</dfn>(<dfn class="terminology">counterexample</dfn>)と呼ばれる命題が成り立たないような具体例を1つ挙げることも多い。 この場合、反例が1つ見つかりさえすれば、通常の証明に比べて簡単に示すことができる。</p>
-<article class="definition-like" id="definition-39"><h6 class="heading">
-<span class="type">定義</span> <span class="codenumber">3.40</span>. <span class="title">反例.</span>
-</h6>命題\(x \in A \implies x \in B\)に対して、「\(A\)の要素だが\(B\)の要素でない\(x\)(\(x \in A \land x \notin B\))」を、命題\(x \in A \implies x \in B\)の<dfn class="terminology">反例</dfn>(<dfn class="terminology">counterexample</dfn>)という。</article><article class="theorem-like" id="theorem-19"><h6 class="heading">
-<span class="type">定理</span> <span class="codenumber">3.41</span>. <span class="title">反例を用いた証明.</span>
-</h6>命題\(x \in A \implies x \in B\)が偽であることを示すには、例を1つ挙げ、その例が「\(A\)の要素だが\(B\)の要素でない」ことを示せばよい。</article><article class="hiddenproof" id="proof-9"><a data-knowl="" class="id-ref" data-refid="hk-proof-9"><h6 class="heading"><span class="type">証明.</span></h6></a></article><div id="hk-proof-9" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><div class="displaymath">
+<p id="p-112">命題\(x \in A \implies x \in B\)が<em class="alert">偽</em>である(\(\overline{x \in A \implies x \in B}\))ことを示すには、<dfn class="terminology">反例</dfn>(<dfn class="terminology">counterexample</dfn>)と呼ばれる命題が成り立たないような具体例を1つ挙げることも多い。 この場合、反例が1つ見つかりさえすれば、通常の証明に比べて簡単に示すことができる。</p>
+<article class="definition definition-like" id="definition-39"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">3.40</span><span class="period">.</span><span class="space"> </span><span class="title">反例.</span>
+</h6>命題\(x \in A \implies x \in B\)に対して、「\(A\)の要素だが\(B\)の要素でない\(x\)(\(x \in A \land x \notin B\))」を、命題\(x \in A \implies x \in B\)の<dfn class="terminology">反例</dfn>(<dfn class="terminology">counterexample</dfn>)という。</article><article class="theorem theorem-like" id="theorem-19"><h6 class="heading">
+<span class="type">定理</span><span class="space"> </span><span class="codenumber">3.41</span><span class="period">.</span><span class="space"> </span><span class="title">反例を用いた証明.</span>
+</h6>命題\(x \in A \implies x \in B\)が偽であることを示すには、例を1つ挙げ、その例が「\(A\)の要素だが\(B\)の要素でない」ことを示せばよい。</article><article class="hiddenproof" id="proof-9"><a data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-9"><h6 class="heading"><span class="type">証明<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-9"><article class="hiddenproof"><div class="displaymath">
 \begin{gather*}
 \overline{x \in A \implies x \in B} = \overline{\overline{x \in A} \lor x \in B} = \overline{\overline{x \in A}} \land \overline{x \in B} = x \in A \land x \not\in B
 \end{gather*}
 </div></article></div></section><section class="subsection" id="ssec-logic-proof-contraposition"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">3.7.3</span> <span class="title">対偶を用いた証明</span>
 </h3>
-<a href="sec-logic-proof.html#ssec-logic-proof-contraposition" class="permalink">¶</a><p id="p-113">命題\(p \implies q\)の真偽を直接示しにくい場合には、元の命題の<em class="alert">対偶</em>\(\overline{q} \implies \overline{p}\)をとり、対偶を示して元の命題を示せることがある。</p></section><section class="subsection" id="ssec-logic-proof-contradiction"><h3 class="heading hide-type">
+<p id="p-113">命題\(p \implies q\)の真偽を直接示しにくい場合には、元の命題の<em class="alert">対偶</em>\(\overline{q} \implies \overline{p}\)をとり、対偶を示して元の命題を示せることがある。</p></section><section class="subsection" id="ssec-logic-proof-contradiction"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">3.7.4</span> <span class="title">背理法</span>
 </h3>
-<a href="sec-logic-proof.html#ssec-logic-proof-contradiction" class="permalink">¶</a><p id="p-114">証明したい命題\(p\)を直接示すのが難しい場合には、命題\(p\)が成り立たない(偽である)と仮定して<dfn class="terminology">矛盾</dfn>(<dfn class="terminology">contradiction</dfn>)を導く<dfn class="terminology">背理法</dfn>が用いられることがある。</p>
-<article class="definition-like" id="definition-40"><h6 class="heading">
-<span class="type">定義</span> <span class="codenumber">3.42</span>. <span class="title">矛盾.</span>
-</h6>\(p\)を命題とするとき、命題\(p \land \overline{p}\)を\(p\)についての<dfn class="terminology">矛盾</dfn>(<dfn class="terminology">contradiction</dfn>)という。 命題\(p \land \overline{p}\)は常に偽である。</article><article class="theorem-like" id="theorem-20"><h6 class="heading">
-<span class="type">定理</span> <span class="codenumber">3.43</span>. <span class="title">背理法.</span>
-</h6>命題\(p\)の真偽と命題\(\overline{p} \implies \text{F}\)の真偽は一致する。</article><article class="hiddenproof" id="proof-10"><a data-knowl="" class="id-ref" data-refid="hk-proof-10"><h6 class="heading"><span class="type">証明.</span></h6></a></article><div id="hk-proof-10" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><div class="displaymath">
+<p id="p-114">証明したい命題\(p\)を直接示すのが難しい場合には、命題\(p\)が成り立たない(偽である)と仮定して<dfn class="terminology">矛盾</dfn>(<dfn class="terminology">contradiction</dfn>)を導く<dfn class="terminology">背理法</dfn>が用いられることがある。</p>
+<article class="definition definition-like" id="definition-40"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">3.42</span><span class="period">.</span><span class="space"> </span><span class="title">矛盾.</span>
+</h6>\(p\)を命題とするとき、命題\(p \land \overline{p}\)を\(p\)についての<dfn class="terminology">矛盾</dfn>(<dfn class="terminology">contradiction</dfn>)という。 命題\(p \land \overline{p}\)は常に偽である。</article><article class="theorem theorem-like" id="theorem-20"><h6 class="heading">
+<span class="type">定理</span><span class="space"> </span><span class="codenumber">3.43</span><span class="period">.</span><span class="space"> </span><span class="title">背理法.</span>
+</h6>命題\(p\)の真偽と命題\(\overline{p} \implies \text{F}\)の真偽は一致する。</article><article class="hiddenproof" id="proof-10"><a data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-10"><h6 class="heading"><span class="type">証明<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-10"><article class="hiddenproof"><div class="displaymath">
 \begin{gather*}
 [ \overline{p} \implies \text{F} ] = [ \overline{\overline{p}} \lor \text{F} ] = [ p \lor \text{F} ] = p
 \end{gather*}
 </div></article></div>
 <p id="p-115">実際の背理法の手順は、次のようになる。</p>
-<article class="theorem-like" id="algorithm-2"><h6 class="heading">
-<span class="type">アルゴリズム</span> <span class="codenumber">3.44</span>. <span class="title">背理法.</span>
+<article class="algorithm theorem-like" id="algorithm-2"><h6 class="heading">
+<span class="type">Algorithm</span><span class="space"> </span><span class="codenumber">3.44</span><span class="period">.</span><span class="space"> </span><span class="title">背理法.</span>
 </h6>命題\(p\)が真であることを示す場合、次のようにする。 <ol class="decimal">
-<li id="li-14">命題\(p\)が偽であると仮定し、\(p\)の否定\(\overline{p}\)が真であるとみなす。</li>
-<li id="li-15">\(\overline{p}\)に対して、演繹による推論を重ねる。</li>
-<li id="li-16">偽になる命題を導く。多くの場合、ある命題\(r\)についての<em class="alert">矛盾</em>\(r \land \overline{r}\)を導く。 具体的には、\(r\)が「\(x\)は有理数である」だとすると、「\(x\)は有理数である」と「\(x\)は有理数でない(無理数である)」の2つは同時に成り立たないので、この2つを示せば矛盾があるといえる。</li>
-<li id="li-17">(3)での推論の結果、矛盾が導かれ偽になったので、(1)で仮定した\(\overline{p}\)が偽であるということになり、\(p\)が真であることが示される。</li>
+<li id="li-14"><p id="p-derived-li-14">命題\(p\)が偽であると仮定し、\(p\)の否定\(\overline{p}\)が真であるとみなす。</p></li>
+<li id="li-15"><p id="p-derived-li-15">\(\overline{p}\)に対して、演繹による推論を重ねる。</p></li>
+<li id="li-16"><p id="p-derived-li-16">偽になる命題を導く。多くの場合、ある命題\(r\)についての<em class="alert">矛盾</em>\(r \land \overline{r}\)を導く。 具体的には、\(r\)が「\(x\)は有理数である」だとすると、「\(x\)は有理数である」と「\(x\)は有理数でない(無理数である)」の2つは同時に成り立たないので、この2つを示せば矛盾があるといえる。</p></li>
+<li id="li-17"><p id="p-derived-li-17">(3)での推論の結果、矛盾が導かれ偽になったので、(1)で仮定した\(\overline{p}\)が偽であるということになり、\(p\)が真であることが示される。</p></li>
 </ol></article><p id="p-116">背理法は、<em class="emphasis">示したい命題が単純すぎて議論を始めにくい</em>ときや、<em class="emphasis">示したい命題より、その否定の方が変形などを行いやすい</em>ときに用いる。</p>
-<article class="example-like" id="example-7"><a data-knowl="" class="id-ref" data-refid="hk-example-7"><h6 class="heading">
-<span class="type">例</span> <span class="codenumber">3.45</span>. <span class="title">背理法の例: 和が1になる3数のうちには\(\frac{1}{3}\)以上のものがあることの証明.</span>
-</h6></a></article><div id="hk-example-7" class="hidden-content tex2jax_ignore"><article class="example-like">「和が1になる3数のうちには\(\frac{1}{3}\)以上のものがある」ことを、背理法で証明したい。 命題「和が1になる3数のいずれかは\(\frac{1}{3}\)以上である」の否定は「<em class="alert">和が1になる3数はいずれも\(\frac{1}{3}\)より小さい</em>」であり、これが成り立つと仮定する。 3数を\(a, b, c\)とすると、\(a &lt; \frac{1}{3}, b &lt; \frac{1}{3}, c &lt; \frac{1}{3}\)となる。 このとき、\(a + b + c &lt; \frac{1}{3} + \frac{1}{3} + \frac{1}{3} = 1\)となるが、これは<em class="alert">\(a + b + c = 1\)であることと矛盾</em>する。 従って、仮定した命題「和が1になる3数はいずれも\(\frac{1}{3}\)より小さい」は偽であることが分かり、「和が1になる3数のうちには\(\frac{1}{3}\)以上のものがある」ことが示された。</article></div>
-<article class="example-like" id="example-8"><a data-knowl="" class="id-ref" data-refid="hk-example-8"><h6 class="heading">
-<span class="type">例</span> <span class="codenumber">3.46</span>. <span class="title">背理法の例: 素数が無数にあることの証明.</span>
-</h6></a></article><div id="hk-example-8" class="hidden-content tex2jax_ignore"><article class="example-like">「素数が無数にある」ことを、背理法で証明したい。 命題「素数が無数にある」の否定は「<em class="alert">素数は有限個しかない</em>」であり、これが成り立つと仮定する。 すると、素数の個数は自然数\(n\)を用いて\(n\)個と表すことができ、\(n\)個の素数を\(p_1, \cdots, p_n\)と表すことができる。 このとき、<em class="alert">数\(p = p_1 p_2 \cdots p_n + 1\)を考える</em>と、\(p\)を\(p_1\)で割ると1余り、\(p\)を\(p_2\)で割っても1余る。 同様にすると、\(p\)を\(p_i (i = 1, \cdots, n)\)で割ると1余るので、\(p\)は\(p_1, \cdots, p_n\)のいずれとも互いに素になることが分かる。 そのため\(p\)は\(p_1, \cdots, p_n\)のいずれとも異なる素数であるが、これは<em class="alert">素数が\(p_1, \cdots, p_n\)しかないことと矛盾</em>する。 従って、仮定した命題「素数は有限個しかない」は偽であることが分かり、「素数が無数にある」ことが示された。</article></div>
-<article class="example-like" id="example-9"><a data-knowl="" class="id-ref" data-refid="hk-example-9"><h6 class="heading">
-<span class="type">例</span> <span class="codenumber">3.47</span>. <span class="title">背理法の例: \(\sqrt{2}\)が無理数であることの証明.</span>
-</h6></a></article><div id="hk-example-9" class="hidden-content tex2jax_ignore"><article class="example-like">「\(\sqrt{2}\)が無理数である」ことを、背理法で証明したい。 命題「\(\sqrt{2}\)が無理数である」の否定は「<em class="alert">\(\sqrt{2}\)が有理数</em>である(\(\sqrt{2} \in \mathbb{Q}\))」であり、これが成り立つと仮定する。 すると、有理数は分数の形で表せる数なので、\(\sqrt{2}\)は整数\(m, n\)を用いて\(\sqrt{2} = \frac{m}{n}\)と表すことができる。 このとき、分数\(\frac{m}{n}\)が既約分数である、つまり<em class="alert">互いに素であるような整数\(m, n\)をとることができる</em>。 \(\sqrt{2} = \frac{m}{n}\)の両辺を2乗すると\(2 = \frac{m^2}{n^2}\)より\(m^2 = 2 n^2\)となり、\(n\)は整数\(n^2\)の2倍であるから\(m^2\)は偶数である。 ここで、対偶を用いると命題「\(m^2: \text{偶数} \implies m: \text{偶数}\)」が成り立つことがいえる。 \(m\)は偶数であるので、整数\(k\)を用いて\(m = 2k\)と表せる。 \(n^2 = \frac{m^2}{2} = \frac{(2k)^2}{2} = 2k^2\)となるので、\(n^2\)も偶数である。 先の命題を用いると、\(n\)は偶数であることが分かり、\(m, n\)はいずれも2で割り切れることが分かるが、これは<em class="alert">\(m, n\)が互いに素であることと矛盾</em>する。 従って、仮定した命題「\(\sqrt{2} \in \mathbb{Q}\)」は偽であることが分かり、「\(\sqrt{2}\)が無理数である」ことが示された。</article></div></section></section></div></main>
+<article class="example example-like" id="example-7"><a data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-7"><h6 class="heading">
+<span class="type">例</span><span class="space"> </span><span class="codenumber">3.45</span><span class="period">.</span><span class="space"> </span><span class="title">背理法の例: 和が1になる3数のうちには\(\frac{1}{3}\)以上のものがあることの証明.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-7"><article class="example example-like">「和が1になる3数のうちには\(\frac{1}{3}\)以上のものがある」ことを、背理法で証明したい。 命題「和が1になる3数のいずれかは\(\frac{1}{3}\)以上である」の否定は「<em class="alert">和が1になる3数はいずれも\(\frac{1}{3}\)より小さい</em>」であり、これが成り立つと仮定する。 3数を\(a, b, c\)とすると、\(a &lt; \frac{1}{3}, b &lt; \frac{1}{3}, c &lt; \frac{1}{3}\)となる。 このとき、\(a + b + c &lt; \frac{1}{3} + \frac{1}{3} + \frac{1}{3} = 1\)となるが、これは<em class="alert">\(a + b + c = 1\)であることと矛盾</em>する。 従って、仮定した命題「和が1になる3数はいずれも\(\frac{1}{3}\)より小さい」は偽であることが分かり、「和が1になる3数のうちには\(\frac{1}{3}\)以上のものがある」ことが示された。</article></div>
+<article class="example example-like" id="example-8"><a data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-8"><h6 class="heading">
+<span class="type">例</span><span class="space"> </span><span class="codenumber">3.46</span><span class="period">.</span><span class="space"> </span><span class="title">背理法の例: 素数が無数にあることの証明.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-8"><article class="example example-like">「素数が無数にある」ことを、背理法で証明したい。 命題「素数が無数にある」の否定は「<em class="alert">素数は有限個しかない</em>」であり、これが成り立つと仮定する。 すると、素数の個数は自然数\(n\)を用いて\(n\)個と表すことができ、\(n\)個の素数を\(p_1, \cdots, p_n\)と表すことができる。 このとき、<em class="alert">数\(p = p_1 p_2 \cdots p_n + 1\)を考える</em>と、\(p\)を\(p_1\)で割ると1余り、\(p\)を\(p_2\)で割っても1余る。 同様にすると、\(p\)を\(p_i (i = 1, \cdots, n)\)で割ると1余るので、\(p\)は\(p_1, \cdots, p_n\)のいずれとも互いに素になることが分かる。 そのため\(p\)は\(p_1, \cdots, p_n\)のいずれとも異なる素数であるが、これは<em class="alert">素数が\(p_1, \cdots, p_n\)しかないことと矛盾</em>する。 従って、仮定した命題「素数は有限個しかない」は偽であることが分かり、「素数が無数にある」ことが示された。</article></div>
+<article class="example example-like" id="example-9"><a data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-9"><h6 class="heading">
+<span class="type">例</span><span class="space"> </span><span class="codenumber">3.47</span><span class="period">.</span><span class="space"> </span><span class="title">背理法の例: \(\sqrt{2}\)が無理数であることの証明.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-9"><article class="example example-like">「\(\sqrt{2}\)が無理数である」ことを、背理法で証明したい。 命題「\(\sqrt{2}\)が無理数である」の否定は「<em class="alert">\(\sqrt{2}\)が有理数</em>である(\(\sqrt{2} \in \mathbb{Q}\))」であり、これが成り立つと仮定する。 すると、有理数は分数の形で表せる数なので、\(\sqrt{2}\)は整数\(m, n\)を用いて\(\sqrt{2} = \frac{m}{n}\)と表すことができる。 このとき、分数\(\frac{m}{n}\)が既約分数である、つまり<em class="alert">互いに素であるような整数\(m, n\)をとることができる</em>。 \(\sqrt{2} = \frac{m}{n}\)の両辺を2乗すると\(2 = \frac{m^2}{n^2}\)より\(m^2 = 2 n^2\)となり、\(n\)は整数\(n^2\)の2倍であるから\(m^2\)は偶数である。 ここで、対偶を用いると命題「\(m^2: \text{偶数} \implies m: \text{偶数}\)」が成り立つことがいえる。 \(m\)は偶数であるので、整数\(k\)を用いて\(m = 2k\)と表せる。 \(n^2 = \frac{m^2}{2} = \frac{(2k)^2}{2} = 2k^2\)となるので、\(n^2\)も偶数である。 先の命題を用いると、\(n\)は偶数であることが分かり、\(m, n\)はいずれも2で割り切れることが分かるが、これは<em class="alert">\(m, n\)が互いに素であることと矛盾</em>する。 従って、仮定した命題「\(\sqrt{2} \in \mathbb{Q}\)」は偽であることが分かり、「\(\sqrt{2}\)が無理数である」ことが示された。</article></div></section></section></div></main>
 </div>
-<div class="login-link"><span id="loginlogout" class="login">login</span></div>
-<script src="https://pretextbook.org/js/0.11/login.js"></script>
 </body>
 </html>

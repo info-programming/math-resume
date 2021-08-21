@@ -1,64 +1,54 @@
 <!DOCTYPE html>
-<!--**************************************-->
-<!--*    Generated from PreTeXt source   *-->
-<!--*    on 2021-08-16T10:08:22+09:00    *-->
-<!--*                                    *-->
-<!--*      https://pretextbook.org       *-->
-<!--*                                    *-->
-<!--**************************************-->
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
 <html lang="ja-JP">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>関係式</title>
 <meta name="Keywords" content="Authored in PreTeXt">
-<meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-    tex2jax: {
-        inlineMath: [['\\(','\\)']]
-    },
-    asciimath2jax: {
-        ignoreClass: ".*",
-        processClass: "has_am"
-    },
-    jax: ["input/AsciiMath"],
-    extensions: ["asciimath2jax.js"],
-    TeX: {
-        extensions: ["extpfeil.js", "autobold.js", "https://pretextbook.org/js/lib/mathjaxknowl.js", ],
-        // scrolling to fragment identifiers is controlled by other Javascript
-        positionToHash: false,
-        equationNumbers: { autoNumber: "none", useLabelIds: true, },
-        TagSide: "right",
-        TagIndent: ".8em",
-    },
-    // HTML-CSS output Jax to be dropped for MathJax 3.0
-    "HTML-CSS": {
-        scale: 88,
-        mtextFontInherit: true,
-    },
-    CommonHTML: {
-        scale: 88,
-        mtextFontInherit: true,
-    },
-});
-</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.11/pretext.js"></script><script src="https://pretextbook.org/js/0.11/pretext_add_on.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
-<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.2/pretext.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.2/pretext_add_on.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.2/toc.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.2/colors_default.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.2/setcolors.css" rel="stylesheet" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    useLabelIds: true,
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore",
+    processHtmlClass: "has_am",
+  },
+  chtml: {
+    scale: 0.88,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext_add_on.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script xmlns:svg="http://www.w3.org/2000/svg">sagecellEvalName='Evaluate (Sage)';
+</script><link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/banner_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/toc_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/knowls_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/style_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/colors_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/setcolors.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href="image/style.css">
-<link href="https://pretextbook.org/css/0.2/features.css" rel="stylesheet" type="text/css">
-<script>var logged_in = false;
-var role = 'student';
-var guest_access = true;
-var login_required = false;
-var js_version = 0.11;
-</script>
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link xmlns:svg="http://www.w3.org/2000/svg" href="developer.css" rel="stylesheet" type="text/css">
 </head>
 <body class="mathbook-book has-toc has-sidebar-left">
-<a class="assistive" href="#content">Skip to main content</a><div class="hidden-content" style="display:none">\(\require{luatexja}\require{luatexja-ruby}\require{indentfirst}\require{unicode-math}\unimathsetup{math-style=ISO,bold-style=ISO}
+<a class="assistive" href="#content">Skip to main content</a><div xmlns:svg="http://www.w3.org/2000/svg" id="latex-macros" class="hidden-content" style="display:none">\(\require{luatexja}\require{luatexja-ruby}\require{indentfirst}\require{unicode-math}\unimathsetup{math-style=ISO,bold-style=ISO}
 \setmathfont{XITSMath-Regular.otf}
 \usepackage[match,deluxe,expert,bold,noto-otf]{luatexja-preset}
 \setmonofont{Noto Sans Mono CJK JP}
@@ -98,17 +88,17 @@ var js_version = 0.11;
 <p class="byline"></p>
 </div>
 </div></div>
-<nav id="primary-navbar" class="navbar"><div class="container">
+<nav xmlns:svg="http://www.w3.org/2000/svg" id="primary-navbar" class="navbar"><div class="container">
 <div class="navbar-top-buttons">
 <button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3">
-<a class="index-button toolbar-item button" href="index-1.html" title="Index">Index</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="sec-expression-fact.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="ch-expression.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="ch-logic.html" title="Next">Next</a></span>
+<a class="index-button toolbar-item button" href="index-1.html" title="索引">索引</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="sec-expression-fact.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="ch-expression.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="ch-logic.html" title="Next">Next</a></span>
 </div>
 </div>
 <div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
 <button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="sec-expression-fact.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="ch-expression.html" title="Up">Up</a><a class="next-button button toolbar-item" href="ch-logic.html" title="Next">Next</a>
 </div>
 </div></nav></header><div class="page">
-<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<div xmlns:svg="http://www.w3.org/2000/svg" id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
 <nav id="toc"><ul>
 <li class="link">
 <a href="ch-intro.html" data-scroll="ch-intro"><span class="codenumber">1</span> <span class="title">数学</span></a><ul>
@@ -156,33 +146,33 @@ var js_version = 0.11;
 <li class="link">
 <a href="ch-geo.html" data-scroll="ch-geo"><span class="codenumber">6</span> <span class="title">幾何</span></a><ul><li><a href="sec-geo-coord.html" data-scroll="sec-geo-coord">座標</a></li></ul>
 </li>
-<li class="link"><a href="backmatter-1.html" data-scroll="backmatter-1"><span class="title">Back Matter</span></a></li>
+<li class="link backmatter"><a href="backmatter-1.html" data-scroll="backmatter-1"><span class="title">Back Matter</span></a></li>
 <li class="link"><a href="references-1.html" data-scroll="references-1"><span class="title">参考文献</span></a></li>
-<li class="link"><a href="index-1.html" data-scroll="index-1"><span class="title">索引</span></a></li>
+<li class="link"><a href="index-1.html" data-scroll="index-1"><span class="title">Index</span></a></li>
 </ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
 </div></div>
-<main class="main"><div id="content" class="pretext-content"><section class="section" id="sec-expression-rel"><h2 class="heading hide-type">
+<main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="section" id="sec-expression-rel"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">2.5</span> <span class="title">関係式</span>
 </h2>
-<a href="sec-expression-rel.html" class="permalink">¶</a><section class="introduction" id="introduction-2">いくつかの式の<dfn class="terminology">関係</dfn>(<dfn class="terminology">relation</dfn>)をあらわした<dfn class="terminology">関係式</dfn>には、方程式や不等式、合同式などがある。</section><section class="subsection" id="ssec-expression-equation"><h3 class="heading hide-type">
+<section class="introduction" id="introduction-2">いくつかの式の<dfn class="terminology">関係</dfn>(<dfn class="terminology">relation</dfn>)をあらわした<dfn class="terminology">関係式</dfn>には、方程式や不等式、合同式などがある。</section><section class="subsection" id="ssec-expression-equation"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">2.5.1</span> <span class="title">等式と方程式</span>
 </h3>
-<a href="sec-expression-rel.html#ssec-expression-equation" class="permalink">¶</a><p id="p-38">関係式のうち最も基本的なものは、いくつかの式が等しいことを表す等式である。</p>
-<article class="definition-like" id="definition-12"><h6 class="heading">
-<span class="type">定義</span> <span class="codenumber">2.23</span>. <span class="title">等式.</span>
-</h6>等号\(=\)を含み、数の相等関係を表す関係式\(a = b\)を<dfn class="terminology">等式</dfn>(<dfn class="terminology">equation</dfn>)という。 等式\(a = b\)で、等号の左側にある辺\(a\)を<dfn class="terminology">左辺</dfn>、右側にある辺\(b\)を<dfn class="terminology">右辺</dfn>という。 等式\(a = b\)が成り立つとき、\(a\)と\(b\)は<dfn class="terminology">等しい</dfn>(<dfn class="terminology">equal to</dfn>)という。</article><article class="definition-like" id="definition-13"><h6 class="heading">
-<span class="type">定義</span> <span class="codenumber">2.24</span>. <span class="title">3つ以上の辺からなる等式.</span>
+<p id="p-38">関係式のうち最も基本的なものは、いくつかの式が等しいことを表す等式である。</p>
+<article class="definition definition-like" id="definition-12"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.23</span><span class="period">.</span><span class="space"> </span><span class="title">等式.</span>
+</h6>等号\(=\)を含み、数の相等関係を表す関係式\(a = b\)を<dfn class="terminology">等式</dfn>(<dfn class="terminology">equation</dfn>)という。 等式\(a = b\)で、等号の左側にある辺\(a\)を<dfn class="terminology">左辺</dfn>、右側にある辺\(b\)を<dfn class="terminology">右辺</dfn>という。 等式\(a = b\)が成り立つとき、\(a\)と\(b\)は<dfn class="terminology">等しい</dfn>(<dfn class="terminology">equal to</dfn>)という。</article><article class="definition definition-like" id="definition-13"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.24</span><span class="period">.</span><span class="space"> </span><span class="title">3つ以上の辺からなる等式.</span>
 </h6>\(a = b\)かつ\(b = c\)のとき、\(a = b = c\)と表すことがある。<div class="displaymath">
 \begin{gather*}
 a = b = c \iff (a = b) \text{かつ} (b = c) \iff \begin{cases} a = b \\ b = c \end{cases}
 \end{gather*}
-</div>等式\(a = b = c\)の最も左側にある辺\(a\)を<dfn class="terminology">第1辺</dfn>、左から2番目にある辺\(b\)を<dfn class="terminology">第2辺</dfn>、左から3番目にある辺\(c\)を<dfn class="terminology">第3辺</dfn>という。</article><article class="definition-like" id="definition-14"><h6 class="heading">
-<span class="type">定義</span> <span class="codenumber">2.25</span>. <span class="title">方程式.</span>
+</div>等式\(a = b = c\)の最も左側にある辺\(a\)を<dfn class="terminology">第1辺</dfn>、左から2番目にある辺\(b\)を<dfn class="terminology">第2辺</dfn>、左から3番目にある辺\(c\)を<dfn class="terminology">第3辺</dfn>という。</article><article class="definition definition-like" id="definition-14"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.25</span><span class="period">.</span><span class="space"> </span><span class="title">方程式.</span>
 </h6>未知の数\(x\)を含み、特定の\(x\)の値について成り立つ等式を、\(x\)についての<dfn class="terminology">方程式</dfn>という。 方程式が成り立つ\(x\)の値を求めることを、方程式を<dfn class="terminology">解く</dfn>(<dfn class="terminology">solve</dfn>)といい、求めた\(x\)の値を方程式の<dfn class="terminology">解</dfn>(<dfn class="terminology">solution</dfn>)という。</article></section><section class="subsection" id="ssec-expression-inequation"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">2.5.2</span> <span class="title">不等式</span>
 </h3>
-<a href="sec-expression-rel.html#ssec-expression-inequation" class="permalink">¶</a><article class="definition-like" id="definition-15"><h6 class="heading">
-<span class="type">定義</span> <span class="codenumber">2.26</span>. <span class="title">不等式.</span>
+<article class="definition definition-like" id="definition-15"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.26</span><span class="period">.</span><span class="space"> </span><span class="title">不等式.</span>
 </h6>不等号\(&lt;, &gt;, \leqq, \geqq\)のいずれかを含み、数の大小関係を表す関係式を<dfn class="terminology">不等式</dfn>(<dfn class="terminology">inequation</dfn>)という。 不等号はそれぞれ、次の意味をもつ。<div class="displaymath">
 \begin{align*}
 a &amp;&lt;  b &amp; (a\text{は}b\text{より小さい(less than)})\\
@@ -192,8 +182,8 @@ a &amp;\geqq b &amp; (a\text{は}b\text{以上である(大きいかまたは等
 \end{align*}
 </div>等式の場合と同様に、これらの式で不等号の左側にある辺\(a\)を<dfn class="terminology">左辺</dfn>、右側にある辺\(b\)を<dfn class="terminology">右辺</dfn>という。</article><p id="p-39">不等号\(\leqq, \geqq\)はそれぞれ、等号の線を一本省略して\(\leq, \geq\)と書くことも多い。</p>
 <p id="p-40">不等式は、両辺に負の数を乗除するときを除けば、次のように方程式と同様の変形が可能である。 <em class="alert">両辺に負の数を乗除するときは、不等号の向きが逆になる</em>ことに注意が必要である。</p>
-<article class="theorem-like" id="theorem-9"><h6 class="heading">
-<span class="type">定理</span> <span class="codenumber">2.27</span>. <span class="title">不等式の性質.</span>
+<article class="theorem theorem-like" id="theorem-9"><h6 class="heading">
+<span class="type">定理</span><span class="space"> </span><span class="codenumber">2.27</span><span class="period">.</span><span class="space"> </span><span class="title">不等式の性質.</span>
 </h6>\(a &lt; b\)かつ\(c\)が実数のとき、次の不等式が成り立つ。<div class="displaymath">
 \begin{align*}
 a + c &amp;&lt; b + c\\
@@ -204,19 +194,17 @@ ac &amp;&gt; bc &amp; (c &lt; 0)\\
 \frac{a}{c} &amp;&gt; \frac{b}{c} &amp; (c &lt; 0)
 \end{align*}
 </div></article><p id="p-41">不等式は、不等号を複数用いることで、3つ以上の式の関係を表すことができる。</p>
-<article class="definition-like" id="definition-16"><h6 class="heading">
-<span class="type">定義</span> <span class="codenumber">2.28</span>. <span class="title">3つ以上の辺からなる不等式.</span>
+<article class="definition definition-like" id="definition-16"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.28</span><span class="period">.</span><span class="space"> </span><span class="title">3つ以上の辺からなる不等式.</span>
 </h6>\(a &lt; b\)かつ\(b &lt; c\)のとき、\(a &lt; b &lt; c\)と表すことがある。\(&lt;\)以外の不等号についても、同様に表すことができる。<div class="displaymath">
 \begin{gather*}
 a &lt; b &lt; c \iff (a &lt; b) \text{かつ} (b &lt; c) \iff \begin{cases} a &lt; b \\ b &lt; c \end{cases}
 \end{gather*}
 </div>等式の場合と同様に、\(a &lt; b &lt; c\)で最も左側にある辺\(a\)を<dfn class="terminology">第1辺</dfn>、左から2番目にある辺\(b\)を<dfn class="terminology">第2辺</dfn>、左から3番目にある辺\(c\)を<dfn class="terminology">第3辺</dfn>という。</article><p id="p-42">この方法と同じ考え方で\(a &lt; b &gt; c\)のような書き方をすることも考えられる。しかし、大小関係が同じ向きに並んでいないと不等式の意味を理解しづらいので、このような書き方はあまり行わない。</p>
 <p id="p-43">\(-3x + 1 &lt; 5\)のように、未知の数を含む不等式を考えることもできる。 このような不等式では、条件を満たす\(x\)は特定の値ではなく、不等式で表される範囲になることが多い。 条件を満たす\(x\)の範囲を求めることを、不等式を<dfn class="terminology">解く</dfn>(<dfn class="terminology">solve</dfn>)といい、求めた範囲を不等式の<dfn class="terminology">解</dfn>(<dfn class="terminology">solution</dfn>)という。</p>
-<article class="example-like" id="example-2"><a data-knowl="" class="id-ref" data-refid="hk-example-2"><h6 class="heading">
-<span class="type">例</span> <span class="codenumber">2.29</span>. <span class="title">不等式の解を求める例.</span>
-</h6></a></article><div id="hk-example-2" class="hidden-content tex2jax_ignore"><article class="example-like"> 不等式\(-3x + 1 &lt; 5\)を解くことを考える。 この不等式について、左辺の項を\(x\)を含む項の\(-3x\)のみにするため、両辺から1を引くと\(-3x + 1 - 1 &lt; 5 - 1\)となり、計算すると\(-3x &lt; 4\)となる。 左辺を\(x\)のみにするため、両辺を\(-3\)で割ると、\(-3 &lt; 0\)なので不等号の向きが逆になり、\(x &gt; - \frac{4}{3}\)となる。</article></div></section></section></div></main>
+<article class="example example-like" id="example-2"><a data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-2"><h6 class="heading">
+<span class="type">例</span><span class="space"> </span><span class="codenumber">2.29</span><span class="period">.</span><span class="space"> </span><span class="title">不等式の解を求める例.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-2"><article class="example example-like"> 不等式\(-3x + 1 &lt; 5\)を解くことを考える。 この不等式について、左辺の項を\(x\)を含む項の\(-3x\)のみにするため、両辺から1を引くと\(-3x + 1 - 1 &lt; 5 - 1\)となり、計算すると\(-3x &lt; 4\)となる。 左辺を\(x\)のみにするため、両辺を\(-3\)で割ると、\(-3 &lt; 0\)なので不等号の向きが逆になり、\(x &gt; - \frac{4}{3}\)となる。</article></div></section></section></div></main>
 </div>
-<div class="login-link"><span id="loginlogout" class="login">login</span></div>
-<script src="https://pretextbook.org/js/0.11/login.js"></script>
 </body>
 </html>
