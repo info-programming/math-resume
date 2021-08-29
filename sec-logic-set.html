@@ -48,7 +48,7 @@
 <!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link xmlns:svg="http://www.w3.org/2000/svg" href="developer.css" rel="stylesheet" type="text/css">
 </head>
 <body class="mathbook-book has-toc has-sidebar-left">
-<a class="assistive" href="#content">Skip to main content</a><div xmlns:svg="http://www.w3.org/2000/svg" id="latex-macros" class="hidden-content" style="display:none">\(\require{luatexja}\require{luatexja-ruby}\require{indentfirst}\require{unicode-math}\unimathsetup{math-style=ISO,bold-style=ISO}
+<a class="assistive" href="#content">Skip to main content</a><div xmlns:svg="http://www.w3.org/2000/svg" id="latex-macros" class="hidden-content" style="display:none">\(\unimathsetup{math-style=ISO,bold-style=ISO}
 \setmathfont{XITSMath-Regular.otf}
 \usepackage[match,deluxe,expert,bold,noto-otf]{luatexja-preset}
 \setmonofont{Noto Sans Mono CJK JP}
@@ -159,10 +159,10 @@
 </h3>
 <p id="p-49">複雑な思考を行うには、いろいろなものを個別に考えるのではなく、共通する性質を取り上げてひとまとめにして、抽象的に考える必要がある。 数学において、複数のものをまとめて表すための最も基本的な道具が、ここで述べる集合である。</p>
 <article class="definition definition-like" id="definition-18"><h6 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">3.4</span><span class="period">.</span><span class="space"> </span><span class="title">集合.</span>
+<span class="type">定義</span><span class="space"> </span><span class="codenumber">3.4</span><span class="period">.</span><span class="space"> </span><span class="title">集合.</span>
 </h6>「あるものがそれに<em class="emphasis">属するかどうかが明確に定まっている</em>ものの<em class="emphasis">集まり</em>」のことを<dfn class="terminology">集合</dfn>(<dfn class="terminology">set</dfn>)という。</article><p id="p-50">集合についてもっとも基本的な関係は、集合とそれに含まれる「もの」の関係である。</p>
 <article class="definition definition-like" id="definition-19"><h6 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">3.5</span><span class="period">.</span><span class="space"> </span><span class="title">要素.</span>
+<span class="type">定義</span><span class="space"> </span><span class="codenumber">3.5</span><span class="period">.</span><span class="space"> </span><span class="title">要素.</span>
 </h6>集合に含まれる「もの」をその集合の<dfn class="terminology">要素</dfn>(<dfn class="terminology">element</dfn>)という。 集合の表し方には、次の2つがある。 <ul class="disc">
 <li id="li-7"><p id="p-derived-li-7"><dfn class="terminology">内包</dfn>(<dfn class="terminology">intensive</dfn>)的な表現: 条件\(P(x)\)を満たす\(x\)の集合を\(\{x|P(x)\}\)のように、集合に含まれる要素が満たす条件を記して表す。</p></li>
 <li id="li-8"><p id="p-derived-li-8"><dfn class="terminology">外延</dfn>(<dfn class="terminology">extensive</dfn>)的な表現: \(\{0,1,2\}\)のように、0,1,2からなる集合の要素を直接書き並べて表す。</p></li>
@@ -171,7 +171,7 @@
 </h3>
 <p id="p-51">集合に含まれる要素については、「要素が集合に含まれる」という包含(ほうがん)関係を定義することができる。</p>
 <article class="definition definition-like" id="definition-20"><h6 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">3.6</span><span class="period">.</span><span class="space"> </span><span class="title">部分集合.</span>
+<span class="type">定義</span><span class="space"> </span><span class="codenumber">3.6</span><span class="period">.</span><span class="space"> </span><span class="title">部分集合.</span>
 </h6>集合\(A, B\)について、\(x \in A\)のときに\(x \in B\)となるなら、\(A\)は\(B\)の<dfn class="terminology">部分集合</dfn>(<dfn class="terminology">subset</dfn>)であるといい、\(A \subset B\)や\(B \supset A\)と表す。 特に、\(A \subset B\)かつ\(A \supset B\)であることを、\(A = B\)と表す。</article><p id="p-52">部分集合の記号\(\subset, \supset\)については、定義より集合\(A\)について\(A \subset A\)が常に成り立つ。 よく似た記号の不等号\(&lt;, &gt;\)では、数\(A\)について\(A &lt; A\)が成り立たないので、違いを理解しておく必要がある。</p>
 <p id="p-53">この定義で、「二つの集合\(A\)と\(B\)が等しい」ということが、集合の包含関係によって定義されている。 この定義により、\(A = B\)を証明したい場合には、\(A \subset B\)かつ\(A \supset B\)であることを示せば良いということが分かる。 これは、\(A = B\)を示すための有力な手がかりとなり、証明においても用いられることがある。</p>
 <article class="example example-like" id="example-3"><a data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-3"><h6 class="heading">
@@ -189,7 +189,7 @@ D &amp; = \{2n|n=1, 2, 3, \cdots\} = \{2, 4, 6, \cdots\} = A
 </h3>
 <p id="p-55">何らかの形で「全体」の集合(<dfn class="terminology">全体集合</dfn>)が決まっているときには、全体のうちである条件を満たさないものの集合を考えることができる。</p>
 <article class="definition definition-like" id="definition-21"><h6 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">3.8</span><span class="period">.</span><span class="space"> </span><span class="title">補集合.</span>
+<span class="type">定義</span><span class="space"> </span><span class="codenumber">3.8</span><span class="period">.</span><span class="space"> </span><span class="title">補集合.</span>
 </h6>全体集合を\(B\)とし、\(A\)を\(B\)の部分集合とする。 \(B\)の元のうち\(A\)の元ではないものを\(A\)の<dfn class="terminology">補集合</dfn>(<dfn class="terminology">complement</dfn>)といい、次のように定義される。<div class="displaymath">
 \begin{gather*}
 \overline{A} = \{x \in B | x \notin A \}
@@ -197,7 +197,7 @@ D &amp; = \{2n|n=1, 2, 3, \cdots\} = \{2, 4, 6, \cdots\} = A
 </div>\(A\)の補集合を表す記号としては、\(\overline{A}\)以外にも\(A^c\)がよく用いられる。</article><p id="p-56">補集合の記号\(\overline{A}\)には全体集合が\(B\)であることは明示されていないが、\(B\)にあたる全体集合がどのようなものであるかにより\(\overline{A}\)の要素が変わることには、注意が必要である。 \(A\)が正の偶数の集合であるとき、\(B\)が自然数の集合であれば\(\overline{A}\)は正の奇数の集合となるが、\(B\)が実数の集合であれば\(\overline{A}\)は正の奇数だけでなく、有理数や無理数も含むことになる。 そのため、<em class="emphasis">補集合を用いる場合は、何が全体集合であるかを予め定めておく</em>必要がある。</p>
 <p id="p-57">通常の数に対して四則演算が定義できるように、集合に対しても同様の演算を定義することができる。</p>
 <article class="definition definition-like" id="definition-22"><h6 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">3.9</span><span class="period">.</span><span class="space"> </span><span class="title">和集合・共通部分.</span>
+<span class="type">定義</span><span class="space"> </span><span class="codenumber">3.9</span><span class="period">.</span><span class="space"> </span><span class="title">和集合・共通部分.</span>
 </h6>\(A, B\)が集合のとき、次の集合をそれぞれ、\(A\)と\(B\)の<dfn class="terminology">和集合</dfn>(<dfn class="terminology">union</dfn>)、\(A\)と\(B\)の<dfn class="terminology">共通部分</dfn>(<dfn class="terminology">intersection</dfn>)という。<div class="displaymath">
 \begin{align*}
 A \cup B &amp; = \{x| x \in A \text{かつ}   x \in    B\}\\
@@ -253,7 +253,7 @@ x \in \overline{A \cap B} &amp;
 </h3>
 <p id="p-62">集合の例としては、まず自然数や実数など、特定の条件を満たす数全体がある。</p>
 <article class="definition definition-like" id="definition-23"><h6 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">3.13</span><span class="period">.</span><span class="space"> </span><span class="title">自然数と整数.</span>
+<span class="type">定義</span><span class="space"> </span><span class="codenumber">3.13</span><span class="period">.</span><span class="space"> </span><span class="title">自然数と整数.</span>
 </h6>
 <dfn class="terminology">自然数</dfn>(<dfn class="terminology">natural number</dfn>)全体の集合を\(\mathbb{N}\)、<dfn class="terminology">整数</dfn>(<dfn class="terminology">integer</dfn>)全体の集合を\(\mathbb{Z}\)で表す。<div class="displaymath">
 \begin{align*}
@@ -262,7 +262,7 @@ x \in \overline{A \cap B} &amp;
 \end{align*}
 </div></article><p id="p-63">整数の集合を\(\mathbb{Z}\)で表すのは、ドイツ語のZahlen(数)に由来する。 また自然数については、現代では\(0 \in \mathbb{N}\)とすることも多い。</p>
 <article class="definition definition-like" id="definition-24"><h6 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">3.14</span><span class="period">.</span><span class="space"> </span><span class="title">有理数と実数.</span>
+<span class="type">定義</span><span class="space"> </span><span class="codenumber">3.14</span><span class="period">.</span><span class="space"> </span><span class="title">有理数と実数.</span>
 </h6>
 <em class="emphasis">分数(比)の形で表すことができる数</em>、つまり有限小数や循環小数を<dfn class="terminology">有理数</dfn>(<dfn class="terminology">rational number</dfn>)といい、有理数全体の集合を\(\mathbb{Q}\)で表す。<div class="displaymath">
 \begin{align*}
@@ -273,9 +273,9 @@ x \in \overline{A \cap B} &amp;
 </h3>
 <p id="p-65">数など複数のものを1つにまとめて扱う方法には、集合以外に<dfn class="terminology">組</dfn>(<dfn class="terminology">tuple</dfn>)を用いる方法もある。</p>
 <article class="definition definition-like" id="definition-25"><h6 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">3.15</span><span class="period">.</span><span class="space"> </span><span class="title">組.</span>
+<span class="type">定義</span><span class="space"> </span><span class="codenumber">3.15</span><span class="period">.</span><span class="space"> </span><span class="title">組.</span>
 </h6>\(x, y, z\)があるとき、\((x, y)\)を\(x\)と\(y\)の<dfn class="terminology">組</dfn>(<dfn class="terminology">tuple</dfn>)、\((x, y, z)\)を\(x\)と\(y\)と\(z\)の組という。</article><article class="definition definition-like" id="definition-26"><h6 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">3.16</span><span class="period">.</span><span class="space"> </span><span class="title">組の相等関係.</span>
+<span class="type">定義</span><span class="space"> </span><span class="codenumber">3.16</span><span class="period">.</span><span class="space"> </span><span class="title">組の相等関係.</span>
 </h6>組\((a_1, a_2, \cdots, a_n)\)と\((b_1, b_2, \cdots, b_n)\)は、\(a_1 = b_1, a_2 = b_2, \cdots, a_n = b_n\)がすべて成り立つとき<dfn class="terminology">等しい</dfn>といい、\((a_1, a_2, \cdots, a_n) = (b_1, b_2, \cdots, b_n)\)と表す。</article><p id="p-66">組は集合と同じく複数のものをまとめて扱う方法であるが、次の2点で異なっている。</p>
 <ul class="disc">
 <li id="li-9"><p id="p-derived-li-9"><em class="alert">組には順序がある</em>ので\((1, 2) \ne (2, 1)\)であるが、<em class="alert">集合の要素には順序がない</em>ので、\(\{1, 2\} = \{2, 1\}\)となる。</p></li>
@@ -283,7 +283,7 @@ x \in \overline{A \cap B} &amp;
 </ul>
 <p id="p-67">組を含む集合は、実用上便利である。</p>
 <article class="definition definition-like" id="definition-27"><h6 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">3.17</span><span class="period">.</span><span class="space"> </span><span class="title">直積.</span>
+<span class="type">定義</span><span class="space"> </span><span class="codenumber">3.17</span><span class="period">.</span><span class="space"> </span><span class="title">直積.</span>
 </h6>\(A, B\)を集合とするとき、\(a (\in A)\)と\(b (\in B)\)の組\((a, b)\)を要素とする集合を\(A\)と\(B\)の<dfn class="terminology">直積</dfn>(<dfn class="terminology">direct product</dfn>)といい、\(A \times B\)と表す。<div class="displaymath">
 \begin{align*}
 A \times B &amp;= \{(a, b) | a \in A, b \in B \}

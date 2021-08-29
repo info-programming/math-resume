@@ -48,7 +48,7 @@
 <!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link xmlns:svg="http://www.w3.org/2000/svg" href="developer.css" rel="stylesheet" type="text/css">
 </head>
 <body class="mathbook-book has-toc has-sidebar-left">
-<a class="assistive" href="#content">Skip to main content</a><div xmlns:svg="http://www.w3.org/2000/svg" id="latex-macros" class="hidden-content" style="display:none">\(\require{luatexja}\require{luatexja-ruby}\require{indentfirst}\require{unicode-math}\unimathsetup{math-style=ISO,bold-style=ISO}
+<a class="assistive" href="#content">Skip to main content</a><div xmlns:svg="http://www.w3.org/2000/svg" id="latex-macros" class="hidden-content" style="display:none">\(\unimathsetup{math-style=ISO,bold-style=ISO}
 \setmathfont{XITSMath-Regular.otf}
 \usepackage[match,deluxe,expert,bold,noto-otf]{luatexja-preset}
 \setmonofont{Noto Sans Mono CJK JP}
@@ -155,16 +155,16 @@
 <span class="type">Section</span> <span class="codenumber">2.3</span> <span class="title">多項式</span>
 </h2>
 <article class="definition definition-like" id="definition-9"><h6 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.13</span><span class="period">.</span><span class="space"> </span><span class="title">多項式.</span>
+<span class="type">定義</span><span class="space"> </span><span class="codenumber">2.13</span><span class="period">.</span><span class="space"> </span><span class="title">多項式.</span>
 </h6>
 <em class="emphasis">1つ以上の項からなる式</em>を<dfn class="terminology">多項式</dfn>(<dfn class="terminology">polynomial</dfn>)という。</article><p id="p-22">例えば式のうち、\(2 + \sqrt{2}\)や\(a + b\)、\(2x + 3y\)などは多項式の例である。 また、左辺と右辺に式がある\(a + b = 3\)などの方程式や、\(2a &lt; 3\)などの不等式もまた、式の例である。</p>
 <p id="p-23">なお、1つしか項がない多項式を<dfn class="terminology">単項式</dfn>と呼ぶことや、多項式の別の呼び方として<dfn class="terminology">整式</dfn>と呼ぶこともある。ただ一般的には、これらすべてをまとめて「多項式」と呼ぶことが多い。</p>
 <p id="p-24">多項式の性質を分析するときには、各項の次数や係数に着目することが多い。</p>
 <article class="definition definition-like" id="definition-10"><h6 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.14</span><span class="period">.</span><span class="space"> </span><span class="title">係数と次数.</span>
+<span class="type">定義</span><span class="space"> </span><span class="codenumber">2.14</span><span class="period">.</span><span class="space"> </span><span class="title">係数と次数.</span>
 </h6>項が\(ax^n\)と表されるとき、\(a\)をこの項の\(x\)についての<dfn class="terminology">係数</dfn>といい、指数\(n\)をこの項の\(x\)についての<dfn class="terminology">次数</dfn>という。 このとき、この項\(ax^n\)は\(x\)について\(n\)次(じ)の項であるという。 数1や\(\pi\)などの<em class="emphasis">定数の次数は0</em>とし、0次の項として扱う。 ただし、数<em class="emphasis">0については次数は定義しない</em>。</article><p id="p-25">数や定数については、\(1 = 1 \times a^0\)と解釈できるため、0次の項とする。 また数0については、\(0 \times x\)とも\(0 \times x^2\)とも解釈できてしまうため、次数を定めないことが多い。 なお、項に含まれる文字が1つだけの場合や、どの文字について述べているのか明らかな場合には、「\(x\)についての」という言葉は省略することが多い。</p>
 <article class="definition definition-like" id="definition-11"><h6 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.15</span><span class="period">.</span><span class="space"> </span><span class="title">多項式の次数.</span>
+<span class="type">定義</span><span class="space"> </span><span class="codenumber">2.15</span><span class="period">.</span><span class="space"> </span><span class="title">多項式の次数.</span>
 </h6>多項式に含まれる文字\(x\)に着目して各項の次数を調べたとき、最大のものをその多項式の<dfn class="terminology">次数</dfn>という。 また、この多項式は\(x\)について\(n\)次式であるという。</article><p id="p-26">例えば、多項式\(1 + 2x^2 + x\)は\(x\)について2次式であるという。</p>
 <p id="p-27">多項式では、次数の大きい項ほど多項式の値に与える影響が大きくなるので、次数の大きい項から順に並べることが多い。 多項式を<em class="emphasis">次数の高い項から順に並べる</em>ことを、その多項式を「<dfn class="terminology">降冪</dfn>の順に整理する」という。 逆に、次数の低い項から順に並べることは、「昇冪(しょうべき)の順に整理する」という。 例えば、多項式\(1 + 2x^2 + x\)を降冪の順に整理すると\(2x^2 + x + 1\)になり、昇冪の順に整理すると\(1 + x + 2x^2\)になる。</p>
 <p id="p-28">降冪の順に整理しても式の見た目がよくならない場合などは、降冪の順から逸脱しても見た目の美しさを優先することもある。 例えば、多項式\(x^2 + y^2 + xy + 2x + 2y + 1\)を\(x\)について降冪の順に整理すると\(x^2 + (y + 2)x + y^2 + 2y + 1\)となる。 このように、降冪の順にすることで多項式における\(x\)と\(y\)の対称性が分かりにくくなる場合には、あえて降冪の順に並べないこともある。</p></section></div></main>

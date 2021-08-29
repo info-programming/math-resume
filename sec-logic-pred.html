@@ -48,7 +48,7 @@
 <!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link xmlns:svg="http://www.w3.org/2000/svg" href="developer.css" rel="stylesheet" type="text/css">
 </head>
 <body class="mathbook-book has-toc has-sidebar-left">
-<a class="assistive" href="#content">Skip to main content</a><div xmlns:svg="http://www.w3.org/2000/svg" id="latex-macros" class="hidden-content" style="display:none">\(\require{luatexja}\require{luatexja-ruby}\require{indentfirst}\require{unicode-math}\unimathsetup{math-style=ISO,bold-style=ISO}
+<a class="assistive" href="#content">Skip to main content</a><div xmlns:svg="http://www.w3.org/2000/svg" id="latex-macros" class="hidden-content" style="display:none">\(\unimathsetup{math-style=ISO,bold-style=ISO}
 \setmathfont{XITSMath-Regular.otf}
 \usepackage[match,deluxe,expert,bold,noto-otf]{luatexja-preset}
 \setmonofont{Noto Sans Mono CJK JP}
@@ -159,7 +159,7 @@
 </h3>
 <p id="p-85">命題論理では、文を命題という単位で扱い、命題を組み合わせてより複雑な命題を表した。 命題には、「2は自然数である」「3は自然数である」「4は自然数である」のように、大半が同じで一部分のみが異なる命題がある。 これらの命題をまとめて表すために、<dfn class="terminology">命題関数</dfn>(<dfn class="terminology">propositional function</dfn>)を定義する。</p>
 <article class="definition definition-like" id="definition-33"><h6 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">3.29</span><span class="period">.</span><span class="space"> </span><span class="title">命題関数.</span>
+<span class="type">定義</span><span class="space"> </span><span class="codenumber">3.29</span><span class="period">.</span><span class="space"> </span><span class="title">命題関数.</span>
 </h6>変数\(x\)に値を代入すれば命題になり真偽が定まるものを<dfn class="terminology">命題関数</dfn>(<dfn class="terminology">propositional function</dfn>)といい、\(P\)という名前をつけた命題関数を\(P(x)\)のように表す。 2つの変数\(x, y\)に値を代入すれば真偽が定まる命題関数についても同様に、\(P(x, y)\)のように表す。</article><article class="example example-like" id="example-6"><a data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-6"><h6 class="heading">
 <span class="type">例</span><span class="space"> </span><span class="codenumber">3.30</span><span class="period">.</span><span class="space"> </span><span class="title">命題関数の例.</span>
 </h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-6"><article class="example example-like">\(P(x)\)を「\(x\)は自然数である」とすると、\(P(1)\)は「1は自然数である」、\(P(2)\)は「2は自然数である」、\(P(2.5)\)は「2.5は自然数である」となり、いずれも命題である。 このうち、\(P(1), P(2)\)は真、\(P(2.5)\)は偽である。 また、\(Q(x, y)\)を「\(x + y\)は自然数である」とすると、\(Q(1, 2)\)は「\(1 + 2\)は自然数である」となり、命題である。 \(Q(1, 2), Q(2, 0)\)は真、\(Q(2, 0.5), Q(-3, 1)\)は偽である。 \(P(x), Q(x, y)\)を数式で表すと、次のようになる。<div class="displaymath">
@@ -180,7 +180,7 @@ Q(x, y) &amp; = \begin{cases} T &amp; (x + y \in \mathbb{N}) \\ F &amp; (\text{o
 </div>
 <p id="p-88">この命題は、自然数\(x\)について\(P(x)\)が常に成り立つときに真、そうでないときに偽となる。</p>
 <article class="definition definition-like" id="definition-34"><h6 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">3.31</span><span class="period">.</span><span class="space"> </span><span class="title">「すべて」.</span>
+<span class="type">定義</span><span class="space"> </span><span class="codenumber">3.31</span><span class="period">.</span><span class="space"> </span><span class="title">「すべて」.</span>
 </h6>集合\(X\)の<dfn class="terminology">すべて</dfn>(<dfn class="terminology">all</dfn>)の要素\(x\)について\(P(x)\)が真であるという命題を\(\forall x \in X, P(x)\)と表す。 この記号\(\forall\)は<dfn class="terminology">全称量化子</dfn>といい、「for <em class="emphasis">a</em>ll」または「<em class="emphasis">a</em>ny」の頭文字である「A」を逆さにした記号である。<div class="displaymath">
 \begin{gather*}
 \forall x \in X, P(x) \iff \bigwedge_{x \in X} P(x)
@@ -193,7 +193,7 @@ P(1) \lor P(2) \lor P(3) \lor \cdots = \bigvee_{x \in \mathbb{N}} P(x)
 </div>
 <p id="p-90">この命題は、自然数のうちに\(P(x)\)が成り立つ\(x\)が存在するときに真、そうでないときに偽となる。</p>
 <article class="definition definition-like" id="definition-35"><h6 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">3.32</span><span class="period">.</span><span class="space"> </span><span class="title">「ある」.</span>
+<span class="type">定義</span><span class="space"> </span><span class="codenumber">3.32</span><span class="period">.</span><span class="space"> </span><span class="title">「ある」.</span>
 </h6>集合\(X\)の<dfn class="terminology">ある</dfn>(<dfn class="terminology">some</dfn>)要素\(x\)について\(P(x)\)が真であるという命題を\(\exists x \in X, P(x)\)と表す。 この記号\(\exists\)は<dfn class="terminology">存在量化子</dfn>といい、「<em class="emphasis">e</em>xist」の頭文字である「E」を逆さにした記号である。<div class="displaymath">
 \begin{gather*}
 \exists x \in X, P(x) \iff \bigvee_{x \in X} P(x)

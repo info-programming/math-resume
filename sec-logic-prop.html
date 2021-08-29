@@ -48,7 +48,7 @@
 <!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link xmlns:svg="http://www.w3.org/2000/svg" href="developer.css" rel="stylesheet" type="text/css">
 </head>
 <body class="mathbook-book has-toc has-sidebar-left">
-<a class="assistive" href="#content">Skip to main content</a><div xmlns:svg="http://www.w3.org/2000/svg" id="latex-macros" class="hidden-content" style="display:none">\(\require{luatexja}\require{luatexja-ruby}\require{indentfirst}\require{unicode-math}\unimathsetup{math-style=ISO,bold-style=ISO}
+<a class="assistive" href="#content">Skip to main content</a><div xmlns:svg="http://www.w3.org/2000/svg" id="latex-macros" class="hidden-content" style="display:none">\(\unimathsetup{math-style=ISO,bold-style=ISO}
 \setmathfont{XITSMath-Regular.otf}
 \usepackage[match,deluxe,expert,bold,noto-otf]{luatexja-preset}
 \setmonofont{Noto Sans Mono CJK JP}
@@ -159,7 +159,7 @@
 </h3>
 <p id="p-70">数学が基盤とする論理学では、客観的な分析が可能な文を<dfn class="terminology">命題</dfn>(<dfn class="terminology">proposition</dfn>)として扱い、複数の命題を推論で接続することで論理を展開する。</p>
 <article class="definition definition-like" id="definition-28"><h6 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">3.18</span><span class="period">.</span><span class="space"> </span><span class="title">命題.</span>
+<span class="type">定義</span><span class="space"> </span><span class="codenumber">3.18</span><span class="period">.</span><span class="space"> </span><span class="title">命題.</span>
 </h6>
 <em class="emphasis">「正しい」か「正しくない」かが明確に定まる</em>式や文のことを<dfn class="terminology">命題</dfn>(<dfn class="terminology">proposition</dfn>)という。 命題\(p\)が「正しい」とき、\(p\)は<dfn class="terminology">真</dfn>(<dfn class="terminology">true</dfn>)であるという。また、\(p\)が真でないとき、\(p\)は<dfn class="terminology">偽</dfn>(<dfn class="terminology">false</dfn>)であるという。 命題\(p\)が真であることを\(p\)が<dfn class="terminology">成り立つ</dfn>、命題\(p\)が偽であることを\(p\)が<dfn class="terminology">成り立たない</dfn>ともいう。</article><p id="p-71">特に、真である命題を<dfn class="terminology">定理</dfn>(<dfn class="terminology">theorem</dfn>)という。ただし、一般的に「定理」という場合は、「真である命題」のうち「何らかの基準に照らして<em class="emphasis">重要なもの</em>」を指すことが多い。</p>
 <p id="p-72">命題を文字で表す場合、propositionの頭文字の\(p\)を用い、複数の命題を文字で表すときは\(q\)や\(r\)も用いることが多い。流儀によっては、命題を大文字の\(P\)や\(Q\)で表すことも多い。</p>
@@ -170,7 +170,7 @@
 </h3>
 <p id="p-73">命題についての基本的な操作には、1つの命題に対する<dfn class="terminology">否定</dfn>や、2つ以上の命題に対する「<dfn class="terminology">かつ</dfn>(連言)」「<dfn class="terminology">または</dfn>(選言)」がある。</p>
 <article class="definition definition-like" id="definition-29"><h6 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">3.20</span><span class="period">.</span><span class="space"> </span><span class="title">連言・選言・否定.</span>
+<span class="type">定義</span><span class="space"> </span><span class="codenumber">3.20</span><span class="period">.</span><span class="space"> </span><span class="title">連言・選言・否定.</span>
 </h6>\(p, q\)を命題とするとき、\(p, q\)の<em class="emphasis">両方</em>が真のときに真となり、それ以外のときに偽となる命題を「\(p\)<dfn class="terminology">かつ</dfn>\(q\)」といい、\(p \land q\)と表すことがある。 また、\(p, q\)の<em class="emphasis">少なくとも一方</em>が真のときに真となり、それ以外のときに偽となる命題を「\(p\)<dfn class="terminology">または</dfn>\(q\)」といい、\(p \lor q\)と表すことがある。 更に、\(p\)が偽のときに真となり、真のときに偽となる命題を「\(p\)の<dfn class="terminology">否定</dfn>」といい、\(\overline{p}\)と表す。</article><p id="p-74">数学における「または」は、「どちらか一方が成り立つ」という意味ではなく「	<em class="emphasis">少なくとも一方</em>が成り立つ」という意味であることに注意が必要である。</p></section><section class="subsection" id="ssec-logic-proplaw"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">3.3.3</span> <span class="title">命題に関する計算法則</span>
 </h3>
@@ -205,7 +205,7 @@ p \land q &amp;= q \land p &amp; (\text{交換法則})\\
 </h3>
 <p id="p-78">命題を用いてより高度な命題を表すには、次の<dfn class="terminology">推論</dfn>(<dfn class="terminology">inference</dfn>)を表す規則が必要となる。</p>
 <article class="definition definition-like" id="definition-30"><h6 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">3.24</span><span class="period">.</span><span class="space"> </span><span class="title">推論.</span>
+<span class="type">定義</span><span class="space"> </span><span class="codenumber">3.24</span><span class="period">.</span><span class="space"> </span><span class="title">推論.</span>
 </h6>\(p, q\)を命題とするとき、「<em class="emphasis">もし\(p\)が成り立つならば、\(q\)も成り立つ</em>」という命題を「\(p\)<dfn class="terminology">ならば</dfn>\(q\)」といい、\(p \implies q\)と表す。 命題\(p \implies q\)は、「<em class="alert">\(p\)が偽</em>のとき」か「\(p\)も\(q\)も真のとき」に真となる。<div class="displaymath">
 \begin{gather*}
 [ p \implies q ] = [ \overline{p} \lor (p \land q) ] = [ (\overline{p} \lor p) \land (\overline{p} \lor q)] (\text{分配法則}) = [ \overline{p} \lor q ] (\text{排中律})
@@ -218,7 +218,7 @@ p \land q &amp;= q \land p &amp; (\text{交換法則})\\
 </h3>
 <p id="p-80">この推論規則を用いて、2つの命題が「同じ」であるという関係を定義する。</p>
 <article class="definition definition-like" id="definition-31"><h6 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">3.26</span><span class="period">.</span><span class="space"> </span><span class="title">同値.</span>
+<span class="type">定義</span><span class="space"> </span><span class="codenumber">3.26</span><span class="period">.</span><span class="space"> </span><span class="title">同値.</span>
 </h6>\(p, q\)を命題とするとき、\(p \implies q\)かつ\(q \implies p\)であれば、\(p\)と\(q\)は<dfn class="terminology">同値</dfn>であるといい、\(p \iff q\)と表す。<div class="displaymath">
 \begin{gather*}
 [ p \iff q ] = [ p \implies q ] \land [ q \implies p ]
@@ -228,7 +228,7 @@ p \land q &amp;= q \land p &amp; (\text{交換法則})\\
 </h3>
 <p id="p-82">更に、推論を用いた命題について、逆や裏、対偶を定義できる。</p>
 <article class="definition definition-like" id="definition-32"><h6 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">3.27</span><span class="period">.</span><span class="space"> </span><span class="title">逆・裏・対偶.</span>
+<span class="type">定義</span><span class="space"> </span><span class="codenumber">3.27</span><span class="period">.</span><span class="space"> </span><span class="title">逆・裏・対偶.</span>
 </h6>\(p, q\)を命題とするとき、命題\(p \implies q\)に対し、\(q \implies p\)を元の命題の<dfn class="terminology">逆</dfn>、\(\overline{p} \implies \overline{q}\)を元の命題の<dfn class="terminology">裏</dfn>、\(\overline{q} \implies \overline{p}\)を元の命題の<dfn class="terminology">対偶</dfn>という。</article><p id="p-83">このうち、命題\(p \implies q\)と逆\(q \implies p\)について、前者は\(\overline{p} \lor q\)、後者は\(\overline{q} \lor p\)であるので、<em class="alert">命題とその逆の真偽は一致しない</em>。 また、命題\(p \implies q\)と対偶\(\overline{q} \implies \overline{p}\)については、次の定理が成り立つ。</p>
 <article class="theorem theorem-like" id="theorem-16"><h6 class="heading">
 <span class="type">定理</span><span class="space"> </span><span class="codenumber">3.28</span><span class="period">.</span><span class="space"> </span><span class="title">命題とその対偶.</span>

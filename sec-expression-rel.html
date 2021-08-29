@@ -48,7 +48,7 @@
 <!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link xmlns:svg="http://www.w3.org/2000/svg" href="developer.css" rel="stylesheet" type="text/css">
 </head>
 <body class="mathbook-book has-toc has-sidebar-left">
-<a class="assistive" href="#content">Skip to main content</a><div xmlns:svg="http://www.w3.org/2000/svg" id="latex-macros" class="hidden-content" style="display:none">\(\require{luatexja}\require{luatexja-ruby}\require{indentfirst}\require{unicode-math}\unimathsetup{math-style=ISO,bold-style=ISO}
+<a class="assistive" href="#content">Skip to main content</a><div xmlns:svg="http://www.w3.org/2000/svg" id="latex-macros" class="hidden-content" style="display:none">\(\unimathsetup{math-style=ISO,bold-style=ISO}
 \setmathfont{XITSMath-Regular.otf}
 \usepackage[match,deluxe,expert,bold,noto-otf]{luatexja-preset}
 \setmonofont{Noto Sans Mono CJK JP}
@@ -159,20 +159,20 @@
 </h3>
 <p id="p-38">関係式のうち最も基本的なものは、いくつかの式が等しいことを表す等式である。</p>
 <article class="definition definition-like" id="definition-12"><h6 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.23</span><span class="period">.</span><span class="space"> </span><span class="title">等式.</span>
+<span class="type">定義</span><span class="space"> </span><span class="codenumber">2.23</span><span class="period">.</span><span class="space"> </span><span class="title">等式.</span>
 </h6>等号\(=\)を含み、数の相等関係を表す関係式\(a = b\)を<dfn class="terminology">等式</dfn>(<dfn class="terminology">equation</dfn>)という。 等式\(a = b\)で、等号の左側にある辺\(a\)を<dfn class="terminology">左辺</dfn>、右側にある辺\(b\)を<dfn class="terminology">右辺</dfn>という。 等式\(a = b\)が成り立つとき、\(a\)と\(b\)は<dfn class="terminology">等しい</dfn>(<dfn class="terminology">equal to</dfn>)という。</article><article class="definition definition-like" id="definition-13"><h6 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.24</span><span class="period">.</span><span class="space"> </span><span class="title">3つ以上の辺からなる等式.</span>
+<span class="type">定義</span><span class="space"> </span><span class="codenumber">2.24</span><span class="period">.</span><span class="space"> </span><span class="title">3つ以上の辺からなる等式.</span>
 </h6>\(a = b\)かつ\(b = c\)のとき、\(a = b = c\)と表すことがある。<div class="displaymath">
 \begin{gather*}
 a = b = c \iff (a = b) \text{かつ} (b = c) \iff \begin{cases} a = b \\ b = c \end{cases}
 \end{gather*}
 </div>等式\(a = b = c\)の最も左側にある辺\(a\)を<dfn class="terminology">第1辺</dfn>、左から2番目にある辺\(b\)を<dfn class="terminology">第2辺</dfn>、左から3番目にある辺\(c\)を<dfn class="terminology">第3辺</dfn>という。</article><article class="definition definition-like" id="definition-14"><h6 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.25</span><span class="period">.</span><span class="space"> </span><span class="title">方程式.</span>
+<span class="type">定義</span><span class="space"> </span><span class="codenumber">2.25</span><span class="period">.</span><span class="space"> </span><span class="title">方程式.</span>
 </h6>未知の数\(x\)を含み、特定の\(x\)の値について成り立つ等式を、\(x\)についての<dfn class="terminology">方程式</dfn>という。 方程式が成り立つ\(x\)の値を求めることを、方程式を<dfn class="terminology">解く</dfn>(<dfn class="terminology">solve</dfn>)といい、求めた\(x\)の値を方程式の<dfn class="terminology">解</dfn>(<dfn class="terminology">solution</dfn>)という。</article></section><section class="subsection" id="ssec-expression-inequation"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">2.5.2</span> <span class="title">不等式</span>
 </h3>
 <article class="definition definition-like" id="definition-15"><h6 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.26</span><span class="period">.</span><span class="space"> </span><span class="title">不等式.</span>
+<span class="type">定義</span><span class="space"> </span><span class="codenumber">2.26</span><span class="period">.</span><span class="space"> </span><span class="title">不等式.</span>
 </h6>不等号\(&lt;, &gt;, \leqq, \geqq\)のいずれかを含み、数の大小関係を表す関係式を<dfn class="terminology">不等式</dfn>(<dfn class="terminology">inequation</dfn>)という。 不等号はそれぞれ、次の意味をもつ。<div class="displaymath">
 \begin{align*}
 a &amp;&lt;  b &amp; (a\text{は}b\text{より小さい(less than)})\\
@@ -195,7 +195,7 @@ ac &amp;&gt; bc &amp; (c &lt; 0)\\
 \end{align*}
 </div></article><p id="p-41">不等式は、不等号を複数用いることで、3つ以上の式の関係を表すことができる。</p>
 <article class="definition definition-like" id="definition-16"><h6 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.28</span><span class="period">.</span><span class="space"> </span><span class="title">3つ以上の辺からなる不等式.</span>
+<span class="type">定義</span><span class="space"> </span><span class="codenumber">2.28</span><span class="period">.</span><span class="space"> </span><span class="title">3つ以上の辺からなる不等式.</span>
 </h6>\(a &lt; b\)かつ\(b &lt; c\)のとき、\(a &lt; b &lt; c\)と表すことがある。\(&lt;\)以外の不等号についても、同様に表すことができる。<div class="displaymath">
 \begin{gather*}
 a &lt; b &lt; c \iff (a &lt; b) \text{かつ} (b &lt; c) \iff \begin{cases} a &lt; b \\ b &lt; c \end{cases}

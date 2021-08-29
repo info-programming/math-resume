@@ -48,7 +48,7 @@
 <!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link xmlns:svg="http://www.w3.org/2000/svg" href="developer.css" rel="stylesheet" type="text/css">
 </head>
 <body class="mathbook-book has-toc has-sidebar-left">
-<a class="assistive" href="#content">Skip to main content</a><div xmlns:svg="http://www.w3.org/2000/svg" id="latex-macros" class="hidden-content" style="display:none">\(\require{luatexja}\require{luatexja-ruby}\require{indentfirst}\require{unicode-math}\unimathsetup{math-style=ISO,bold-style=ISO}
+<a class="assistive" href="#content">Skip to main content</a><div xmlns:svg="http://www.w3.org/2000/svg" id="latex-macros" class="hidden-content" style="display:none">\(\unimathsetup{math-style=ISO,bold-style=ISO}
 \setmathfont{XITSMath-Regular.otf}
 \usepackage[match,deluxe,expert,bold,noto-otf]{luatexja-preset}
 \setmonofont{Noto Sans Mono CJK JP}
@@ -159,7 +159,7 @@
 </h3>
 <p id="p-142">角度を\(x^\circ\)のような形で表す方法を、<dfn class="terminology">度数法</dfn>という。 角度は\(0^\circ\)が最も小さく、\(360^\circ\)になると\(0^\circ\)と同じになる。 こう考えると、例えば\(361^\circ\)は\(1^\circ\)と同じであるとみなせる。 この考え方を一般化したのが、次の一般角である。</p>
 <article class="definition definition-like" id="definition-48"><h6 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">5.1</span><span class="period">.</span><span class="space"> </span><span class="title">一般角.</span>
+<span class="type">定義</span><span class="space"> </span><span class="codenumber">5.1</span><span class="period">.</span><span class="space"> </span><span class="title">一般角.</span>
 </h6>\(\theta \in [0, 360)\)のとき、度数法での<dfn class="terminology">一般角</dfn>を次のように定める。<div class="displaymath">
 \begin{gather*}
 (\theta + 360n)^\circ = \theta^\circ (n \in \mathbb{Z})
@@ -172,7 +172,7 @@
 <p id="p-143">度数法による角度の表示は、そのままでは通常の数と比較することができず、数学で扱うには不便である。 そこで、扇形の弧の「長さ」を用いて、角の大きさを表すことを考える。</p>
 <p id="p-144">半径\(r\)の円の弧の長さは、\(2 \pi r\)と表せる。 円は中心角\(360^\circ\)の扇形とみなすことができるので、\(360^\circ\)と\(2 \pi\)を対応づける、<dfn class="terminology">弧度法</dfn>という角度の表し方を定義する。</p>
 <article class="definition definition-like" id="definition-49"><h6 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">5.3</span><span class="period">.</span><span class="space"> </span><span class="title">弧度法.</span>
+<span class="type">定義</span><span class="space"> </span><span class="codenumber">5.3</span><span class="period">.</span><span class="space"> </span><span class="title">弧度法.</span>
 </h6>半径\(r\)の扇形の弧の長さが\(r\)になるとき、<dfn class="terminology">ラジアン</dfn>(<dfn class="terminology">radian</dfn>)という単位を用いて、この扇形の中心角を<em class="emphasis">1 (radian)</em>と定める。 半径\(r\)の円(中心角\(360^\circ\))の円周は\(2\pi r\)で表されるので、\(360^\circ = 2\pi (radian)\)である。 なお、単位radianは省略することが多い。 <figure class="figure figure-like" id="fig-triangle-radian"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="image/triangle-radian.svg" role="img" class="contained" alt=""></div>
 <figcaption><span class="type">図</span><span class="space"> </span><span class="codenumber">5.4<span class="period">.</span></span><span class="space"> </span>弧度法</figcaption></figure></article><p id="p-145">度数法と弧度法は、次の関係式で変換できる。</p>
 <article class="theorem theorem-like" id="theorem-23"><h6 class="heading">

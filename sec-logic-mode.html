@@ -48,7 +48,7 @@
 <!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link xmlns:svg="http://www.w3.org/2000/svg" href="developer.css" rel="stylesheet" type="text/css">
 </head>
 <body class="mathbook-book has-toc has-sidebar-left">
-<a class="assistive" href="#content">Skip to main content</a><div xmlns:svg="http://www.w3.org/2000/svg" id="latex-macros" class="hidden-content" style="display:none">\(\require{luatexja}\require{luatexja-ruby}\require{indentfirst}\require{unicode-math}\unimathsetup{math-style=ISO,bold-style=ISO}
+<a class="assistive" href="#content">Skip to main content</a><div xmlns:svg="http://www.w3.org/2000/svg" id="latex-macros" class="hidden-content" style="display:none">\(\unimathsetup{math-style=ISO,bold-style=ISO}
 \setmathfont{XITSMath-Regular.otf}
 \usepackage[match,deluxe,expert,bold,noto-otf]{luatexja-preset}
 \setmonofont{Noto Sans Mono CJK JP}
@@ -159,14 +159,14 @@
 </h3>
 <p id="p-95">これまで扱った命題と同様に、「必ず〜となる」「〜となることがありうる」という文も、真偽が確定するので命題だといえる。 様相論理は、このような必然性や可能性についてのいろいろな命題を扱うための論理である。</p>
 <article class="definition definition-like" id="definition-36"><h6 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">3.34</span><span class="period">.</span><span class="space"> </span><span class="title">「必ず」「ありうる」.</span>
+<span class="type">定義</span><span class="space"> </span><span class="codenumber">3.34</span><span class="period">.</span><span class="space"> </span><span class="title">「必ず」「ありうる」.</span>
 </h6>命題\(P\)に対して、「\(P\)が成り立つことが<dfn class="terminology">必然</dfn>(<dfn class="terminology">necessary</dfn>)である」「必ず\(P\)となる」という命題を\(\Box P\)と表す。 また、「\(P\)が成り立つことが<dfn class="terminology">可能</dfn>(<dfn class="terminology">possible</dfn>)である」「\(P\)となりうる」という命題を\(\Diamond P\)と表す。</article></section><section class="subsection" id="ssec-logic-world"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">3.5.2</span> <span class="title">可能世界</span>
 </h3>
 <p id="p-96">\(\Box P\)や\(\Diamond P\)は、次に定義する<dfn class="terminology">可能世界</dfn>(<dfn class="terminology">possible world</dfn>)の考え方を用いると、述語論理の記号で表せる。</p>
 <p id="p-97">将棋や囲碁のようなゲームでは、対局の途中のある盤面について、駒を進めたり置いたりすることで、次の盤面に進む。 多くの場合、駒の進め方や置き方は複数ありうるので、「次の盤面」も複数ありうる。 このときの「今の盤面」と「次の盤面」のように「現在の世界」と「次の時点の世界」を考え、「ありうる世界の集合」を定義したときの要素を可能世界と呼ぶ。</p>
 <article class="definition definition-like" id="definition-37"><h6 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">3.35</span><span class="period">.</span><span class="space"> </span><span class="title">可能世界を用いた「必ず」「ありうる」の表現.</span>
+<span class="type">定義</span><span class="space"> </span><span class="codenumber">3.35</span><span class="period">.</span><span class="space"> </span><span class="title">可能世界を用いた「必ず」「ありうる」の表現.</span>
 </h6>可能世界の集合を\(W\)、可能世界\(w\)で事象\(P\)が成り立つかどうかを命題関数\(P(w)\)で表すとき、次のように\(\Box P, \Diamond P\)を定義できる。<div class="displaymath">
 \begin{align*}
 \Box     P &amp;\iff \forall w \in W, P(w)\\

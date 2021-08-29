@@ -48,7 +48,7 @@
 <!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link xmlns:svg="http://www.w3.org/2000/svg" href="developer.css" rel="stylesheet" type="text/css">
 </head>
 <body class="mathbook-book has-toc has-sidebar-left">
-<a class="assistive" href="#content">Skip to main content</a><div xmlns:svg="http://www.w3.org/2000/svg" id="latex-macros" class="hidden-content" style="display:none">\(\require{luatexja}\require{luatexja-ruby}\require{indentfirst}\require{unicode-math}\unimathsetup{math-style=ISO,bold-style=ISO}
+<a class="assistive" href="#content">Skip to main content</a><div xmlns:svg="http://www.w3.org/2000/svg" id="latex-macros" class="hidden-content" style="display:none">\(\unimathsetup{math-style=ISO,bold-style=ISO}
 \setmathfont{XITSMath-Regular.otf}
 \usepackage[match,deluxe,expert,bold,noto-otf]{luatexja-preset}
 \setmonofont{Noto Sans Mono CJK JP}
@@ -162,7 +162,7 @@
 </h3>
 <p id="p-112">命題\(x \in A \implies x \in B\)が<em class="alert">偽</em>である(\(\overline{x \in A \implies x \in B}\))ことを示すには、<dfn class="terminology">反例</dfn>(<dfn class="terminology">counterexample</dfn>)と呼ばれる命題が成り立たないような具体例を1つ挙げることも多い。 この場合、反例が1つ見つかりさえすれば、通常の証明に比べて簡単に示すことができる。</p>
 <article class="definition definition-like" id="definition-39"><h6 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">3.40</span><span class="period">.</span><span class="space"> </span><span class="title">反例.</span>
+<span class="type">定義</span><span class="space"> </span><span class="codenumber">3.40</span><span class="period">.</span><span class="space"> </span><span class="title">反例.</span>
 </h6>命題\(x \in A \implies x \in B\)に対して、「\(A\)の要素だが\(B\)の要素でない\(x\)(\(x \in A \land x \notin B\))」を、命題\(x \in A \implies x \in B\)の<dfn class="terminology">反例</dfn>(<dfn class="terminology">counterexample</dfn>)という。</article><article class="theorem theorem-like" id="theorem-19"><h6 class="heading">
 <span class="type">定理</span><span class="space"> </span><span class="codenumber">3.41</span><span class="period">.</span><span class="space"> </span><span class="title">反例を用いた証明.</span>
 </h6>命題\(x \in A \implies x \in B\)が偽であることを示すには、例を1つ挙げ、その例が「\(A\)の要素だが\(B\)の要素でない」ことを示せばよい。</article><article class="hiddenproof" id="proof-9"><a data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-9"><h6 class="heading"><span class="type">証明<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-9"><article class="hiddenproof"><div class="displaymath">
@@ -177,7 +177,7 @@
 </h3>
 <p id="p-114">証明したい命題\(p\)を直接示すのが難しい場合には、命題\(p\)が成り立たない(偽である)と仮定して<dfn class="terminology">矛盾</dfn>(<dfn class="terminology">contradiction</dfn>)を導く<dfn class="terminology">背理法</dfn>が用いられることがある。</p>
 <article class="definition definition-like" id="definition-40"><h6 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">3.42</span><span class="period">.</span><span class="space"> </span><span class="title">矛盾.</span>
+<span class="type">定義</span><span class="space"> </span><span class="codenumber">3.42</span><span class="period">.</span><span class="space"> </span><span class="title">矛盾.</span>
 </h6>\(p\)を命題とするとき、命題\(p \land \overline{p}\)を\(p\)についての<dfn class="terminology">矛盾</dfn>(<dfn class="terminology">contradiction</dfn>)という。 命題\(p \land \overline{p}\)は常に偽である。</article><article class="theorem theorem-like" id="theorem-20"><h6 class="heading">
 <span class="type">定理</span><span class="space"> </span><span class="codenumber">3.43</span><span class="period">.</span><span class="space"> </span><span class="title">背理法.</span>
 </h6>命題\(p\)の真偽と命題\(\overline{p} \implies \text{F}\)の真偽は一致する。</article><article class="hiddenproof" id="proof-10"><a data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-10"><h6 class="heading"><span class="type">証明<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-10"><article class="hiddenproof"><div class="displaymath">

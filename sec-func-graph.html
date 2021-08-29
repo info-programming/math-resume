@@ -48,7 +48,7 @@
 <!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link xmlns:svg="http://www.w3.org/2000/svg" href="developer.css" rel="stylesheet" type="text/css">
 </head>
 <body class="mathbook-book has-toc has-sidebar-left">
-<a class="assistive" href="#content">Skip to main content</a><div xmlns:svg="http://www.w3.org/2000/svg" id="latex-macros" class="hidden-content" style="display:none">\(\require{luatexja}\require{luatexja-ruby}\require{indentfirst}\require{unicode-math}\unimathsetup{math-style=ISO,bold-style=ISO}
+<a class="assistive" href="#content">Skip to main content</a><div xmlns:svg="http://www.w3.org/2000/svg" id="latex-macros" class="hidden-content" style="display:none">\(\unimathsetup{math-style=ISO,bold-style=ISO}
 \setmathfont{XITSMath-Regular.otf}
 \usepackage[match,deluxe,expert,bold,noto-otf]{luatexja-preset}
 \setmonofont{Noto Sans Mono CJK JP}
@@ -159,7 +159,7 @@
 </h3>
 <p id="p-124">関数のグラフを座標空間に図示すると、関数の値の変化を目で見て分かるように可視化できる。</p>
 <article class="definition definition-like" id="definition-42"><h6 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">4.4</span><span class="period">.</span><span class="space"> </span><span class="title">グラフ.</span>
+<span class="type">定義</span><span class="space"> </span><span class="codenumber">4.4</span><span class="period">.</span><span class="space"> </span><span class="title">グラフ.</span>
 </h6>関数\(f: \mathbb{R} \to \mathbb{R}\)について、集合\(\{ (x, y) | x \in \mathbb{R}, y = f(x) \}\)を\(f\)の<dfn class="terminology">グラフ</dfn>(<dfn class="terminology">graph</dfn>)という。 また、関数\(f: \mathbb{R}^2 \to \mathbb{R}\)について、集合\(\{ (x, y, z) | x, y \in \mathbb{R}, z = f(x, y) \}\)を\(f\)のグラフという。 このとき、\(y = f(x)\)や\(z = f(x, y)\)をそれぞれのグラフの方程式という。</article><article class="algorithm theorem-like" id="algorithm-3"><h6 class="heading">
 <span class="type">Algorithm</span><span class="space"> </span><span class="codenumber">4.5</span><span class="period">.</span><span class="space"> </span><span class="title">グラフの描き方.</span>
 </h6>
@@ -173,11 +173,11 @@
 </h3>
 <p id="p-125">関数のグラフを座標空間内で移動させると、グラフに対してさまざまな変形を行うことができる。</p>
 <article class="definition definition-like" id="definition-43"><h6 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">4.6</span><span class="period">.</span><span class="space"> </span><span class="title">平行移動.</span>
+<span class="type">定義</span><span class="space"> </span><span class="codenumber">4.6</span><span class="period">.</span><span class="space"> </span><span class="title">平行移動.</span>
 </h6>あるグラフを平面上で一定の距離と方向に動かすことを、そのグラフの<dfn class="terminology">平行移動</dfn>という。 ある方程式のグラフを\(X\)軸方向に\(p\)だけ平行移動したグラフの方程式は、元の方程式の変数\(X\)を\(X - p\)に置き換えたものになる。 たとえば、\(y = f(x)\)を\(x\)軸方向に\(p\)、\(y\)軸方向に\(q\)だけ平行移動したグラフは\(y - q = f(x - p)\)と表される。 <figure class="figure figure-like" id="fig-func-trans-translate"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="image/func-trans-translate.svg" role="img" class="contained" alt=""></div>
 <figcaption><span class="type">図</span><span class="space"> </span><span class="codenumber">4.7<span class="period">.</span></span><span class="space"> </span>平行移動の例</figcaption></figure></article><p id="p-126">\(xy\)平面上の点\((a, b)\)を\(x\)軸方向に\(p\)、\(y\)軸方向に\(q\)だけ平行移動すると点\((a + p, b + q)\)となる。 点\((a, b)\)の方程式は\((x, y) = (a, b)\)、つまり「\(x = a\)かつ\(y = b\)」と表せるので、移動後の点の方程式は「\(x = a + p\)かつ\(y = b + q\)」となる。 これを変形すると「\(x - p = a\)かつ\(y - q = b\)となり、元の方程式の\(x\)を\(x - p\)に、\(y\)を\(y - q\)に、それぞれ置き換えたものであることが分かる。 図形のグラフは方程式を満たす点の集合であるので、一般の図形についても、\(x\)を\(x - p\)に、\(y\)を\(y - q\)に、それぞれ置き換えることで、平行移動後のグラフの方程式が求められる。</p>
 <article class="definition definition-like" id="definition-44"><h6 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">4.8</span><span class="period">.</span><span class="space"> </span><span class="title">対称移動.</span>
+<span class="type">定義</span><span class="space"> </span><span class="codenumber">4.8</span><span class="period">.</span><span class="space"> </span><span class="title">対称移動.</span>
 </h6>ある点や直線などを決め、グラフをそれに関して対称に移動することを、その点や直線などに関する<dfn class="terminology">対称移動</dfn>という。 ある方程式のグラフを直線\(X = 0\)について対称移動したグラフの方程式は、元の方程式の変数\(X\)を\(-X\)に置き換えたものになる。 <ul class="disc">
 <li id="li-25"><p id="p-derived-li-25">\(y = f(x)\)を\(x\)軸(\(y = 0\))について対称移動したグラフは\(-y = f(x)\)と表される。</p></li>
 <li id="li-26"><p id="p-derived-li-26">\(y = f(x)\)を\(y\)軸(\(x = 0\))について対称移動したグラフは\(y = f(-x)\)と表される。</p></li>
